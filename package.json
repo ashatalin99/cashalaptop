@@ -1,0 +1,17 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "Main Theme",
+  "author": "Alex Shatalin",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development",
+    "dev"  : "npx @tailwindcss/cli -i ./style.css -o ./dist/theme-styles.min.css --watch",
+    "dev:optimize" : "npx tailwindcss -o ./dist/theme-styles.min.css --minify",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.16",
+    "tailwindcss": "^4.0.16"
+  }
+}

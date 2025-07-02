@@ -1,51 +1,51 @@
-import { request, gql } from 'graphql-request'
+import { sdk } from '@/lib/sdk';
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
-type PostsResponse = {
-  posts: {
-    nodes: { slug: string }[]
-  }
-};
-
-export async function generateStaticParams() {
-  const { posts } = await request<PostsResponse>(process.env.WP_API_URL!, gql`
-    { posts(first: 100) { nodes { slug } } }
-  `)
-  return posts.nodes.map((p: any) => ({ slug: p.slug }))
+interface Params {
+  slug: string;
 }
 
-type PostPageProps = {
-  params: {
-    slug: string
-  }
-};
+/* BUILD-TIME paths ------------------------------------------------------- */
+export async function generateStaticParams() {
+  const { posts } = await sdk.GetPostSlugs();
+  return posts?.nodes?.map(({ slug }) => ({ slug })) ?? [];
+}
 
-type PostResponse = {
-  post: {
-    title: string;
-    content: string;
-    featuredImage: {
-      node: {
-        sourceUrl: string;
-        altText: string;
-      } | null;
-    } | null;
-  };
-};
+/* OPTIONAL: dynamic <head> tags ----------------------------------------- */
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+  const { slug } = await params;
+  const { postBy } = await sdk.PostBySlug({ slug });
+  if (!postBy) return {};
+  return { title: postBy.title };
+}
 
-export default async function Post({ params }: PostPageProps) {
-  const { post } = await request<PostResponse>(process.env.WP_API_URL!, gql`
-    query ($slug: String!) {
-      post(slug: $slug) {
-        title
-        content
-        featuredImage { node { sourceUrl altText } }
-      }
-    }`, { slug: params.slug });
+/* ISR: rebuild at most once a minute ------------------------------------ */
+export const revalidate = 60;
+
+/* PAGE: strongly typed --------------------------------------------------- */
+export default async function Post( { params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+
+  const { postBy } = await sdk.PostBySlug({ slug });
+
+  if (!postBy) notFound();
 
   return (
     <article className="prose mx-auto">
-      <h1>{post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <h1>{postBy.title}</h1>
+
+      {/* {postBy.featuredImage?.node && (
+        <img
+          src={postBy.featuredImage.node.sourceUrl}
+          alt={postBy.featuredImage.node.altText ?? postBy.title}
+          className="mb-4"
+        />
+      )} */}
+
+      <div dangerouslySetInnerHTML={{ __html: postBy.content ?? '' }} />
     </article>
-  )
+  );
 }

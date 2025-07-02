@@ -107,3 +107,7 @@ if( !function_exists('cc_mime_types') ) {
 	}
 	add_filter('upload_mimes', 'cc_mime_types');
 }
+
+add_filter( 'graphql_entrypoint', function() {
+  return '/graphql';            
+});

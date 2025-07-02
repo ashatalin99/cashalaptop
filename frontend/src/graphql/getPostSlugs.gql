@@ -1,0 +1,6 @@
+query GetPostSlugs {
+  posts(first: 100) {
+    nodes { slug }
+  }
+}
+

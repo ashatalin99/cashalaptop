@@ -1,0 +1,8 @@
+query PostBySlug($slug: String!) {
+  postBy(slug: $slug) {
+    id
+    title
+    content
+    featuredImage { node { sourceUrl altText } }
+  }
+}

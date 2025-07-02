@@ -1,0 +1,6 @@
+query GetLaptopSlugs {
+  laptops(first: 100) {
+    nodes { slug }
+  }
+}
+

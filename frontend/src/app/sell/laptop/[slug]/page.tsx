@@ -8,8 +8,8 @@ interface Params {
 
 /* BUILD-TIME paths ------------------------------------------------------- */
 export async function generateStaticParams() {
-  const { posts } = await sdk.GetPostSlugs();
-  return posts?.nodes?.map(({ slug }) => ({ slug })) ?? [];
+  const { laptops } = await sdk.GetLaptopSlugs();
+  return laptops?.nodes?.map(({ slug }) => ({ slug })) ?? [];
 }
 
 /* OPTIONAL: dynamic <head> tags ----------------------------------------- */
@@ -17,7 +17,7 @@ export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
   const { slug } = await params;
-  const { postBy } = await sdk.PostBySlug({ slug });
+  const { postBy } = await sdk.LaptopBySlug({ slug });
   if (!postBy) return {};
   return { title: postBy.title };
 }

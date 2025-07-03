@@ -1,6 +1,0 @@
-query LaptopBySlug($slug: String!) {
-  postBy(slug: $slug) {
-    id
-    title
-  }
-}

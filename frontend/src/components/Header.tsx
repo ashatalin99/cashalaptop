@@ -16,8 +16,8 @@ export const Header = () => {
         </div>
         <div>
           <ul className="flex h-full items-center space-x-2">
-            <li className="hover:bg-[#222] flex items-center h-full px-2">
-              <a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem]">Start Selling</a>
+            <li className="h-full">
+              <a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] hover:bg-[#222] flex items-center h-full px-2">Start Selling</a>
               <ul>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
@@ -33,9 +33,9 @@ export const Header = () => {
                 <li><a href=""></a></li>
               </ul>
             </li>
-            <li className="hover:bg-[#222] flex items-center h-full px-2"><a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] transition-colors duration-200">Sell in Bulk</a></li>
-            <li className="hover:bg-[#222] flex items-center h-full px-2"><a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] transition-colors duration-200">Buy Refurbished</a></li>
-            <li className="hover:bg-[#222] flex items-center h-full px-2"><a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] transition-colors duration-200">Support</a></li>
+            <li className="h-full"><a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] transition-colors duration-200 hover:bg-[#222] flex items-center h-full px-2">Sell in Bulk</a></li>
+            <li className="h-full"><a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] transition-colors duration-200 hover:bg-[#222] flex items-center h-full px-2">Buy Refurbished</a></li>
+            <li className="h-full"><a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] transition-colors duration-200 hover:bg-[#222] flex items-center h-full px-2">Support</a></li>
             <li>
               <button className="w-[25px] h-[25px]">
                 <svg 

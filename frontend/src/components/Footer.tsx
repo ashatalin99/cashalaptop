@@ -5,15 +5,16 @@ import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react"
 
 export const Footer = () => {
   return (
-    <footer id="contact" className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-4 gap-8">
+    <footer className="bg-gray-900 text-white">
+      <div className="container mx-auto px-8 py-16">
+        <div className="grid md:grid-cols-4 gap-6">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-blue-600 text-white p-2 rounded-lg">
-                <span className="font-bold text-xl">CL</span>
-              </div>
-              <span className="text-xl font-bold">Cash A Laptop</span>
+              <img 
+                  src="/logo4.png"
+                  alt="Logo"
+                  className="w-[110px] my-4"
+                />
             </div>
             <p className="text-gray-400">
               The trusted way to sell your laptop for top dollar. Fast, secure, and reliable.

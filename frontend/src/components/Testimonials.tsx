@@ -1,7 +1,7 @@
-
+"use client";
 import { Star } from "lucide-react";
 
-export const Testimonials = () => {
+const Testimonials = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
@@ -57,3 +57,5 @@ export const Testimonials = () => {
     </section>
   );
 };
+
+export { Testimonials };

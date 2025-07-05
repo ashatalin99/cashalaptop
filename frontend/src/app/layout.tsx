@@ -1,16 +1,20 @@
 
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto, Ubuntu } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Roboto({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const roboto = Roboto({
+  subsets: ['latin'],      
+  weight: ['400', '500', '700'],
+  display: 'swap',
+  variable: '--font-roboto',
 });
 
-const geistMono = Roboto({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'], 
+  display: 'swap',              
+  variable: '--font-ubuntu',
 });
 
 export const metadata: Metadata = {
@@ -26,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${roboto.variable} ${ubuntu.variable} antialiased`}
       >
         {children}
       </body>

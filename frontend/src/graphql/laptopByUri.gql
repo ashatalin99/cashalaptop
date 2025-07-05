@@ -1,21 +1,21 @@
-query LaptopBySlug($uri: String!) {
-  postBy(uri: $uri) {
-    id
-    title
-  }
-}
+# query LaptopBySlug($uri: String!) {
+#   postBy(uri: $uri) {
+#     id
+#     title
+#   }
+# }
 
 
-query NodeByUri($path: String!) {
-  nodeByUri(uri: $path) {
-    __typename
-    ... on Post {
-      id
-      title
-      uri
-    }
-  }
-}
+# query NodeByUri($path: String!) {
+#   nodeByUri(uri: $path) {
+#     __typename
+#     ... on Post {
+#       id
+#       title
+#       uri
+#     }
+#   }
+# }
 
 # query LaptopBySlug($slug: ID!) {
 #   post(id: $slug, idType: SLUG) {

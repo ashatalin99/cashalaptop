@@ -6,6 +6,8 @@
   --grey-100: #e2e2e2;
   --grey-200: #c7c7c7;
   --grey-grid-100: #cccccc;
+  --blue-100: #56c3e0;
+  --blue-200: #1E90FA;
 }
 
 @theme inline {
@@ -26,4 +28,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Ubuntu", "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-blue-100 {
+  color: var(--blue-100);
 }

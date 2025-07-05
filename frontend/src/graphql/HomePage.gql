@@ -1,0 +1,30 @@
+query HomePage {
+  pageBy(uri: "/") {          
+    id
+    heroSection {
+      title           
+      subtitle       
+      button {          
+        url
+        title
+        target
+      }
+      featuredImage {       
+        node {                  
+            sourceUrl
+            altText
+        }
+      }
+    }
+  }
+
+  posts(first: 3) {           # latest 3 blog posts teaser
+    nodes {
+      id
+      title
+      uri
+      featuredImage { node { sourceUrl altText } }
+      excerpt
+    }
+  }
+}

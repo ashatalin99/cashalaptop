@@ -35,6 +35,17 @@ export type AcfFieldGroupFields = {
   fieldGroupName?: Maybe<Scalars['String']['output']>;
 };
 
+/** ACF Link field */
+export type AcfLink = {
+  __typename?: 'AcfLink';
+  /** The target of the link (_blank, etc) */
+  target?: Maybe<Scalars['String']['output']>;
+  /** The title of the link */
+  title?: Maybe<Scalars['String']['output']>;
+  /** The url of the link */
+  url?: Maybe<Scalars['String']['output']>;
+};
+
 /** Connection between the ContactInfo_Fields type and the MediaItem type */
 export type AcfMediaItemConnectionEdge = Edge & MediaItemConnectionEdge & OneToOneConnection & {
   __typename?: 'AcfMediaItemConnectionEdge';
@@ -3637,6 +3648,45 @@ export type GeneralSettings = {
   url?: Maybe<Scalars['String']['output']>;
 };
 
+/** The &quot;HeroSection&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type HeroSection = AcfFieldGroup & AcfFieldGroupFields & HeroSection_Fields & {
+  __typename?: 'HeroSection';
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
+  button?: Maybe<AcfLink>;
+  /** Field of the &quot;wysiwyg&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
+  content?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;image&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
+  featuredImage?: Maybe<AcfMediaItemConnectionEdge>;
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
+  subtitle?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
+  title?: Maybe<Scalars['String']['output']>;
+};
+
+/** Interface representing fields of the ACF &quot;HeroSection&quot; Field Group */
+export type HeroSection_Fields = {
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
+  button?: Maybe<AcfLink>;
+  /** Field of the &quot;wysiwyg&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
+  content?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;image&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
+  featuredImage?: Maybe<AcfMediaItemConnectionEdge>;
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
+  subtitle?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
+  title?: Maybe<Scalars['String']['output']>;
+};
+
 /** Content that can be organized in a parent-child structure. Provides fields for navigating up and down the hierarchy and maintaining structured relationships. */
 export type HierarchicalContentNode = {
   /** Returns ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
@@ -5354,7 +5404,7 @@ export enum OrderEnum {
 }
 
 /** A standalone content entry generally used for static, non-chronological content such as &quot;About Us&quot; or &quot;Contact&quot; pages. */
-export type Page = ContentNode & DatabaseIdentifier & HierarchicalContentNode & HierarchicalNode & MenuItemLinkable & Node & NodeWithAuthor & NodeWithContentEditor & NodeWithFeaturedImage & NodeWithPageAttributes & NodeWithRevisions & NodeWithTemplate & NodeWithTitle & Previewable & UniformResourceIdentifiable & {
+export type Page = ContentNode & DatabaseIdentifier & HierarchicalContentNode & HierarchicalNode & MenuItemLinkable & Node & NodeWithAuthor & NodeWithContentEditor & NodeWithFeaturedImage & NodeWithPageAttributes & NodeWithRevisions & NodeWithTemplate & NodeWithTitle & Previewable & UniformResourceIdentifiable & WithAcfHeroSection & {
   __typename?: 'Page';
   /** Returns ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
   ancestors?: Maybe<HierarchicalContentNodeToContentNodeAncestorsConnection>;
@@ -5398,6 +5448,8 @@ export type Page = ContentNode & DatabaseIdentifier & HierarchicalContentNode & 
   guid?: Maybe<Scalars['String']['output']>;
   /** Whether the page object is password protected. */
   hasPassword?: Maybe<Scalars['Boolean']['output']>;
+  /** Fields of the HeroSection ACF Field Group */
+  heroSection?: Maybe<HeroSection>;
   /** The globally unique identifier of the page object. */
   id: Scalars['ID']['output'];
   /** Whether the node is a Comment */
@@ -13048,6 +13100,12 @@ export type WithAcfDevice = {
   device?: Maybe<Device>;
 };
 
+/** Provides access to fields of the &quot;HeroSection&quot; ACF Field Group via the &quot;heroSection&quot; field */
+export type WithAcfHeroSection = {
+  /** Fields of the HeroSection ACF Field Group */
+  heroSection?: Maybe<HeroSection>;
+};
+
 /** The writing setting type */
 export type WritingSettings = {
   __typename?: 'WritingSettings';
@@ -13059,53 +13117,44 @@ export type WritingSettings = {
   useSmilies?: Maybe<Scalars['Boolean']['output']>;
 };
 
-export type GetLaptopUrisQueryVariables = Exact<{ [key: string]: never; }>;
+export type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetLaptopUrisQuery = { __typename?: 'RootQuery', laptops?: { __typename?: 'RootQueryToLaptopConnection', nodes: Array<{ __typename?: 'Laptop', id: string, title?: string | null, uri?: string | null }> } | null };
-
-export type LaptopBySlugQueryVariables = Exact<{
-  uri: Scalars['String']['input'];
-}>;
+export type HomePageQuery = { __typename?: 'RootQuery', pageBy?: { __typename?: 'Page', id: string, heroSection?: { __typename?: 'HeroSection', title?: string | null, subtitle?: string | null, button?: { __typename?: 'AcfLink', url?: string | null, title?: string | null, target?: string | null } | null, featuredImage?: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null } | null } | null, posts?: { __typename?: 'RootQueryToPostConnection', nodes: Array<{ __typename?: 'Post', id: string, title?: string | null, uri?: string | null, excerpt?: string | null, featuredImage?: { __typename?: 'NodeWithFeaturedImageToMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null }> } | null };
 
 
-export type LaptopBySlugQuery = { __typename?: 'RootQuery', postBy?: { __typename?: 'Post', id: string, title?: string | null } | null };
-
-export type NodeByUriQueryVariables = Exact<{
-  path: Scalars['String']['input'];
-}>;
-
-
-export type NodeByUriQuery = { __typename?: 'RootQuery', nodeByUri?: { __typename: 'All_in_one' } | { __typename: 'Category' } | { __typename: 'Comment' } | { __typename: 'Console' } | { __typename: 'ContentType' } | { __typename: 'Desktop' } | { __typename: 'Faq' } | { __typename: 'Laptop' } | { __typename: 'MediaItem' } | { __typename: 'Page' } | { __typename: 'Phone' } | { __typename: 'Post', id: string, title?: string | null, uri?: string | null } | { __typename: 'PostFormat' } | { __typename: 'Tablet' } | { __typename: 'Tag' } | { __typename: 'User' } | { __typename: 'Watch' } | null };
-
-
-export const GetLaptopUrisDocument = gql`
-    query GetLaptopUris {
-  laptops(first: 100) {
+export const HomePageDocument = gql`
+    query HomePage {
+  pageBy(uri: "/") {
+    id
+    heroSection {
+      title
+      subtitle
+      button {
+        url
+        title
+        target
+      }
+      featuredImage {
+        node {
+          sourceUrl
+          altText
+        }
+      }
+    }
+  }
+  posts(first: 3) {
     nodes {
       id
       title
       uri
-    }
-  }
-}
-    `;
-export const LaptopBySlugDocument = gql`
-    query LaptopBySlug($uri: String!) {
-  postBy(uri: $uri) {
-    id
-    title
-  }
-}
-    `;
-export const NodeByUriDocument = gql`
-    query NodeByUri($path: String!) {
-  nodeByUri(uri: $path) {
-    __typename
-    ... on Post {
-      id
-      title
-      uri
+      featuredImage {
+        node {
+          sourceUrl
+          altText
+        }
+      }
+      excerpt
     }
   }
 }
@@ -13118,14 +13167,8 @@ const defaultWrapper: SdkFunctionWrapper = (action, _operationName, _operationTy
 
 export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
   return {
-    GetLaptopUris(variables?: GetLaptopUrisQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetLaptopUrisQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<GetLaptopUrisQuery>({ document: GetLaptopUrisDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetLaptopUris', 'query', variables);
-    },
-    LaptopBySlug(variables: LaptopBySlugQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<LaptopBySlugQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<LaptopBySlugQuery>({ document: LaptopBySlugDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'LaptopBySlug', 'query', variables);
-    },
-    NodeByUri(variables: NodeByUriQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<NodeByUriQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<NodeByUriQuery>({ document: NodeByUriDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'NodeByUri', 'query', variables);
+    HomePage(variables?: HomePageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<HomePageQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<HomePageQuery>({ document: HomePageDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'HomePage', 'query', variables);
     }
   };
 }

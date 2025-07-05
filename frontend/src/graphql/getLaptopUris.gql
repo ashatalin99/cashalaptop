@@ -4,13 +4,13 @@
 #   }
 # }
 
-query GetLaptopUris {
-  laptops(first: 100) {
-    nodes {
-      id
-      title
-      uri     # ← full slug / path
-    }
-  }
-}
+# query GetLaptopUris {
+#   laptops(first: 100) {
+#     nodes {
+#       id
+#       title
+#       uri     # ← full slug / path
+#     }
+#   }
+# }
 

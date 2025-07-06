@@ -1,19 +1,8 @@
 "use client";
+import type { HeaderItems } from "@/types/Header";
 
-interface NavItem {
-    id: string;
-    label: string;
-    url: string;
-    parentId: string; 
-    target: "_blank" | "_self";
-    childItems: { nodes: NavItem[] }
-  }
-interface NavItems {
-    navItems: NavItem[];
-  }
 
-const Header = ({navItems}: NavItems) => {
-  console.log(navItems);
+const Header = ({navItems}: HeaderItems) => {
   return (
     <header className="bg-[#333] sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between">

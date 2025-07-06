@@ -8,6 +8,7 @@
   --grey-grid-100: #cccccc;
   --blue-100: #56c3e0;
   --blue-200: #1E90FA;
+  --orange-100: #f1852a;
 }
 
 @theme inline {
@@ -40,4 +41,8 @@ body {
 
 .text-blue-100 {
   color: var(--blue-100);
+}
+
+.text-blue-200 {
+  color: var(--blue-200);
 }

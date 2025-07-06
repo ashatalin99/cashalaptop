@@ -1,30 +1,18 @@
 
 import { sdk } from '@/lib/sdk';
+import type { StepsSection } from "@/types/StepsSection";
 import Image from 'next/image';
 import { Metadata } from 'next';
 
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { HowItWorks } from "@/components/HowItWorks";
+import { FeaturedSteps } from "@/components/FeaturedSteps";
 import { StartSelling } from "@/components/StartSelling";
 import { Testimonials } from "@/components/Testimonials";
 import { FeaturedBlog } from "@/components/FeaturedBlog";
 import { Footer } from "@/components/Footer";
 
 export const revalidate = 60;        // ISR: rebuild at most once a minute
-
-export interface NavItem {
-    id: string;
-    label: string;
-    url: string;
-    parentId: string; // Added parentId to track hierarchy
-    target: "_blank" | "_self";
-    childItems: { nodes: NavItem[] };
-  }
-
- export interface NavItems {
-  navItems: NavItem[];
-}
 
 export default async function Home() {
   const { menu } = await sdk.HeaderNav();
@@ -39,7 +27,11 @@ export default async function Home() {
 
   const hero = pageBy.heroSection;
   if (!hero) return <h1>Hero section not found</h1>;
- 
+
+  const stepsSection = pageBy.featuredSteps;
+  if (!stepsSection) return <h1>Featured Steps section not found</h1>;
+  console.log(stepsSection);
+
   const headerProps = {
     navItems: headerNav.map((item) => ({
       id: item.id,
@@ -80,30 +72,23 @@ export default async function Home() {
         : undefined,
   } satisfies Parameters<typeof Hero>[0];
 
-
+  // Map stepsSection to match StepsSection type
+  const stepsSectionProps: StepsSection = {
+    title: stepsSection.sectionTitle ?? "",
+    items: (stepsSection.steps ?? []).map((step) => ({
+      title: step?.title ?? "",
+      subtitle: step?.subtitle ?? "",
+      icon: step?.icon?.node?.sourceUrl
+        ? { sourceUrl: step.icon.node.sourceUrl }
+        : undefined,
+    })),
+  };
 
   return (
-    
     <div className="min-h-screen bg-white">
       <Header {...headerProps}/>
       <Hero {...heroProps} />
-      {/* <Header />
-      <FullHero />
-      <HowItWorks />
-      <StartSelling />
-      <Testimonials />
-      <FeaturedBlog />
-      <Footer /> */}
+      <FeaturedSteps {...stepsSectionProps} />
     </div>
-  );
+  )
 }
-
-
-
-// export async function generateMetadata(): Promise<Metadata> {
-//   const { pageBy } = await sdk.HomePage();
-//   return {
-//     title: pageBy?.seo?.title ?? pageBy?.title,
-//     description: pageBy?.seo?.metaDesc ?? undefined,
-//   };
-// }

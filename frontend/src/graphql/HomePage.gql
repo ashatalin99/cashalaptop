@@ -16,6 +16,19 @@ query HomePage {
         }
       }
     }
+    featuredSteps {
+      sectionTitle
+      steps {
+        title
+        subtitle
+        icon {
+          node {
+            sourceUrl
+            altText
+          }
+        }
+      }
+    }
   }
 
   posts(first: 3) {           # latest 3 blog posts teaser

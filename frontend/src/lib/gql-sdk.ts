@@ -3625,6 +3625,64 @@ export type FaqToPreviewConnectionEdge = Edge & FaqConnectionEdge & OneToOneConn
   node: Faq;
 };
 
+/** The &quot;FeaturedSteps&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type FeaturedSteps = AcfFieldGroup & AcfFieldGroupFields & FeaturedSteps_Fields & {
+  __typename?: 'FeaturedSteps';
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;FeaturedSteps&quot; Field Group */
+  sectionTitle?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;FeaturedSteps&quot; Field Group */
+  steps?: Maybe<Array<Maybe<FeaturedStepsSteps>>>;
+};
+
+/** The &quot;FeaturedStepsSteps&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type FeaturedStepsSteps = AcfFieldGroup & AcfFieldGroupFields & FeaturedStepsSteps_Fields & {
+  __typename?: 'FeaturedStepsSteps';
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;image&quot; Field Type added to the schema as part of the &quot;FeaturedStepsSteps&quot; Field Group */
+  icon?: Maybe<AcfMediaItemConnectionEdge>;
+  /** Field of the &quot;textarea&quot; Field Type added to the schema as part of the &quot;FeaturedStepsSteps&quot; Field Group */
+  subtitle?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;FeaturedStepsSteps&quot; Field Group */
+  title?: Maybe<Scalars['String']['output']>;
+};
+
+/** Interface representing fields of the ACF &quot;FeaturedStepsSteps&quot; Field Group */
+export type FeaturedStepsSteps_Fields = {
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;image&quot; Field Type added to the schema as part of the &quot;FeaturedStepsSteps&quot; Field Group */
+  icon?: Maybe<AcfMediaItemConnectionEdge>;
+  /** Field of the &quot;textarea&quot; Field Type added to the schema as part of the &quot;FeaturedStepsSteps&quot; Field Group */
+  subtitle?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;FeaturedStepsSteps&quot; Field Group */
+  title?: Maybe<Scalars['String']['output']>;
+};
+
+/** Interface representing fields of the ACF &quot;FeaturedSteps&quot; Field Group */
+export type FeaturedSteps_Fields = {
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;FeaturedSteps&quot; Field Group */
+  sectionTitle?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;FeaturedSteps&quot; Field Group */
+  steps?: Maybe<Array<Maybe<FeaturedStepsSteps>>>;
+};
+
 /** The general setting type */
 export type GeneralSettings = {
   __typename?: 'GeneralSettings';
@@ -5400,7 +5458,7 @@ export enum OrderEnum {
 }
 
 /** A standalone content entry generally used for static, non-chronological content such as &quot;About Us&quot; or &quot;Contact&quot; pages. */
-export type Page = ContentNode & DatabaseIdentifier & HierarchicalContentNode & HierarchicalNode & MenuItemLinkable & Node & NodeWithAuthor & NodeWithContentEditor & NodeWithFeaturedImage & NodeWithPageAttributes & NodeWithRevisions & NodeWithTemplate & NodeWithTitle & Previewable & UniformResourceIdentifiable & WithAcfHeroSection & {
+export type Page = ContentNode & DatabaseIdentifier & HierarchicalContentNode & HierarchicalNode & MenuItemLinkable & Node & NodeWithAuthor & NodeWithContentEditor & NodeWithFeaturedImage & NodeWithPageAttributes & NodeWithRevisions & NodeWithTemplate & NodeWithTitle & Previewable & UniformResourceIdentifiable & WithAcfFeaturedSteps & WithAcfHeroSection & {
   __typename?: 'Page';
   /** Returns ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
   ancestors?: Maybe<HierarchicalContentNodeToContentNodeAncestorsConnection>;
@@ -5440,6 +5498,8 @@ export type Page = ContentNode & DatabaseIdentifier & HierarchicalContentNode & 
   featuredImageDatabaseId?: Maybe<Scalars['Int']['output']>;
   /** Globally unique ID of the featured image assigned to the node */
   featuredImageId?: Maybe<Scalars['ID']['output']>;
+  /** Fields of the FeaturedSteps ACF Field Group */
+  featuredSteps?: Maybe<FeaturedSteps>;
   /** The global unique identifier for this post. This currently matches the value stored in WP_Post-&gt;guid and the guid column in the &quot;post_objects&quot; database table. */
   guid?: Maybe<Scalars['String']['output']>;
   /** Whether the page object is password protected. */
@@ -13096,6 +13156,12 @@ export type WithAcfDevice = {
   device?: Maybe<Device>;
 };
 
+/** Provides access to fields of the &quot;FeaturedSteps&quot; ACF Field Group via the &quot;featuredSteps&quot; field */
+export type WithAcfFeaturedSteps = {
+  /** Fields of the FeaturedSteps ACF Field Group */
+  featuredSteps?: Maybe<FeaturedSteps>;
+};
+
 /** Provides access to fields of the &quot;HeroSection&quot; ACF Field Group via the &quot;heroSection&quot; field */
 export type WithAcfHeroSection = {
   /** Fields of the HeroSection ACF Field Group */
@@ -13116,19 +13182,12 @@ export type WritingSettings = {
 export type HeaderNavQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type HeaderNavQuery = { __typename?: 'RootQuery', menu?: { __typename?: 'Menu', name?: string | null, menuId?: number | null, menuItems?: {
-  map: any; __typename?: 'MenuToMenuItemConnection', nodes: Array<{
-    target: "_blank" | "_self"; __typename?: 'MenuItem', id: string, label?: string | null, url?: string | null, parentId?: string | null, childItems?: { __typename?: 'MenuItemToMenuItemConnection', nodes: Array<{
-      parentId: string;
-      target: "_blank" | "_self"; __typename?: 'MenuItem', id: string, label?: string | null, url?: string | null 
-}> } | null 
-}> 
-} | null } | null };
+export type HeaderNavQuery = { __typename?: 'RootQuery', menu?: { __typename?: 'Menu', name?: string | null, menuId?: number | null, menuItems?: { __typename?: 'MenuToMenuItemConnection', nodes: Array<{ __typename?: 'MenuItem', id: string, label?: string | null, url?: string | null, parentId?: string | null, childItems?: { __typename?: 'MenuItemToMenuItemConnection', nodes: Array<{ __typename?: 'MenuItem', id: string, label?: string | null, url?: string | null }> } | null }> } | null } | null };
 
 export type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type HomePageQuery = { __typename?: 'RootQuery', pageBy?: { __typename?: 'Page', id: string, heroSection?: { __typename?: 'HeroSection', title?: string | null, subtitle?: string | null, button?: { __typename?: 'AcfLink', url?: string | null, title?: string | null, target?: string | null } | null, featuredImage?: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null } | null } | null, posts?: { __typename?: 'RootQueryToPostConnection', nodes: Array<{ __typename?: 'Post', id: string, title?: string | null, uri?: string | null, excerpt?: string | null, featuredImage?: { __typename?: 'NodeWithFeaturedImageToMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null }> } | null };
+export type HomePageQuery = { __typename?: 'RootQuery', pageBy?: { __typename?: 'Page', id: string, heroSection?: { __typename?: 'HeroSection', title?: string | null, subtitle?: string | null, button?: { __typename?: 'AcfLink', url?: string | null, title?: string | null, target?: string | null } | null, featuredImage?: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null } | null, featuredSteps?: { __typename?: 'FeaturedSteps', sectionTitle?: string | null, steps?: Array<{ __typename?: 'FeaturedStepsSteps', title?: string | null, subtitle?: string | null, icon?: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null } | null> | null } | null } | null, posts?: { __typename?: 'RootQueryToPostConnection', nodes: Array<{ __typename?: 'Post', id: string, title?: string | null, uri?: string | null, excerpt?: string | null, featuredImage?: { __typename?: 'NodeWithFeaturedImageToMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null }> } | null };
 
 
 export const HeaderNavDocument = gql`
@@ -13170,6 +13229,19 @@ export const HomePageDocument = gql`
         node {
           sourceUrl
           altText
+        }
+      }
+    }
+    featuredSteps {
+      sectionTitle
+      steps {
+        title
+        subtitle
+        icon {
+          node {
+            sourceUrl
+            altText
+          }
         }
       }
     }

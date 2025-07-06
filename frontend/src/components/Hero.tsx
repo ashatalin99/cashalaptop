@@ -1,12 +1,7 @@
 "use client";
-export interface HeroProps {
-  title: string;
-  subtitle?: string;
-  image: { src: string; alt: string };
-  cta?: { url: string; label: string; target?: "_blank" | "_self" };
-}
+import type { Hero } from "@/types/Hero";
 
-const Hero = ({title, subtitle, image, cta}: HeroProps) => {
+const Hero = ({title, subtitle, image, cta}: Hero) => {
   return (
     <section style={{ background: `url(${image.src}) no-repeat center bottom/cover` }} className="relative py-40 after:content-[''] after:absolute after:inset-0 after:bg-[#222]/90">
       <div className="container mx-auto px-4 relative z-10">

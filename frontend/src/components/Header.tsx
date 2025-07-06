@@ -1,9 +1,19 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { Menu, Phone } from "lucide-react";
-import Image from "next/image";
 
-export const Header = () => {
+interface NavItem {
+    id: string;
+    label: string;
+    url: string;
+    parentId: string; 
+    target: "_blank" | "_self";
+    childItems: { nodes: NavItem[] }
+  }
+interface NavItems {
+    navItems: NavItem[];
+  }
+
+const Header = ({navItems}: NavItems) => {
+  console.log(navItems);
   return (
     <header className="bg-[#333] sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between">
@@ -15,27 +25,43 @@ export const Header = () => {
           />
         </div>
         <div>
-          <ul className="flex h-full items-center space-x-2">
-            <li className="h-full">
-              <a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] hover:bg-[#222] flex items-center h-full px-2">Start Selling</a>
-              <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-              </ul>
-            </li>
-            <li className="h-full"><a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] transition-colors duration-200 hover:bg-[#222] flex items-center h-full px-2">Sell in Bulk</a></li>
-            <li className="h-full"><a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] transition-colors duration-200 hover:bg-[#222] flex items-center h-full px-2">Buy Refurbished</a></li>
-            <li className="h-full"><a href="#" className="text-white uppercase font-semibold hover:text-[#56C3E0] text-[0.85rem] transition-colors duration-200 hover:bg-[#222] flex items-center h-full px-2">Support</a></li>
+          <ul className="flex h-full items-center space-x-2 relative">
+            {
+            navItems.map((item, index) => {
+              if (!item.parentId) {
+                return (
+                  <li key={item.id} className="h-full group">
+                    <a
+                      href={item.url}
+                      target={item.target}
+                      rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
+                      className="text-[14px] uppercase flex items-center h-full text-white px-3 py-2 rounded hover:text-[var(--blue-100)] hover:bg-[#222] transition-colors font-semibold"
+                    >
+                      {item.label}
+                    </a>
+                    {item.childItems.nodes.length > 0 && (
+                      <ul className="absolute bg-[#333] hidden group-hover:block group-focus-within:block">
+                      {
+                        item.childItems.nodes.map((child, childIndex) => (
+                          <li key={child.id || childIndex}>
+                            <a 
+                              href={child.url}
+                              target={child.target}
+                              className="text-white hover:text-[#56C3E0] px-4 py-4 hover:bg-[#222] block transition-colors text-md"
+                            >
+                              {child.label}
+                            </a>
+                          </li>
+                        ))
+                      }
+                    </ul>
+                    )}
+                  </li>
+                );
+              }
+              return null;
+            })
+            }
             <li>
               <button className="w-[25px] h-[25px]">
                 <svg 
@@ -55,3 +81,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export { Header };

@@ -12,7 +12,7 @@ function theme_setup() {
 
 	// Register commonly used menus
 	register_nav_menus( array(
-		// 'header_top_nav' => __( 'Mega Menu - Top Navigation' ),
+		 'header_nav' => __( 'Header Nav - Header' ),
 	));
 
 	// Cleanup Head

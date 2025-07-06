@@ -1,5 +1,4 @@
 "use client";
-import clsx from "clsx";
 export interface HeroProps {
   title: string;
   subtitle?: string;
@@ -8,7 +7,6 @@ export interface HeroProps {
 }
 
 const Hero = ({title, subtitle, image, cta}: HeroProps) => {
- 
   return (
     <section style={{ background: `url(${image.src}) no-repeat center bottom/cover` }} className="relative py-40 after:content-[''] after:absolute after:inset-0 after:bg-[#222]/90">
       <div className="container mx-auto px-4 relative z-10">

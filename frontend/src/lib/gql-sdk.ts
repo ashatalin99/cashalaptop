@@ -3653,8 +3653,6 @@ export type HeroSection = AcfFieldGroup & AcfFieldGroupFields & HeroSection_Fiel
   __typename?: 'HeroSection';
   /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
   button?: Maybe<AcfLink>;
-  /** Field of the &quot;wysiwyg&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
-  content?: Maybe<Scalars['String']['output']>;
   /** Field of the &quot;image&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
   featuredImage?: Maybe<AcfMediaItemConnectionEdge>;
   /**
@@ -3672,8 +3670,6 @@ export type HeroSection = AcfFieldGroup & AcfFieldGroupFields & HeroSection_Fiel
 export type HeroSection_Fields = {
   /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
   button?: Maybe<AcfLink>;
-  /** Field of the &quot;wysiwyg&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
-  content?: Maybe<Scalars['String']['output']>;
   /** Field of the &quot;image&quot; Field Type added to the schema as part of the &quot;HeroSection&quot; Field Group */
   featuredImage?: Maybe<AcfMediaItemConnectionEdge>;
   /**
@@ -4985,8 +4981,8 @@ export type MenuItemToMenuItemLinkableConnectionEdge = Edge & MenuItemLinkableCo
 
 /** Designated areas where navigation menus can be displayed. Represents the named regions in the interface where menus can be assigned. */
 export enum MenuLocationEnum {
-  /** Empty menu location */
-  Empty = 'EMPTY'
+  /** Put the menu in the header_nav location */
+  HeaderNav = 'HEADER_NAV'
 }
 
 /** Identifier types for retrieving a specific navigation menu. Specifies which property (ID, name, location) is used to locate a particular menu. */
@@ -13117,12 +13113,47 @@ export type WritingSettings = {
   useSmilies?: Maybe<Scalars['Boolean']['output']>;
 };
 
+export type HeaderNavQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type HeaderNavQuery = { __typename?: 'RootQuery', menu?: { __typename?: 'Menu', name?: string | null, menuId?: number | null, menuItems?: {
+  map: any; __typename?: 'MenuToMenuItemConnection', nodes: Array<{
+    target: "_blank" | "_self"; __typename?: 'MenuItem', id: string, label?: string | null, url?: string | null, parentId?: string | null, childItems?: { __typename?: 'MenuItemToMenuItemConnection', nodes: Array<{
+      parentId: string;
+      target: "_blank" | "_self"; __typename?: 'MenuItem', id: string, label?: string | null, url?: string | null 
+}> } | null 
+}> 
+} | null } | null };
+
 export type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type HomePageQuery = { __typename?: 'RootQuery', pageBy?: { __typename?: 'Page', id: string, heroSection?: { __typename?: 'HeroSection', title?: string | null, subtitle?: string | null, button?: { __typename?: 'AcfLink', url?: string | null, title?: string | null, target?: string | null } | null, featuredImage?: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null } | null } | null, posts?: { __typename?: 'RootQueryToPostConnection', nodes: Array<{ __typename?: 'Post', id: string, title?: string | null, uri?: string | null, excerpt?: string | null, featuredImage?: { __typename?: 'NodeWithFeaturedImageToMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null }> } | null };
 
 
+export const HeaderNavDocument = gql`
+    query HeaderNav {
+  menu(id: "Header Nav", idType: SLUG) {
+    name
+    menuId
+    menuItems(first: 100) {
+      nodes {
+        id
+        label
+        url
+        parentId
+        childItems(first: 20) {
+          nodes {
+            id
+            label
+            url
+          }
+        }
+      }
+    }
+  }
+}
+    `;
 export const HomePageDocument = gql`
     query HomePage {
   pageBy(uri: "/") {
@@ -13167,6 +13198,9 @@ const defaultWrapper: SdkFunctionWrapper = (action, _operationName, _operationTy
 
 export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
   return {
+    HeaderNav(variables?: HeaderNavQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<HeaderNavQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<HeaderNavQuery>({ document: HeaderNavDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'HeaderNav', 'query', variables);
+    },
     HomePage(variables?: HomePageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<HomePageQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<HomePageQuery>({ document: HomePageDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'HomePage', 'query', variables);
     }

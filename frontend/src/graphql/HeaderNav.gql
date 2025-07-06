@@ -1,0 +1,21 @@
+query HeaderNav {
+  menu(id: "Header Nav", idType: SLUG) {  
+    name
+    menuId                               
+    menuItems(first: 100) {
+      nodes {
+        id
+        label
+        url
+        parentId
+        childItems(first: 20) {
+          nodes {
+            id
+            label
+            url
+          }
+        }
+      }
+    }
+  }
+}

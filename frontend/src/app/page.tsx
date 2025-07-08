@@ -30,7 +30,7 @@ export default async function Home() {
 
   const stepsSection = pageBy.featuredSteps;
   if (!stepsSection) return <h1>Featured Steps section not found</h1>;
-  console.log(stepsSection);
+
 
   const headerProps = {
     navItems: headerNav.map((item) => ({
@@ -72,7 +72,6 @@ export default async function Home() {
         : undefined,
   } satisfies Parameters<typeof Hero>[0];
 
-  // Map stepsSection to match StepsSection type
   const stepsSectionProps: StepsSection = {
     title: stepsSection.sectionTitle ?? "",
     items: (stepsSection.steps ?? []).map((step) => ({

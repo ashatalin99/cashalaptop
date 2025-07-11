@@ -115,6 +115,9 @@ export default async function Home() {
       <Hero {...heroProps} />
       <FeaturedSteps {...stepsSectionProps} />
       <StartSelling {...deviceViewProps}/>
+      <Testimonials />
+      <FeaturedBlog />
+      <Footer />
     </div>
   )
 }

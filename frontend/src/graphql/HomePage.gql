@@ -30,6 +30,34 @@ query HomePage {
       }
     }
   }
+  # Options page where all devices are included
+  deviceView {
+      deviceViewSettings {
+        title
+        subtitle
+        searchFieldPlaceholder
+        quickLinks {
+          link {
+            url
+            title
+            target
+          }
+        }
+        selectDevices {
+          deviceName {
+            url
+            title
+            target
+          }
+          icon {
+            node {
+              sourceUrl
+              altText
+            }
+          }
+        }
+      }
+    }
 
   posts(first: 3) {           # latest 3 blog posts teaser
     nodes {

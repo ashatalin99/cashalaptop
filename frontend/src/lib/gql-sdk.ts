@@ -55,6 +55,15 @@ export type AcfMediaItemConnectionEdge = Edge & MediaItemConnectionEdge & OneToO
   node: MediaItem;
 };
 
+/** Options Page registered by ACF */
+export type AcfOptionsPage = {
+  /** The globally unique ID for the object */
+  id: Scalars['ID']['output'];
+  menuTitle?: Maybe<Scalars['String']['output']>;
+  pageTitle?: Maybe<Scalars['String']['output']>;
+  parentId?: Maybe<Scalars['String']['output']>;
+};
+
 /** Represents a connection to a all_in_one. Contains both the all_in_one Node and metadata about the relationship. */
 export type AllInOneConnectionEdge = {
   /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
@@ -312,49 +321,6 @@ export enum AvatarRatingEnum {
   /** Indicates an X level avatar rating level. */
   X = 'X'
 }
-
-/** The &quot;CalculatorSettingOptions&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
-export type CalculatorSettingOptions = AcfFieldGroup & AcfFieldGroupFields & CalculatorSettingOptions_Fields & {
-  __typename?: 'CalculatorSettingOptions';
-  /** Field of the &quot;true_false&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  addDefect?: Maybe<Scalars['Boolean']['output']>;
-  /** Field of the &quot;select&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  defectList?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
-  /** Field of the &quot;true_false&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  deleteDefect?: Maybe<Scalars['Boolean']['output']>;
-  /** Field of the &quot;select&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  deviceCategory?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
-  /** Field of the &quot;true_false&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  editDefect?: Maybe<Scalars['Boolean']['output']>;
-  /**
-   * The name of the field group
-   * @deprecated Use __typename instead
-   */
-  fieldGroupName?: Maybe<Scalars['String']['output']>;
-  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  singleDefect?: Maybe<Scalars['String']['output']>;
-};
-
-/** Interface representing fields of the ACF &quot;CalculatorSettingOptions&quot; Field Group */
-export type CalculatorSettingOptions_Fields = {
-  /** Field of the &quot;true_false&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  addDefect?: Maybe<Scalars['Boolean']['output']>;
-  /** Field of the &quot;select&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  defectList?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
-  /** Field of the &quot;true_false&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  deleteDefect?: Maybe<Scalars['Boolean']['output']>;
-  /** Field of the &quot;select&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  deviceCategory?: Maybe<Array<Maybe<Scalars['String']['output']>>>;
-  /** Field of the &quot;true_false&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  editDefect?: Maybe<Scalars['Boolean']['output']>;
-  /**
-   * The name of the field group
-   * @deprecated Use __typename instead
-   */
-  fieldGroupName?: Maybe<Scalars['String']['output']>;
-  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;CalculatorSettingOptions&quot; Field Group */
-  singleDefect?: Maybe<Scalars['String']['output']>;
-};
 
 /** A taxonomy term that classifies content. Categories support hierarchy and can be used to create a nested structure. */
 export type Category = DatabaseIdentifier & HierarchicalNode & HierarchicalTermNode & MenuItemLinkable & Node & TermNode & UniformResourceIdentifiable & {
@@ -3186,6 +3152,106 @@ export type Device = AcfFieldGroup & AcfFieldGroupFields & Device_Fields & {
   price?: Maybe<Scalars['Float']['output']>;
   /** Field of the &quot;file&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
   vedo?: Maybe<AcfMediaItemConnectionEdge>;
+};
+
+export type DeviceView = AcfOptionsPage & Node & WithAcfDeviceViewSettings & {
+  __typename?: 'DeviceView';
+  /** Fields of the DeviceViewSettings ACF Field Group */
+  deviceViewSettings?: Maybe<DeviceViewSettings>;
+  /** The globally unique ID for the object */
+  id: Scalars['ID']['output'];
+  menuTitle?: Maybe<Scalars['String']['output']>;
+  pageTitle?: Maybe<Scalars['String']['output']>;
+  parentId?: Maybe<Scalars['String']['output']>;
+};
+
+/** The &quot;DeviceViewSettings&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type DeviceViewSettings = AcfFieldGroup & AcfFieldGroupFields & DeviceViewSettings_Fields & {
+  __typename?: 'DeviceViewSettings';
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;DeviceViewSettings&quot; Field Group */
+  quickLinks?: Maybe<Array<Maybe<DeviceViewSettingsQuickLinks>>>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;DeviceViewSettings&quot; Field Group */
+  searchFieldPlaceholder?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;DeviceViewSettings&quot; Field Group */
+  selectDevices?: Maybe<Array<Maybe<DeviceViewSettingsSelectDevices>>>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;DeviceViewSettings&quot; Field Group */
+  subtitle?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;DeviceViewSettings&quot; Field Group */
+  title?: Maybe<Scalars['String']['output']>;
+};
+
+/** The &quot;DeviceViewSettingsQuickLinks&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type DeviceViewSettingsQuickLinks = AcfFieldGroup & AcfFieldGroupFields & DeviceViewSettingsQuickLinks_Fields & {
+  __typename?: 'DeviceViewSettingsQuickLinks';
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;DeviceViewSettingsQuickLinks&quot; Field Group */
+  link?: Maybe<AcfLink>;
+};
+
+/** Interface representing fields of the ACF &quot;DeviceViewSettingsQuickLinks&quot; Field Group */
+export type DeviceViewSettingsQuickLinks_Fields = {
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;DeviceViewSettingsQuickLinks&quot; Field Group */
+  link?: Maybe<AcfLink>;
+};
+
+/** The &quot;DeviceViewSettingsSelectDevices&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type DeviceViewSettingsSelectDevices = AcfFieldGroup & AcfFieldGroupFields & DeviceViewSettingsSelectDevices_Fields & {
+  __typename?: 'DeviceViewSettingsSelectDevices';
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;DeviceViewSettingsSelectDevices&quot; Field Group */
+  deviceName?: Maybe<AcfLink>;
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;image&quot; Field Type added to the schema as part of the &quot;DeviceViewSettingsSelectDevices&quot; Field Group */
+  icon?: Maybe<AcfMediaItemConnectionEdge>;
+};
+
+/** Interface representing fields of the ACF &quot;DeviceViewSettingsSelectDevices&quot; Field Group */
+export type DeviceViewSettingsSelectDevices_Fields = {
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;DeviceViewSettingsSelectDevices&quot; Field Group */
+  deviceName?: Maybe<AcfLink>;
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;image&quot; Field Type added to the schema as part of the &quot;DeviceViewSettingsSelectDevices&quot; Field Group */
+  icon?: Maybe<AcfMediaItemConnectionEdge>;
+};
+
+/** Interface representing fields of the ACF &quot;DeviceViewSettings&quot; Field Group */
+export type DeviceViewSettings_Fields = {
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;DeviceViewSettings&quot; Field Group */
+  quickLinks?: Maybe<Array<Maybe<DeviceViewSettingsQuickLinks>>>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;DeviceViewSettings&quot; Field Group */
+  searchFieldPlaceholder?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;DeviceViewSettings&quot; Field Group */
+  selectDevices?: Maybe<Array<Maybe<DeviceViewSettingsSelectDevices>>>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;DeviceViewSettings&quot; Field Group */
+  subtitle?: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;DeviceViewSettings&quot; Field Group */
+  title?: Maybe<Scalars['String']['output']>;
 };
 
 /** Interface representing fields of the ACF &quot;Device&quot; Field Group */
@@ -7867,7 +7933,7 @@ export type RootMutationUpdateWatchArgs = {
 };
 
 /** The root entry point into the Graph */
-export type RootQuery = {
+export type RootQuery = WithAcfOptionsPageDeviceView & {
   __typename?: 'RootQuery';
   /** An object of the all_in_one Type.  */
   allInOne?: Maybe<All_In_One>;
@@ -7914,6 +7980,7 @@ export type RootQuery = {
   desktopBy?: Maybe<Desktop>;
   /** Connection between the RootQuery type and the desktop type */
   desktops?: Maybe<RootQueryToDesktopConnection>;
+  deviceView?: Maybe<DeviceView>;
   /** Fields of the &#039;DiscussionSettings&#039; settings group */
   discussionSettings?: Maybe<DiscussionSettings>;
   /** An object of the faq Type.  */
@@ -13156,6 +13223,12 @@ export type WithAcfDevice = {
   device?: Maybe<Device>;
 };
 
+/** Provides access to fields of the &quot;DeviceViewSettings&quot; ACF Field Group via the &quot;deviceViewSettings&quot; field */
+export type WithAcfDeviceViewSettings = {
+  /** Fields of the DeviceViewSettings ACF Field Group */
+  deviceViewSettings?: Maybe<DeviceViewSettings>;
+};
+
 /** Provides access to fields of the &quot;FeaturedSteps&quot; ACF Field Group via the &quot;featuredSteps&quot; field */
 export type WithAcfFeaturedSteps = {
   /** Fields of the FeaturedSteps ACF Field Group */
@@ -13166,6 +13239,11 @@ export type WithAcfFeaturedSteps = {
 export type WithAcfHeroSection = {
   /** Fields of the HeroSection ACF Field Group */
   heroSection?: Maybe<HeroSection>;
+};
+
+/** Access point for the &quot;DeviceView&quot; ACF Options Page */
+export type WithAcfOptionsPageDeviceView = {
+  deviceView?: Maybe<DeviceView>;
 };
 
 /** The writing setting type */
@@ -13187,7 +13265,7 @@ export type HeaderNavQuery = { __typename?: 'RootQuery', menu?: { __typename?: '
 export type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type HomePageQuery = { __typename?: 'RootQuery', pageBy?: { __typename?: 'Page', id: string, heroSection?: { __typename?: 'HeroSection', title?: string | null, subtitle?: string | null, button?: { __typename?: 'AcfLink', url?: string | null, title?: string | null, target?: string | null } | null, featuredImage?: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null } | null, featuredSteps?: { __typename?: 'FeaturedSteps', sectionTitle?: string | null, steps?: Array<{ __typename?: 'FeaturedStepsSteps', title?: string | null, subtitle?: string | null, icon?: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null } | null> | null } | null } | null, posts?: { __typename?: 'RootQueryToPostConnection', nodes: Array<{ __typename?: 'Post', id: string, title?: string | null, uri?: string | null, excerpt?: string | null, featuredImage?: { __typename?: 'NodeWithFeaturedImageToMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null }> } | null };
+export type HomePageQuery = { __typename?: 'RootQuery', pageBy?: { __typename?: 'Page', id: string, heroSection?: { __typename?: 'HeroSection', title?: string | null, subtitle?: string | null, button?: { __typename?: 'AcfLink', url?: string | null, title?: string | null, target?: string | null } | null, featuredImage?: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null } | null, featuredSteps?: { __typename?: 'FeaturedSteps', sectionTitle?: string | null, steps?: Array<{ __typename?: 'FeaturedStepsSteps', title?: string | null, subtitle?: string | null, icon?: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null } | null> | null } | null } | null, deviceView?: { __typename?: 'DeviceView', deviceViewSettings?: { __typename?: 'DeviceViewSettings', title?: string | null, subtitle?: string | null, searchFieldPlaceholder?: string | null, quickLinks?: Array<{ __typename?: 'DeviceViewSettingsQuickLinks', link?: { __typename?: 'AcfLink', url?: string | null, title?: string | null, target?: string | null } | null } | null> | null, selectDevices?: Array<{ __typename?: 'DeviceViewSettingsSelectDevices', deviceName?: { __typename?: 'AcfLink', url?: string | null, title?: string | null, target?: string | null } | null, icon?: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null } | null> | null } | null } | null, posts?: { __typename?: 'RootQueryToPostConnection', nodes: Array<{ __typename?: 'Post', id: string, title?: string | null, uri?: string | null, excerpt?: string | null, featuredImage?: { __typename?: 'NodeWithFeaturedImageToMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl?: string | null, altText?: string | null } } | null }> } | null };
 
 
 export const HeaderNavDocument = gql`
@@ -13237,6 +13315,33 @@ export const HomePageDocument = gql`
       steps {
         title
         subtitle
+        icon {
+          node {
+            sourceUrl
+            altText
+          }
+        }
+      }
+    }
+  }
+  deviceView {
+    deviceViewSettings {
+      title
+      subtitle
+      searchFieldPlaceholder
+      quickLinks {
+        link {
+          url
+          title
+          target
+        }
+      }
+      selectDevices {
+        deviceName {
+          url
+          title
+          target
+        }
         icon {
           node {
             sourceUrl

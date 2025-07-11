@@ -1,6 +1,7 @@
 
 import { sdk } from '@/lib/sdk';
 import type { StepsSection } from "@/types/StepsSection";
+import type { DeviceView } from "@/types/DeviceView";
 import Image from 'next/image';
 import { Metadata } from 'next';
 
@@ -16,11 +17,12 @@ export const revalidate = 60;        // ISR: rebuild at most once a minute
 
 export default async function Home() {
   const { menu } = await sdk.HeaderNav();
-  const { pageBy, posts } = await sdk.HomePage();
+  const { pageBy, posts, deviceView } = await sdk.HomePage();
   
 
   if (!menu) return <h1>Header menu not found</h1>;
   if (!pageBy) return <h1>Home page not found</h1>;
+  if (!deviceView) return <h1>Device View not found</h1>
   
   const headerNav = menu.menuItems?.nodes;
   if (!headerNav) return <h1>HeaderNav not found</h1>;
@@ -83,11 +85,36 @@ export default async function Home() {
     })),
   };
 
+  const deviceViewProps = {
+    title: deviceView.deviceViewSettings?.title ?? "",
+    subtitle: deviceView.deviceViewSettings?.subtitle ?? "",
+    inputPlaceholder: deviceView.deviceViewSettings?.searchFieldPlaceholder ?? "",
+    quickLinks: deviceView.deviceViewSettings?.quickLinks?.map((link) => ({
+      link: {
+        url: link?.link?.url ?? "#",
+        title: link?.link?.title ?? "",
+        target: (link?.link?.target as "_blank" | "_self") ?? "_self",
+      },
+    })) ?? [],
+    devices: (deviceView.deviceViewSettings?.selectDevices ?? []).map((device) => ({
+      deviceName: {
+        url: device?.deviceName?.url ?? "#",
+        title: device?.deviceName?.title ?? "",
+        target: (device?.deviceName?.target as "_blank" | "_self") ?? "_self",
+      },
+      icon: {
+        src: device?.icon?.node?.sourceUrl ?? "/placeholder.jpg",
+        alt: device?.icon?.node?.altText ?? "Device icon",
+      },
+    })),
+  } satisfies DeviceView;
+
   return (
     <div className="min-h-screen bg-white">
       <Header {...headerProps}/>
       <Hero {...heroProps} />
       <FeaturedSteps {...stepsSectionProps} />
+      <StartSelling {...deviceViewProps}/>
     </div>
   )
 }

@@ -3,7 +3,6 @@ import { Input } from "./ui/input";
 import type { DeviceView } from "@/types/DeviceView";
 
 const StartSelling = ({title, subtitle, inputPlaceholder, quickLinks, devices}: DeviceView) => {
-    console.log("StartSelling", {title, subtitle, inputPlaceholder, quickLinks, devices});
     return (
     <section className="flex flex-col items-center justify-center bg-[#F1F1F1] border border-t-[#ddd] border-b-[#ddd] py-26">
         <h3 className="text-[2.25rem] font-semibold mb-3 leading-[1.4] text-[#222]">{title}</h3>

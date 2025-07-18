@@ -1,19 +1,14 @@
 import type { CodegenConfig } from '@graphql-codegen/cli';
 
 /**
- * GraphQL Code Generator configuration for Cashalaptop
+ * GraphQL Code Generator configuration – Cashalaptop
  * -------------------------------------------------------------------------
- * • In **local/dev**, it hits the live WPGraphQL endpoint defined in your
- *   `.env.local` (GRAPHQL_ENDPOINT). If that env var is missing it falls
- *   back to the default docker URL `http://cashalaptop.dev.localhost/graphql`.
- * • In **CI** (CI=true) **or** whenever the endpoint is down (502/timeout),
- *   it automatically switches to a **local schema snapshot**\* so the build
- *   never blocks.
- *
- *   \*Generate / refresh that snapshot with:
- *     npx get-graphql-schema $GRAPHQL_ENDPOINT > schema.graphql
- *
- *   You can commit `schema.graphql` so Codegen runs offline.
+ * • In dev it uses the live WPGraphQL endpoint (GRAPHQL_ENDPOINT env var) and
+ *   merges in any local SDL files under src/graphql/schema/**.
+ * • In CI (CI=true) it relies solely on the checked-in SDL, so builds never
+ *   fail when the remote API is down.
+ * • `skipGraphQLImport: false` lets the built-in loader resolve `# import`
+ *   fragment spreads without needing a custom loader package.
  */
 
 const ENDPOINT =
@@ -22,29 +17,37 @@ const ENDPOINT =
 const isCI = process.env.CI === 'true';
 
 const config: CodegenConfig = {
-  // Try the live endpoint in dev; otherwise fall back to the snapshot file
-  schema: isCI ? './schema.graphql' : ENDPOINT,
+  // ─── SCHEMA ────────────────────────────────────────────────────────────
+  schema: isCI
+    ? ['src/graphql/schema/**/*.{gql,graphql}']
+    : [ENDPOINT, 'src/graphql/schema/**/*.{gql,graphql}'],
 
-  // All *.graphql | *.gql operations & fragments live here
-  documents: ['src/graphql/**/*.{graphql,gql}'],
+  // ─── DOCUMENTS (queries • mutations • fragments) ───────────────────────
+  documents: 'src/graphql/**/*.{gql,graphql}',
 
+  // ─── OUTPUT ────────────────────────────────────────────────────────────
   generates: {
-    'src/lib/gql-sdk.ts': {
+    './src/lib/gql-sdk.ts': {
       plugins: [
         'typescript',
         'typescript-operations',
         'typescript-graphql-request',
       ],
       config: {
-        avoidOptionals: true,         // nicer DX in TS strict‑mode
+        avoidOptionals: true,
         enumsAsConst: true,
+        documentMode: 'string', // embed raw query text
       },
     },
   },
 
   overwrite: true,
 
-  // Auto‑format the generated file so it passes lint on first try
+  // global plugin / loader config
+  config: {
+    skipGraphQLImport: false, // enable `# import` everywhere
+  },
+
   // hooks: {
   //   afterAllFileWrite: ['eslint --fix'],
   // },

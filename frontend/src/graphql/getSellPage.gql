@@ -1,5 +1,5 @@
-query HomePage {
-  pageBy(uri: "/") {          
+query GetSellPage {
+  pageBy(uri: "/sell") {          
     id
     heroSection {
       title           
@@ -13,19 +13,6 @@ query HomePage {
         node {                  
             sourceUrl
             altText
-        }
-      }
-    }
-    featuredSteps {
-      sectionTitle
-      steps {
-        title
-        subtitle
-        icon {
-          node {
-            sourceUrl
-            altText
-          }
         }
       }
     }
@@ -58,14 +45,4 @@ query HomePage {
         }
       }
     }
-
-  posts(first: 3) {           # latest 3 blog posts teaser
-    nodes {
-      id
-      title
-      uri
-      featuredImage { node { sourceUrl altText } }
-      excerpt
-    }
-  }
 }

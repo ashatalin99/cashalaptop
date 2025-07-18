@@ -1,5 +1,4 @@
 import { GraphQLClient, RequestOptions } from 'graphql-request';
-import gql from 'graphql-tag';
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
@@ -13311,19 +13310,24 @@ export type WritingSettings = {
   useSmilies: Maybe<Scalars['Boolean']['output']>;
 };
 
-export type HeaderNavQueryVariables = Exact<{ [key: string]: never; }>;
+export type GetHeaderNavQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type HeaderNavQuery = { __typename?: 'RootQuery', menu: { __typename?: 'Menu', name: string | null, menuId: number | null, menuItems: { __typename?: 'MenuToMenuItemConnection', nodes: Array<{ __typename?: 'MenuItem', id: string, label: string | null, url: string | null, parentId: string | null, childItems: { __typename?: 'MenuItemToMenuItemConnection', nodes: Array<{ __typename?: 'MenuItem', id: string, label: string | null, url: string | null }> } | null }> } | null } | null };
+export type GetHeaderNavQuery = { __typename?: 'RootQuery', menu: { __typename?: 'Menu', name: string | null, menuId: number | null, menuItems: { __typename?: 'MenuToMenuItemConnection', nodes: Array<{ __typename?: 'MenuItem', id: string, label: string | null, url: string | null, parentId: string | null, childItems: { __typename?: 'MenuItemToMenuItemConnection', nodes: Array<{ __typename?: 'MenuItem', id: string, label: string | null, url: string | null }> } | null }> } | null } | null };
 
-export type HomePageQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type HomePageQuery = { __typename?: 'RootQuery', pageBy: { __typename?: 'Page', id: string, heroSection: { __typename?: 'HeroSection', title: string | null, subtitle: string | null, button: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, featuredImage: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null, featuredSteps: { __typename?: 'FeaturedSteps', sectionTitle: string | null, steps: Array<{ __typename?: 'FeaturedStepsSteps', title: string | null, subtitle: string | null, icon: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null> | null } | null } | null, deviceView: { __typename?: 'DeviceView', deviceViewSettings: { __typename?: 'DeviceViewSettings', title: string | null, subtitle: string | null, searchFieldPlaceholder: string | null, quickLinks: Array<{ __typename?: 'DeviceViewSettingsQuickLinks', link: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null } | null> | null, selectDevices: Array<{ __typename?: 'DeviceViewSettingsSelectDevices', deviceName: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, icon: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null> | null } | null } | null, posts: { __typename?: 'RootQueryToPostConnection', nodes: Array<{ __typename?: 'Post', id: string, title: string | null, uri: string | null, excerpt: string | null, featuredImage: { __typename?: 'NodeWithFeaturedImageToMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null }> } | null };
+export type GetHomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export const HeaderNavDocument = gql`
-    query HeaderNav {
+export type GetHomePageQuery = { __typename?: 'RootQuery', pageBy: { __typename?: 'Page', id: string, heroSection: { __typename?: 'HeroSection', title: string | null, subtitle: string | null, button: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, featuredImage: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null, featuredSteps: { __typename?: 'FeaturedSteps', sectionTitle: string | null, steps: Array<{ __typename?: 'FeaturedStepsSteps', title: string | null, subtitle: string | null, icon: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null> | null } | null } | null, deviceView: { __typename?: 'DeviceView', deviceViewSettings: { __typename?: 'DeviceViewSettings', title: string | null, subtitle: string | null, searchFieldPlaceholder: string | null, quickLinks: Array<{ __typename?: 'DeviceViewSettingsQuickLinks', link: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null } | null> | null, selectDevices: Array<{ __typename?: 'DeviceViewSettingsSelectDevices', deviceName: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, icon: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null> | null } | null } | null, posts: { __typename?: 'RootQueryToPostConnection', nodes: Array<{ __typename?: 'Post', id: string, title: string | null, uri: string | null, excerpt: string | null, featuredImage: { __typename?: 'NodeWithFeaturedImageToMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null }> } | null };
+
+export type GetSellPageQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type GetSellPageQuery = { __typename?: 'RootQuery', pageBy: { __typename?: 'Page', id: string, heroSection: { __typename?: 'HeroSection', title: string | null, subtitle: string | null, button: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, featuredImage: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null } | null, deviceView: { __typename?: 'DeviceView', deviceViewSettings: { __typename?: 'DeviceViewSettings', title: string | null, subtitle: string | null, searchFieldPlaceholder: string | null, quickLinks: Array<{ __typename?: 'DeviceViewSettingsQuickLinks', link: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null } | null> | null, selectDevices: Array<{ __typename?: 'DeviceViewSettingsSelectDevices', deviceName: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, icon: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null> | null } | null } | null };
+
+
+export const GetHeaderNavDocument = `
+    query GetHeaderNav {
   menu(id: "Header Nav", idType: SLUG) {
     name
     menuId
@@ -13345,8 +13349,8 @@ export const HeaderNavDocument = gql`
   }
 }
     `;
-export const HomePageDocument = gql`
-    query HomePage {
+export const GetHomePageDocument = `
+    query GetHomePage {
   pageBy(uri: "/") {
     id
     heroSection {
@@ -13421,6 +13425,55 @@ export const HomePageDocument = gql`
   }
 }
     `;
+export const GetSellPageDocument = `
+    query GetSellPage {
+  pageBy(uri: "/sell") {
+    id
+    heroSection {
+      title
+      subtitle
+      button {
+        url
+        title
+        target
+      }
+      featuredImage {
+        node {
+          sourceUrl
+          altText
+        }
+      }
+    }
+  }
+  deviceView {
+    deviceViewSettings {
+      title
+      subtitle
+      searchFieldPlaceholder
+      quickLinks {
+        link {
+          url
+          title
+          target
+        }
+      }
+      selectDevices {
+        deviceName {
+          url
+          title
+          target
+        }
+        icon {
+          node {
+            sourceUrl
+            altText
+          }
+        }
+      }
+    }
+  }
+}
+    `;
 
 export type SdkFunctionWrapper = <T>(action: (requestHeaders?:Record<string, string>) => Promise<T>, operationName: string, operationType?: string, variables?: any) => Promise<T>;
 
@@ -13429,11 +13482,14 @@ const defaultWrapper: SdkFunctionWrapper = (action, _operationName, _operationTy
 
 export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
   return {
-    HeaderNav(variables?: HeaderNavQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<HeaderNavQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<HeaderNavQuery>({ document: HeaderNavDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'HeaderNav', 'query', variables);
+    GetHeaderNav(variables?: GetHeaderNavQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetHeaderNavQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<GetHeaderNavQuery>({ document: GetHeaderNavDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetHeaderNav', 'query', variables);
     },
-    HomePage(variables?: HomePageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<HomePageQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<HomePageQuery>({ document: HomePageDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'HomePage', 'query', variables);
+    GetHomePage(variables?: GetHomePageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetHomePageQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<GetHomePageQuery>({ document: GetHomePageDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetHomePage', 'query', variables);
+    },
+    GetSellPage(variables?: GetSellPageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetSellPageQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<GetSellPageQuery>({ document: GetSellPageDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetSellPage', 'query', variables);
     }
   };
 }

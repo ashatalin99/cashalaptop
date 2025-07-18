@@ -1,4 +1,4 @@
-query HeaderNav {
+query GetHeaderNav {
   menu(id: "Header Nav", idType: SLUG) {  
     name
     menuId                               

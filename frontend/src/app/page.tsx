@@ -16,8 +16,8 @@ import { Footer } from "@/components/Footer";
 export const revalidate = 60;        // ISR: rebuild at most once a minute
 
 export default async function Home() {
-  const { menu } = await sdk.HeaderNav();
-  const { pageBy, posts, deviceView } = await sdk.HomePage();
+  const { menu } = await sdk.GetHeaderNav();
+  const { pageBy, posts, deviceView } = await sdk.GetHomePage();
   
 
   if (!menu) return <h1>Header menu not found</h1>;

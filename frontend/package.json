@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "codegen": "graphql-codegen --verbose --config codegen.ts",
+    "codegen:watch": "graphql-codegen --watch --config codegen.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -68,6 +70,7 @@
     "@graphql-codegen/typescript": "^4.1.6",
     "@graphql-codegen/typescript-graphql-request": "^6.3.0",
     "@graphql-codegen/typescript-operations": "^4.6.1",
+    "@graphql-tools/graphql-file-loader": "^8.0.21",
     "@parcel/watcher": "^2.5.1",
     "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/typography": "^0.5.15",

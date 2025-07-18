@@ -2,21 +2,21 @@
 // Create category sections for faq
 add_action('init', function() {
     register_taxonomy('faq_section', ['faq'], [
-        'label' => 'Sections',
+        'label' => 'Categories',
         'hierarchical' => true,
         'public' => true,
         'show_admin_column' => true,
     ]);
 
-    $sections = [
+    $categories = [
         "Shipping", "About online buyback quote process and steps",
         "About Payment", "About Your Laptop (or other device and gadgets)",
         
     ];
 
-    foreach ($sections as $section) {
-        if (!term_exists($section, 'faq_section')) {
-            wp_insert_term($section, 'faq_section');
+    foreach ($categories as $category) {
+        if (!term_exists($category, 'faq_category')) {
+            wp_insert_term($category, 'faq_category');
         }
     }
 });

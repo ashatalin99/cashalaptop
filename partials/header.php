@@ -1,3 +1,3 @@
 <header>
-  Wrong place to hangout here.
+  Wrong place to hangout.
 </header>

@@ -8,7 +8,7 @@ import { Metadata } from 'next';
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { FeaturedSteps } from "@/components/FeaturedSteps";
-import { StartSelling } from "@/components/StartSelling";
+import { DeviceSection } from "@/components/DeviceSection";
 import { Testimonials } from "@/components/Testimonials";
 import { FeaturedBlog } from "@/components/FeaturedBlog";
 import { Footer } from "@/components/Footer";
@@ -114,7 +114,7 @@ export default async function Home() {
       <Header {...headerProps}/>
       <Hero {...heroProps} />
       <FeaturedSteps {...stepsSectionProps} />
-      <StartSelling {...deviceViewProps}/>
+      <DeviceSection {...deviceViewProps}/>
       <Testimonials />
       <FeaturedBlog />
       <Footer />

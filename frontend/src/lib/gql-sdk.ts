@@ -13313,7 +13313,12 @@ export type WritingSettings = {
 export type GetHeaderNavQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetHeaderNavQuery = { __typename?: 'RootQuery', menu: { __typename?: 'Menu', name: string | null, menuId: number | null, menuItems: { __typename?: 'MenuToMenuItemConnection', nodes: Array<{ __typename?: 'MenuItem', id: string, label: string | null, url: string | null, parentId: string | null, childItems: { __typename?: 'MenuItemToMenuItemConnection', nodes: Array<{ __typename?: 'MenuItem', id: string, label: string | null, url: string | null }> } | null }> } | null } | null };
+export type GetHeaderNavQuery = { __typename?: 'RootQuery', menu: { __typename?: 'Menu', name: string | null, menuId: number | null, menuItems: { __typename?: 'MenuToMenuItemConnection', nodes: Array<{
+  target: "_blank" | "_self"; __typename?: 'MenuItem', id: string, label: string | null, url: string | null, parentId: string | null, childItems: { __typename?: 'MenuItemToMenuItemConnection', nodes: Array<{
+    target: "_blank" | "_self";
+    parentId: string; __typename?: 'MenuItem', id: string, label: string | null, url: string | null 
+}> } | null 
+}> } | null } | null };
 
 export type GetHomePageQueryVariables = Exact<{ [key: string]: never; }>;
 

@@ -1,0 +1,20 @@
+query GetCustomPostTypes(
+  $first: Int = 100         # page size; loop with $after if you have lots
+  $after: String
+) {
+  contentTypes(
+    first: $first
+    after: $after
+  ) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    nodes {
+      name                # “Products”, “Case Studies”…
+      graphqlSingleName   # “Product”,  “CaseStudy”
+      graphqlPluralName   # “Products”, “CaseStudies”
+      description
+    }
+  }
+}

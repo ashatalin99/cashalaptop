@@ -1,0 +1,25 @@
+query GetPageHero(
+  $pageId: ID!                 # supply a URI, slug, or numeric ID
+  $idType: PageIdType = URI 
+) {
+  page(id: $pageId, idType: $idType) {
+    id
+    title                      # page title (optional, but handy)
+    # ───── Hero section (ACF or block field) ─────
+    heroSection {
+      title
+      subtitle
+      button {
+        url
+        title
+        target
+      }
+      featuredImage {
+        node {
+          sourceUrl
+          altText
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+query GetAllTaxonomyTerms(
+  $taxonomy: TaxonomyEnum!          # PRODUCTCATEGORY
+  $first:    Int = 100
+  $after:    String
+) {
+  terms(
+    first:  $first
+    after:  $after
+    where:  { taxonomies: [$taxonomy], hideEmpty: false }
+  ) {
+    pageInfo { hasNextPage endCursor }
+    nodes {
+      id
+      name
+      slug
+      description
+      # no count per-CPT in this version
+      __typename                    # you can check this if needed
+    }
+  }
+}

@@ -1,6 +1,6 @@
 <?php 
 /**
- * Template Name: Devices
+ * Template Name: Brands
  */
 
  echo 'This is devices';

@@ -6,20 +6,23 @@ add_action('init', function() {
         'hierarchical' => true,
         'public' => true,
         'show_admin_column' => true,
+        'show_in_graphql'       => true,
+        'graphql_single_name'   => 'LaptopBrand',
+        'graphql_plural_name'   => 'LaptopBrands',
     ]);
 
-    $brands = [
-        "Acer", "Alienware", "Aorus", "Apple", "ASUS", "Averatec", "Compaq",
-        "Dell", "Eluktronics", "eMachines", "Framework", "Fujitsu", "Gateway",
-        "Google", "HP", "Huawei", "Lenovo", "LG", "Microsoft", "MSI", "Panasonic",
-        "Razer", "Samsung",  "Sony", "Toshiba", "Xiaomi"
-    ];
+    // $brands = [
+    //     "Acer", "Alienware", "Aorus", "Apple", "ASUS", "Averatec", "Compaq",
+    //     "Dell", "Eluktronics", "eMachines", "Framework", "Fujitsu", "Gateway",
+    //     "Google", "HP", "Huawei", "Lenovo", "LG", "Microsoft", "MSI", "Panasonic",
+    //     "Razer", "Samsung",  "Sony", "Toshiba", "Xiaomi"
+    // ];
 
-    foreach ($brands as $brand) {
-        if (!term_exists($brand, 'laptop_brand')) {
-            wp_insert_term($brand, 'laptop_brand');
-        }
-    }
+    // foreach ($brands as $brand) {
+    //     if (!term_exists($brand, 'laptop_brand')) {
+    //         wp_insert_term($brand, 'laptop_brand');
+    //     }
+    // }
 });
 
 // Populate category slug in post url when saving post

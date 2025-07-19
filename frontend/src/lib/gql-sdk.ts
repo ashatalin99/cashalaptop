@@ -16,6 +16,39 @@ export type Scalars = {
   Float: { input: number; output: number; }
 };
 
+/** Connection between the FaqSection_Fields type and the ContentNode type */
+export type AcfContentNodeConnection = Connection & ContentNodeConnection & {
+  __typename?: 'AcfContentNodeConnection';
+  /** Edges for the AcfContentNodeConnection connection */
+  edges: Array<AcfContentNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ContentNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: AcfContentNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type AcfContentNodeConnectionEdge = ContentNodeConnectionEdge & Edge & {
+  __typename?: 'AcfContentNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ContentNode;
+};
+
+/** Pagination metadata specific to &quot;AcfContentNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of AcfContentNodeConnection Nodes. */
+export type AcfContentNodeConnectionPageInfo = ContentNodeConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'AcfContentNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
 /** A Field Group managed by ACF */
 export type AcfFieldGroup = {
   /**
@@ -63,6 +96,444 @@ export type AcfOptionsPage = {
   parentId: Maybe<Scalars['String']['output']>;
 };
 
+/** The AllInOneBrand type */
+export type AllInOneBrand = DatabaseIdentifier & HierarchicalNode & HierarchicalTermNode & MenuItemLinkable & Node & TermNode & UniformResourceIdentifiable & {
+  __typename?: 'AllInOneBrand';
+  /**
+   * The id field matches the WP_Post-&gt;ID field.
+   * @deprecated Deprecated in favor of databaseId
+   */
+  allInOneBrandId: Maybe<Scalars['Int']['output']>;
+  /** Connection between the AllInOneBrand type and the all_in_one type */
+  allInOnes: Maybe<AllInOneBrandToAll_In_OneConnection>;
+  /** The ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
+  ancestors: Maybe<AllInOneBrandToAncestorsAllInOneBrandConnection>;
+  /** Connection between the AllInOneBrand type and its children AllInOneBrands. */
+  children: Maybe<AllInOneBrandToAllInOneBrandConnection>;
+  /** Connection between the AllInOneBrand type and the ContentNode type */
+  contentNodes: Maybe<AllInOneBrandToContentNodeConnection>;
+  /** The number of objects connected to the object */
+  count: Maybe<Scalars['Int']['output']>;
+  /** The unique identifier stored in the database */
+  databaseId: Scalars['Int']['output'];
+  /** The description of the object */
+  description: Maybe<Scalars['String']['output']>;
+  /** Connection between the TermNode type and the EnqueuedScript type */
+  enqueuedScripts: Maybe<TermNodeToEnqueuedScriptConnection>;
+  /** Connection between the TermNode type and the EnqueuedStylesheet type */
+  enqueuedStylesheets: Maybe<TermNodeToEnqueuedStylesheetConnection>;
+  /** The globally unique ID for the object */
+  id: Scalars['ID']['output'];
+  /** Whether the node is a Comment */
+  isComment: Scalars['Boolean']['output'];
+  /** Whether the node is a Content Node */
+  isContentNode: Scalars['Boolean']['output'];
+  /** Whether the node represents the front page. */
+  isFrontPage: Scalars['Boolean']['output'];
+  /** Whether  the node represents the blog page. */
+  isPostsPage: Scalars['Boolean']['output'];
+  /** Whether the object is restricted from the current viewer */
+  isRestricted: Maybe<Scalars['Boolean']['output']>;
+  /** Whether the node is a Term */
+  isTermNode: Scalars['Boolean']['output'];
+  /** The link to the term */
+  link: Maybe<Scalars['String']['output']>;
+  /** The human friendly name of the object. */
+  name: Maybe<Scalars['String']['output']>;
+  /** Connection between the AllInOneBrand type and its parent AllInOneBrand. */
+  parent: Maybe<AllInOneBrandToParentAllInOneBrandConnectionEdge>;
+  /** Database id of the parent node */
+  parentDatabaseId: Maybe<Scalars['Int']['output']>;
+  /** The globally unique identifier of the parent node. */
+  parentId: Maybe<Scalars['ID']['output']>;
+  /** An alphanumeric identifier for the object unique to its type. */
+  slug: Maybe<Scalars['String']['output']>;
+  /** Connection between the AllInOneBrand type and the Taxonomy type */
+  taxonomy: Maybe<AllInOneBrandToTaxonomyConnectionEdge>;
+  /** The name of the taxonomy that the object is associated with */
+  taxonomyName: Maybe<Scalars['String']['output']>;
+  /** The ID of the term group that this term object belongs to */
+  termGroupId: Maybe<Scalars['Int']['output']>;
+  /** The taxonomy ID that the object is associated with */
+  termTaxonomyId: Maybe<Scalars['Int']['output']>;
+  /** The unique resource identifier path */
+  uri: Maybe<Scalars['String']['output']>;
+};
+
+
+/** The AllInOneBrand type */
+export type AllInOneBrandAllInOnesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<AllInOneBrandToAll_In_OneConnectionWhereArgs>;
+};
+
+
+/** The AllInOneBrand type */
+export type AllInOneBrandAncestorsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The AllInOneBrand type */
+export type AllInOneBrandChildrenArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<AllInOneBrandToAllInOneBrandConnectionWhereArgs>;
+};
+
+
+/** The AllInOneBrand type */
+export type AllInOneBrandContentNodesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<AllInOneBrandToContentNodeConnectionWhereArgs>;
+};
+
+
+/** The AllInOneBrand type */
+export type AllInOneBrandEnqueuedScriptsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The AllInOneBrand type */
+export type AllInOneBrandEnqueuedStylesheetsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+/** A paginated collection of AllInOneBrand Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of AllInOneBrand Nodes */
+export type AllInOneBrandConnection = {
+  /** A list of edges (relational context) between RootQuery and connected AllInOneBrand Nodes */
+  edges: Array<AllInOneBrandConnectionEdge>;
+  /** A list of connected AllInOneBrand Nodes */
+  nodes: Array<AllInOneBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: AllInOneBrandConnectionPageInfo;
+};
+
+/** Represents a connection to a AllInOneBrand. Contains both the AllInOneBrand Node and metadata about the relationship. */
+export type AllInOneBrandConnectionEdge = {
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The connected AllInOneBrand Node */
+  node: AllInOneBrand;
+};
+
+/** Pagination metadata specific to &quot;AllInOneBrandConnectionEdge&quot; collections. Provides cursors and flags for navigating through sets of &quot;AllInOneBrandConnectionEdge&quot; Nodes. */
+export type AllInOneBrandConnectionPageInfo = {
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Identifier types for retrieving a specific AllInOneBrand. Determines which unique property (global ID, database ID, slug, etc.) is used to locate the AllInOneBrand. */
+export const AllInOneBrandIdType = {
+  /** The Database ID for the node */
+  DatabaseId: 'DATABASE_ID',
+  /** The hashed Global ID */
+  Id: 'ID',
+  /** The name of the node */
+  Name: 'NAME',
+  /** Url friendly name of the node */
+  Slug: 'SLUG',
+  /** The URI for the node */
+  Uri: 'URI'
+} as const;
+
+export type AllInOneBrandIdType = typeof AllInOneBrandIdType[keyof typeof AllInOneBrandIdType];
+/** Connection between the AllInOneBrand type and the AllInOneBrand type */
+export type AllInOneBrandToAllInOneBrandConnection = AllInOneBrandConnection & Connection & {
+  __typename?: 'AllInOneBrandToAllInOneBrandConnection';
+  /** Edges for the AllInOneBrandToAllInOneBrandConnection connection */
+  edges: Array<AllInOneBrandToAllInOneBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<AllInOneBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: AllInOneBrandToAllInOneBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type AllInOneBrandToAllInOneBrandConnectionEdge = AllInOneBrandConnectionEdge & Edge & {
+  __typename?: 'AllInOneBrandToAllInOneBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: AllInOneBrand;
+};
+
+/** Pagination metadata specific to &quot;AllInOneBrandToAllInOneBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of AllInOneBrandToAllInOneBrandConnection Nodes. */
+export type AllInOneBrandToAllInOneBrandConnectionPageInfo = AllInOneBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'AllInOneBrandToAllInOneBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the AllInOneBrandToAllInOneBrandConnection connection */
+export type AllInOneBrandToAllInOneBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+/** Connection between the AllInOneBrand type and the all_in_one type */
+export type AllInOneBrandToAll_In_OneConnection = Connection & {
+  __typename?: 'AllInOneBrandToAll_in_oneConnection';
+  /** Edges for the AllInOneBrandToAll_in_oneConnection connection */
+  edges: Array<AllInOneBrandToAll_In_OneConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<All_In_One>;
+  /** Information about pagination in a connection. */
+  pageInfo: AllInOneBrandToAll_In_OneConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type AllInOneBrandToAll_In_OneConnectionEdge = AllInOneConnectionEdge & Edge & {
+  __typename?: 'AllInOneBrandToAll_in_oneConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: All_In_One;
+};
+
+/** Pagination metadata specific to &quot;AllInOneBrandToAll_in_oneConnection&quot; collections. Provides cursors and flags for navigating through sets of AllInOneBrandToAll_in_oneConnection Nodes. */
+export type AllInOneBrandToAll_In_OneConnectionPageInfo = All_In_OneConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'AllInOneBrandToAll_in_oneConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the AllInOneBrandToAll_in_oneConnection connection */
+export type AllInOneBrandToAll_In_OneConnectionWhereArgs = {
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the AllInOneBrand type and the AllInOneBrand type */
+export type AllInOneBrandToAncestorsAllInOneBrandConnection = AllInOneBrandConnection & Connection & {
+  __typename?: 'AllInOneBrandToAncestorsAllInOneBrandConnection';
+  /** Edges for the AllInOneBrandToAncestorsAllInOneBrandConnection connection */
+  edges: Array<AllInOneBrandToAncestorsAllInOneBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<AllInOneBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: AllInOneBrandToAncestorsAllInOneBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type AllInOneBrandToAncestorsAllInOneBrandConnectionEdge = AllInOneBrandConnectionEdge & Edge & {
+  __typename?: 'AllInOneBrandToAncestorsAllInOneBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: AllInOneBrand;
+};
+
+/** Pagination metadata specific to &quot;AllInOneBrandToAncestorsAllInOneBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of AllInOneBrandToAncestorsAllInOneBrandConnection Nodes. */
+export type AllInOneBrandToAncestorsAllInOneBrandConnectionPageInfo = AllInOneBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'AllInOneBrandToAncestorsAllInOneBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the AllInOneBrand type and the ContentNode type */
+export type AllInOneBrandToContentNodeConnection = Connection & ContentNodeConnection & {
+  __typename?: 'AllInOneBrandToContentNodeConnection';
+  /** Edges for the AllInOneBrandToContentNodeConnection connection */
+  edges: Array<AllInOneBrandToContentNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ContentNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: AllInOneBrandToContentNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type AllInOneBrandToContentNodeConnectionEdge = ContentNodeConnectionEdge & Edge & {
+  __typename?: 'AllInOneBrandToContentNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ContentNode;
+};
+
+/** Pagination metadata specific to &quot;AllInOneBrandToContentNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of AllInOneBrandToContentNodeConnection Nodes. */
+export type AllInOneBrandToContentNodeConnectionPageInfo = ContentNodeConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'AllInOneBrandToContentNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the AllInOneBrandToContentNodeConnection connection */
+export type AllInOneBrandToContentNodeConnectionWhereArgs = {
+  /** The Types of content to filter */
+  contentTypes: InputMaybe<Array<InputMaybe<ContentTypesOfAllInOneBrandEnum>>>;
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the AllInOneBrand type and the AllInOneBrand type */
+export type AllInOneBrandToParentAllInOneBrandConnectionEdge = AllInOneBrandConnectionEdge & Edge & OneToOneConnection & {
+  __typename?: 'AllInOneBrandToParentAllInOneBrandConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: AllInOneBrand;
+};
+
+/** Connection between the AllInOneBrand type and the Taxonomy type */
+export type AllInOneBrandToTaxonomyConnectionEdge = Edge & OneToOneConnection & TaxonomyConnectionEdge & {
+  __typename?: 'AllInOneBrandToTaxonomyConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: Taxonomy;
+};
+
 /** Represents a connection to a all_in_one. Contains both the all_in_one Node and metadata about the relationship. */
 export type AllInOneConnectionEdge = {
   /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
@@ -74,6 +545,8 @@ export type AllInOneConnectionEdge = {
 /** The all_in_one type */
 export type All_In_One = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node & NodeWithFeaturedImage & NodeWithTemplate & NodeWithTitle & Previewable & UniformResourceIdentifiable & WithAcfDevice & {
   __typename?: 'All_in_one';
+  /** Connection between the All_in_one type and the AllInOneBrand type */
+  allInOneBrands: Maybe<All_In_OneToAllInOneBrandConnection>;
   /**
    * The id field matches the WP_Post-&gt;ID field.
    * @deprecated Deprecated in favor of the databaseId field
@@ -159,10 +632,22 @@ export type All_In_One = ContentNode & DatabaseIdentifier & MenuItemLinkable & N
   status: Maybe<Scalars['String']['output']>;
   /** The template assigned to the node */
   template: Maybe<ContentTemplate>;
+  /** Connection between the All_in_one type and the TermNode type */
+  terms: Maybe<All_In_OneToTermNodeConnection>;
   /** The title of the post. This is currently just the raw title. An amendment to support rendered title needs to be made. */
   title: Maybe<Scalars['String']['output']>;
   /** The unique resource identifier path */
   uri: Maybe<Scalars['String']['output']>;
+};
+
+
+/** The all_in_one type */
+export type All_In_OneAllInOneBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<All_In_OneToAllInOneBrandConnectionWhereArgs>;
 };
 
 
@@ -194,8 +679,38 @@ export type All_In_OneEnqueuedStylesheetsArgs = {
 
 
 /** The all_in_one type */
+export type All_In_OneTermsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<All_In_OneToTermNodeConnectionWhereArgs>;
+};
+
+
+/** The all_in_one type */
 export type All_In_OneTitleArgs = {
   format: InputMaybe<PostObjectFieldFormatEnum>;
+};
+
+/** Set relationships between the all_in_one to AllInOneBrands */
+export type All_In_OneAllInOneBrandsInput = {
+  /** If true, this will append the AllInOneBrand to existing related AllInOneBrands. If false, this will replace existing relationships. Default true. */
+  append: InputMaybe<Scalars['Boolean']['input']>;
+  /** The input list of items to set. */
+  nodes: InputMaybe<Array<InputMaybe<All_In_OneAllInOneBrandsNodeInput>>>;
+};
+
+/** List of AllInOneBrands to connect the all_in_one to. If an ID is set, it will be used to create the connection. If not, it will look for a slug. If neither are valid existing terms, and the site is configured to allow terms to be created during post mutations, a term will be created using the Name if it exists in the input, then fallback to the slug if it exists. */
+export type All_In_OneAllInOneBrandsNodeInput = {
+  /** The description of the AllInOneBrand. This field is used to set a description of the AllInOneBrand if a new one is created during the mutation. */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the AllInOneBrand. If present, this will be used to connect to the all_in_one. If no existing AllInOneBrand exists with this ID, no connection will be made. */
+  id: InputMaybe<Scalars['ID']['input']>;
+  /** The name of the AllInOneBrand. This field is used to create a new term, if term creation is enabled in nested mutations, and if one does not already exist with the provided slug or ID or if a slug or ID is not provided. If no name is included and a term is created, the creation will fallback to the slug field. */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The slug of the AllInOneBrand. If no ID is present, this field will be used to make a connection. If no existing term exists with this slug, this field will be used as a fallback to the Name field when creating a new term to connect to, if term creation is enabled as a nested mutation. */
+  slug: InputMaybe<Scalars['String']['input']>;
 };
 
 /** Pagination metadata specific to &quot;AllInOneConnectionEdge&quot; collections. Provides cursors and flags for navigating through sets of &quot;AllInOneConnectionEdge&quot; Nodes. */
@@ -223,6 +738,83 @@ export const All_In_OneIdType = {
 } as const;
 
 export type All_In_OneIdType = typeof All_In_OneIdType[keyof typeof All_In_OneIdType];
+/** Connection between the All_in_one type and the AllInOneBrand type */
+export type All_In_OneToAllInOneBrandConnection = AllInOneBrandConnection & Connection & {
+  __typename?: 'All_in_oneToAllInOneBrandConnection';
+  /** Edges for the All_in_oneToAllInOneBrandConnection connection */
+  edges: Array<All_In_OneToAllInOneBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<AllInOneBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: All_In_OneToAllInOneBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type All_In_OneToAllInOneBrandConnectionEdge = AllInOneBrandConnectionEdge & Edge & {
+  __typename?: 'All_in_oneToAllInOneBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: AllInOneBrand;
+};
+
+/** Pagination metadata specific to &quot;All_in_oneToAllInOneBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of All_in_oneToAllInOneBrandConnection Nodes. */
+export type All_In_OneToAllInOneBrandConnectionPageInfo = AllInOneBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'All_in_oneToAllInOneBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the All_in_oneToAllInOneBrandConnection connection */
+export type All_In_OneToAllInOneBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 /** Connection between the All_in_one type and the all_in_one type */
 export type All_In_OneToAll_In_OneConnection = Connection & {
   __typename?: 'All_in_oneToAll_in_oneConnection';
@@ -281,6 +873,85 @@ export type All_In_OneToPreviewConnectionEdge = AllInOneConnectionEdge & Edge & 
   cursor: Maybe<Scalars['String']['output']>;
   /** The node of the connection, without the edges */
   node: All_In_One;
+};
+
+/** Connection between the All_in_one type and the TermNode type */
+export type All_In_OneToTermNodeConnection = Connection & TermNodeConnection & {
+  __typename?: 'All_in_oneToTermNodeConnection';
+  /** Edges for the All_in_oneToTermNodeConnection connection */
+  edges: Array<All_In_OneToTermNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TermNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: All_In_OneToTermNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type All_In_OneToTermNodeConnectionEdge = Edge & TermNodeConnectionEdge & {
+  __typename?: 'All_in_oneToTermNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TermNode;
+};
+
+/** Pagination metadata specific to &quot;All_in_oneToTermNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of All_in_oneToTermNodeConnection Nodes. */
+export type All_In_OneToTermNodeConnectionPageInfo = PageInfo & TermNodeConnectionPageInfo & WpPageInfo & {
+  __typename?: 'All_in_oneToTermNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the All_in_oneToTermNodeConnection connection */
+export type All_In_OneToTermNodeConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** The Taxonomy to filter terms by */
+  taxonomies: InputMaybe<Array<InputMaybe<TaxonomyEnum>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** Avatars are profile images for users. WordPress by default uses the Gravatar service to host and fetch avatars from. */
@@ -1248,6 +1919,8 @@ export type Console = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node
    * @deprecated This content type is not hierarchical and typically will not have ancestors
    */
   ancestors: Maybe<ConsoleToConsoleConnection>;
+  /** Connection between the Console type and the ConsoleBrand type */
+  consoleBrands: Maybe<ConsoleToConsoleBrandConnection>;
   /**
    * The id field matches the WP_Post-&gt;ID field.
    * @deprecated Deprecated in favor of the databaseId field
@@ -1328,6 +2001,8 @@ export type Console = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node
   status: Maybe<Scalars['String']['output']>;
   /** The template assigned to the node */
   template: Maybe<ContentTemplate>;
+  /** Connection between the Console type and the TermNode type */
+  terms: Maybe<ConsoleToTermNodeConnection>;
   /** The title of the post. This is currently just the raw title. An amendment to support rendered title needs to be made. */
   title: Maybe<Scalars['String']['output']>;
   /** The unique resource identifier path */
@@ -1341,6 +2016,16 @@ export type ConsoleAncestorsArgs = {
   before: InputMaybe<Scalars['String']['input']>;
   first: InputMaybe<Scalars['Int']['input']>;
   last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The console type */
+export type ConsoleConsoleBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<ConsoleToConsoleBrandConnectionWhereArgs>;
 };
 
 
@@ -1363,8 +2048,456 @@ export type ConsoleEnqueuedStylesheetsArgs = {
 
 
 /** The console type */
+export type ConsoleTermsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<ConsoleToTermNodeConnectionWhereArgs>;
+};
+
+
+/** The console type */
 export type ConsoleTitleArgs = {
   format: InputMaybe<PostObjectFieldFormatEnum>;
+};
+
+/** The ConsoleBrand type */
+export type ConsoleBrand = DatabaseIdentifier & HierarchicalNode & HierarchicalTermNode & MenuItemLinkable & Node & TermNode & UniformResourceIdentifiable & {
+  __typename?: 'ConsoleBrand';
+  /** The ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
+  ancestors: Maybe<ConsoleBrandToAncestorsConsoleBrandConnection>;
+  /** Connection between the ConsoleBrand type and its children ConsoleBrands. */
+  children: Maybe<ConsoleBrandToConsoleBrandConnection>;
+  /**
+   * The id field matches the WP_Post-&gt;ID field.
+   * @deprecated Deprecated in favor of databaseId
+   */
+  consoleBrandId: Maybe<Scalars['Int']['output']>;
+  /** Connection between the ConsoleBrand type and the console type */
+  consoles: Maybe<ConsoleBrandToConsoleConnection>;
+  /** Connection between the ConsoleBrand type and the ContentNode type */
+  contentNodes: Maybe<ConsoleBrandToContentNodeConnection>;
+  /** The number of objects connected to the object */
+  count: Maybe<Scalars['Int']['output']>;
+  /** The unique identifier stored in the database */
+  databaseId: Scalars['Int']['output'];
+  /** The description of the object */
+  description: Maybe<Scalars['String']['output']>;
+  /** Connection between the TermNode type and the EnqueuedScript type */
+  enqueuedScripts: Maybe<TermNodeToEnqueuedScriptConnection>;
+  /** Connection between the TermNode type and the EnqueuedStylesheet type */
+  enqueuedStylesheets: Maybe<TermNodeToEnqueuedStylesheetConnection>;
+  /** The globally unique ID for the object */
+  id: Scalars['ID']['output'];
+  /** Whether the node is a Comment */
+  isComment: Scalars['Boolean']['output'];
+  /** Whether the node is a Content Node */
+  isContentNode: Scalars['Boolean']['output'];
+  /** Whether the node represents the front page. */
+  isFrontPage: Scalars['Boolean']['output'];
+  /** Whether  the node represents the blog page. */
+  isPostsPage: Scalars['Boolean']['output'];
+  /** Whether the object is restricted from the current viewer */
+  isRestricted: Maybe<Scalars['Boolean']['output']>;
+  /** Whether the node is a Term */
+  isTermNode: Scalars['Boolean']['output'];
+  /** The link to the term */
+  link: Maybe<Scalars['String']['output']>;
+  /** The human friendly name of the object. */
+  name: Maybe<Scalars['String']['output']>;
+  /** Connection between the ConsoleBrand type and its parent ConsoleBrand. */
+  parent: Maybe<ConsoleBrandToParentConsoleBrandConnectionEdge>;
+  /** Database id of the parent node */
+  parentDatabaseId: Maybe<Scalars['Int']['output']>;
+  /** The globally unique identifier of the parent node. */
+  parentId: Maybe<Scalars['ID']['output']>;
+  /** An alphanumeric identifier for the object unique to its type. */
+  slug: Maybe<Scalars['String']['output']>;
+  /** Connection between the ConsoleBrand type and the Taxonomy type */
+  taxonomy: Maybe<ConsoleBrandToTaxonomyConnectionEdge>;
+  /** The name of the taxonomy that the object is associated with */
+  taxonomyName: Maybe<Scalars['String']['output']>;
+  /** The ID of the term group that this term object belongs to */
+  termGroupId: Maybe<Scalars['Int']['output']>;
+  /** The taxonomy ID that the object is associated with */
+  termTaxonomyId: Maybe<Scalars['Int']['output']>;
+  /** The unique resource identifier path */
+  uri: Maybe<Scalars['String']['output']>;
+};
+
+
+/** The ConsoleBrand type */
+export type ConsoleBrandAncestorsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The ConsoleBrand type */
+export type ConsoleBrandChildrenArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<ConsoleBrandToConsoleBrandConnectionWhereArgs>;
+};
+
+
+/** The ConsoleBrand type */
+export type ConsoleBrandConsolesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<ConsoleBrandToConsoleConnectionWhereArgs>;
+};
+
+
+/** The ConsoleBrand type */
+export type ConsoleBrandContentNodesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<ConsoleBrandToContentNodeConnectionWhereArgs>;
+};
+
+
+/** The ConsoleBrand type */
+export type ConsoleBrandEnqueuedScriptsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The ConsoleBrand type */
+export type ConsoleBrandEnqueuedStylesheetsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+/** A paginated collection of ConsoleBrand Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of ConsoleBrand Nodes */
+export type ConsoleBrandConnection = {
+  /** A list of edges (relational context) between RootQuery and connected ConsoleBrand Nodes */
+  edges: Array<ConsoleBrandConnectionEdge>;
+  /** A list of connected ConsoleBrand Nodes */
+  nodes: Array<ConsoleBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: ConsoleBrandConnectionPageInfo;
+};
+
+/** Represents a connection to a ConsoleBrand. Contains both the ConsoleBrand Node and metadata about the relationship. */
+export type ConsoleBrandConnectionEdge = {
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The connected ConsoleBrand Node */
+  node: ConsoleBrand;
+};
+
+/** Pagination metadata specific to &quot;ConsoleBrandConnectionEdge&quot; collections. Provides cursors and flags for navigating through sets of &quot;ConsoleBrandConnectionEdge&quot; Nodes. */
+export type ConsoleBrandConnectionPageInfo = {
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Identifier types for retrieving a specific ConsoleBrand. Determines which unique property (global ID, database ID, slug, etc.) is used to locate the ConsoleBrand. */
+export const ConsoleBrandIdType = {
+  /** The Database ID for the node */
+  DatabaseId: 'DATABASE_ID',
+  /** The hashed Global ID */
+  Id: 'ID',
+  /** The name of the node */
+  Name: 'NAME',
+  /** Url friendly name of the node */
+  Slug: 'SLUG',
+  /** The URI for the node */
+  Uri: 'URI'
+} as const;
+
+export type ConsoleBrandIdType = typeof ConsoleBrandIdType[keyof typeof ConsoleBrandIdType];
+/** Connection between the ConsoleBrand type and the ConsoleBrand type */
+export type ConsoleBrandToAncestorsConsoleBrandConnection = Connection & ConsoleBrandConnection & {
+  __typename?: 'ConsoleBrandToAncestorsConsoleBrandConnection';
+  /** Edges for the ConsoleBrandToAncestorsConsoleBrandConnection connection */
+  edges: Array<ConsoleBrandToAncestorsConsoleBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ConsoleBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: ConsoleBrandToAncestorsConsoleBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type ConsoleBrandToAncestorsConsoleBrandConnectionEdge = ConsoleBrandConnectionEdge & Edge & {
+  __typename?: 'ConsoleBrandToAncestorsConsoleBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ConsoleBrand;
+};
+
+/** Pagination metadata specific to &quot;ConsoleBrandToAncestorsConsoleBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of ConsoleBrandToAncestorsConsoleBrandConnection Nodes. */
+export type ConsoleBrandToAncestorsConsoleBrandConnectionPageInfo = ConsoleBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'ConsoleBrandToAncestorsConsoleBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the ConsoleBrand type and the ConsoleBrand type */
+export type ConsoleBrandToConsoleBrandConnection = Connection & ConsoleBrandConnection & {
+  __typename?: 'ConsoleBrandToConsoleBrandConnection';
+  /** Edges for the ConsoleBrandToConsoleBrandConnection connection */
+  edges: Array<ConsoleBrandToConsoleBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ConsoleBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: ConsoleBrandToConsoleBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type ConsoleBrandToConsoleBrandConnectionEdge = ConsoleBrandConnectionEdge & Edge & {
+  __typename?: 'ConsoleBrandToConsoleBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ConsoleBrand;
+};
+
+/** Pagination metadata specific to &quot;ConsoleBrandToConsoleBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of ConsoleBrandToConsoleBrandConnection Nodes. */
+export type ConsoleBrandToConsoleBrandConnectionPageInfo = ConsoleBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'ConsoleBrandToConsoleBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the ConsoleBrandToConsoleBrandConnection connection */
+export type ConsoleBrandToConsoleBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+/** Connection between the ConsoleBrand type and the console type */
+export type ConsoleBrandToConsoleConnection = Connection & ConsoleConnection & {
+  __typename?: 'ConsoleBrandToConsoleConnection';
+  /** Edges for the ConsoleBrandToConsoleConnection connection */
+  edges: Array<ConsoleBrandToConsoleConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<Console>;
+  /** Information about pagination in a connection. */
+  pageInfo: ConsoleBrandToConsoleConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type ConsoleBrandToConsoleConnectionEdge = ConsoleConnectionEdge & Edge & {
+  __typename?: 'ConsoleBrandToConsoleConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: Console;
+};
+
+/** Pagination metadata specific to &quot;ConsoleBrandToConsoleConnection&quot; collections. Provides cursors and flags for navigating through sets of ConsoleBrandToConsoleConnection Nodes. */
+export type ConsoleBrandToConsoleConnectionPageInfo = ConsoleConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'ConsoleBrandToConsoleConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the ConsoleBrandToConsoleConnection connection */
+export type ConsoleBrandToConsoleConnectionWhereArgs = {
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the ConsoleBrand type and the ContentNode type */
+export type ConsoleBrandToContentNodeConnection = Connection & ContentNodeConnection & {
+  __typename?: 'ConsoleBrandToContentNodeConnection';
+  /** Edges for the ConsoleBrandToContentNodeConnection connection */
+  edges: Array<ConsoleBrandToContentNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ContentNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: ConsoleBrandToContentNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type ConsoleBrandToContentNodeConnectionEdge = ContentNodeConnectionEdge & Edge & {
+  __typename?: 'ConsoleBrandToContentNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ContentNode;
+};
+
+/** Pagination metadata specific to &quot;ConsoleBrandToContentNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of ConsoleBrandToContentNodeConnection Nodes. */
+export type ConsoleBrandToContentNodeConnectionPageInfo = ContentNodeConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'ConsoleBrandToContentNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the ConsoleBrandToContentNodeConnection connection */
+export type ConsoleBrandToContentNodeConnectionWhereArgs = {
+  /** The Types of content to filter */
+  contentTypes: InputMaybe<Array<InputMaybe<ContentTypesOfConsoleBrandEnum>>>;
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the ConsoleBrand type and the ConsoleBrand type */
+export type ConsoleBrandToParentConsoleBrandConnectionEdge = ConsoleBrandConnectionEdge & Edge & OneToOneConnection & {
+  __typename?: 'ConsoleBrandToParentConsoleBrandConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: ConsoleBrand;
+};
+
+/** Connection between the ConsoleBrand type and the Taxonomy type */
+export type ConsoleBrandToTaxonomyConnectionEdge = Edge & OneToOneConnection & TaxonomyConnectionEdge & {
+  __typename?: 'ConsoleBrandToTaxonomyConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: Taxonomy;
 };
 
 /** A paginated collection of console Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of console Nodes */
@@ -1397,6 +2530,26 @@ export type ConsoleConnectionPageInfo = {
   startCursor: Maybe<Scalars['String']['output']>;
 };
 
+/** Set relationships between the console to ConsoleBrands */
+export type ConsoleConsoleBrandsInput = {
+  /** If true, this will append the ConsoleBrand to existing related ConsoleBrands. If false, this will replace existing relationships. Default true. */
+  append: InputMaybe<Scalars['Boolean']['input']>;
+  /** The input list of items to set. */
+  nodes: InputMaybe<Array<InputMaybe<ConsoleConsoleBrandsNodeInput>>>;
+};
+
+/** List of ConsoleBrands to connect the console to. If an ID is set, it will be used to create the connection. If not, it will look for a slug. If neither are valid existing terms, and the site is configured to allow terms to be created during post mutations, a term will be created using the Name if it exists in the input, then fallback to the slug if it exists. */
+export type ConsoleConsoleBrandsNodeInput = {
+  /** The description of the ConsoleBrand. This field is used to set a description of the ConsoleBrand if a new one is created during the mutation. */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the ConsoleBrand. If present, this will be used to connect to the console. If no existing ConsoleBrand exists with this ID, no connection will be made. */
+  id: InputMaybe<Scalars['ID']['input']>;
+  /** The name of the ConsoleBrand. This field is used to create a new term, if term creation is enabled in nested mutations, and if one does not already exist with the provided slug or ID or if a slug or ID is not provided. If no name is included and a term is created, the creation will fallback to the slug field. */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The slug of the ConsoleBrand. If no ID is present, this field will be used to make a connection. If no existing term exists with this slug, this field will be used as a fallback to the Name field when creating a new term to connect to, if term creation is enabled as a nested mutation. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
 /** Identifier types for retrieving a specific Console. Specifies which unique attribute is used to find an exact Console. */
 export const ConsoleIdType = {
   /** Identify a resource by the Database ID. */
@@ -1410,6 +2563,83 @@ export const ConsoleIdType = {
 } as const;
 
 export type ConsoleIdType = typeof ConsoleIdType[keyof typeof ConsoleIdType];
+/** Connection between the Console type and the ConsoleBrand type */
+export type ConsoleToConsoleBrandConnection = Connection & ConsoleBrandConnection & {
+  __typename?: 'ConsoleToConsoleBrandConnection';
+  /** Edges for the ConsoleToConsoleBrandConnection connection */
+  edges: Array<ConsoleToConsoleBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ConsoleBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: ConsoleToConsoleBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type ConsoleToConsoleBrandConnectionEdge = ConsoleBrandConnectionEdge & Edge & {
+  __typename?: 'ConsoleToConsoleBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ConsoleBrand;
+};
+
+/** Pagination metadata specific to &quot;ConsoleToConsoleBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of ConsoleToConsoleBrandConnection Nodes. */
+export type ConsoleToConsoleBrandConnectionPageInfo = ConsoleBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'ConsoleToConsoleBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the ConsoleToConsoleBrandConnection connection */
+export type ConsoleToConsoleBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 /** Connection between the Console type and the console type */
 export type ConsoleToConsoleConnection = Connection & ConsoleConnection & {
   __typename?: 'ConsoleToConsoleConnection';
@@ -1468,6 +2698,85 @@ export type ConsoleToPreviewConnectionEdge = ConsoleConnectionEdge & Edge & OneT
   cursor: Maybe<Scalars['String']['output']>;
   /** The node of the connection, without the edges */
   node: Console;
+};
+
+/** Connection between the Console type and the TermNode type */
+export type ConsoleToTermNodeConnection = Connection & TermNodeConnection & {
+  __typename?: 'ConsoleToTermNodeConnection';
+  /** Edges for the ConsoleToTermNodeConnection connection */
+  edges: Array<ConsoleToTermNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TermNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: ConsoleToTermNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type ConsoleToTermNodeConnectionEdge = Edge & TermNodeConnectionEdge & {
+  __typename?: 'ConsoleToTermNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TermNode;
+};
+
+/** Pagination metadata specific to &quot;ConsoleToTermNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of ConsoleToTermNodeConnection Nodes. */
+export type ConsoleToTermNodeConnectionPageInfo = PageInfo & TermNodeConnectionPageInfo & WpPageInfo & {
+  __typename?: 'ConsoleToTermNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the ConsoleToTermNodeConnection connection */
+export type ConsoleToTermNodeConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** The Taxonomy to filter terms by */
+  taxonomies: InputMaybe<Array<InputMaybe<TaxonomyEnum>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** The &quot;ContactInfo&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
@@ -2001,6 +3310,13 @@ export type ContentTypeToTaxonomyConnectionPageInfo = PageInfo & TaxonomyConnect
   startCursor: Maybe<Scalars['String']['output']>;
 };
 
+/** Allowed Content Types of the AllInOneBrand taxonomy. */
+export const ContentTypesOfAllInOneBrandEnum = {
+  /** The Type of Content object */
+  AllInOne: 'ALL_IN_ONE'
+} as const;
+
+export type ContentTypesOfAllInOneBrandEnum = typeof ContentTypesOfAllInOneBrandEnum[keyof typeof ContentTypesOfAllInOneBrandEnum];
 /** Allowed Content Types of the Category taxonomy. */
 export const ContentTypesOfCategoryEnum = {
   /** The Type of Content object */
@@ -2008,6 +3324,34 @@ export const ContentTypesOfCategoryEnum = {
 } as const;
 
 export type ContentTypesOfCategoryEnum = typeof ContentTypesOfCategoryEnum[keyof typeof ContentTypesOfCategoryEnum];
+/** Allowed Content Types of the ConsoleBrand taxonomy. */
+export const ContentTypesOfConsoleBrandEnum = {
+  /** The Type of Content object */
+  Console: 'CONSOLE'
+} as const;
+
+export type ContentTypesOfConsoleBrandEnum = typeof ContentTypesOfConsoleBrandEnum[keyof typeof ContentTypesOfConsoleBrandEnum];
+/** Allowed Content Types of the DesktopBrand taxonomy. */
+export const ContentTypesOfDesktopBrandEnum = {
+  /** The Type of Content object */
+  Desktop: 'DESKTOP'
+} as const;
+
+export type ContentTypesOfDesktopBrandEnum = typeof ContentTypesOfDesktopBrandEnum[keyof typeof ContentTypesOfDesktopBrandEnum];
+/** Allowed Content Types of the LaptopBrand taxonomy. */
+export const ContentTypesOfLaptopBrandEnum = {
+  /** The Type of Content object */
+  Laptop: 'LAPTOP'
+} as const;
+
+export type ContentTypesOfLaptopBrandEnum = typeof ContentTypesOfLaptopBrandEnum[keyof typeof ContentTypesOfLaptopBrandEnum];
+/** Allowed Content Types of the PhoneBrand taxonomy. */
+export const ContentTypesOfPhoneBrandEnum = {
+  /** The Type of Content object */
+  Phone: 'PHONE'
+} as const;
+
+export type ContentTypesOfPhoneBrandEnum = typeof ContentTypesOfPhoneBrandEnum[keyof typeof ContentTypesOfPhoneBrandEnum];
 /** Allowed Content Types of the PostFormat taxonomy. */
 export const ContentTypesOfPostFormatEnum = {
   /** The Type of Content object */
@@ -2015,6 +3359,13 @@ export const ContentTypesOfPostFormatEnum = {
 } as const;
 
 export type ContentTypesOfPostFormatEnum = typeof ContentTypesOfPostFormatEnum[keyof typeof ContentTypesOfPostFormatEnum];
+/** Allowed Content Types of the TabletBrand taxonomy. */
+export const ContentTypesOfTabletBrandEnum = {
+  /** The Type of Content object */
+  Tablet: 'TABLET'
+} as const;
+
+export type ContentTypesOfTabletBrandEnum = typeof ContentTypesOfTabletBrandEnum[keyof typeof ContentTypesOfTabletBrandEnum];
 /** Allowed Content Types of the Tag taxonomy. */
 export const ContentTypesOfTagEnum = {
   /** The Type of Content object */
@@ -2022,8 +3373,44 @@ export const ContentTypesOfTagEnum = {
 } as const;
 
 export type ContentTypesOfTagEnum = typeof ContentTypesOfTagEnum[keyof typeof ContentTypesOfTagEnum];
+/** Allowed Content Types of the WatchBrand taxonomy. */
+export const ContentTypesOfWatchBrandEnum = {
+  /** The Type of Content object */
+  Watch: 'WATCH'
+} as const;
+
+export type ContentTypesOfWatchBrandEnum = typeof ContentTypesOfWatchBrandEnum[keyof typeof ContentTypesOfWatchBrandEnum];
+/** Input for the createAllInOneBrand mutation. */
+export type CreateAllInOneBrandInput = {
+  /** The slug that the all_in_one_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the all_in_one_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The name of the all_in_one_brand object to mutate */
+  name: Scalars['String']['input'];
+  /** The database ID of the all_in_one_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the all_in_one_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the createAllInOneBrand mutation. */
+export type CreateAllInOneBrandPayload = {
+  __typename?: 'CreateAllInOneBrandPayload';
+  /** The created all_in_one_brand */
+  allInOneBrand: Maybe<AllInOneBrand>;
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+};
+
 /** Input for the createAll_in_one mutation. */
 export type CreateAll_In_OneInput = {
+  /** Set connections between the all_in_one and AllInOneBrands */
+  allInOneBrands: InputMaybe<All_In_OneAllInOneBrandsInput>;
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
   clientMutationId: InputMaybe<Scalars['String']['input']>;
   /** The date of the object. Preferable to enter as year/month/day (e.g. 01/31/2017) as it will rearrange date as fit if it is not specified. Incomplete dates may have unintended results for example, "2017" as the input will use current date with timestamp 20:17  */
@@ -2111,10 +3498,39 @@ export type CreateCommentPayload = {
   success: Maybe<Scalars['Boolean']['output']>;
 };
 
+/** Input for the createConsoleBrand mutation. */
+export type CreateConsoleBrandInput = {
+  /** The slug that the console_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the console_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The name of the console_brand object to mutate */
+  name: Scalars['String']['input'];
+  /** The database ID of the console_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the console_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the createConsoleBrand mutation. */
+export type CreateConsoleBrandPayload = {
+  __typename?: 'CreateConsoleBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created console_brand */
+  consoleBrand: Maybe<ConsoleBrand>;
+};
+
 /** Input for the createConsole mutation. */
 export type CreateConsoleInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
   clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the console and ConsoleBrands */
+  consoleBrands: InputMaybe<ConsoleConsoleBrandsInput>;
   /** The date of the object. Preferable to enter as year/month/day (e.g. 01/31/2017) as it will rearrange date as fit if it is not specified. Incomplete dates may have unintended results for example, "2017" as the input will use current date with timestamp 20:17  */
   date: InputMaybe<Scalars['String']['input']>;
   /** A field used for ordering posts. This is typically used with nav menu items or for special ordering of hierarchical content types. */
@@ -2138,12 +3554,41 @@ export type CreateConsolePayload = {
   console: Maybe<Console>;
 };
 
+/** Input for the createDesktopBrand mutation. */
+export type CreateDesktopBrandInput = {
+  /** The slug that the desktop_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the desktop_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The name of the desktop_brand object to mutate */
+  name: Scalars['String']['input'];
+  /** The database ID of the desktop_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the desktop_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the createDesktopBrand mutation. */
+export type CreateDesktopBrandPayload = {
+  __typename?: 'CreateDesktopBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created desktop_brand */
+  desktopBrand: Maybe<DesktopBrand>;
+};
+
 /** Input for the createDesktop mutation. */
 export type CreateDesktopInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
   clientMutationId: InputMaybe<Scalars['String']['input']>;
   /** The date of the object. Preferable to enter as year/month/day (e.g. 01/31/2017) as it will rearrange date as fit if it is not specified. Incomplete dates may have unintended results for example, "2017" as the input will use current date with timestamp 20:17  */
   date: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the desktop and DesktopBrands */
+  desktopBrands: InputMaybe<DesktopDesktopBrandsInput>;
   /** A field used for ordering posts. This is typically used with nav menu items or for special ordering of hierarchical content types. */
   menuOrder: InputMaybe<Scalars['Int']['input']>;
   /** The password used to protect the content of the object */
@@ -2194,12 +3639,41 @@ export type CreateFaqPayload = {
   faq: Maybe<Faq>;
 };
 
+/** Input for the createLaptopBrand mutation. */
+export type CreateLaptopBrandInput = {
+  /** The slug that the laptop_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the laptop_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The name of the laptop_brand object to mutate */
+  name: Scalars['String']['input'];
+  /** The database ID of the laptop_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the laptop_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the createLaptopBrand mutation. */
+export type CreateLaptopBrandPayload = {
+  __typename?: 'CreateLaptopBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created laptop_brand */
+  laptopBrand: Maybe<LaptopBrand>;
+};
+
 /** Input for the createLaptop mutation. */
 export type CreateLaptopInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
   clientMutationId: InputMaybe<Scalars['String']['input']>;
   /** The date of the object. Preferable to enter as year/month/day (e.g. 01/31/2017) as it will rearrange date as fit if it is not specified. Incomplete dates may have unintended results for example, "2017" as the input will use current date with timestamp 20:17  */
   date: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the laptop and LaptopBrands */
+  laptopBrands: InputMaybe<LaptopLaptopBrandsInput>;
   /** A field used for ordering posts. This is typically used with nav menu items or for special ordering of hierarchical content types. */
   menuOrder: InputMaybe<Scalars['Int']['input']>;
   /** The password used to protect the content of the object */
@@ -2297,6 +3771,33 @@ export type CreatePagePayload = {
   page: Maybe<Page>;
 };
 
+/** Input for the createPhoneBrand mutation. */
+export type CreatePhoneBrandInput = {
+  /** The slug that the phone_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the phone_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The name of the phone_brand object to mutate */
+  name: Scalars['String']['input'];
+  /** The database ID of the phone_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the phone_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the createPhoneBrand mutation. */
+export type CreatePhoneBrandPayload = {
+  __typename?: 'CreatePhoneBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created phone_brand */
+  phoneBrand: Maybe<PhoneBrand>;
+};
+
 /** Input for the createPhone mutation. */
 export type CreatePhoneInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -2307,6 +3808,8 @@ export type CreatePhoneInput = {
   menuOrder: InputMaybe<Scalars['Int']['input']>;
   /** The password used to protect the content of the object */
   password: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the phone and PhoneBrands */
+  phoneBrands: InputMaybe<PhonePhoneBrandsInput>;
   /** The slug of the object */
   slug: InputMaybe<Scalars['String']['input']>;
   /** The status of the object */
@@ -2392,6 +3895,33 @@ export type CreatePostPayload = {
   post: Maybe<Post>;
 };
 
+/** Input for the createTabletBrand mutation. */
+export type CreateTabletBrandInput = {
+  /** The slug that the tablet_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the tablet_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The name of the tablet_brand object to mutate */
+  name: Scalars['String']['input'];
+  /** The database ID of the tablet_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the tablet_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the createTabletBrand mutation. */
+export type CreateTabletBrandPayload = {
+  __typename?: 'CreateTabletBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created tablet_brand */
+  tabletBrand: Maybe<TabletBrand>;
+};
+
 /** Input for the createTablet mutation. */
 export type CreateTabletInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -2406,6 +3936,8 @@ export type CreateTabletInput = {
   slug: InputMaybe<Scalars['String']['input']>;
   /** The status of the object */
   status: InputMaybe<PostStatusEnum>;
+  /** Set connections between the tablet and TabletBrands */
+  tabletBrands: InputMaybe<TabletTabletBrandsInput>;
   /** The title of the object */
   title: InputMaybe<Scalars['String']['input']>;
 };
@@ -2491,6 +4023,33 @@ export type CreateUserPayload = {
   user: Maybe<User>;
 };
 
+/** Input for the createWatchBrand mutation. */
+export type CreateWatchBrandInput = {
+  /** The slug that the watch_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the watch_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The name of the watch_brand object to mutate */
+  name: Scalars['String']['input'];
+  /** The database ID of the watch_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the watch_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the createWatchBrand mutation. */
+export type CreateWatchBrandPayload = {
+  __typename?: 'CreateWatchBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created watch_brand */
+  watchBrand: Maybe<WatchBrand>;
+};
+
 /** Input for the createWatch mutation. */
 export type CreateWatchInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -2507,6 +4066,8 @@ export type CreateWatchInput = {
   status: InputMaybe<PostStatusEnum>;
   /** The title of the object */
   title: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the watch and WatchBrands */
+  watchBrands: InputMaybe<WatchWatchBrandsInput>;
 };
 
 /** The payload for the createWatch mutation. */
@@ -2569,6 +4130,25 @@ export type DefaultTemplate = ContentTemplate & {
   __typename?: 'DefaultTemplate';
   /** The name of the template */
   templateName: Maybe<Scalars['String']['output']>;
+};
+
+/** Input for the deleteAllInOneBrand mutation. */
+export type DeleteAllInOneBrandInput = {
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the AllInOneBrand to delete */
+  id: Scalars['ID']['input'];
+};
+
+/** The payload for the deleteAllInOneBrand mutation. */
+export type DeleteAllInOneBrandPayload = {
+  __typename?: 'DeleteAllInOneBrandPayload';
+  /** The deleted term object */
+  allInOneBrand: Maybe<AllInOneBrand>;
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The ID of the deleted object */
+  deletedId: Maybe<Scalars['ID']['output']>;
 };
 
 /** Input for the deleteAll_in_one mutation. */
@@ -2634,6 +4214,25 @@ export type DeleteCommentPayload = {
   deletedId: Maybe<Scalars['ID']['output']>;
 };
 
+/** Input for the deleteConsoleBrand mutation. */
+export type DeleteConsoleBrandInput = {
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the ConsoleBrand to delete */
+  id: Scalars['ID']['input'];
+};
+
+/** The payload for the deleteConsoleBrand mutation. */
+export type DeleteConsoleBrandPayload = {
+  __typename?: 'DeleteConsoleBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The deleted term object */
+  consoleBrand: Maybe<ConsoleBrand>;
+  /** The ID of the deleted object */
+  deletedId: Maybe<Scalars['ID']['output']>;
+};
+
 /** Input for the deleteConsole mutation. */
 export type DeleteConsoleInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -2655,6 +4254,25 @@ export type DeleteConsolePayload = {
   console: Maybe<Console>;
   /** The ID of the deleted object */
   deletedId: Maybe<Scalars['ID']['output']>;
+};
+
+/** Input for the deleteDesktopBrand mutation. */
+export type DeleteDesktopBrandInput = {
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the DesktopBrand to delete */
+  id: Scalars['ID']['input'];
+};
+
+/** The payload for the deleteDesktopBrand mutation. */
+export type DeleteDesktopBrandPayload = {
+  __typename?: 'DeleteDesktopBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The ID of the deleted object */
+  deletedId: Maybe<Scalars['ID']['output']>;
+  /** The deleted term object */
+  desktopBrand: Maybe<DesktopBrand>;
 };
 
 /** Input for the deleteDesktop mutation. */
@@ -2701,6 +4319,25 @@ export type DeleteFaqPayload = {
   deletedId: Maybe<Scalars['ID']['output']>;
   /** The object before it was deleted */
   faq: Maybe<Faq>;
+};
+
+/** Input for the deleteLaptopBrand mutation. */
+export type DeleteLaptopBrandInput = {
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the LaptopBrand to delete */
+  id: Scalars['ID']['input'];
+};
+
+/** The payload for the deleteLaptopBrand mutation. */
+export type DeleteLaptopBrandPayload = {
+  __typename?: 'DeleteLaptopBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The ID of the deleted object */
+  deletedId: Maybe<Scalars['ID']['output']>;
+  /** The deleted term object */
+  laptopBrand: Maybe<LaptopBrand>;
 };
 
 /** Input for the deleteLaptop mutation. */
@@ -2770,6 +4407,25 @@ export type DeletePagePayload = {
   page: Maybe<Page>;
 };
 
+/** Input for the deletePhoneBrand mutation. */
+export type DeletePhoneBrandInput = {
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the PhoneBrand to delete */
+  id: Scalars['ID']['input'];
+};
+
+/** The payload for the deletePhoneBrand mutation. */
+export type DeletePhoneBrandPayload = {
+  __typename?: 'DeletePhoneBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The ID of the deleted object */
+  deletedId: Maybe<Scalars['ID']['output']>;
+  /** The deleted term object */
+  phoneBrand: Maybe<PhoneBrand>;
+};
+
 /** Input for the deletePhone mutation. */
 export type DeletePhoneInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -2835,6 +4491,25 @@ export type DeletePostPayload = {
   post: Maybe<Post>;
 };
 
+/** Input for the deleteTabletBrand mutation. */
+export type DeleteTabletBrandInput = {
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the TabletBrand to delete */
+  id: Scalars['ID']['input'];
+};
+
+/** The payload for the deleteTabletBrand mutation. */
+export type DeleteTabletBrandPayload = {
+  __typename?: 'DeleteTabletBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The ID of the deleted object */
+  deletedId: Maybe<Scalars['ID']['output']>;
+  /** The deleted term object */
+  tabletBrand: Maybe<TabletBrand>;
+};
+
 /** Input for the deleteTablet mutation. */
 export type DeleteTabletInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -2898,6 +4573,25 @@ export type DeleteUserPayload = {
   user: Maybe<User>;
 };
 
+/** Input for the deleteWatchBrand mutation. */
+export type DeleteWatchBrandInput = {
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the WatchBrand to delete */
+  id: Scalars['ID']['input'];
+};
+
+/** The payload for the deleteWatchBrand mutation. */
+export type DeleteWatchBrandPayload = {
+  __typename?: 'DeleteWatchBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The ID of the deleted object */
+  deletedId: Maybe<Scalars['ID']['output']>;
+  /** The deleted term object */
+  watchBrand: Maybe<WatchBrand>;
+};
+
 /** Input for the deleteWatch mutation. */
 export type DeleteWatchInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -2941,6 +4635,8 @@ export type Desktop = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node
   dateGmt: Maybe<Scalars['String']['output']>;
   /** The desired slug of the post */
   desiredSlug: Maybe<Scalars['String']['output']>;
+  /** Connection between the Desktop type and the DesktopBrand type */
+  desktopBrands: Maybe<DesktopToDesktopBrandConnection>;
   /**
    * The id field matches the WP_Post-&gt;ID field.
    * @deprecated Deprecated in favor of the databaseId field
@@ -3009,6 +4705,8 @@ export type Desktop = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node
   status: Maybe<Scalars['String']['output']>;
   /** The template assigned to the node */
   template: Maybe<ContentTemplate>;
+  /** Connection between the Desktop type and the TermNode type */
+  terms: Maybe<DesktopToTermNodeConnection>;
   /** The title of the post. This is currently just the raw title. An amendment to support rendered title needs to be made. */
   title: Maybe<Scalars['String']['output']>;
   /** The unique resource identifier path */
@@ -3022,6 +4720,16 @@ export type DesktopAncestorsArgs = {
   before: InputMaybe<Scalars['String']['input']>;
   first: InputMaybe<Scalars['Int']['input']>;
   last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The desktop type */
+export type DesktopDesktopBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<DesktopToDesktopBrandConnectionWhereArgs>;
 };
 
 
@@ -3044,8 +4752,456 @@ export type DesktopEnqueuedStylesheetsArgs = {
 
 
 /** The desktop type */
+export type DesktopTermsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<DesktopToTermNodeConnectionWhereArgs>;
+};
+
+
+/** The desktop type */
 export type DesktopTitleArgs = {
   format: InputMaybe<PostObjectFieldFormatEnum>;
+};
+
+/** The DesktopBrand type */
+export type DesktopBrand = DatabaseIdentifier & HierarchicalNode & HierarchicalTermNode & MenuItemLinkable & Node & TermNode & UniformResourceIdentifiable & {
+  __typename?: 'DesktopBrand';
+  /** The ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
+  ancestors: Maybe<DesktopBrandToAncestorsDesktopBrandConnection>;
+  /** Connection between the DesktopBrand type and its children DesktopBrands. */
+  children: Maybe<DesktopBrandToDesktopBrandConnection>;
+  /** Connection between the DesktopBrand type and the ContentNode type */
+  contentNodes: Maybe<DesktopBrandToContentNodeConnection>;
+  /** The number of objects connected to the object */
+  count: Maybe<Scalars['Int']['output']>;
+  /** The unique identifier stored in the database */
+  databaseId: Scalars['Int']['output'];
+  /** The description of the object */
+  description: Maybe<Scalars['String']['output']>;
+  /**
+   * The id field matches the WP_Post-&gt;ID field.
+   * @deprecated Deprecated in favor of databaseId
+   */
+  desktopBrandId: Maybe<Scalars['Int']['output']>;
+  /** Connection between the DesktopBrand type and the desktop type */
+  desktops: Maybe<DesktopBrandToDesktopConnection>;
+  /** Connection between the TermNode type and the EnqueuedScript type */
+  enqueuedScripts: Maybe<TermNodeToEnqueuedScriptConnection>;
+  /** Connection between the TermNode type and the EnqueuedStylesheet type */
+  enqueuedStylesheets: Maybe<TermNodeToEnqueuedStylesheetConnection>;
+  /** The globally unique ID for the object */
+  id: Scalars['ID']['output'];
+  /** Whether the node is a Comment */
+  isComment: Scalars['Boolean']['output'];
+  /** Whether the node is a Content Node */
+  isContentNode: Scalars['Boolean']['output'];
+  /** Whether the node represents the front page. */
+  isFrontPage: Scalars['Boolean']['output'];
+  /** Whether  the node represents the blog page. */
+  isPostsPage: Scalars['Boolean']['output'];
+  /** Whether the object is restricted from the current viewer */
+  isRestricted: Maybe<Scalars['Boolean']['output']>;
+  /** Whether the node is a Term */
+  isTermNode: Scalars['Boolean']['output'];
+  /** The link to the term */
+  link: Maybe<Scalars['String']['output']>;
+  /** The human friendly name of the object. */
+  name: Maybe<Scalars['String']['output']>;
+  /** Connection between the DesktopBrand type and its parent DesktopBrand. */
+  parent: Maybe<DesktopBrandToParentDesktopBrandConnectionEdge>;
+  /** Database id of the parent node */
+  parentDatabaseId: Maybe<Scalars['Int']['output']>;
+  /** The globally unique identifier of the parent node. */
+  parentId: Maybe<Scalars['ID']['output']>;
+  /** An alphanumeric identifier for the object unique to its type. */
+  slug: Maybe<Scalars['String']['output']>;
+  /** Connection between the DesktopBrand type and the Taxonomy type */
+  taxonomy: Maybe<DesktopBrandToTaxonomyConnectionEdge>;
+  /** The name of the taxonomy that the object is associated with */
+  taxonomyName: Maybe<Scalars['String']['output']>;
+  /** The ID of the term group that this term object belongs to */
+  termGroupId: Maybe<Scalars['Int']['output']>;
+  /** The taxonomy ID that the object is associated with */
+  termTaxonomyId: Maybe<Scalars['Int']['output']>;
+  /** The unique resource identifier path */
+  uri: Maybe<Scalars['String']['output']>;
+};
+
+
+/** The DesktopBrand type */
+export type DesktopBrandAncestorsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The DesktopBrand type */
+export type DesktopBrandChildrenArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<DesktopBrandToDesktopBrandConnectionWhereArgs>;
+};
+
+
+/** The DesktopBrand type */
+export type DesktopBrandContentNodesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<DesktopBrandToContentNodeConnectionWhereArgs>;
+};
+
+
+/** The DesktopBrand type */
+export type DesktopBrandDesktopsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<DesktopBrandToDesktopConnectionWhereArgs>;
+};
+
+
+/** The DesktopBrand type */
+export type DesktopBrandEnqueuedScriptsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The DesktopBrand type */
+export type DesktopBrandEnqueuedStylesheetsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+/** A paginated collection of DesktopBrand Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of DesktopBrand Nodes */
+export type DesktopBrandConnection = {
+  /** A list of edges (relational context) between RootQuery and connected DesktopBrand Nodes */
+  edges: Array<DesktopBrandConnectionEdge>;
+  /** A list of connected DesktopBrand Nodes */
+  nodes: Array<DesktopBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: DesktopBrandConnectionPageInfo;
+};
+
+/** Represents a connection to a DesktopBrand. Contains both the DesktopBrand Node and metadata about the relationship. */
+export type DesktopBrandConnectionEdge = {
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The connected DesktopBrand Node */
+  node: DesktopBrand;
+};
+
+/** Pagination metadata specific to &quot;DesktopBrandConnectionEdge&quot; collections. Provides cursors and flags for navigating through sets of &quot;DesktopBrandConnectionEdge&quot; Nodes. */
+export type DesktopBrandConnectionPageInfo = {
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Identifier types for retrieving a specific DesktopBrand. Determines which unique property (global ID, database ID, slug, etc.) is used to locate the DesktopBrand. */
+export const DesktopBrandIdType = {
+  /** The Database ID for the node */
+  DatabaseId: 'DATABASE_ID',
+  /** The hashed Global ID */
+  Id: 'ID',
+  /** The name of the node */
+  Name: 'NAME',
+  /** Url friendly name of the node */
+  Slug: 'SLUG',
+  /** The URI for the node */
+  Uri: 'URI'
+} as const;
+
+export type DesktopBrandIdType = typeof DesktopBrandIdType[keyof typeof DesktopBrandIdType];
+/** Connection between the DesktopBrand type and the DesktopBrand type */
+export type DesktopBrandToAncestorsDesktopBrandConnection = Connection & DesktopBrandConnection & {
+  __typename?: 'DesktopBrandToAncestorsDesktopBrandConnection';
+  /** Edges for the DesktopBrandToAncestorsDesktopBrandConnection connection */
+  edges: Array<DesktopBrandToAncestorsDesktopBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<DesktopBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: DesktopBrandToAncestorsDesktopBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type DesktopBrandToAncestorsDesktopBrandConnectionEdge = DesktopBrandConnectionEdge & Edge & {
+  __typename?: 'DesktopBrandToAncestorsDesktopBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: DesktopBrand;
+};
+
+/** Pagination metadata specific to &quot;DesktopBrandToAncestorsDesktopBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of DesktopBrandToAncestorsDesktopBrandConnection Nodes. */
+export type DesktopBrandToAncestorsDesktopBrandConnectionPageInfo = DesktopBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'DesktopBrandToAncestorsDesktopBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the DesktopBrand type and the ContentNode type */
+export type DesktopBrandToContentNodeConnection = Connection & ContentNodeConnection & {
+  __typename?: 'DesktopBrandToContentNodeConnection';
+  /** Edges for the DesktopBrandToContentNodeConnection connection */
+  edges: Array<DesktopBrandToContentNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ContentNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: DesktopBrandToContentNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type DesktopBrandToContentNodeConnectionEdge = ContentNodeConnectionEdge & Edge & {
+  __typename?: 'DesktopBrandToContentNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ContentNode;
+};
+
+/** Pagination metadata specific to &quot;DesktopBrandToContentNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of DesktopBrandToContentNodeConnection Nodes. */
+export type DesktopBrandToContentNodeConnectionPageInfo = ContentNodeConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'DesktopBrandToContentNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the DesktopBrandToContentNodeConnection connection */
+export type DesktopBrandToContentNodeConnectionWhereArgs = {
+  /** The Types of content to filter */
+  contentTypes: InputMaybe<Array<InputMaybe<ContentTypesOfDesktopBrandEnum>>>;
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the DesktopBrand type and the DesktopBrand type */
+export type DesktopBrandToDesktopBrandConnection = Connection & DesktopBrandConnection & {
+  __typename?: 'DesktopBrandToDesktopBrandConnection';
+  /** Edges for the DesktopBrandToDesktopBrandConnection connection */
+  edges: Array<DesktopBrandToDesktopBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<DesktopBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: DesktopBrandToDesktopBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type DesktopBrandToDesktopBrandConnectionEdge = DesktopBrandConnectionEdge & Edge & {
+  __typename?: 'DesktopBrandToDesktopBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: DesktopBrand;
+};
+
+/** Pagination metadata specific to &quot;DesktopBrandToDesktopBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of DesktopBrandToDesktopBrandConnection Nodes. */
+export type DesktopBrandToDesktopBrandConnectionPageInfo = DesktopBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'DesktopBrandToDesktopBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the DesktopBrandToDesktopBrandConnection connection */
+export type DesktopBrandToDesktopBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+/** Connection between the DesktopBrand type and the desktop type */
+export type DesktopBrandToDesktopConnection = Connection & DesktopConnection & {
+  __typename?: 'DesktopBrandToDesktopConnection';
+  /** Edges for the DesktopBrandToDesktopConnection connection */
+  edges: Array<DesktopBrandToDesktopConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<Desktop>;
+  /** Information about pagination in a connection. */
+  pageInfo: DesktopBrandToDesktopConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type DesktopBrandToDesktopConnectionEdge = DesktopConnectionEdge & Edge & {
+  __typename?: 'DesktopBrandToDesktopConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: Desktop;
+};
+
+/** Pagination metadata specific to &quot;DesktopBrandToDesktopConnection&quot; collections. Provides cursors and flags for navigating through sets of DesktopBrandToDesktopConnection Nodes. */
+export type DesktopBrandToDesktopConnectionPageInfo = DesktopConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'DesktopBrandToDesktopConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the DesktopBrandToDesktopConnection connection */
+export type DesktopBrandToDesktopConnectionWhereArgs = {
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the DesktopBrand type and the DesktopBrand type */
+export type DesktopBrandToParentDesktopBrandConnectionEdge = DesktopBrandConnectionEdge & Edge & OneToOneConnection & {
+  __typename?: 'DesktopBrandToParentDesktopBrandConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: DesktopBrand;
+};
+
+/** Connection between the DesktopBrand type and the Taxonomy type */
+export type DesktopBrandToTaxonomyConnectionEdge = Edge & OneToOneConnection & TaxonomyConnectionEdge & {
+  __typename?: 'DesktopBrandToTaxonomyConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: Taxonomy;
 };
 
 /** A paginated collection of desktop Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of desktop Nodes */
@@ -3078,6 +5234,26 @@ export type DesktopConnectionPageInfo = {
   startCursor: Maybe<Scalars['String']['output']>;
 };
 
+/** Set relationships between the desktop to DesktopBrands */
+export type DesktopDesktopBrandsInput = {
+  /** If true, this will append the DesktopBrand to existing related DesktopBrands. If false, this will replace existing relationships. Default true. */
+  append: InputMaybe<Scalars['Boolean']['input']>;
+  /** The input list of items to set. */
+  nodes: InputMaybe<Array<InputMaybe<DesktopDesktopBrandsNodeInput>>>;
+};
+
+/** List of DesktopBrands to connect the desktop to. If an ID is set, it will be used to create the connection. If not, it will look for a slug. If neither are valid existing terms, and the site is configured to allow terms to be created during post mutations, a term will be created using the Name if it exists in the input, then fallback to the slug if it exists. */
+export type DesktopDesktopBrandsNodeInput = {
+  /** The description of the DesktopBrand. This field is used to set a description of the DesktopBrand if a new one is created during the mutation. */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the DesktopBrand. If present, this will be used to connect to the desktop. If no existing DesktopBrand exists with this ID, no connection will be made. */
+  id: InputMaybe<Scalars['ID']['input']>;
+  /** The name of the DesktopBrand. This field is used to create a new term, if term creation is enabled in nested mutations, and if one does not already exist with the provided slug or ID or if a slug or ID is not provided. If no name is included and a term is created, the creation will fallback to the slug field. */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The slug of the DesktopBrand. If no ID is present, this field will be used to make a connection. If no existing term exists with this slug, this field will be used as a fallback to the Name field when creating a new term to connect to, if term creation is enabled as a nested mutation. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
 /** Identifier types for retrieving a specific Desktop. Specifies which unique attribute is used to find an exact Desktop. */
 export const DesktopIdType = {
   /** Identify a resource by the Database ID. */
@@ -3091,6 +5267,83 @@ export const DesktopIdType = {
 } as const;
 
 export type DesktopIdType = typeof DesktopIdType[keyof typeof DesktopIdType];
+/** Connection between the Desktop type and the DesktopBrand type */
+export type DesktopToDesktopBrandConnection = Connection & DesktopBrandConnection & {
+  __typename?: 'DesktopToDesktopBrandConnection';
+  /** Edges for the DesktopToDesktopBrandConnection connection */
+  edges: Array<DesktopToDesktopBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<DesktopBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: DesktopToDesktopBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type DesktopToDesktopBrandConnectionEdge = DesktopBrandConnectionEdge & Edge & {
+  __typename?: 'DesktopToDesktopBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: DesktopBrand;
+};
+
+/** Pagination metadata specific to &quot;DesktopToDesktopBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of DesktopToDesktopBrandConnection Nodes. */
+export type DesktopToDesktopBrandConnectionPageInfo = DesktopBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'DesktopToDesktopBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the DesktopToDesktopBrandConnection connection */
+export type DesktopToDesktopBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 /** Connection between the Desktop type and the desktop type */
 export type DesktopToDesktopConnection = Connection & DesktopConnection & {
   __typename?: 'DesktopToDesktopConnection';
@@ -3149,6 +5402,85 @@ export type DesktopToPreviewConnectionEdge = DesktopConnectionEdge & Edge & OneT
   cursor: Maybe<Scalars['String']['output']>;
   /** The node of the connection, without the edges */
   node: Desktop;
+};
+
+/** Connection between the Desktop type and the TermNode type */
+export type DesktopToTermNodeConnection = Connection & TermNodeConnection & {
+  __typename?: 'DesktopToTermNodeConnection';
+  /** Edges for the DesktopToTermNodeConnection connection */
+  edges: Array<DesktopToTermNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TermNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: DesktopToTermNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type DesktopToTermNodeConnectionEdge = Edge & TermNodeConnectionEdge & {
+  __typename?: 'DesktopToTermNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TermNode;
+};
+
+/** Pagination metadata specific to &quot;DesktopToTermNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of DesktopToTermNodeConnection Nodes. */
+export type DesktopToTermNodeConnectionPageInfo = PageInfo & TermNodeConnectionPageInfo & WpPageInfo & {
+  __typename?: 'DesktopToTermNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the DesktopToTermNodeConnection connection */
+export type DesktopToTermNodeConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** The Taxonomy to filter terms by */
+  taxonomies: InputMaybe<Array<InputMaybe<TaxonomyEnum>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** The &quot;Device&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
@@ -3645,6 +5977,47 @@ export const FaqIdType = {
 } as const;
 
 export type FaqIdType = typeof FaqIdType[keyof typeof FaqIdType];
+/** The &quot;FaqSection&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type FaqSection = AcfFieldGroup & AcfFieldGroupFields & FaqSection_Fields & {
+  __typename?: 'FaqSection';
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;post_object&quot; Field Type added to the schema as part of the &quot;FaqSection&quot; Field Group */
+  singleFaq: Maybe<AcfContentNodeConnection>;
+};
+
+
+/** The &quot;FaqSection&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type FaqSectionSingleFaqArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+/** Interface representing fields of the ACF &quot;FaqSection&quot; Field Group */
+export type FaqSection_Fields = {
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;post_object&quot; Field Type added to the schema as part of the &quot;FaqSection&quot; Field Group */
+  singleFaq: Maybe<AcfContentNodeConnection>;
+};
+
+
+/** Interface representing fields of the ACF &quot;FaqSection&quot; Field Group */
+export type FaqSection_FieldsSingleFaqArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
 /** Connection between the Faq type and the faq type */
 export type FaqToFaqConnection = Connection & FaqConnection & {
   __typename?: 'FaqToFaqConnection';
@@ -4218,6 +6591,8 @@ export type Laptop = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node 
   isRestricted: Maybe<Scalars['Boolean']['output']>;
   /** Whether the node is a Term */
   isTermNode: Scalars['Boolean']['output'];
+  /** Connection between the Laptop type and the LaptopBrand type */
+  laptopBrands: Maybe<LaptopToLaptopBrandConnection>;
   /**
    * The id field matches the WP_Post-&gt;ID field.
    * @deprecated Deprecated in favor of the databaseId field
@@ -4250,6 +6625,8 @@ export type Laptop = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node 
   status: Maybe<Scalars['String']['output']>;
   /** The template assigned to the node */
   template: Maybe<ContentTemplate>;
+  /** Connection between the Laptop type and the TermNode type */
+  terms: Maybe<LaptopToTermNodeConnection>;
   /** The title of the post. This is currently just the raw title. An amendment to support rendered title needs to be made. */
   title: Maybe<Scalars['String']['output']>;
   /** The unique resource identifier path */
@@ -4285,8 +6662,466 @@ export type LaptopEnqueuedStylesheetsArgs = {
 
 
 /** The laptop type */
+export type LaptopLaptopBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<LaptopToLaptopBrandConnectionWhereArgs>;
+};
+
+
+/** The laptop type */
+export type LaptopTermsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<LaptopToTermNodeConnectionWhereArgs>;
+};
+
+
+/** The laptop type */
 export type LaptopTitleArgs = {
   format: InputMaybe<PostObjectFieldFormatEnum>;
+};
+
+/** The LaptopBrand type */
+export type LaptopBrand = DatabaseIdentifier & HierarchicalNode & HierarchicalTermNode & MenuItemLinkable & Node & TermNode & UniformResourceIdentifiable & {
+  __typename?: 'LaptopBrand';
+  /** The ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
+  ancestors: Maybe<LaptopBrandToAncestorsLaptopBrandConnection>;
+  /** Connection between the LaptopBrand type and its children LaptopBrands. */
+  children: Maybe<LaptopBrandToLaptopBrandConnection>;
+  /** Connection between the LaptopBrand type and the ContentNode type */
+  contentNodes: Maybe<LaptopBrandToContentNodeConnection>;
+  /** The number of objects connected to the object */
+  count: Maybe<Scalars['Int']['output']>;
+  /** The unique identifier stored in the database */
+  databaseId: Scalars['Int']['output'];
+  /** The description of the object */
+  description: Maybe<Scalars['String']['output']>;
+  /** Connection between the TermNode type and the EnqueuedScript type */
+  enqueuedScripts: Maybe<TermNodeToEnqueuedScriptConnection>;
+  /** Connection between the TermNode type and the EnqueuedStylesheet type */
+  enqueuedStylesheets: Maybe<TermNodeToEnqueuedStylesheetConnection>;
+  /** The globally unique ID for the object */
+  id: Scalars['ID']['output'];
+  /** Whether the node is a Comment */
+  isComment: Scalars['Boolean']['output'];
+  /** Whether the node is a Content Node */
+  isContentNode: Scalars['Boolean']['output'];
+  /** Whether the node represents the front page. */
+  isFrontPage: Scalars['Boolean']['output'];
+  /** Whether  the node represents the blog page. */
+  isPostsPage: Scalars['Boolean']['output'];
+  /** Whether the object is restricted from the current viewer */
+  isRestricted: Maybe<Scalars['Boolean']['output']>;
+  /** Whether the node is a Term */
+  isTermNode: Scalars['Boolean']['output'];
+  /**
+   * The id field matches the WP_Post-&gt;ID field.
+   * @deprecated Deprecated in favor of databaseId
+   */
+  laptopBrandId: Maybe<Scalars['Int']['output']>;
+  /** Connection between the LaptopBrand type and the laptop type */
+  laptops: Maybe<LaptopBrandToLaptopConnection>;
+  /** The link to the term */
+  link: Maybe<Scalars['String']['output']>;
+  /** The human friendly name of the object. */
+  name: Maybe<Scalars['String']['output']>;
+  /** Connection between the LaptopBrand type and its parent LaptopBrand. */
+  parent: Maybe<LaptopBrandToParentLaptopBrandConnectionEdge>;
+  /** Database id of the parent node */
+  parentDatabaseId: Maybe<Scalars['Int']['output']>;
+  /** The globally unique identifier of the parent node. */
+  parentId: Maybe<Scalars['ID']['output']>;
+  /** An alphanumeric identifier for the object unique to its type. */
+  slug: Maybe<Scalars['String']['output']>;
+  /** Connection between the LaptopBrand type and the Taxonomy type */
+  taxonomy: Maybe<LaptopBrandToTaxonomyConnectionEdge>;
+  /** The name of the taxonomy that the object is associated with */
+  taxonomyName: Maybe<Scalars['String']['output']>;
+  /** The ID of the term group that this term object belongs to */
+  termGroupId: Maybe<Scalars['Int']['output']>;
+  /** The taxonomy ID that the object is associated with */
+  termTaxonomyId: Maybe<Scalars['Int']['output']>;
+  /** The unique resource identifier path */
+  uri: Maybe<Scalars['String']['output']>;
+};
+
+
+/** The LaptopBrand type */
+export type LaptopBrandAncestorsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The LaptopBrand type */
+export type LaptopBrandChildrenArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<LaptopBrandToLaptopBrandConnectionWhereArgs>;
+};
+
+
+/** The LaptopBrand type */
+export type LaptopBrandContentNodesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<LaptopBrandToContentNodeConnectionWhereArgs>;
+};
+
+
+/** The LaptopBrand type */
+export type LaptopBrandEnqueuedScriptsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The LaptopBrand type */
+export type LaptopBrandEnqueuedStylesheetsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The LaptopBrand type */
+export type LaptopBrandLaptopsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<LaptopBrandToLaptopConnectionWhereArgs>;
+};
+
+/** A paginated collection of LaptopBrand Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of LaptopBrand Nodes */
+export type LaptopBrandConnection = {
+  /** A list of edges (relational context) between RootQuery and connected LaptopBrand Nodes */
+  edges: Array<LaptopBrandConnectionEdge>;
+  /** A list of connected LaptopBrand Nodes */
+  nodes: Array<LaptopBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: LaptopBrandConnectionPageInfo;
+};
+
+/** Represents a connection to a LaptopBrand. Contains both the LaptopBrand Node and metadata about the relationship. */
+export type LaptopBrandConnectionEdge = {
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The connected LaptopBrand Node */
+  node: LaptopBrand;
+};
+
+/** Pagination metadata specific to &quot;LaptopBrandConnectionEdge&quot; collections. Provides cursors and flags for navigating through sets of &quot;LaptopBrandConnectionEdge&quot; Nodes. */
+export type LaptopBrandConnectionPageInfo = {
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Identifier types for retrieving a specific LaptopBrand. Determines which unique property (global ID, database ID, slug, etc.) is used to locate the LaptopBrand. */
+export const LaptopBrandIdType = {
+  /** The Database ID for the node */
+  DatabaseId: 'DATABASE_ID',
+  /** The hashed Global ID */
+  Id: 'ID',
+  /** The name of the node */
+  Name: 'NAME',
+  /** Url friendly name of the node */
+  Slug: 'SLUG',
+  /** The URI for the node */
+  Uri: 'URI'
+} as const;
+
+export type LaptopBrandIdType = typeof LaptopBrandIdType[keyof typeof LaptopBrandIdType];
+/** Connection between the LaptopBrand type and the LaptopBrand type */
+export type LaptopBrandToAncestorsLaptopBrandConnection = Connection & LaptopBrandConnection & {
+  __typename?: 'LaptopBrandToAncestorsLaptopBrandConnection';
+  /** Edges for the LaptopBrandToAncestorsLaptopBrandConnection connection */
+  edges: Array<LaptopBrandToAncestorsLaptopBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<LaptopBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: LaptopBrandToAncestorsLaptopBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type LaptopBrandToAncestorsLaptopBrandConnectionEdge = Edge & LaptopBrandConnectionEdge & {
+  __typename?: 'LaptopBrandToAncestorsLaptopBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: LaptopBrand;
+};
+
+/** Pagination metadata specific to &quot;LaptopBrandToAncestorsLaptopBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of LaptopBrandToAncestorsLaptopBrandConnection Nodes. */
+export type LaptopBrandToAncestorsLaptopBrandConnectionPageInfo = LaptopBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'LaptopBrandToAncestorsLaptopBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the LaptopBrand type and the ContentNode type */
+export type LaptopBrandToContentNodeConnection = Connection & ContentNodeConnection & {
+  __typename?: 'LaptopBrandToContentNodeConnection';
+  /** Edges for the LaptopBrandToContentNodeConnection connection */
+  edges: Array<LaptopBrandToContentNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ContentNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: LaptopBrandToContentNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type LaptopBrandToContentNodeConnectionEdge = ContentNodeConnectionEdge & Edge & {
+  __typename?: 'LaptopBrandToContentNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ContentNode;
+};
+
+/** Pagination metadata specific to &quot;LaptopBrandToContentNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of LaptopBrandToContentNodeConnection Nodes. */
+export type LaptopBrandToContentNodeConnectionPageInfo = ContentNodeConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'LaptopBrandToContentNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the LaptopBrandToContentNodeConnection connection */
+export type LaptopBrandToContentNodeConnectionWhereArgs = {
+  /** The Types of content to filter */
+  contentTypes: InputMaybe<Array<InputMaybe<ContentTypesOfLaptopBrandEnum>>>;
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the LaptopBrand type and the LaptopBrand type */
+export type LaptopBrandToLaptopBrandConnection = Connection & LaptopBrandConnection & {
+  __typename?: 'LaptopBrandToLaptopBrandConnection';
+  /** Edges for the LaptopBrandToLaptopBrandConnection connection */
+  edges: Array<LaptopBrandToLaptopBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<LaptopBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: LaptopBrandToLaptopBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type LaptopBrandToLaptopBrandConnectionEdge = Edge & LaptopBrandConnectionEdge & {
+  __typename?: 'LaptopBrandToLaptopBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: LaptopBrand;
+};
+
+/** Pagination metadata specific to &quot;LaptopBrandToLaptopBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of LaptopBrandToLaptopBrandConnection Nodes. */
+export type LaptopBrandToLaptopBrandConnectionPageInfo = LaptopBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'LaptopBrandToLaptopBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the LaptopBrandToLaptopBrandConnection connection */
+export type LaptopBrandToLaptopBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+/** Connection between the LaptopBrand type and the laptop type */
+export type LaptopBrandToLaptopConnection = Connection & LaptopConnection & {
+  __typename?: 'LaptopBrandToLaptopConnection';
+  /** Edges for the LaptopBrandToLaptopConnection connection */
+  edges: Array<LaptopBrandToLaptopConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<Laptop>;
+  /** Information about pagination in a connection. */
+  pageInfo: LaptopBrandToLaptopConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type LaptopBrandToLaptopConnectionEdge = Edge & LaptopConnectionEdge & {
+  __typename?: 'LaptopBrandToLaptopConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: Laptop;
+};
+
+/** Pagination metadata specific to &quot;LaptopBrandToLaptopConnection&quot; collections. Provides cursors and flags for navigating through sets of LaptopBrandToLaptopConnection Nodes. */
+export type LaptopBrandToLaptopConnectionPageInfo = LaptopConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'LaptopBrandToLaptopConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the LaptopBrandToLaptopConnection connection */
+export type LaptopBrandToLaptopConnectionWhereArgs = {
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the LaptopBrand type and the LaptopBrand type */
+export type LaptopBrandToParentLaptopBrandConnectionEdge = Edge & LaptopBrandConnectionEdge & OneToOneConnection & {
+  __typename?: 'LaptopBrandToParentLaptopBrandConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: LaptopBrand;
+};
+
+/** Connection between the LaptopBrand type and the Taxonomy type */
+export type LaptopBrandToTaxonomyConnectionEdge = Edge & OneToOneConnection & TaxonomyConnectionEdge & {
+  __typename?: 'LaptopBrandToTaxonomyConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: Taxonomy;
 };
 
 /** A paginated collection of laptop Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of laptop Nodes */
@@ -4332,6 +7167,103 @@ export const LaptopIdType = {
 } as const;
 
 export type LaptopIdType = typeof LaptopIdType[keyof typeof LaptopIdType];
+/** Set relationships between the laptop to LaptopBrands */
+export type LaptopLaptopBrandsInput = {
+  /** If true, this will append the LaptopBrand to existing related LaptopBrands. If false, this will replace existing relationships. Default true. */
+  append: InputMaybe<Scalars['Boolean']['input']>;
+  /** The input list of items to set. */
+  nodes: InputMaybe<Array<InputMaybe<LaptopLaptopBrandsNodeInput>>>;
+};
+
+/** List of LaptopBrands to connect the laptop to. If an ID is set, it will be used to create the connection. If not, it will look for a slug. If neither are valid existing terms, and the site is configured to allow terms to be created during post mutations, a term will be created using the Name if it exists in the input, then fallback to the slug if it exists. */
+export type LaptopLaptopBrandsNodeInput = {
+  /** The description of the LaptopBrand. This field is used to set a description of the LaptopBrand if a new one is created during the mutation. */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the LaptopBrand. If present, this will be used to connect to the laptop. If no existing LaptopBrand exists with this ID, no connection will be made. */
+  id: InputMaybe<Scalars['ID']['input']>;
+  /** The name of the LaptopBrand. This field is used to create a new term, if term creation is enabled in nested mutations, and if one does not already exist with the provided slug or ID or if a slug or ID is not provided. If no name is included and a term is created, the creation will fallback to the slug field. */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The slug of the LaptopBrand. If no ID is present, this field will be used to make a connection. If no existing term exists with this slug, this field will be used as a fallback to the Name field when creating a new term to connect to, if term creation is enabled as a nested mutation. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the Laptop type and the LaptopBrand type */
+export type LaptopToLaptopBrandConnection = Connection & LaptopBrandConnection & {
+  __typename?: 'LaptopToLaptopBrandConnection';
+  /** Edges for the LaptopToLaptopBrandConnection connection */
+  edges: Array<LaptopToLaptopBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<LaptopBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: LaptopToLaptopBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type LaptopToLaptopBrandConnectionEdge = Edge & LaptopBrandConnectionEdge & {
+  __typename?: 'LaptopToLaptopBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: LaptopBrand;
+};
+
+/** Pagination metadata specific to &quot;LaptopToLaptopBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of LaptopToLaptopBrandConnection Nodes. */
+export type LaptopToLaptopBrandConnectionPageInfo = LaptopBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'LaptopToLaptopBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the LaptopToLaptopBrandConnection connection */
+export type LaptopToLaptopBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 /** Connection between the Laptop type and the laptop type */
 export type LaptopToLaptopConnection = Connection & LaptopConnection & {
   __typename?: 'LaptopToLaptopConnection';
@@ -4390,6 +7322,85 @@ export type LaptopToPreviewConnectionEdge = Edge & LaptopConnectionEdge & OneToO
   cursor: Maybe<Scalars['String']['output']>;
   /** The node of the connection, without the edges */
   node: Laptop;
+};
+
+/** Connection between the Laptop type and the TermNode type */
+export type LaptopToTermNodeConnection = Connection & TermNodeConnection & {
+  __typename?: 'LaptopToTermNodeConnection';
+  /** Edges for the LaptopToTermNodeConnection connection */
+  edges: Array<LaptopToTermNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TermNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: LaptopToTermNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type LaptopToTermNodeConnectionEdge = Edge & TermNodeConnectionEdge & {
+  __typename?: 'LaptopToTermNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TermNode;
+};
+
+/** Pagination metadata specific to &quot;LaptopToTermNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of LaptopToTermNodeConnection Nodes. */
+export type LaptopToTermNodeConnectionPageInfo = PageInfo & TermNodeConnectionPageInfo & WpPageInfo & {
+  __typename?: 'LaptopToTermNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the LaptopToTermNodeConnection connection */
+export type LaptopToTermNodeConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** The Taxonomy to filter terms by */
+  taxonomies: InputMaybe<Array<InputMaybe<TaxonomyEnum>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** File details for a Media Item */
@@ -5057,7 +8068,7 @@ export const MenuItemNodeIdTypeEnum = {
 
 export type MenuItemNodeIdTypeEnum = typeof MenuItemNodeIdTypeEnum[keyof typeof MenuItemNodeIdTypeEnum];
 /** Deprecated in favor of MenuItemLinkeable Interface */
-export type MenuItemObjectUnion = All_In_One | Category | Console | Desktop | Faq | Laptop | Page | Phone | Post | Tablet | Tag | Watch;
+export type MenuItemObjectUnion = AllInOneBrand | All_In_One | Category | Console | ConsoleBrand | Desktop | DesktopBrand | Faq | Laptop | LaptopBrand | Page | Phone | PhoneBrand | Post | Tablet | TabletBrand | Tag | Watch | WatchBrand;
 
 /** Connection between the MenuItem type and the Menu type */
 export type MenuItemToMenuConnectionEdge = Edge & MenuConnectionEdge & OneToOneConnection & {
@@ -5932,6 +8943,8 @@ export type Phone = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node &
   parent: Maybe<PhoneToParentConnectionEdge>;
   /** The password for the phone object. */
   password: Maybe<Scalars['String']['output']>;
+  /** Connection between the Phone type and the PhoneBrand type */
+  phoneBrands: Maybe<PhoneToPhoneBrandConnection>;
   /**
    * The id field matches the WP_Post-&gt;ID field.
    * @deprecated Deprecated in favor of the databaseId field
@@ -5949,6 +8962,8 @@ export type Phone = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node &
   status: Maybe<Scalars['String']['output']>;
   /** The template assigned to the node */
   template: Maybe<ContentTemplate>;
+  /** Connection between the Phone type and the TermNode type */
+  terms: Maybe<PhoneToTermNodeConnection>;
   /** The title of the post. This is currently just the raw title. An amendment to support rendered title needs to be made. */
   title: Maybe<Scalars['String']['output']>;
   /** The unique resource identifier path */
@@ -5984,8 +8999,466 @@ export type PhoneEnqueuedStylesheetsArgs = {
 
 
 /** The phone type */
+export type PhonePhoneBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<PhoneToPhoneBrandConnectionWhereArgs>;
+};
+
+
+/** The phone type */
+export type PhoneTermsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<PhoneToTermNodeConnectionWhereArgs>;
+};
+
+
+/** The phone type */
 export type PhoneTitleArgs = {
   format: InputMaybe<PostObjectFieldFormatEnum>;
+};
+
+/** The PhoneBrand type */
+export type PhoneBrand = DatabaseIdentifier & HierarchicalNode & HierarchicalTermNode & MenuItemLinkable & Node & TermNode & UniformResourceIdentifiable & {
+  __typename?: 'PhoneBrand';
+  /** The ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
+  ancestors: Maybe<PhoneBrandToAncestorsPhoneBrandConnection>;
+  /** Connection between the PhoneBrand type and its children PhoneBrands. */
+  children: Maybe<PhoneBrandToPhoneBrandConnection>;
+  /** Connection between the PhoneBrand type and the ContentNode type */
+  contentNodes: Maybe<PhoneBrandToContentNodeConnection>;
+  /** The number of objects connected to the object */
+  count: Maybe<Scalars['Int']['output']>;
+  /** The unique identifier stored in the database */
+  databaseId: Scalars['Int']['output'];
+  /** The description of the object */
+  description: Maybe<Scalars['String']['output']>;
+  /** Connection between the TermNode type and the EnqueuedScript type */
+  enqueuedScripts: Maybe<TermNodeToEnqueuedScriptConnection>;
+  /** Connection between the TermNode type and the EnqueuedStylesheet type */
+  enqueuedStylesheets: Maybe<TermNodeToEnqueuedStylesheetConnection>;
+  /** The globally unique ID for the object */
+  id: Scalars['ID']['output'];
+  /** Whether the node is a Comment */
+  isComment: Scalars['Boolean']['output'];
+  /** Whether the node is a Content Node */
+  isContentNode: Scalars['Boolean']['output'];
+  /** Whether the node represents the front page. */
+  isFrontPage: Scalars['Boolean']['output'];
+  /** Whether  the node represents the blog page. */
+  isPostsPage: Scalars['Boolean']['output'];
+  /** Whether the object is restricted from the current viewer */
+  isRestricted: Maybe<Scalars['Boolean']['output']>;
+  /** Whether the node is a Term */
+  isTermNode: Scalars['Boolean']['output'];
+  /** The link to the term */
+  link: Maybe<Scalars['String']['output']>;
+  /** The human friendly name of the object. */
+  name: Maybe<Scalars['String']['output']>;
+  /** Connection between the PhoneBrand type and its parent PhoneBrand. */
+  parent: Maybe<PhoneBrandToParentPhoneBrandConnectionEdge>;
+  /** Database id of the parent node */
+  parentDatabaseId: Maybe<Scalars['Int']['output']>;
+  /** The globally unique identifier of the parent node. */
+  parentId: Maybe<Scalars['ID']['output']>;
+  /**
+   * The id field matches the WP_Post-&gt;ID field.
+   * @deprecated Deprecated in favor of databaseId
+   */
+  phoneBrandId: Maybe<Scalars['Int']['output']>;
+  /** Connection between the PhoneBrand type and the phone type */
+  phones: Maybe<PhoneBrandToPhoneConnection>;
+  /** An alphanumeric identifier for the object unique to its type. */
+  slug: Maybe<Scalars['String']['output']>;
+  /** Connection between the PhoneBrand type and the Taxonomy type */
+  taxonomy: Maybe<PhoneBrandToTaxonomyConnectionEdge>;
+  /** The name of the taxonomy that the object is associated with */
+  taxonomyName: Maybe<Scalars['String']['output']>;
+  /** The ID of the term group that this term object belongs to */
+  termGroupId: Maybe<Scalars['Int']['output']>;
+  /** The taxonomy ID that the object is associated with */
+  termTaxonomyId: Maybe<Scalars['Int']['output']>;
+  /** The unique resource identifier path */
+  uri: Maybe<Scalars['String']['output']>;
+};
+
+
+/** The PhoneBrand type */
+export type PhoneBrandAncestorsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The PhoneBrand type */
+export type PhoneBrandChildrenArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<PhoneBrandToPhoneBrandConnectionWhereArgs>;
+};
+
+
+/** The PhoneBrand type */
+export type PhoneBrandContentNodesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<PhoneBrandToContentNodeConnectionWhereArgs>;
+};
+
+
+/** The PhoneBrand type */
+export type PhoneBrandEnqueuedScriptsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The PhoneBrand type */
+export type PhoneBrandEnqueuedStylesheetsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The PhoneBrand type */
+export type PhoneBrandPhonesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<PhoneBrandToPhoneConnectionWhereArgs>;
+};
+
+/** A paginated collection of PhoneBrand Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of PhoneBrand Nodes */
+export type PhoneBrandConnection = {
+  /** A list of edges (relational context) between RootQuery and connected PhoneBrand Nodes */
+  edges: Array<PhoneBrandConnectionEdge>;
+  /** A list of connected PhoneBrand Nodes */
+  nodes: Array<PhoneBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: PhoneBrandConnectionPageInfo;
+};
+
+/** Represents a connection to a PhoneBrand. Contains both the PhoneBrand Node and metadata about the relationship. */
+export type PhoneBrandConnectionEdge = {
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The connected PhoneBrand Node */
+  node: PhoneBrand;
+};
+
+/** Pagination metadata specific to &quot;PhoneBrandConnectionEdge&quot; collections. Provides cursors and flags for navigating through sets of &quot;PhoneBrandConnectionEdge&quot; Nodes. */
+export type PhoneBrandConnectionPageInfo = {
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Identifier types for retrieving a specific PhoneBrand. Determines which unique property (global ID, database ID, slug, etc.) is used to locate the PhoneBrand. */
+export const PhoneBrandIdType = {
+  /** The Database ID for the node */
+  DatabaseId: 'DATABASE_ID',
+  /** The hashed Global ID */
+  Id: 'ID',
+  /** The name of the node */
+  Name: 'NAME',
+  /** Url friendly name of the node */
+  Slug: 'SLUG',
+  /** The URI for the node */
+  Uri: 'URI'
+} as const;
+
+export type PhoneBrandIdType = typeof PhoneBrandIdType[keyof typeof PhoneBrandIdType];
+/** Connection between the PhoneBrand type and the PhoneBrand type */
+export type PhoneBrandToAncestorsPhoneBrandConnection = Connection & PhoneBrandConnection & {
+  __typename?: 'PhoneBrandToAncestorsPhoneBrandConnection';
+  /** Edges for the PhoneBrandToAncestorsPhoneBrandConnection connection */
+  edges: Array<PhoneBrandToAncestorsPhoneBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<PhoneBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: PhoneBrandToAncestorsPhoneBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type PhoneBrandToAncestorsPhoneBrandConnectionEdge = Edge & PhoneBrandConnectionEdge & {
+  __typename?: 'PhoneBrandToAncestorsPhoneBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: PhoneBrand;
+};
+
+/** Pagination metadata specific to &quot;PhoneBrandToAncestorsPhoneBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of PhoneBrandToAncestorsPhoneBrandConnection Nodes. */
+export type PhoneBrandToAncestorsPhoneBrandConnectionPageInfo = PageInfo & PhoneBrandConnectionPageInfo & WpPageInfo & {
+  __typename?: 'PhoneBrandToAncestorsPhoneBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the PhoneBrand type and the ContentNode type */
+export type PhoneBrandToContentNodeConnection = Connection & ContentNodeConnection & {
+  __typename?: 'PhoneBrandToContentNodeConnection';
+  /** Edges for the PhoneBrandToContentNodeConnection connection */
+  edges: Array<PhoneBrandToContentNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ContentNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: PhoneBrandToContentNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type PhoneBrandToContentNodeConnectionEdge = ContentNodeConnectionEdge & Edge & {
+  __typename?: 'PhoneBrandToContentNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ContentNode;
+};
+
+/** Pagination metadata specific to &quot;PhoneBrandToContentNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of PhoneBrandToContentNodeConnection Nodes. */
+export type PhoneBrandToContentNodeConnectionPageInfo = ContentNodeConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'PhoneBrandToContentNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the PhoneBrandToContentNodeConnection connection */
+export type PhoneBrandToContentNodeConnectionWhereArgs = {
+  /** The Types of content to filter */
+  contentTypes: InputMaybe<Array<InputMaybe<ContentTypesOfPhoneBrandEnum>>>;
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the PhoneBrand type and the PhoneBrand type */
+export type PhoneBrandToParentPhoneBrandConnectionEdge = Edge & OneToOneConnection & PhoneBrandConnectionEdge & {
+  __typename?: 'PhoneBrandToParentPhoneBrandConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: PhoneBrand;
+};
+
+/** Connection between the PhoneBrand type and the PhoneBrand type */
+export type PhoneBrandToPhoneBrandConnection = Connection & PhoneBrandConnection & {
+  __typename?: 'PhoneBrandToPhoneBrandConnection';
+  /** Edges for the PhoneBrandToPhoneBrandConnection connection */
+  edges: Array<PhoneBrandToPhoneBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<PhoneBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: PhoneBrandToPhoneBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type PhoneBrandToPhoneBrandConnectionEdge = Edge & PhoneBrandConnectionEdge & {
+  __typename?: 'PhoneBrandToPhoneBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: PhoneBrand;
+};
+
+/** Pagination metadata specific to &quot;PhoneBrandToPhoneBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of PhoneBrandToPhoneBrandConnection Nodes. */
+export type PhoneBrandToPhoneBrandConnectionPageInfo = PageInfo & PhoneBrandConnectionPageInfo & WpPageInfo & {
+  __typename?: 'PhoneBrandToPhoneBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the PhoneBrandToPhoneBrandConnection connection */
+export type PhoneBrandToPhoneBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+/** Connection between the PhoneBrand type and the phone type */
+export type PhoneBrandToPhoneConnection = Connection & PhoneConnection & {
+  __typename?: 'PhoneBrandToPhoneConnection';
+  /** Edges for the PhoneBrandToPhoneConnection connection */
+  edges: Array<PhoneBrandToPhoneConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<Phone>;
+  /** Information about pagination in a connection. */
+  pageInfo: PhoneBrandToPhoneConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type PhoneBrandToPhoneConnectionEdge = Edge & PhoneConnectionEdge & {
+  __typename?: 'PhoneBrandToPhoneConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: Phone;
+};
+
+/** Pagination metadata specific to &quot;PhoneBrandToPhoneConnection&quot; collections. Provides cursors and flags for navigating through sets of PhoneBrandToPhoneConnection Nodes. */
+export type PhoneBrandToPhoneConnectionPageInfo = PageInfo & PhoneConnectionPageInfo & WpPageInfo & {
+  __typename?: 'PhoneBrandToPhoneConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the PhoneBrandToPhoneConnection connection */
+export type PhoneBrandToPhoneConnectionWhereArgs = {
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the PhoneBrand type and the Taxonomy type */
+export type PhoneBrandToTaxonomyConnectionEdge = Edge & OneToOneConnection & TaxonomyConnectionEdge & {
+  __typename?: 'PhoneBrandToTaxonomyConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: Taxonomy;
 };
 
 /** A paginated collection of phone Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of phone Nodes */
@@ -6031,6 +9504,26 @@ export const PhoneIdType = {
 } as const;
 
 export type PhoneIdType = typeof PhoneIdType[keyof typeof PhoneIdType];
+/** Set relationships between the phone to PhoneBrands */
+export type PhonePhoneBrandsInput = {
+  /** If true, this will append the PhoneBrand to existing related PhoneBrands. If false, this will replace existing relationships. Default true. */
+  append: InputMaybe<Scalars['Boolean']['input']>;
+  /** The input list of items to set. */
+  nodes: InputMaybe<Array<InputMaybe<PhonePhoneBrandsNodeInput>>>;
+};
+
+/** List of PhoneBrands to connect the phone to. If an ID is set, it will be used to create the connection. If not, it will look for a slug. If neither are valid existing terms, and the site is configured to allow terms to be created during post mutations, a term will be created using the Name if it exists in the input, then fallback to the slug if it exists. */
+export type PhonePhoneBrandsNodeInput = {
+  /** The description of the PhoneBrand. This field is used to set a description of the PhoneBrand if a new one is created during the mutation. */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the PhoneBrand. If present, this will be used to connect to the phone. If no existing PhoneBrand exists with this ID, no connection will be made. */
+  id: InputMaybe<Scalars['ID']['input']>;
+  /** The name of the PhoneBrand. This field is used to create a new term, if term creation is enabled in nested mutations, and if one does not already exist with the provided slug or ID or if a slug or ID is not provided. If no name is included and a term is created, the creation will fallback to the slug field. */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The slug of the PhoneBrand. If no ID is present, this field will be used to make a connection. If no existing term exists with this slug, this field will be used as a fallback to the Name field when creating a new term to connect to, if term creation is enabled as a nested mutation. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
 /** Connection between the Phone type and the phone type */
 export type PhoneToParentConnectionEdge = Edge & OneToOneConnection & PhoneConnectionEdge & {
   __typename?: 'PhoneToParentConnectionEdge';
@@ -6041,6 +9534,83 @@ export type PhoneToParentConnectionEdge = Edge & OneToOneConnection & PhoneConne
    * @deprecated This content type is not hierarchical and typically will not have a parent
    */
   node: Phone;
+};
+
+/** Connection between the Phone type and the PhoneBrand type */
+export type PhoneToPhoneBrandConnection = Connection & PhoneBrandConnection & {
+  __typename?: 'PhoneToPhoneBrandConnection';
+  /** Edges for the PhoneToPhoneBrandConnection connection */
+  edges: Array<PhoneToPhoneBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<PhoneBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: PhoneToPhoneBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type PhoneToPhoneBrandConnectionEdge = Edge & PhoneBrandConnectionEdge & {
+  __typename?: 'PhoneToPhoneBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: PhoneBrand;
+};
+
+/** Pagination metadata specific to &quot;PhoneToPhoneBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of PhoneToPhoneBrandConnection Nodes. */
+export type PhoneToPhoneBrandConnectionPageInfo = PageInfo & PhoneBrandConnectionPageInfo & WpPageInfo & {
+  __typename?: 'PhoneToPhoneBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the PhoneToPhoneBrandConnection connection */
+export type PhoneToPhoneBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** Connection between the Phone type and the phone type */
@@ -6089,6 +9659,85 @@ export type PhoneToPreviewConnectionEdge = Edge & OneToOneConnection & PhoneConn
   cursor: Maybe<Scalars['String']['output']>;
   /** The node of the connection, without the edges */
   node: Phone;
+};
+
+/** Connection between the Phone type and the TermNode type */
+export type PhoneToTermNodeConnection = Connection & TermNodeConnection & {
+  __typename?: 'PhoneToTermNodeConnection';
+  /** Edges for the PhoneToTermNodeConnection connection */
+  edges: Array<PhoneToTermNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TermNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: PhoneToTermNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type PhoneToTermNodeConnectionEdge = Edge & TermNodeConnectionEdge & {
+  __typename?: 'PhoneToTermNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TermNode;
+};
+
+/** Pagination metadata specific to &quot;PhoneToTermNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of PhoneToTermNodeConnection Nodes. */
+export type PhoneToTermNodeConnectionPageInfo = PageInfo & TermNodeConnectionPageInfo & WpPageInfo & {
+  __typename?: 'PhoneToTermNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the PhoneToTermNodeConnection connection */
+export type PhoneToTermNodeConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** The Taxonomy to filter terms by */
+  taxonomies: InputMaybe<Array<InputMaybe<TaxonomyEnum>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** An plugin object */
@@ -7531,6 +11180,8 @@ export type RestoreCommentPayload = {
 /** The root mutation */
 export type RootMutation = {
   __typename?: 'RootMutation';
+  /** The createAllInOneBrand mutation */
+  createAllInOneBrand: Maybe<CreateAllInOneBrandPayload>;
   /** The createAll_in_one mutation */
   createAll_in_one: Maybe<CreateAll_In_OnePayload>;
   /** The createCategory mutation */
@@ -7539,30 +11190,44 @@ export type RootMutation = {
   createComment: Maybe<CreateCommentPayload>;
   /** The createConsole mutation */
   createConsole: Maybe<CreateConsolePayload>;
+  /** The createConsoleBrand mutation */
+  createConsoleBrand: Maybe<CreateConsoleBrandPayload>;
   /** The createDesktop mutation */
   createDesktop: Maybe<CreateDesktopPayload>;
+  /** The createDesktopBrand mutation */
+  createDesktopBrand: Maybe<CreateDesktopBrandPayload>;
   /** The createFaq mutation */
   createFaq: Maybe<CreateFaqPayload>;
   /** The createLaptop mutation */
   createLaptop: Maybe<CreateLaptopPayload>;
+  /** The createLaptopBrand mutation */
+  createLaptopBrand: Maybe<CreateLaptopBrandPayload>;
   /** The createMediaItem mutation */
   createMediaItem: Maybe<CreateMediaItemPayload>;
   /** The createPage mutation */
   createPage: Maybe<CreatePagePayload>;
   /** The createPhone mutation */
   createPhone: Maybe<CreatePhonePayload>;
+  /** The createPhoneBrand mutation */
+  createPhoneBrand: Maybe<CreatePhoneBrandPayload>;
   /** The createPost mutation */
   createPost: Maybe<CreatePostPayload>;
   /** The createPostFormat mutation */
   createPostFormat: Maybe<CreatePostFormatPayload>;
   /** The createTablet mutation */
   createTablet: Maybe<CreateTabletPayload>;
+  /** The createTabletBrand mutation */
+  createTabletBrand: Maybe<CreateTabletBrandPayload>;
   /** The createTag mutation */
   createTag: Maybe<CreateTagPayload>;
   /** The createUser mutation */
   createUser: Maybe<CreateUserPayload>;
   /** The createWatch mutation */
   createWatch: Maybe<CreateWatchPayload>;
+  /** The createWatchBrand mutation */
+  createWatchBrand: Maybe<CreateWatchBrandPayload>;
+  /** The deleteAllInOneBrand mutation */
+  deleteAllInOneBrand: Maybe<DeleteAllInOneBrandPayload>;
   /** The deleteAll_in_one mutation */
   deleteAll_in_one: Maybe<DeleteAll_In_OnePayload>;
   /** The deleteCategory mutation */
@@ -7571,30 +11236,42 @@ export type RootMutation = {
   deleteComment: Maybe<DeleteCommentPayload>;
   /** The deleteConsole mutation */
   deleteConsole: Maybe<DeleteConsolePayload>;
+  /** The deleteConsoleBrand mutation */
+  deleteConsoleBrand: Maybe<DeleteConsoleBrandPayload>;
   /** The deleteDesktop mutation */
   deleteDesktop: Maybe<DeleteDesktopPayload>;
+  /** The deleteDesktopBrand mutation */
+  deleteDesktopBrand: Maybe<DeleteDesktopBrandPayload>;
   /** The deleteFaq mutation */
   deleteFaq: Maybe<DeleteFaqPayload>;
   /** The deleteLaptop mutation */
   deleteLaptop: Maybe<DeleteLaptopPayload>;
+  /** The deleteLaptopBrand mutation */
+  deleteLaptopBrand: Maybe<DeleteLaptopBrandPayload>;
   /** The deleteMediaItem mutation */
   deleteMediaItem: Maybe<DeleteMediaItemPayload>;
   /** The deletePage mutation */
   deletePage: Maybe<DeletePagePayload>;
   /** The deletePhone mutation */
   deletePhone: Maybe<DeletePhonePayload>;
+  /** The deletePhoneBrand mutation */
+  deletePhoneBrand: Maybe<DeletePhoneBrandPayload>;
   /** The deletePost mutation */
   deletePost: Maybe<DeletePostPayload>;
   /** The deletePostFormat mutation */
   deletePostFormat: Maybe<DeletePostFormatPayload>;
   /** The deleteTablet mutation */
   deleteTablet: Maybe<DeleteTabletPayload>;
+  /** The deleteTabletBrand mutation */
+  deleteTabletBrand: Maybe<DeleteTabletBrandPayload>;
   /** The deleteTag mutation */
   deleteTag: Maybe<DeleteTagPayload>;
   /** The deleteUser mutation */
   deleteUser: Maybe<DeleteUserPayload>;
   /** The deleteWatch mutation */
   deleteWatch: Maybe<DeleteWatchPayload>;
+  /** The deleteWatchBrand mutation */
+  deleteWatchBrand: Maybe<DeleteWatchBrandPayload>;
   /** Increase the count. */
   increaseCount: Maybe<Scalars['Int']['output']>;
   /** The registerUser mutation */
@@ -7605,6 +11282,8 @@ export type RootMutation = {
   restoreComment: Maybe<RestoreCommentPayload>;
   /** Send password reset email to user */
   sendPasswordResetEmail: Maybe<SendPasswordResetEmailPayload>;
+  /** The updateAllInOneBrand mutation */
+  updateAllInOneBrand: Maybe<UpdateAllInOneBrandPayload>;
   /** The updateAll_in_one mutation */
   updateAll_in_one: Maybe<UpdateAll_In_OnePayload>;
   /** The updateCategory mutation */
@@ -7613,18 +11292,26 @@ export type RootMutation = {
   updateComment: Maybe<UpdateCommentPayload>;
   /** The updateConsole mutation */
   updateConsole: Maybe<UpdateConsolePayload>;
+  /** The updateConsoleBrand mutation */
+  updateConsoleBrand: Maybe<UpdateConsoleBrandPayload>;
   /** The updateDesktop mutation */
   updateDesktop: Maybe<UpdateDesktopPayload>;
+  /** The updateDesktopBrand mutation */
+  updateDesktopBrand: Maybe<UpdateDesktopBrandPayload>;
   /** The updateFaq mutation */
   updateFaq: Maybe<UpdateFaqPayload>;
   /** The updateLaptop mutation */
   updateLaptop: Maybe<UpdateLaptopPayload>;
+  /** The updateLaptopBrand mutation */
+  updateLaptopBrand: Maybe<UpdateLaptopBrandPayload>;
   /** The updateMediaItem mutation */
   updateMediaItem: Maybe<UpdateMediaItemPayload>;
   /** The updatePage mutation */
   updatePage: Maybe<UpdatePagePayload>;
   /** The updatePhone mutation */
   updatePhone: Maybe<UpdatePhonePayload>;
+  /** The updatePhoneBrand mutation */
+  updatePhoneBrand: Maybe<UpdatePhoneBrandPayload>;
   /** The updatePost mutation */
   updatePost: Maybe<UpdatePostPayload>;
   /** The updatePostFormat mutation */
@@ -7633,12 +11320,22 @@ export type RootMutation = {
   updateSettings: Maybe<UpdateSettingsPayload>;
   /** The updateTablet mutation */
   updateTablet: Maybe<UpdateTabletPayload>;
+  /** The updateTabletBrand mutation */
+  updateTabletBrand: Maybe<UpdateTabletBrandPayload>;
   /** The updateTag mutation */
   updateTag: Maybe<UpdateTagPayload>;
   /** The updateUser mutation */
   updateUser: Maybe<UpdateUserPayload>;
   /** The updateWatch mutation */
   updateWatch: Maybe<UpdateWatchPayload>;
+  /** The updateWatchBrand mutation */
+  updateWatchBrand: Maybe<UpdateWatchBrandPayload>;
+};
+
+
+/** The root mutation */
+export type RootMutationCreateAllInOneBrandArgs = {
+  input: CreateAllInOneBrandInput;
 };
 
 
@@ -7667,8 +11364,20 @@ export type RootMutationCreateConsoleArgs = {
 
 
 /** The root mutation */
+export type RootMutationCreateConsoleBrandArgs = {
+  input: CreateConsoleBrandInput;
+};
+
+
+/** The root mutation */
 export type RootMutationCreateDesktopArgs = {
   input: CreateDesktopInput;
+};
+
+
+/** The root mutation */
+export type RootMutationCreateDesktopBrandArgs = {
+  input: CreateDesktopBrandInput;
 };
 
 
@@ -7681,6 +11390,12 @@ export type RootMutationCreateFaqArgs = {
 /** The root mutation */
 export type RootMutationCreateLaptopArgs = {
   input: CreateLaptopInput;
+};
+
+
+/** The root mutation */
+export type RootMutationCreateLaptopBrandArgs = {
+  input: CreateLaptopBrandInput;
 };
 
 
@@ -7703,6 +11418,12 @@ export type RootMutationCreatePhoneArgs = {
 
 
 /** The root mutation */
+export type RootMutationCreatePhoneBrandArgs = {
+  input: CreatePhoneBrandInput;
+};
+
+
+/** The root mutation */
 export type RootMutationCreatePostArgs = {
   input: CreatePostInput;
 };
@@ -7721,6 +11442,12 @@ export type RootMutationCreateTabletArgs = {
 
 
 /** The root mutation */
+export type RootMutationCreateTabletBrandArgs = {
+  input: CreateTabletBrandInput;
+};
+
+
+/** The root mutation */
 export type RootMutationCreateTagArgs = {
   input: CreateTagInput;
 };
@@ -7735,6 +11462,18 @@ export type RootMutationCreateUserArgs = {
 /** The root mutation */
 export type RootMutationCreateWatchArgs = {
   input: CreateWatchInput;
+};
+
+
+/** The root mutation */
+export type RootMutationCreateWatchBrandArgs = {
+  input: CreateWatchBrandInput;
+};
+
+
+/** The root mutation */
+export type RootMutationDeleteAllInOneBrandArgs = {
+  input: DeleteAllInOneBrandInput;
 };
 
 
@@ -7763,8 +11502,20 @@ export type RootMutationDeleteConsoleArgs = {
 
 
 /** The root mutation */
+export type RootMutationDeleteConsoleBrandArgs = {
+  input: DeleteConsoleBrandInput;
+};
+
+
+/** The root mutation */
 export type RootMutationDeleteDesktopArgs = {
   input: DeleteDesktopInput;
+};
+
+
+/** The root mutation */
+export type RootMutationDeleteDesktopBrandArgs = {
+  input: DeleteDesktopBrandInput;
 };
 
 
@@ -7777,6 +11528,12 @@ export type RootMutationDeleteFaqArgs = {
 /** The root mutation */
 export type RootMutationDeleteLaptopArgs = {
   input: DeleteLaptopInput;
+};
+
+
+/** The root mutation */
+export type RootMutationDeleteLaptopBrandArgs = {
+  input: DeleteLaptopBrandInput;
 };
 
 
@@ -7799,6 +11556,12 @@ export type RootMutationDeletePhoneArgs = {
 
 
 /** The root mutation */
+export type RootMutationDeletePhoneBrandArgs = {
+  input: DeletePhoneBrandInput;
+};
+
+
+/** The root mutation */
 export type RootMutationDeletePostArgs = {
   input: DeletePostInput;
 };
@@ -7817,6 +11580,12 @@ export type RootMutationDeleteTabletArgs = {
 
 
 /** The root mutation */
+export type RootMutationDeleteTabletBrandArgs = {
+  input: DeleteTabletBrandInput;
+};
+
+
+/** The root mutation */
 export type RootMutationDeleteTagArgs = {
   input: DeleteTagInput;
 };
@@ -7831,6 +11600,12 @@ export type RootMutationDeleteUserArgs = {
 /** The root mutation */
 export type RootMutationDeleteWatchArgs = {
   input: DeleteWatchInput;
+};
+
+
+/** The root mutation */
+export type RootMutationDeleteWatchBrandArgs = {
+  input: DeleteWatchBrandInput;
 };
 
 
@@ -7865,6 +11640,12 @@ export type RootMutationSendPasswordResetEmailArgs = {
 
 
 /** The root mutation */
+export type RootMutationUpdateAllInOneBrandArgs = {
+  input: UpdateAllInOneBrandInput;
+};
+
+
+/** The root mutation */
 export type RootMutationUpdateAll_In_OneArgs = {
   input: UpdateAll_In_OneInput;
 };
@@ -7889,8 +11670,20 @@ export type RootMutationUpdateConsoleArgs = {
 
 
 /** The root mutation */
+export type RootMutationUpdateConsoleBrandArgs = {
+  input: UpdateConsoleBrandInput;
+};
+
+
+/** The root mutation */
 export type RootMutationUpdateDesktopArgs = {
   input: UpdateDesktopInput;
+};
+
+
+/** The root mutation */
+export type RootMutationUpdateDesktopBrandArgs = {
+  input: UpdateDesktopBrandInput;
 };
 
 
@@ -7903,6 +11696,12 @@ export type RootMutationUpdateFaqArgs = {
 /** The root mutation */
 export type RootMutationUpdateLaptopArgs = {
   input: UpdateLaptopInput;
+};
+
+
+/** The root mutation */
+export type RootMutationUpdateLaptopBrandArgs = {
+  input: UpdateLaptopBrandInput;
 };
 
 
@@ -7921,6 +11720,12 @@ export type RootMutationUpdatePageArgs = {
 /** The root mutation */
 export type RootMutationUpdatePhoneArgs = {
   input: UpdatePhoneInput;
+};
+
+
+/** The root mutation */
+export type RootMutationUpdatePhoneBrandArgs = {
+  input: UpdatePhoneBrandInput;
 };
 
 
@@ -7949,6 +11754,12 @@ export type RootMutationUpdateTabletArgs = {
 
 
 /** The root mutation */
+export type RootMutationUpdateTabletBrandArgs = {
+  input: UpdateTabletBrandInput;
+};
+
+
+/** The root mutation */
 export type RootMutationUpdateTagArgs = {
   input: UpdateTagInput;
 };
@@ -7965,11 +11776,21 @@ export type RootMutationUpdateWatchArgs = {
   input: UpdateWatchInput;
 };
 
+
+/** The root mutation */
+export type RootMutationUpdateWatchBrandArgs = {
+  input: UpdateWatchBrandInput;
+};
+
 /** The root entry point into the Graph */
 export type RootQuery = WithAcfOptionsPageDeviceView & {
   __typename?: 'RootQuery';
   /** An object of the all_in_one Type.  */
   allInOne: Maybe<All_In_One>;
+  /** A 0bject */
+  allInOneBrand: Maybe<AllInOneBrand>;
+  /** Connection between the RootQuery type and the AllInOneBrand type */
+  allInOneBrands: Maybe<RootQueryToAllInOneBrandConnection>;
   /**
    * A all_in_one object
    * @deprecated Deprecated in favor of using the single entry point for this type with ID and IDType fields. For example, instead of postBy( id: &quot;&quot; ), use post(id: &quot;&quot; idType: &quot;&quot;)
@@ -7989,6 +11810,10 @@ export type RootQuery = WithAcfOptionsPageDeviceView & {
   comments: Maybe<RootQueryToCommentConnection>;
   /** An object of the console Type.  */
   console: Maybe<Console>;
+  /** A 0bject */
+  consoleBrand: Maybe<ConsoleBrand>;
+  /** Connection between the RootQuery type and the ConsoleBrand type */
+  consoleBrands: Maybe<RootQueryToConsoleBrandConnection>;
   /**
    * A console object
    * @deprecated Deprecated in favor of using the single entry point for this type with ID and IDType fields. For example, instead of postBy( id: &quot;&quot; ), use post(id: &quot;&quot; idType: &quot;&quot;)
@@ -8006,6 +11831,10 @@ export type RootQuery = WithAcfOptionsPageDeviceView & {
   contentTypes: Maybe<RootQueryToContentTypeConnection>;
   /** An object of the desktop Type.  */
   desktop: Maybe<Desktop>;
+  /** A 0bject */
+  desktopBrand: Maybe<DesktopBrand>;
+  /** Connection between the RootQuery type and the DesktopBrand type */
+  desktopBrands: Maybe<RootQueryToDesktopBrandConnection>;
   /**
    * A desktop object
    * @deprecated Deprecated in favor of using the single entry point for this type with ID and IDType fields. For example, instead of postBy( id: &quot;&quot; ), use post(id: &quot;&quot; idType: &quot;&quot;)
@@ -8029,6 +11858,10 @@ export type RootQuery = WithAcfOptionsPageDeviceView & {
   generalSettings: Maybe<GeneralSettings>;
   /** An object of the laptop Type.  */
   laptop: Maybe<Laptop>;
+  /** A 0bject */
+  laptopBrand: Maybe<LaptopBrand>;
+  /** Connection between the RootQuery type and the LaptopBrand type */
+  laptopBrands: Maybe<RootQueryToLaptopBrandConnection>;
   /**
    * A laptop object
    * @deprecated Deprecated in favor of using the single entry point for this type with ID and IDType fields. For example, instead of postBy( id: &quot;&quot; ), use post(id: &quot;&quot; idType: &quot;&quot;)
@@ -8068,6 +11901,10 @@ export type RootQuery = WithAcfOptionsPageDeviceView & {
   pages: Maybe<RootQueryToPageConnection>;
   /** An object of the phone Type.  */
   phone: Maybe<Phone>;
+  /** A 0bject */
+  phoneBrand: Maybe<PhoneBrand>;
+  /** Connection between the RootQuery type and the PhoneBrand type */
+  phoneBrands: Maybe<RootQueryToPhoneBrandConnection>;
   /**
    * A phone object
    * @deprecated Deprecated in favor of using the single entry point for this type with ID and IDType fields. For example, instead of postBy( id: &quot;&quot; ), use post(id: &quot;&quot; idType: &quot;&quot;)
@@ -8102,6 +11939,10 @@ export type RootQuery = WithAcfOptionsPageDeviceView & {
   revisions: Maybe<RootQueryToRevisionsConnection>;
   /** An object of the tablet Type.  */
   tablet: Maybe<Tablet>;
+  /** A 0bject */
+  tabletBrand: Maybe<TabletBrand>;
+  /** Connection between the RootQuery type and the TabletBrand type */
+  tabletBrands: Maybe<RootQueryToTabletBrandConnection>;
   /**
    * A tablet object
    * @deprecated Deprecated in favor of using the single entry point for this type with ID and IDType fields. For example, instead of postBy( id: &quot;&quot; ), use post(id: &quot;&quot; idType: &quot;&quot;)
@@ -8137,6 +11978,10 @@ export type RootQuery = WithAcfOptionsPageDeviceView & {
   viewer: Maybe<User>;
   /** An object of the watch Type.  */
   watch: Maybe<Watch>;
+  /** A 0bject */
+  watchBrand: Maybe<WatchBrand>;
+  /** Connection between the RootQuery type and the WatchBrand type */
+  watchBrands: Maybe<RootQueryToWatchBrandConnection>;
   /**
    * A watch object
    * @deprecated Deprecated in favor of using the single entry point for this type with ID and IDType fields. For example, instead of postBy( id: &quot;&quot; ), use post(id: &quot;&quot; idType: &quot;&quot;)
@@ -8154,6 +11999,23 @@ export type RootQueryAllInOneArgs = {
   asPreview: InputMaybe<Scalars['Boolean']['input']>;
   id: Scalars['ID']['input'];
   idType: InputMaybe<All_In_OneIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryAllInOneBrandArgs = {
+  id: Scalars['ID']['input'];
+  idType: InputMaybe<AllInOneBrandIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryAllInOneBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<RootQueryToAllInOneBrandConnectionWhereArgs>;
 };
 
 
@@ -8215,6 +12077,23 @@ export type RootQueryConsoleArgs = {
   asPreview: InputMaybe<Scalars['Boolean']['input']>;
   id: Scalars['ID']['input'];
   idType: InputMaybe<ConsoleIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryConsoleBrandArgs = {
+  id: Scalars['ID']['input'];
+  idType: InputMaybe<ConsoleBrandIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryConsoleBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<RootQueryToConsoleBrandConnectionWhereArgs>;
 };
 
 
@@ -8281,6 +12160,23 @@ export type RootQueryDesktopArgs = {
 
 
 /** The root entry point into the Graph */
+export type RootQueryDesktopBrandArgs = {
+  id: Scalars['ID']['input'];
+  idType: InputMaybe<DesktopBrandIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryDesktopBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<RootQueryToDesktopBrandConnectionWhereArgs>;
+};
+
+
+/** The root entry point into the Graph */
 export type RootQueryDesktopByArgs = {
   desktopId: InputMaybe<Scalars['Int']['input']>;
   id: InputMaybe<Scalars['ID']['input']>;
@@ -8331,6 +12227,23 @@ export type RootQueryLaptopArgs = {
   asPreview: InputMaybe<Scalars['Boolean']['input']>;
   id: Scalars['ID']['input'];
   idType: InputMaybe<LaptopIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryLaptopBrandArgs = {
+  id: Scalars['ID']['input'];
+  idType: InputMaybe<LaptopBrandIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryLaptopBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<RootQueryToLaptopBrandConnectionWhereArgs>;
 };
 
 
@@ -8461,6 +12374,23 @@ export type RootQueryPhoneArgs = {
 
 
 /** The root entry point into the Graph */
+export type RootQueryPhoneBrandArgs = {
+  id: Scalars['ID']['input'];
+  idType: InputMaybe<PhoneBrandIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryPhoneBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<RootQueryToPhoneBrandConnectionWhereArgs>;
+};
+
+
+/** The root entry point into the Graph */
 export type RootQueryPhoneByArgs = {
   id: InputMaybe<Scalars['ID']['input']>;
   phoneId: InputMaybe<Scalars['Int']['input']>;
@@ -8572,6 +12502,23 @@ export type RootQueryTabletArgs = {
   asPreview: InputMaybe<Scalars['Boolean']['input']>;
   id: Scalars['ID']['input'];
   idType: InputMaybe<TabletIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryTabletBrandArgs = {
+  id: Scalars['ID']['input'];
+  idType: InputMaybe<TabletBrandIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryTabletBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<RootQueryToTabletBrandConnectionWhereArgs>;
 };
 
 
@@ -8701,6 +12648,23 @@ export type RootQueryWatchArgs = {
 
 
 /** The root entry point into the Graph */
+export type RootQueryWatchBrandArgs = {
+  id: Scalars['ID']['input'];
+  idType: InputMaybe<WatchBrandIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryWatchBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<RootQueryToWatchBrandConnectionWhereArgs>;
+};
+
+
+/** The root entry point into the Graph */
 export type RootQueryWatchByArgs = {
   id: InputMaybe<Scalars['ID']['input']>;
   slug: InputMaybe<Scalars['String']['input']>;
@@ -8716,6 +12680,83 @@ export type RootQueryWatchesArgs = {
   first: InputMaybe<Scalars['Int']['input']>;
   last: InputMaybe<Scalars['Int']['input']>;
   where: InputMaybe<RootQueryToWatchConnectionWhereArgs>;
+};
+
+/** Connection between the RootQuery type and the AllInOneBrand type */
+export type RootQueryToAllInOneBrandConnection = AllInOneBrandConnection & Connection & {
+  __typename?: 'RootQueryToAllInOneBrandConnection';
+  /** Edges for the RootQueryToAllInOneBrandConnection connection */
+  edges: Array<RootQueryToAllInOneBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<AllInOneBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: RootQueryToAllInOneBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type RootQueryToAllInOneBrandConnectionEdge = AllInOneBrandConnectionEdge & Edge & {
+  __typename?: 'RootQueryToAllInOneBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: AllInOneBrand;
+};
+
+/** Pagination metadata specific to &quot;RootQueryToAllInOneBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of RootQueryToAllInOneBrandConnection Nodes. */
+export type RootQueryToAllInOneBrandConnectionPageInfo = AllInOneBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'RootQueryToAllInOneBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the RootQueryToAllInOneBrandConnection connection */
+export type RootQueryToAllInOneBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** Connection between the RootQuery type and the all_in_one type */
@@ -8961,6 +13002,83 @@ export type RootQueryToCommentConnectionWhereArgs = {
   userId: InputMaybe<Scalars['ID']['input']>;
 };
 
+/** Connection between the RootQuery type and the ConsoleBrand type */
+export type RootQueryToConsoleBrandConnection = Connection & ConsoleBrandConnection & {
+  __typename?: 'RootQueryToConsoleBrandConnection';
+  /** Edges for the RootQueryToConsoleBrandConnection connection */
+  edges: Array<RootQueryToConsoleBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ConsoleBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: RootQueryToConsoleBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type RootQueryToConsoleBrandConnectionEdge = ConsoleBrandConnectionEdge & Edge & {
+  __typename?: 'RootQueryToConsoleBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ConsoleBrand;
+};
+
+/** Pagination metadata specific to &quot;RootQueryToConsoleBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of RootQueryToConsoleBrandConnection Nodes. */
+export type RootQueryToConsoleBrandConnectionPageInfo = ConsoleBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'RootQueryToConsoleBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the RootQueryToConsoleBrandConnection connection */
+export type RootQueryToConsoleBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 /** Connection between the RootQuery type and the console type */
 export type RootQueryToConsoleConnection = Connection & ConsoleConnection & {
   __typename?: 'RootQueryToConsoleConnection';
@@ -9136,6 +13254,83 @@ export type RootQueryToContentTypeConnectionPageInfo = ContentTypeConnectionPage
   hasPreviousPage: Scalars['Boolean']['output'];
   /** When paginating backwards, the cursor to continue. */
   startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the RootQuery type and the DesktopBrand type */
+export type RootQueryToDesktopBrandConnection = Connection & DesktopBrandConnection & {
+  __typename?: 'RootQueryToDesktopBrandConnection';
+  /** Edges for the RootQueryToDesktopBrandConnection connection */
+  edges: Array<RootQueryToDesktopBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<DesktopBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: RootQueryToDesktopBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type RootQueryToDesktopBrandConnectionEdge = DesktopBrandConnectionEdge & Edge & {
+  __typename?: 'RootQueryToDesktopBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: DesktopBrand;
+};
+
+/** Pagination metadata specific to &quot;RootQueryToDesktopBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of RootQueryToDesktopBrandConnection Nodes. */
+export type RootQueryToDesktopBrandConnectionPageInfo = DesktopBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'RootQueryToDesktopBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the RootQueryToDesktopBrandConnection connection */
+export type RootQueryToDesktopBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** Connection between the RootQuery type and the desktop type */
@@ -9344,6 +13539,83 @@ export type RootQueryToFaqConnectionWhereArgs = {
   status: InputMaybe<PostStatusEnum>;
   /** Title of the object */
   title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the RootQuery type and the LaptopBrand type */
+export type RootQueryToLaptopBrandConnection = Connection & LaptopBrandConnection & {
+  __typename?: 'RootQueryToLaptopBrandConnection';
+  /** Edges for the RootQueryToLaptopBrandConnection connection */
+  edges: Array<RootQueryToLaptopBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<LaptopBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: RootQueryToLaptopBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type RootQueryToLaptopBrandConnectionEdge = Edge & LaptopBrandConnectionEdge & {
+  __typename?: 'RootQueryToLaptopBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: LaptopBrand;
+};
+
+/** Pagination metadata specific to &quot;RootQueryToLaptopBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of RootQueryToLaptopBrandConnection Nodes. */
+export type RootQueryToLaptopBrandConnectionPageInfo = LaptopBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'RootQueryToLaptopBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the RootQueryToLaptopBrandConnection connection */
+export type RootQueryToLaptopBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** Connection between the RootQuery type and the laptop type */
@@ -9661,6 +13933,83 @@ export type RootQueryToPageConnectionWhereArgs = {
   status: InputMaybe<PostStatusEnum>;
   /** Title of the object */
   title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the RootQuery type and the PhoneBrand type */
+export type RootQueryToPhoneBrandConnection = Connection & PhoneBrandConnection & {
+  __typename?: 'RootQueryToPhoneBrandConnection';
+  /** Edges for the RootQueryToPhoneBrandConnection connection */
+  edges: Array<RootQueryToPhoneBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<PhoneBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: RootQueryToPhoneBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type RootQueryToPhoneBrandConnectionEdge = Edge & PhoneBrandConnectionEdge & {
+  __typename?: 'RootQueryToPhoneBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: PhoneBrand;
+};
+
+/** Pagination metadata specific to &quot;RootQueryToPhoneBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of RootQueryToPhoneBrandConnection Nodes. */
+export type RootQueryToPhoneBrandConnectionPageInfo = PageInfo & PhoneBrandConnectionPageInfo & WpPageInfo & {
+  __typename?: 'RootQueryToPhoneBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the RootQueryToPhoneBrandConnection connection */
+export type RootQueryToPhoneBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** Connection between the RootQuery type and the phone type */
@@ -10024,6 +14373,83 @@ export type RootQueryToRevisionsConnectionWhereArgs = {
   status: InputMaybe<PostStatusEnum>;
   /** Title of the object */
   title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the RootQuery type and the TabletBrand type */
+export type RootQueryToTabletBrandConnection = Connection & TabletBrandConnection & {
+  __typename?: 'RootQueryToTabletBrandConnection';
+  /** Edges for the RootQueryToTabletBrandConnection connection */
+  edges: Array<RootQueryToTabletBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TabletBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: RootQueryToTabletBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type RootQueryToTabletBrandConnectionEdge = Edge & TabletBrandConnectionEdge & {
+  __typename?: 'RootQueryToTabletBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TabletBrand;
+};
+
+/** Pagination metadata specific to &quot;RootQueryToTabletBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of RootQueryToTabletBrandConnection Nodes. */
+export type RootQueryToTabletBrandConnectionPageInfo = PageInfo & TabletBrandConnectionPageInfo & WpPageInfo & {
+  __typename?: 'RootQueryToTabletBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the RootQueryToTabletBrandConnection connection */
+export type RootQueryToTabletBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** Connection between the RootQuery type and the tablet type */
@@ -10419,6 +14845,83 @@ export type RootQueryToUserRoleConnectionPageInfo = PageInfo & UserRoleConnectio
   startCursor: Maybe<Scalars['String']['output']>;
 };
 
+/** Connection between the RootQuery type and the WatchBrand type */
+export type RootQueryToWatchBrandConnection = Connection & WatchBrandConnection & {
+  __typename?: 'RootQueryToWatchBrandConnection';
+  /** Edges for the RootQueryToWatchBrandConnection connection */
+  edges: Array<RootQueryToWatchBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<WatchBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: RootQueryToWatchBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type RootQueryToWatchBrandConnectionEdge = Edge & WatchBrandConnectionEdge & {
+  __typename?: 'RootQueryToWatchBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: WatchBrand;
+};
+
+/** Pagination metadata specific to &quot;RootQueryToWatchBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of RootQueryToWatchBrandConnection Nodes. */
+export type RootQueryToWatchBrandConnectionPageInfo = PageInfo & WpPageInfo & WatchBrandConnectionPageInfo & {
+  __typename?: 'RootQueryToWatchBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the RootQueryToWatchBrandConnection connection */
+export type RootQueryToWatchBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 /** Connection between the RootQuery type and the watch type */
 export type RootQueryToWatchConnection = Connection & WatchConnection & {
   __typename?: 'RootQueryToWatchConnection';
@@ -10652,6 +15155,8 @@ export type Tablet = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node 
   slug: Maybe<Scalars['String']['output']>;
   /** The current status of the object */
   status: Maybe<Scalars['String']['output']>;
+  /** Connection between the Tablet type and the TabletBrand type */
+  tabletBrands: Maybe<TabletToTabletBrandConnection>;
   /**
    * The id field matches the WP_Post-&gt;ID field.
    * @deprecated Deprecated in favor of the databaseId field
@@ -10659,6 +15164,8 @@ export type Tablet = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node 
   tabletId: Scalars['Int']['output'];
   /** The template assigned to the node */
   template: Maybe<ContentTemplate>;
+  /** Connection between the Tablet type and the TermNode type */
+  terms: Maybe<TabletToTermNodeConnection>;
   /** The title of the post. This is currently just the raw title. An amendment to support rendered title needs to be made. */
   title: Maybe<Scalars['String']['output']>;
   /** The unique resource identifier path */
@@ -10694,8 +15201,466 @@ export type TabletEnqueuedStylesheetsArgs = {
 
 
 /** The tablet type */
+export type TabletTabletBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<TabletToTabletBrandConnectionWhereArgs>;
+};
+
+
+/** The tablet type */
+export type TabletTermsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<TabletToTermNodeConnectionWhereArgs>;
+};
+
+
+/** The tablet type */
 export type TabletTitleArgs = {
   format: InputMaybe<PostObjectFieldFormatEnum>;
+};
+
+/** The TabletBrand type */
+export type TabletBrand = DatabaseIdentifier & HierarchicalNode & HierarchicalTermNode & MenuItemLinkable & Node & TermNode & UniformResourceIdentifiable & {
+  __typename?: 'TabletBrand';
+  /** The ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
+  ancestors: Maybe<TabletBrandToAncestorsTabletBrandConnection>;
+  /** Connection between the TabletBrand type and its children TabletBrands. */
+  children: Maybe<TabletBrandToTabletBrandConnection>;
+  /** Connection between the TabletBrand type and the ContentNode type */
+  contentNodes: Maybe<TabletBrandToContentNodeConnection>;
+  /** The number of objects connected to the object */
+  count: Maybe<Scalars['Int']['output']>;
+  /** The unique identifier stored in the database */
+  databaseId: Scalars['Int']['output'];
+  /** The description of the object */
+  description: Maybe<Scalars['String']['output']>;
+  /** Connection between the TermNode type and the EnqueuedScript type */
+  enqueuedScripts: Maybe<TermNodeToEnqueuedScriptConnection>;
+  /** Connection between the TermNode type and the EnqueuedStylesheet type */
+  enqueuedStylesheets: Maybe<TermNodeToEnqueuedStylesheetConnection>;
+  /** The globally unique ID for the object */
+  id: Scalars['ID']['output'];
+  /** Whether the node is a Comment */
+  isComment: Scalars['Boolean']['output'];
+  /** Whether the node is a Content Node */
+  isContentNode: Scalars['Boolean']['output'];
+  /** Whether the node represents the front page. */
+  isFrontPage: Scalars['Boolean']['output'];
+  /** Whether  the node represents the blog page. */
+  isPostsPage: Scalars['Boolean']['output'];
+  /** Whether the object is restricted from the current viewer */
+  isRestricted: Maybe<Scalars['Boolean']['output']>;
+  /** Whether the node is a Term */
+  isTermNode: Scalars['Boolean']['output'];
+  /** The link to the term */
+  link: Maybe<Scalars['String']['output']>;
+  /** The human friendly name of the object. */
+  name: Maybe<Scalars['String']['output']>;
+  /** Connection between the TabletBrand type and its parent TabletBrand. */
+  parent: Maybe<TabletBrandToParentTabletBrandConnectionEdge>;
+  /** Database id of the parent node */
+  parentDatabaseId: Maybe<Scalars['Int']['output']>;
+  /** The globally unique identifier of the parent node. */
+  parentId: Maybe<Scalars['ID']['output']>;
+  /** An alphanumeric identifier for the object unique to its type. */
+  slug: Maybe<Scalars['String']['output']>;
+  /**
+   * The id field matches the WP_Post-&gt;ID field.
+   * @deprecated Deprecated in favor of databaseId
+   */
+  tabletBrandId: Maybe<Scalars['Int']['output']>;
+  /** Connection between the TabletBrand type and the tablet type */
+  tablets: Maybe<TabletBrandToTabletConnection>;
+  /** Connection between the TabletBrand type and the Taxonomy type */
+  taxonomy: Maybe<TabletBrandToTaxonomyConnectionEdge>;
+  /** The name of the taxonomy that the object is associated with */
+  taxonomyName: Maybe<Scalars['String']['output']>;
+  /** The ID of the term group that this term object belongs to */
+  termGroupId: Maybe<Scalars['Int']['output']>;
+  /** The taxonomy ID that the object is associated with */
+  termTaxonomyId: Maybe<Scalars['Int']['output']>;
+  /** The unique resource identifier path */
+  uri: Maybe<Scalars['String']['output']>;
+};
+
+
+/** The TabletBrand type */
+export type TabletBrandAncestorsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The TabletBrand type */
+export type TabletBrandChildrenArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<TabletBrandToTabletBrandConnectionWhereArgs>;
+};
+
+
+/** The TabletBrand type */
+export type TabletBrandContentNodesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<TabletBrandToContentNodeConnectionWhereArgs>;
+};
+
+
+/** The TabletBrand type */
+export type TabletBrandEnqueuedScriptsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The TabletBrand type */
+export type TabletBrandEnqueuedStylesheetsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The TabletBrand type */
+export type TabletBrandTabletsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<TabletBrandToTabletConnectionWhereArgs>;
+};
+
+/** A paginated collection of TabletBrand Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of TabletBrand Nodes */
+export type TabletBrandConnection = {
+  /** A list of edges (relational context) between RootQuery and connected TabletBrand Nodes */
+  edges: Array<TabletBrandConnectionEdge>;
+  /** A list of connected TabletBrand Nodes */
+  nodes: Array<TabletBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: TabletBrandConnectionPageInfo;
+};
+
+/** Represents a connection to a TabletBrand. Contains both the TabletBrand Node and metadata about the relationship. */
+export type TabletBrandConnectionEdge = {
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The connected TabletBrand Node */
+  node: TabletBrand;
+};
+
+/** Pagination metadata specific to &quot;TabletBrandConnectionEdge&quot; collections. Provides cursors and flags for navigating through sets of &quot;TabletBrandConnectionEdge&quot; Nodes. */
+export type TabletBrandConnectionPageInfo = {
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Identifier types for retrieving a specific TabletBrand. Determines which unique property (global ID, database ID, slug, etc.) is used to locate the TabletBrand. */
+export const TabletBrandIdType = {
+  /** The Database ID for the node */
+  DatabaseId: 'DATABASE_ID',
+  /** The hashed Global ID */
+  Id: 'ID',
+  /** The name of the node */
+  Name: 'NAME',
+  /** Url friendly name of the node */
+  Slug: 'SLUG',
+  /** The URI for the node */
+  Uri: 'URI'
+} as const;
+
+export type TabletBrandIdType = typeof TabletBrandIdType[keyof typeof TabletBrandIdType];
+/** Connection between the TabletBrand type and the TabletBrand type */
+export type TabletBrandToAncestorsTabletBrandConnection = Connection & TabletBrandConnection & {
+  __typename?: 'TabletBrandToAncestorsTabletBrandConnection';
+  /** Edges for the TabletBrandToAncestorsTabletBrandConnection connection */
+  edges: Array<TabletBrandToAncestorsTabletBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TabletBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: TabletBrandToAncestorsTabletBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type TabletBrandToAncestorsTabletBrandConnectionEdge = Edge & TabletBrandConnectionEdge & {
+  __typename?: 'TabletBrandToAncestorsTabletBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TabletBrand;
+};
+
+/** Pagination metadata specific to &quot;TabletBrandToAncestorsTabletBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of TabletBrandToAncestorsTabletBrandConnection Nodes. */
+export type TabletBrandToAncestorsTabletBrandConnectionPageInfo = PageInfo & TabletBrandConnectionPageInfo & WpPageInfo & {
+  __typename?: 'TabletBrandToAncestorsTabletBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the TabletBrand type and the ContentNode type */
+export type TabletBrandToContentNodeConnection = Connection & ContentNodeConnection & {
+  __typename?: 'TabletBrandToContentNodeConnection';
+  /** Edges for the TabletBrandToContentNodeConnection connection */
+  edges: Array<TabletBrandToContentNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ContentNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: TabletBrandToContentNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type TabletBrandToContentNodeConnectionEdge = ContentNodeConnectionEdge & Edge & {
+  __typename?: 'TabletBrandToContentNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ContentNode;
+};
+
+/** Pagination metadata specific to &quot;TabletBrandToContentNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of TabletBrandToContentNodeConnection Nodes. */
+export type TabletBrandToContentNodeConnectionPageInfo = ContentNodeConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'TabletBrandToContentNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the TabletBrandToContentNodeConnection connection */
+export type TabletBrandToContentNodeConnectionWhereArgs = {
+  /** The Types of content to filter */
+  contentTypes: InputMaybe<Array<InputMaybe<ContentTypesOfTabletBrandEnum>>>;
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the TabletBrand type and the TabletBrand type */
+export type TabletBrandToParentTabletBrandConnectionEdge = Edge & OneToOneConnection & TabletBrandConnectionEdge & {
+  __typename?: 'TabletBrandToParentTabletBrandConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: TabletBrand;
+};
+
+/** Connection between the TabletBrand type and the TabletBrand type */
+export type TabletBrandToTabletBrandConnection = Connection & TabletBrandConnection & {
+  __typename?: 'TabletBrandToTabletBrandConnection';
+  /** Edges for the TabletBrandToTabletBrandConnection connection */
+  edges: Array<TabletBrandToTabletBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TabletBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: TabletBrandToTabletBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type TabletBrandToTabletBrandConnectionEdge = Edge & TabletBrandConnectionEdge & {
+  __typename?: 'TabletBrandToTabletBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TabletBrand;
+};
+
+/** Pagination metadata specific to &quot;TabletBrandToTabletBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of TabletBrandToTabletBrandConnection Nodes. */
+export type TabletBrandToTabletBrandConnectionPageInfo = PageInfo & TabletBrandConnectionPageInfo & WpPageInfo & {
+  __typename?: 'TabletBrandToTabletBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the TabletBrandToTabletBrandConnection connection */
+export type TabletBrandToTabletBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+/** Connection between the TabletBrand type and the tablet type */
+export type TabletBrandToTabletConnection = Connection & TabletConnection & {
+  __typename?: 'TabletBrandToTabletConnection';
+  /** Edges for the TabletBrandToTabletConnection connection */
+  edges: Array<TabletBrandToTabletConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<Tablet>;
+  /** Information about pagination in a connection. */
+  pageInfo: TabletBrandToTabletConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type TabletBrandToTabletConnectionEdge = Edge & TabletConnectionEdge & {
+  __typename?: 'TabletBrandToTabletConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: Tablet;
+};
+
+/** Pagination metadata specific to &quot;TabletBrandToTabletConnection&quot; collections. Provides cursors and flags for navigating through sets of TabletBrandToTabletConnection Nodes. */
+export type TabletBrandToTabletConnectionPageInfo = PageInfo & TabletConnectionPageInfo & WpPageInfo & {
+  __typename?: 'TabletBrandToTabletConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the TabletBrandToTabletConnection connection */
+export type TabletBrandToTabletConnectionWhereArgs = {
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the TabletBrand type and the Taxonomy type */
+export type TabletBrandToTaxonomyConnectionEdge = Edge & OneToOneConnection & TaxonomyConnectionEdge & {
+  __typename?: 'TabletBrandToTaxonomyConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: Taxonomy;
 };
 
 /** A paginated collection of tablet Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of tablet Nodes */
@@ -10741,6 +15706,26 @@ export const TabletIdType = {
 } as const;
 
 export type TabletIdType = typeof TabletIdType[keyof typeof TabletIdType];
+/** Set relationships between the tablet to TabletBrands */
+export type TabletTabletBrandsInput = {
+  /** If true, this will append the TabletBrand to existing related TabletBrands. If false, this will replace existing relationships. Default true. */
+  append: InputMaybe<Scalars['Boolean']['input']>;
+  /** The input list of items to set. */
+  nodes: InputMaybe<Array<InputMaybe<TabletTabletBrandsNodeInput>>>;
+};
+
+/** List of TabletBrands to connect the tablet to. If an ID is set, it will be used to create the connection. If not, it will look for a slug. If neither are valid existing terms, and the site is configured to allow terms to be created during post mutations, a term will be created using the Name if it exists in the input, then fallback to the slug if it exists. */
+export type TabletTabletBrandsNodeInput = {
+  /** The description of the TabletBrand. This field is used to set a description of the TabletBrand if a new one is created during the mutation. */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the TabletBrand. If present, this will be used to connect to the tablet. If no existing TabletBrand exists with this ID, no connection will be made. */
+  id: InputMaybe<Scalars['ID']['input']>;
+  /** The name of the TabletBrand. This field is used to create a new term, if term creation is enabled in nested mutations, and if one does not already exist with the provided slug or ID or if a slug or ID is not provided. If no name is included and a term is created, the creation will fallback to the slug field. */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The slug of the TabletBrand. If no ID is present, this field will be used to make a connection. If no existing term exists with this slug, this field will be used as a fallback to the Name field when creating a new term to connect to, if term creation is enabled as a nested mutation. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
 /** Connection between the Tablet type and the tablet type */
 export type TabletToParentConnectionEdge = Edge & OneToOneConnection & TabletConnectionEdge & {
   __typename?: 'TabletToParentConnectionEdge';
@@ -10760,6 +15745,83 @@ export type TabletToPreviewConnectionEdge = Edge & OneToOneConnection & TabletCo
   cursor: Maybe<Scalars['String']['output']>;
   /** The node of the connection, without the edges */
   node: Tablet;
+};
+
+/** Connection between the Tablet type and the TabletBrand type */
+export type TabletToTabletBrandConnection = Connection & TabletBrandConnection & {
+  __typename?: 'TabletToTabletBrandConnection';
+  /** Edges for the TabletToTabletBrandConnection connection */
+  edges: Array<TabletToTabletBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TabletBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: TabletToTabletBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type TabletToTabletBrandConnectionEdge = Edge & TabletBrandConnectionEdge & {
+  __typename?: 'TabletToTabletBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TabletBrand;
+};
+
+/** Pagination metadata specific to &quot;TabletToTabletBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of TabletToTabletBrandConnection Nodes. */
+export type TabletToTabletBrandConnectionPageInfo = PageInfo & TabletBrandConnectionPageInfo & WpPageInfo & {
+  __typename?: 'TabletToTabletBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the TabletToTabletBrandConnection connection */
+export type TabletToTabletBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** Connection between the Tablet type and the tablet type */
@@ -10799,6 +15861,85 @@ export type TabletToTabletConnectionPageInfo = PageInfo & TabletConnectionPageIn
   hasPreviousPage: Scalars['Boolean']['output'];
   /** When paginating backwards, the cursor to continue. */
   startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the Tablet type and the TermNode type */
+export type TabletToTermNodeConnection = Connection & TermNodeConnection & {
+  __typename?: 'TabletToTermNodeConnection';
+  /** Edges for the TabletToTermNodeConnection connection */
+  edges: Array<TabletToTermNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TermNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: TabletToTermNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type TabletToTermNodeConnectionEdge = Edge & TermNodeConnectionEdge & {
+  __typename?: 'TabletToTermNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TermNode;
+};
+
+/** Pagination metadata specific to &quot;TabletToTermNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of TabletToTermNodeConnection Nodes. */
+export type TabletToTermNodeConnectionPageInfo = PageInfo & TermNodeConnectionPageInfo & WpPageInfo & {
+  __typename?: 'TabletToTermNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the TabletToTermNodeConnection connection */
+export type TabletToTermNodeConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** The Taxonomy to filter terms by */
+  taxonomies: InputMaybe<Array<InputMaybe<TaxonomyEnum>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** A taxonomy term used to organize and classify content. Tags do not have a hierarchy and are generally used for more specific classifications. */
@@ -11216,12 +16357,26 @@ export type TaxonomyConnectionPageInfo = {
 
 /** Available classification systems for organizing content. Identifies the different taxonomy types that can be used for content categorization. */
 export const TaxonomyEnum = {
+  /** Taxonomy enum all_in_one_brand */
+  Allinonebrand: 'ALLINONEBRAND',
   /** Taxonomy enum category */
   Category: 'CATEGORY',
+  /** Taxonomy enum console_brand */
+  Consolebrand: 'CONSOLEBRAND',
+  /** Taxonomy enum desktop_brand */
+  Desktopbrand: 'DESKTOPBRAND',
+  /** Taxonomy enum laptop_brand */
+  Laptopbrand: 'LAPTOPBRAND',
+  /** Taxonomy enum phone_brand */
+  Phonebrand: 'PHONEBRAND',
   /** Taxonomy enum post_format */
   Postformat: 'POSTFORMAT',
+  /** Taxonomy enum tablet_brand */
+  Tabletbrand: 'TABLETBRAND',
   /** Taxonomy enum post_tag */
-  Tag: 'TAG'
+  Tag: 'TAG',
+  /** Taxonomy enum watch_brand */
+  Watchbrand: 'WATCHBRAND'
 } as const;
 
 export type TaxonomyEnum = typeof TaxonomyEnum[keyof typeof TaxonomyEnum];
@@ -11301,8 +16456,10 @@ export type TaxonomyToTermNodeConnectionPageInfo = PageInfo & TermNodeConnection
 };
 
 /** The template assigned to the node */
-export type Template_Devices = ContentTemplate & {
-  __typename?: 'Template_Devices';
+export type Template_Brands = ContentTemplate & WithAcfFaqSection & {
+  __typename?: 'Template_Brands';
+  /** Fields of the FaqSection ACF Field Group */
+  faqSection: Maybe<FaqSection>;
   /** The name of the template */
   templateName: Maybe<Scalars['String']['output']>;
 };
@@ -11579,8 +16736,39 @@ export type UniformResourceIdentifiable = {
   uri: Maybe<Scalars['String']['output']>;
 };
 
+/** Input for the updateAllInOneBrand mutation. */
+export type UpdateAllInOneBrandInput = {
+  /** The slug that the all_in_one_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the all_in_one_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the AllInOneBrand object to update */
+  id: Scalars['ID']['input'];
+  /** The name of the all_in_one_brand object to mutate */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The database ID of the all_in_one_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the all_in_one_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the updateAllInOneBrand mutation. */
+export type UpdateAllInOneBrandPayload = {
+  __typename?: 'UpdateAllInOneBrandPayload';
+  /** The created all_in_one_brand */
+  allInOneBrand: Maybe<AllInOneBrand>;
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+};
+
 /** Input for the updateAll_in_one mutation. */
 export type UpdateAll_In_OneInput = {
+  /** Set connections between the all_in_one and AllInOneBrands */
+  allInOneBrands: InputMaybe<All_In_OneAllInOneBrandsInput>;
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
   clientMutationId: InputMaybe<Scalars['String']['input']>;
   /** The date of the object. Preferable to enter as year/month/day (e.g. 01/31/2017) as it will rearrange date as fit if it is not specified. Incomplete dates may have unintended results for example, "2017" as the input will use current date with timestamp 20:17  */
@@ -11676,10 +16864,41 @@ export type UpdateCommentPayload = {
   success: Maybe<Scalars['Boolean']['output']>;
 };
 
+/** Input for the updateConsoleBrand mutation. */
+export type UpdateConsoleBrandInput = {
+  /** The slug that the console_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the console_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the ConsoleBrand object to update */
+  id: Scalars['ID']['input'];
+  /** The name of the console_brand object to mutate */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The database ID of the console_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the console_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the updateConsoleBrand mutation. */
+export type UpdateConsoleBrandPayload = {
+  __typename?: 'UpdateConsoleBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created console_brand */
+  consoleBrand: Maybe<ConsoleBrand>;
+};
+
 /** Input for the updateConsole mutation. */
 export type UpdateConsoleInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
   clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the console and ConsoleBrands */
+  consoleBrands: InputMaybe<ConsoleConsoleBrandsInput>;
   /** The date of the object. Preferable to enter as year/month/day (e.g. 01/31/2017) as it will rearrange date as fit if it is not specified. Incomplete dates may have unintended results for example, "2017" as the input will use current date with timestamp 20:17  */
   date: InputMaybe<Scalars['String']['input']>;
   /** The ID of the console object */
@@ -11707,12 +16926,43 @@ export type UpdateConsolePayload = {
   console: Maybe<Console>;
 };
 
+/** Input for the updateDesktopBrand mutation. */
+export type UpdateDesktopBrandInput = {
+  /** The slug that the desktop_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the desktop_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the DesktopBrand object to update */
+  id: Scalars['ID']['input'];
+  /** The name of the desktop_brand object to mutate */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The database ID of the desktop_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the desktop_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the updateDesktopBrand mutation. */
+export type UpdateDesktopBrandPayload = {
+  __typename?: 'UpdateDesktopBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created desktop_brand */
+  desktopBrand: Maybe<DesktopBrand>;
+};
+
 /** Input for the updateDesktop mutation. */
 export type UpdateDesktopInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
   clientMutationId: InputMaybe<Scalars['String']['input']>;
   /** The date of the object. Preferable to enter as year/month/day (e.g. 01/31/2017) as it will rearrange date as fit if it is not specified. Incomplete dates may have unintended results for example, "2017" as the input will use current date with timestamp 20:17  */
   date: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the desktop and DesktopBrands */
+  desktopBrands: InputMaybe<DesktopDesktopBrandsInput>;
   /** The ID of the desktop object */
   id: Scalars['ID']['input'];
   /** Override the edit lock when another user is editing the post */
@@ -11771,6 +17021,35 @@ export type UpdateFaqPayload = {
   faq: Maybe<Faq>;
 };
 
+/** Input for the updateLaptopBrand mutation. */
+export type UpdateLaptopBrandInput = {
+  /** The slug that the laptop_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the laptop_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the LaptopBrand object to update */
+  id: Scalars['ID']['input'];
+  /** The name of the laptop_brand object to mutate */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The database ID of the laptop_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the laptop_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the updateLaptopBrand mutation. */
+export type UpdateLaptopBrandPayload = {
+  __typename?: 'UpdateLaptopBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created laptop_brand */
+  laptopBrand: Maybe<LaptopBrand>;
+};
+
 /** Input for the updateLaptop mutation. */
 export type UpdateLaptopInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -11781,6 +17060,8 @@ export type UpdateLaptopInput = {
   id: Scalars['ID']['input'];
   /** Override the edit lock when another user is editing the post */
   ignoreEditLock: InputMaybe<Scalars['Boolean']['input']>;
+  /** Set connections between the laptop and LaptopBrands */
+  laptopBrands: InputMaybe<LaptopLaptopBrandsInput>;
   /** A field used for ordering posts. This is typically used with nav menu items or for special ordering of hierarchical content types. */
   menuOrder: InputMaybe<Scalars['Int']['input']>;
   /** The password used to protect the content of the object */
@@ -11884,6 +17165,35 @@ export type UpdatePagePayload = {
   page: Maybe<Page>;
 };
 
+/** Input for the updatePhoneBrand mutation. */
+export type UpdatePhoneBrandInput = {
+  /** The slug that the phone_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the phone_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the PhoneBrand object to update */
+  id: Scalars['ID']['input'];
+  /** The name of the phone_brand object to mutate */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The database ID of the phone_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the phone_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the updatePhoneBrand mutation. */
+export type UpdatePhoneBrandPayload = {
+  __typename?: 'UpdatePhoneBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created phone_brand */
+  phoneBrand: Maybe<PhoneBrand>;
+};
+
 /** Input for the updatePhone mutation. */
 export type UpdatePhoneInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -11898,6 +17208,8 @@ export type UpdatePhoneInput = {
   menuOrder: InputMaybe<Scalars['Int']['input']>;
   /** The password used to protect the content of the object */
   password: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the phone and PhoneBrands */
+  phoneBrands: InputMaybe<PhonePhoneBrandsInput>;
   /** The slug of the object */
   slug: InputMaybe<Scalars['String']['input']>;
   /** The status of the object */
@@ -12048,6 +17360,35 @@ export type UpdateSettingsPayload = {
   writingSettings: Maybe<WritingSettings>;
 };
 
+/** Input for the updateTabletBrand mutation. */
+export type UpdateTabletBrandInput = {
+  /** The slug that the tablet_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the tablet_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the TabletBrand object to update */
+  id: Scalars['ID']['input'];
+  /** The name of the tablet_brand object to mutate */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The database ID of the tablet_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the tablet_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the updateTabletBrand mutation. */
+export type UpdateTabletBrandPayload = {
+  __typename?: 'UpdateTabletBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created tablet_brand */
+  tabletBrand: Maybe<TabletBrand>;
+};
+
 /** Input for the updateTablet mutation. */
 export type UpdateTabletInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -12066,6 +17407,8 @@ export type UpdateTabletInput = {
   slug: InputMaybe<Scalars['String']['input']>;
   /** The status of the object */
   status: InputMaybe<PostStatusEnum>;
+  /** Set connections between the tablet and TabletBrands */
+  tabletBrands: InputMaybe<TabletTabletBrandsInput>;
   /** The title of the object */
   title: InputMaybe<Scalars['String']['input']>;
 };
@@ -12153,6 +17496,35 @@ export type UpdateUserPayload = {
   user: Maybe<User>;
 };
 
+/** Input for the updateWatchBrand mutation. */
+export type UpdateWatchBrandInput = {
+  /** The slug that the watch_brand will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the watch_brand object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the WatchBrand object to update */
+  id: Scalars['ID']['input'];
+  /** The name of the watch_brand object to mutate */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The database ID of the watch_brand that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the watch_brand that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the updateWatchBrand mutation. */
+export type UpdateWatchBrandPayload = {
+  __typename?: 'UpdateWatchBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created watch_brand */
+  watchBrand: Maybe<WatchBrand>;
+};
+
 /** Input for the updateWatch mutation. */
 export type UpdateWatchInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -12173,6 +17545,8 @@ export type UpdateWatchInput = {
   status: InputMaybe<PostStatusEnum>;
   /** The title of the object */
   title: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the watch and WatchBrands */
+  watchBrands: InputMaybe<WatchWatchBrandsInput>;
 };
 
 /** The payload for the updateWatch mutation. */
@@ -13123,10 +18497,14 @@ export type Watch = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node &
   status: Maybe<Scalars['String']['output']>;
   /** The template assigned to the node */
   template: Maybe<ContentTemplate>;
+  /** Connection between the Watch type and the TermNode type */
+  terms: Maybe<WatchToTermNodeConnection>;
   /** The title of the post. This is currently just the raw title. An amendment to support rendered title needs to be made. */
   title: Maybe<Scalars['String']['output']>;
   /** The unique resource identifier path */
   uri: Maybe<Scalars['String']['output']>;
+  /** Connection between the Watch type and the WatchBrand type */
+  watchBrands: Maybe<WatchToWatchBrandConnection>;
   /**
    * The id field matches the WP_Post-&gt;ID field.
    * @deprecated Deprecated in favor of the databaseId field
@@ -13163,8 +18541,466 @@ export type WatchEnqueuedStylesheetsArgs = {
 
 
 /** The watch type */
+export type WatchTermsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<WatchToTermNodeConnectionWhereArgs>;
+};
+
+
+/** The watch type */
 export type WatchTitleArgs = {
   format: InputMaybe<PostObjectFieldFormatEnum>;
+};
+
+
+/** The watch type */
+export type WatchWatchBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<WatchToWatchBrandConnectionWhereArgs>;
+};
+
+/** The WatchBrand type */
+export type WatchBrand = DatabaseIdentifier & HierarchicalNode & HierarchicalTermNode & MenuItemLinkable & Node & TermNode & UniformResourceIdentifiable & {
+  __typename?: 'WatchBrand';
+  /** The ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
+  ancestors: Maybe<WatchBrandToAncestorsWatchBrandConnection>;
+  /** Connection between the WatchBrand type and its children WatchBrands. */
+  children: Maybe<WatchBrandToWatchBrandConnection>;
+  /** Connection between the WatchBrand type and the ContentNode type */
+  contentNodes: Maybe<WatchBrandToContentNodeConnection>;
+  /** The number of objects connected to the object */
+  count: Maybe<Scalars['Int']['output']>;
+  /** The unique identifier stored in the database */
+  databaseId: Scalars['Int']['output'];
+  /** The description of the object */
+  description: Maybe<Scalars['String']['output']>;
+  /** Connection between the TermNode type and the EnqueuedScript type */
+  enqueuedScripts: Maybe<TermNodeToEnqueuedScriptConnection>;
+  /** Connection between the TermNode type and the EnqueuedStylesheet type */
+  enqueuedStylesheets: Maybe<TermNodeToEnqueuedStylesheetConnection>;
+  /** The globally unique ID for the object */
+  id: Scalars['ID']['output'];
+  /** Whether the node is a Comment */
+  isComment: Scalars['Boolean']['output'];
+  /** Whether the node is a Content Node */
+  isContentNode: Scalars['Boolean']['output'];
+  /** Whether the node represents the front page. */
+  isFrontPage: Scalars['Boolean']['output'];
+  /** Whether  the node represents the blog page. */
+  isPostsPage: Scalars['Boolean']['output'];
+  /** Whether the object is restricted from the current viewer */
+  isRestricted: Maybe<Scalars['Boolean']['output']>;
+  /** Whether the node is a Term */
+  isTermNode: Scalars['Boolean']['output'];
+  /** The link to the term */
+  link: Maybe<Scalars['String']['output']>;
+  /** The human friendly name of the object. */
+  name: Maybe<Scalars['String']['output']>;
+  /** Connection between the WatchBrand type and its parent WatchBrand. */
+  parent: Maybe<WatchBrandToParentWatchBrandConnectionEdge>;
+  /** Database id of the parent node */
+  parentDatabaseId: Maybe<Scalars['Int']['output']>;
+  /** The globally unique identifier of the parent node. */
+  parentId: Maybe<Scalars['ID']['output']>;
+  /** An alphanumeric identifier for the object unique to its type. */
+  slug: Maybe<Scalars['String']['output']>;
+  /** Connection between the WatchBrand type and the Taxonomy type */
+  taxonomy: Maybe<WatchBrandToTaxonomyConnectionEdge>;
+  /** The name of the taxonomy that the object is associated with */
+  taxonomyName: Maybe<Scalars['String']['output']>;
+  /** The ID of the term group that this term object belongs to */
+  termGroupId: Maybe<Scalars['Int']['output']>;
+  /** The taxonomy ID that the object is associated with */
+  termTaxonomyId: Maybe<Scalars['Int']['output']>;
+  /** The unique resource identifier path */
+  uri: Maybe<Scalars['String']['output']>;
+  /**
+   * The id field matches the WP_Post-&gt;ID field.
+   * @deprecated Deprecated in favor of databaseId
+   */
+  watchBrandId: Maybe<Scalars['Int']['output']>;
+  /** Connection between the WatchBrand type and the watch type */
+  watches: Maybe<WatchBrandToWatchConnection>;
+};
+
+
+/** The WatchBrand type */
+export type WatchBrandAncestorsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The WatchBrand type */
+export type WatchBrandChildrenArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<WatchBrandToWatchBrandConnectionWhereArgs>;
+};
+
+
+/** The WatchBrand type */
+export type WatchBrandContentNodesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<WatchBrandToContentNodeConnectionWhereArgs>;
+};
+
+
+/** The WatchBrand type */
+export type WatchBrandEnqueuedScriptsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The WatchBrand type */
+export type WatchBrandEnqueuedStylesheetsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The WatchBrand type */
+export type WatchBrandWatchesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<WatchBrandToWatchConnectionWhereArgs>;
+};
+
+/** A paginated collection of WatchBrand Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of WatchBrand Nodes */
+export type WatchBrandConnection = {
+  /** A list of edges (relational context) between RootQuery and connected WatchBrand Nodes */
+  edges: Array<WatchBrandConnectionEdge>;
+  /** A list of connected WatchBrand Nodes */
+  nodes: Array<WatchBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: WatchBrandConnectionPageInfo;
+};
+
+/** Represents a connection to a WatchBrand. Contains both the WatchBrand Node and metadata about the relationship. */
+export type WatchBrandConnectionEdge = {
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The connected WatchBrand Node */
+  node: WatchBrand;
+};
+
+/** Pagination metadata specific to &quot;WatchBrandConnectionEdge&quot; collections. Provides cursors and flags for navigating through sets of &quot;WatchBrandConnectionEdge&quot; Nodes. */
+export type WatchBrandConnectionPageInfo = {
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Identifier types for retrieving a specific WatchBrand. Determines which unique property (global ID, database ID, slug, etc.) is used to locate the WatchBrand. */
+export const WatchBrandIdType = {
+  /** The Database ID for the node */
+  DatabaseId: 'DATABASE_ID',
+  /** The hashed Global ID */
+  Id: 'ID',
+  /** The name of the node */
+  Name: 'NAME',
+  /** Url friendly name of the node */
+  Slug: 'SLUG',
+  /** The URI for the node */
+  Uri: 'URI'
+} as const;
+
+export type WatchBrandIdType = typeof WatchBrandIdType[keyof typeof WatchBrandIdType];
+/** Connection between the WatchBrand type and the WatchBrand type */
+export type WatchBrandToAncestorsWatchBrandConnection = Connection & WatchBrandConnection & {
+  __typename?: 'WatchBrandToAncestorsWatchBrandConnection';
+  /** Edges for the WatchBrandToAncestorsWatchBrandConnection connection */
+  edges: Array<WatchBrandToAncestorsWatchBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<WatchBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: WatchBrandToAncestorsWatchBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type WatchBrandToAncestorsWatchBrandConnectionEdge = Edge & WatchBrandConnectionEdge & {
+  __typename?: 'WatchBrandToAncestorsWatchBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: WatchBrand;
+};
+
+/** Pagination metadata specific to &quot;WatchBrandToAncestorsWatchBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of WatchBrandToAncestorsWatchBrandConnection Nodes. */
+export type WatchBrandToAncestorsWatchBrandConnectionPageInfo = PageInfo & WpPageInfo & WatchBrandConnectionPageInfo & {
+  __typename?: 'WatchBrandToAncestorsWatchBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the WatchBrand type and the ContentNode type */
+export type WatchBrandToContentNodeConnection = Connection & ContentNodeConnection & {
+  __typename?: 'WatchBrandToContentNodeConnection';
+  /** Edges for the WatchBrandToContentNodeConnection connection */
+  edges: Array<WatchBrandToContentNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ContentNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: WatchBrandToContentNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type WatchBrandToContentNodeConnectionEdge = ContentNodeConnectionEdge & Edge & {
+  __typename?: 'WatchBrandToContentNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ContentNode;
+};
+
+/** Pagination metadata specific to &quot;WatchBrandToContentNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of WatchBrandToContentNodeConnection Nodes. */
+export type WatchBrandToContentNodeConnectionPageInfo = ContentNodeConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'WatchBrandToContentNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the WatchBrandToContentNodeConnection connection */
+export type WatchBrandToContentNodeConnectionWhereArgs = {
+  /** The Types of content to filter */
+  contentTypes: InputMaybe<Array<InputMaybe<ContentTypesOfWatchBrandEnum>>>;
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the WatchBrand type and the WatchBrand type */
+export type WatchBrandToParentWatchBrandConnectionEdge = Edge & OneToOneConnection & WatchBrandConnectionEdge & {
+  __typename?: 'WatchBrandToParentWatchBrandConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: WatchBrand;
+};
+
+/** Connection between the WatchBrand type and the Taxonomy type */
+export type WatchBrandToTaxonomyConnectionEdge = Edge & OneToOneConnection & TaxonomyConnectionEdge & {
+  __typename?: 'WatchBrandToTaxonomyConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: Taxonomy;
+};
+
+/** Connection between the WatchBrand type and the WatchBrand type */
+export type WatchBrandToWatchBrandConnection = Connection & WatchBrandConnection & {
+  __typename?: 'WatchBrandToWatchBrandConnection';
+  /** Edges for the WatchBrandToWatchBrandConnection connection */
+  edges: Array<WatchBrandToWatchBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<WatchBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: WatchBrandToWatchBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type WatchBrandToWatchBrandConnectionEdge = Edge & WatchBrandConnectionEdge & {
+  __typename?: 'WatchBrandToWatchBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: WatchBrand;
+};
+
+/** Pagination metadata specific to &quot;WatchBrandToWatchBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of WatchBrandToWatchBrandConnection Nodes. */
+export type WatchBrandToWatchBrandConnectionPageInfo = PageInfo & WpPageInfo & WatchBrandConnectionPageInfo & {
+  __typename?: 'WatchBrandToWatchBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the WatchBrandToWatchBrandConnection connection */
+export type WatchBrandToWatchBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+/** Connection between the WatchBrand type and the watch type */
+export type WatchBrandToWatchConnection = Connection & WatchConnection & {
+  __typename?: 'WatchBrandToWatchConnection';
+  /** Edges for the WatchBrandToWatchConnection connection */
+  edges: Array<WatchBrandToWatchConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<Watch>;
+  /** Information about pagination in a connection. */
+  pageInfo: WatchBrandToWatchConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type WatchBrandToWatchConnectionEdge = Edge & WatchConnectionEdge & {
+  __typename?: 'WatchBrandToWatchConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: Watch;
+};
+
+/** Pagination metadata specific to &quot;WatchBrandToWatchConnection&quot; collections. Provides cursors and flags for navigating through sets of WatchBrandToWatchConnection Nodes. */
+export type WatchBrandToWatchConnectionPageInfo = PageInfo & WpPageInfo & WatchConnectionPageInfo & {
+  __typename?: 'WatchBrandToWatchConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the WatchBrandToWatchConnection connection */
+export type WatchBrandToWatchConnectionWhereArgs = {
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
 };
 
 /** A paginated collection of watch Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of watch Nodes */
@@ -13231,6 +19067,162 @@ export type WatchToPreviewConnectionEdge = Edge & OneToOneConnection & WatchConn
   node: Watch;
 };
 
+/** Connection between the Watch type and the TermNode type */
+export type WatchToTermNodeConnection = Connection & TermNodeConnection & {
+  __typename?: 'WatchToTermNodeConnection';
+  /** Edges for the WatchToTermNodeConnection connection */
+  edges: Array<WatchToTermNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TermNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: WatchToTermNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type WatchToTermNodeConnectionEdge = Edge & TermNodeConnectionEdge & {
+  __typename?: 'WatchToTermNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TermNode;
+};
+
+/** Pagination metadata specific to &quot;WatchToTermNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of WatchToTermNodeConnection Nodes. */
+export type WatchToTermNodeConnectionPageInfo = PageInfo & TermNodeConnectionPageInfo & WpPageInfo & {
+  __typename?: 'WatchToTermNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the WatchToTermNodeConnection connection */
+export type WatchToTermNodeConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** The Taxonomy to filter terms by */
+  taxonomies: InputMaybe<Array<InputMaybe<TaxonomyEnum>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+/** Connection between the Watch type and the WatchBrand type */
+export type WatchToWatchBrandConnection = Connection & WatchBrandConnection & {
+  __typename?: 'WatchToWatchBrandConnection';
+  /** Edges for the WatchToWatchBrandConnection connection */
+  edges: Array<WatchToWatchBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<WatchBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: WatchToWatchBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type WatchToWatchBrandConnectionEdge = Edge & WatchBrandConnectionEdge & {
+  __typename?: 'WatchToWatchBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: WatchBrand;
+};
+
+/** Pagination metadata specific to &quot;WatchToWatchBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of WatchToWatchBrandConnection Nodes. */
+export type WatchToWatchBrandConnectionPageInfo = PageInfo & WpPageInfo & WatchBrandConnectionPageInfo & {
+  __typename?: 'WatchToWatchBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the WatchToWatchBrandConnection connection */
+export type WatchToWatchBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 /** Connection between the Watch type and the watch type */
 export type WatchToWatchConnection = Connection & WatchConnection & {
   __typename?: 'WatchToWatchConnection';
@@ -13270,6 +19262,26 @@ export type WatchToWatchConnectionPageInfo = PageInfo & WpPageInfo & WatchConnec
   startCursor: Maybe<Scalars['String']['output']>;
 };
 
+/** Set relationships between the watch to WatchBrands */
+export type WatchWatchBrandsInput = {
+  /** If true, this will append the WatchBrand to existing related WatchBrands. If false, this will replace existing relationships. Default true. */
+  append: InputMaybe<Scalars['Boolean']['input']>;
+  /** The input list of items to set. */
+  nodes: InputMaybe<Array<InputMaybe<WatchWatchBrandsNodeInput>>>;
+};
+
+/** List of WatchBrands to connect the watch to. If an ID is set, it will be used to create the connection. If not, it will look for a slug. If neither are valid existing terms, and the site is configured to allow terms to be created during post mutations, a term will be created using the Name if it exists in the input, then fallback to the slug if it exists. */
+export type WatchWatchBrandsNodeInput = {
+  /** The description of the WatchBrand. This field is used to set a description of the WatchBrand if a new one is created during the mutation. */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the WatchBrand. If present, this will be used to connect to the watch. If no existing WatchBrand exists with this ID, no connection will be made. */
+  id: InputMaybe<Scalars['ID']['input']>;
+  /** The name of the WatchBrand. This field is used to create a new term, if term creation is enabled in nested mutations, and if one does not already exist with the provided slug or ID or if a slug or ID is not provided. If no name is included and a term is created, the creation will fallback to the slug field. */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The slug of the WatchBrand. If no ID is present, this field will be used to make a connection. If no existing term exists with this slug, this field will be used as a fallback to the Name field when creating a new term to connect to, if term creation is enabled as a nested mutation. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
 /** Provides access to fields of the &quot;Device&quot; ACF Field Group via the &quot;device&quot; field */
 export type WithAcfDevice = {
   /** Fields of the Device ACF Field Group */
@@ -13280,6 +19292,12 @@ export type WithAcfDevice = {
 export type WithAcfDeviceViewSettings = {
   /** Fields of the DeviceViewSettings ACF Field Group */
   deviceViewSettings: Maybe<DeviceViewSettings>;
+};
+
+/** Provides access to fields of the &quot;FaqSection&quot; ACF Field Group via the &quot;faqSection&quot; field */
+export type WithAcfFaqSection = {
+  /** Fields of the FaqSection ACF Field Group */
+  faqSection: Maybe<FaqSection>;
 };
 
 /** Provides access to fields of the &quot;FeaturedSteps&quot; ACF Field Group via the &quot;featuredSteps&quot; field */
@@ -13310,15 +19328,27 @@ export type WritingSettings = {
   useSmilies: Maybe<Scalars['Boolean']['output']>;
 };
 
+export type GetAllTaxonomyTermsQueryVariables = Exact<{
+  taxonomy: TaxonomyEnum;
+  first?: InputMaybe<Scalars['Int']['input']>;
+  after: InputMaybe<Scalars['String']['input']>;
+}>;
+
+
+export type GetAllTaxonomyTermsQuery = { __typename?: 'RootQuery', terms: { __typename?: 'RootQueryToTermNodeConnection', pageInfo: { __typename?: 'RootQueryToTermNodeConnectionPageInfo', hasNextPage: boolean, endCursor: string | null }, nodes: Array<{ __typename: 'AllInOneBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'Category', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'ConsoleBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'DesktopBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'LaptopBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'PhoneBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'PostFormat', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'TabletBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'Tag', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'WatchBrand', id: string, name: string | null, slug: string | null, description: string | null }> } | null };
+
+export type GetCustomPostTypesQueryVariables = Exact<{
+  first?: InputMaybe<Scalars['Int']['input']>;
+  after: InputMaybe<Scalars['String']['input']>;
+}>;
+
+
+export type GetCustomPostTypesQuery = { __typename?: 'RootQuery', contentTypes: { __typename?: 'RootQueryToContentTypeConnection', pageInfo: { __typename?: 'RootQueryToContentTypeConnectionPageInfo', hasNextPage: boolean, endCursor: string | null }, nodes: Array<{ __typename?: 'ContentType', name: string | null, graphqlSingleName: string | null, graphqlPluralName: string | null, description: string | null }> } | null };
+
 export type GetHeaderNavQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetHeaderNavQuery = { __typename?: 'RootQuery', menu: { __typename?: 'Menu', name: string | null, menuId: number | null, menuItems: { __typename?: 'MenuToMenuItemConnection', nodes: Array<{
-  target: "_blank" | "_self"; __typename?: 'MenuItem', id: string, label: string | null, url: string | null, parentId: string | null, childItems: { __typename?: 'MenuItemToMenuItemConnection', nodes: Array<{
-    target: "_blank" | "_self";
-    parentId: string; __typename?: 'MenuItem', id: string, label: string | null, url: string | null 
-}> } | null 
-}> } | null } | null };
+export type GetHeaderNavQuery = { __typename?: 'RootQuery', menu: { __typename?: 'Menu', name: string | null, menuId: number | null, menuItems: { __typename?: 'MenuToMenuItemConnection', nodes: Array<{ __typename?: 'MenuItem', id: string, label: string | null, url: string | null, parentId: string | null, childItems: { __typename?: 'MenuItemToMenuItemConnection', nodes: Array<{ __typename?: 'MenuItem', id: string, label: string | null, url: string | null }> } | null }> } | null } | null };
 
 export type GetHomePageQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -13330,7 +19360,52 @@ export type GetSellPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type GetSellPageQuery = { __typename?: 'RootQuery', pageBy: { __typename?: 'Page', id: string, heroSection: { __typename?: 'HeroSection', title: string | null, subtitle: string | null, button: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, featuredImage: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null } | null, deviceView: { __typename?: 'DeviceView', deviceViewSettings: { __typename?: 'DeviceViewSettings', title: string | null, subtitle: string | null, searchFieldPlaceholder: string | null, quickLinks: Array<{ __typename?: 'DeviceViewSettingsQuickLinks', link: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null } | null> | null, selectDevices: Array<{ __typename?: 'DeviceViewSettingsSelectDevices', deviceName: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, icon: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null> | null } | null } | null };
 
+export type GetPageHeroQueryVariables = Exact<{
+  pageId: Scalars['ID']['input'];
+  idType?: InputMaybe<PageIdType>;
+}>;
 
+
+export type GetPageHeroQuery = { __typename?: 'RootQuery', page: { __typename?: 'Page', id: string, title: string | null, heroSection: { __typename?: 'HeroSection', title: string | null, subtitle: string | null, button: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, featuredImage: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null } | null };
+
+
+export const GetAllTaxonomyTermsDocument = `
+    query GetAllTaxonomyTerms($taxonomy: TaxonomyEnum!, $first: Int = 100, $after: String) {
+  terms(
+    first: $first
+    after: $after
+    where: {taxonomies: [$taxonomy], hideEmpty: false}
+  ) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    nodes {
+      id
+      name
+      slug
+      description
+      __typename
+    }
+  }
+}
+    `;
+export const GetCustomPostTypesDocument = `
+    query GetCustomPostTypes($first: Int = 100, $after: String) {
+  contentTypes(first: $first, after: $after) {
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+    nodes {
+      name
+      graphqlSingleName
+      graphqlPluralName
+      description
+    }
+  }
+}
+    `;
 export const GetHeaderNavDocument = `
     query GetHeaderNav {
   menu(id: "Header Nav", idType: SLUG) {
@@ -13479,6 +19554,29 @@ export const GetSellPageDocument = `
   }
 }
     `;
+export const GetPageHeroDocument = `
+    query GetPageHero($pageId: ID!, $idType: PageIdType = URI) {
+  page(id: $pageId, idType: $idType) {
+    id
+    title
+    heroSection {
+      title
+      subtitle
+      button {
+        url
+        title
+        target
+      }
+      featuredImage {
+        node {
+          sourceUrl
+          altText
+        }
+      }
+    }
+  }
+}
+    `;
 
 export type SdkFunctionWrapper = <T>(action: (requestHeaders?:Record<string, string>) => Promise<T>, operationName: string, operationType?: string, variables?: any) => Promise<T>;
 
@@ -13487,6 +19585,12 @@ const defaultWrapper: SdkFunctionWrapper = (action, _operationName, _operationTy
 
 export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
   return {
+    GetAllTaxonomyTerms(variables: GetAllTaxonomyTermsQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetAllTaxonomyTermsQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<GetAllTaxonomyTermsQuery>({ document: GetAllTaxonomyTermsDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetAllTaxonomyTerms', 'query', variables);
+    },
+    GetCustomPostTypes(variables?: GetCustomPostTypesQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetCustomPostTypesQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<GetCustomPostTypesQuery>({ document: GetCustomPostTypesDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetCustomPostTypes', 'query', variables);
+    },
     GetHeaderNav(variables?: GetHeaderNavQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetHeaderNavQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<GetHeaderNavQuery>({ document: GetHeaderNavDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetHeaderNav', 'query', variables);
     },
@@ -13495,6 +19599,9 @@ export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = 
     },
     GetSellPage(variables?: GetSellPageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetSellPageQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<GetSellPageQuery>({ document: GetSellPageDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetSellPage', 'query', variables);
+    },
+    GetPageHero(variables: GetPageHeroQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetPageHeroQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<GetPageHeroQuery>({ document: GetPageHeroDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetPageHero', 'query', variables);
     }
   };
 }

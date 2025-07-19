@@ -6,6 +6,9 @@ add_action('init', function() {
         'hierarchical' => true,
         'public' => true,
         'show_admin_column' => true,
+        'show_in_graphql'       => true,
+        'graphql_single_name'   => 'ConsoleBrand',
+        'graphql_plural_name'   => 'ConsoleBrands',
     ]);
 
     $brands = [

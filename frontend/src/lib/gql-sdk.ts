@@ -3338,6 +3338,13 @@ export const ContentTypesOfDesktopBrandEnum = {
 } as const;
 
 export type ContentTypesOfDesktopBrandEnum = typeof ContentTypesOfDesktopBrandEnum[keyof typeof ContentTypesOfDesktopBrandEnum];
+/** Allowed Content Types of the FaqBrand taxonomy. */
+export const ContentTypesOfFaqBrandEnum = {
+  /** The Type of Content object */
+  Faq: 'FAQ'
+} as const;
+
+export type ContentTypesOfFaqBrandEnum = typeof ContentTypesOfFaqBrandEnum[keyof typeof ContentTypesOfFaqBrandEnum];
 /** Allowed Content Types of the LaptopBrand taxonomy. */
 export const ContentTypesOfLaptopBrandEnum = {
   /** The Type of Content object */
@@ -3610,6 +3617,33 @@ export type CreateDesktopPayload = {
   desktop: Maybe<Desktop>;
 };
 
+/** Input for the createFaqBrand mutation. */
+export type CreateFaqBrandInput = {
+  /** The slug that the faq_category will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the faq_category object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The name of the faq_category object to mutate */
+  name: Scalars['String']['input'];
+  /** The database ID of the faq_category that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the faq_category that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the createFaqBrand mutation. */
+export type CreateFaqBrandPayload = {
+  __typename?: 'CreateFaqBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created faq_category */
+  faqBrand: Maybe<FaqBrand>;
+};
+
 /** Input for the createFaq mutation. */
 export type CreateFaqInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -3618,6 +3652,8 @@ export type CreateFaqInput = {
   content: InputMaybe<Scalars['String']['input']>;
   /** The date of the object. Preferable to enter as year/month/day (e.g. 01/31/2017) as it will rearrange date as fit if it is not specified. Incomplete dates may have unintended results for example, "2017" as the input will use current date with timestamp 20:17  */
   date: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the faq and FaqBrands */
+  faqBrands: InputMaybe<FaqFaqBrandsInput>;
   /** A field used for ordering posts. This is typically used with nav menu items or for special ordering of hierarchical content types. */
   menuOrder: InputMaybe<Scalars['Int']['input']>;
   /** The password used to protect the content of the object */
@@ -4296,6 +4332,25 @@ export type DeleteDesktopPayload = {
   deletedId: Maybe<Scalars['ID']['output']>;
   /** The object before it was deleted */
   desktop: Maybe<Desktop>;
+};
+
+/** Input for the deleteFaqBrand mutation. */
+export type DeleteFaqBrandInput = {
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the FaqBrand to delete */
+  id: Scalars['ID']['input'];
+};
+
+/** The payload for the deleteFaqBrand mutation. */
+export type DeleteFaqBrandPayload = {
+  __typename?: 'DeleteFaqBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The ID of the deleted object */
+  deletedId: Maybe<Scalars['ID']['output']>;
+  /** The deleted term object */
+  faqBrand: Maybe<FaqBrand>;
 };
 
 /** Input for the deleteFaq mutation. */
@@ -5837,6 +5892,8 @@ export type Faq = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node & N
   enqueuedScripts: Maybe<ContentNodeToEnqueuedScriptConnection>;
   /** Connection between the ContentNode type and the EnqueuedStylesheet type */
   enqueuedStylesheets: Maybe<ContentNodeToEnqueuedStylesheetConnection>;
+  /** Connection between the Faq type and the FaqBrand type */
+  faqBrands: Maybe<FaqToFaqBrandConnection>;
   /**
    * The id field matches the WP_Post-&gt;ID field.
    * @deprecated Deprecated in favor of the databaseId field
@@ -5889,6 +5946,8 @@ export type Faq = ContentNode & DatabaseIdentifier & MenuItemLinkable & Node & N
   status: Maybe<Scalars['String']['output']>;
   /** The template assigned to the node */
   template: Maybe<ContentTemplate>;
+  /** Connection between the Faq type and the TermNode type */
+  terms: Maybe<FaqToTermNodeConnection>;
   /** The title of the post. This is currently just the raw title. An amendment to support rendered title needs to be made. */
   title: Maybe<Scalars['String']['output']>;
   /** The unique resource identifier path */
@@ -5930,8 +5989,466 @@ export type FaqEnqueuedStylesheetsArgs = {
 
 
 /** The faq type */
+export type FaqFaqBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<FaqToFaqBrandConnectionWhereArgs>;
+};
+
+
+/** The faq type */
+export type FaqTermsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<FaqToTermNodeConnectionWhereArgs>;
+};
+
+
+/** The faq type */
 export type FaqTitleArgs = {
   format: InputMaybe<PostObjectFieldFormatEnum>;
+};
+
+/** The FaqBrand type */
+export type FaqBrand = DatabaseIdentifier & HierarchicalNode & HierarchicalTermNode & MenuItemLinkable & Node & TermNode & UniformResourceIdentifiable & {
+  __typename?: 'FaqBrand';
+  /** The ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
+  ancestors: Maybe<FaqBrandToAncestorsFaqBrandConnection>;
+  /** Connection between the FaqBrand type and its children FaqBrands. */
+  children: Maybe<FaqBrandToFaqBrandConnection>;
+  /** Connection between the FaqBrand type and the ContentNode type */
+  contentNodes: Maybe<FaqBrandToContentNodeConnection>;
+  /** The number of objects connected to the object */
+  count: Maybe<Scalars['Int']['output']>;
+  /** The unique identifier stored in the database */
+  databaseId: Scalars['Int']['output'];
+  /** The description of the object */
+  description: Maybe<Scalars['String']['output']>;
+  /** Connection between the TermNode type and the EnqueuedScript type */
+  enqueuedScripts: Maybe<TermNodeToEnqueuedScriptConnection>;
+  /** Connection between the TermNode type and the EnqueuedStylesheet type */
+  enqueuedStylesheets: Maybe<TermNodeToEnqueuedStylesheetConnection>;
+  /**
+   * The id field matches the WP_Post-&gt;ID field.
+   * @deprecated Deprecated in favor of databaseId
+   */
+  faqBrandId: Maybe<Scalars['Int']['output']>;
+  /** Connection between the FaqBrand type and the faq type */
+  faqs: Maybe<FaqBrandToFaqConnection>;
+  /** The globally unique ID for the object */
+  id: Scalars['ID']['output'];
+  /** Whether the node is a Comment */
+  isComment: Scalars['Boolean']['output'];
+  /** Whether the node is a Content Node */
+  isContentNode: Scalars['Boolean']['output'];
+  /** Whether the node represents the front page. */
+  isFrontPage: Scalars['Boolean']['output'];
+  /** Whether  the node represents the blog page. */
+  isPostsPage: Scalars['Boolean']['output'];
+  /** Whether the object is restricted from the current viewer */
+  isRestricted: Maybe<Scalars['Boolean']['output']>;
+  /** Whether the node is a Term */
+  isTermNode: Scalars['Boolean']['output'];
+  /** The link to the term */
+  link: Maybe<Scalars['String']['output']>;
+  /** The human friendly name of the object. */
+  name: Maybe<Scalars['String']['output']>;
+  /** Connection between the FaqBrand type and its parent FaqBrand. */
+  parent: Maybe<FaqBrandToParentFaqBrandConnectionEdge>;
+  /** Database id of the parent node */
+  parentDatabaseId: Maybe<Scalars['Int']['output']>;
+  /** The globally unique identifier of the parent node. */
+  parentId: Maybe<Scalars['ID']['output']>;
+  /** An alphanumeric identifier for the object unique to its type. */
+  slug: Maybe<Scalars['String']['output']>;
+  /** Connection between the FaqBrand type and the Taxonomy type */
+  taxonomy: Maybe<FaqBrandToTaxonomyConnectionEdge>;
+  /** The name of the taxonomy that the object is associated with */
+  taxonomyName: Maybe<Scalars['String']['output']>;
+  /** The ID of the term group that this term object belongs to */
+  termGroupId: Maybe<Scalars['Int']['output']>;
+  /** The taxonomy ID that the object is associated with */
+  termTaxonomyId: Maybe<Scalars['Int']['output']>;
+  /** The unique resource identifier path */
+  uri: Maybe<Scalars['String']['output']>;
+};
+
+
+/** The FaqBrand type */
+export type FaqBrandAncestorsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The FaqBrand type */
+export type FaqBrandChildrenArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<FaqBrandToFaqBrandConnectionWhereArgs>;
+};
+
+
+/** The FaqBrand type */
+export type FaqBrandContentNodesArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<FaqBrandToContentNodeConnectionWhereArgs>;
+};
+
+
+/** The FaqBrand type */
+export type FaqBrandEnqueuedScriptsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The FaqBrand type */
+export type FaqBrandEnqueuedStylesheetsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+/** The FaqBrand type */
+export type FaqBrandFaqsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<FaqBrandToFaqConnectionWhereArgs>;
+};
+
+/** A paginated collection of FaqBrand Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of FaqBrand Nodes */
+export type FaqBrandConnection = {
+  /** A list of edges (relational context) between RootQuery and connected FaqBrand Nodes */
+  edges: Array<FaqBrandConnectionEdge>;
+  /** A list of connected FaqBrand Nodes */
+  nodes: Array<FaqBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: FaqBrandConnectionPageInfo;
+};
+
+/** Represents a connection to a FaqBrand. Contains both the FaqBrand Node and metadata about the relationship. */
+export type FaqBrandConnectionEdge = {
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The connected FaqBrand Node */
+  node: FaqBrand;
+};
+
+/** Pagination metadata specific to &quot;FaqBrandConnectionEdge&quot; collections. Provides cursors and flags for navigating through sets of &quot;FaqBrandConnectionEdge&quot; Nodes. */
+export type FaqBrandConnectionPageInfo = {
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Identifier types for retrieving a specific FaqBrand. Determines which unique property (global ID, database ID, slug, etc.) is used to locate the FaqBrand. */
+export const FaqBrandIdType = {
+  /** The Database ID for the node */
+  DatabaseId: 'DATABASE_ID',
+  /** The hashed Global ID */
+  Id: 'ID',
+  /** The name of the node */
+  Name: 'NAME',
+  /** Url friendly name of the node */
+  Slug: 'SLUG',
+  /** The URI for the node */
+  Uri: 'URI'
+} as const;
+
+export type FaqBrandIdType = typeof FaqBrandIdType[keyof typeof FaqBrandIdType];
+/** Connection between the FaqBrand type and the FaqBrand type */
+export type FaqBrandToAncestorsFaqBrandConnection = Connection & FaqBrandConnection & {
+  __typename?: 'FaqBrandToAncestorsFaqBrandConnection';
+  /** Edges for the FaqBrandToAncestorsFaqBrandConnection connection */
+  edges: Array<FaqBrandToAncestorsFaqBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<FaqBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: FaqBrandToAncestorsFaqBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type FaqBrandToAncestorsFaqBrandConnectionEdge = Edge & FaqBrandConnectionEdge & {
+  __typename?: 'FaqBrandToAncestorsFaqBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: FaqBrand;
+};
+
+/** Pagination metadata specific to &quot;FaqBrandToAncestorsFaqBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of FaqBrandToAncestorsFaqBrandConnection Nodes. */
+export type FaqBrandToAncestorsFaqBrandConnectionPageInfo = FaqBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'FaqBrandToAncestorsFaqBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the FaqBrand type and the ContentNode type */
+export type FaqBrandToContentNodeConnection = Connection & ContentNodeConnection & {
+  __typename?: 'FaqBrandToContentNodeConnection';
+  /** Edges for the FaqBrandToContentNodeConnection connection */
+  edges: Array<FaqBrandToContentNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<ContentNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: FaqBrandToContentNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type FaqBrandToContentNodeConnectionEdge = ContentNodeConnectionEdge & Edge & {
+  __typename?: 'FaqBrandToContentNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: ContentNode;
+};
+
+/** Pagination metadata specific to &quot;FaqBrandToContentNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of FaqBrandToContentNodeConnection Nodes. */
+export type FaqBrandToContentNodeConnectionPageInfo = ContentNodeConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'FaqBrandToContentNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the FaqBrandToContentNodeConnection connection */
+export type FaqBrandToContentNodeConnectionWhereArgs = {
+  /** The Types of content to filter */
+  contentTypes: InputMaybe<Array<InputMaybe<ContentTypesOfFaqBrandEnum>>>;
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the FaqBrand type and the FaqBrand type */
+export type FaqBrandToFaqBrandConnection = Connection & FaqBrandConnection & {
+  __typename?: 'FaqBrandToFaqBrandConnection';
+  /** Edges for the FaqBrandToFaqBrandConnection connection */
+  edges: Array<FaqBrandToFaqBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<FaqBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: FaqBrandToFaqBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type FaqBrandToFaqBrandConnectionEdge = Edge & FaqBrandConnectionEdge & {
+  __typename?: 'FaqBrandToFaqBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: FaqBrand;
+};
+
+/** Pagination metadata specific to &quot;FaqBrandToFaqBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of FaqBrandToFaqBrandConnection Nodes. */
+export type FaqBrandToFaqBrandConnectionPageInfo = FaqBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'FaqBrandToFaqBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the FaqBrandToFaqBrandConnection connection */
+export type FaqBrandToFaqBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+/** Connection between the FaqBrand type and the faq type */
+export type FaqBrandToFaqConnection = Connection & FaqConnection & {
+  __typename?: 'FaqBrandToFaqConnection';
+  /** Edges for the FaqBrandToFaqConnection connection */
+  edges: Array<FaqBrandToFaqConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<Faq>;
+  /** Information about pagination in a connection. */
+  pageInfo: FaqBrandToFaqConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type FaqBrandToFaqConnectionEdge = Edge & FaqConnectionEdge & {
+  __typename?: 'FaqBrandToFaqConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: Faq;
+};
+
+/** Pagination metadata specific to &quot;FaqBrandToFaqConnection&quot; collections. Provides cursors and flags for navigating through sets of FaqBrandToFaqConnection Nodes. */
+export type FaqBrandToFaqConnectionPageInfo = FaqConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'FaqBrandToFaqConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the FaqBrandToFaqConnection connection */
+export type FaqBrandToFaqConnectionWhereArgs = {
+  /** Filter the connection based on dates */
+  dateQuery: InputMaybe<DateQueryInput>;
+  /** True for objects with passwords; False for objects without passwords; null for all objects with or without passwords */
+  hasPassword: InputMaybe<Scalars['Boolean']['input']>;
+  /** Specific database ID of the object */
+  id: InputMaybe<Scalars['Int']['input']>;
+  /** Array of IDs for the objects to retrieve */
+  in: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Get objects with a specific mimeType property */
+  mimeType: InputMaybe<MimeTypeEnum>;
+  /** Slug / post_name of the object */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** Specify objects to retrieve. Use slugs */
+  nameIn: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Specify IDs NOT to retrieve. If this is used in the same query as "in", it will be ignored */
+  notIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** What parameter to use to order the objects by. */
+  orderby: InputMaybe<Array<InputMaybe<PostObjectsConnectionOrderbyInput>>>;
+  /** Use ID to return only children. Use 0 to return only top-level items */
+  parent: InputMaybe<Scalars['ID']['input']>;
+  /** Specify objects whose parent is in an array */
+  parentIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Specify posts whose parent is not in an array */
+  parentNotIn: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Show posts with a specific password. */
+  password: InputMaybe<Scalars['String']['input']>;
+  /** Show Posts based on a keyword search */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Retrieve posts where post status is in an array. */
+  stati: InputMaybe<Array<InputMaybe<PostStatusEnum>>>;
+  /** Show posts with a specific status. */
+  status: InputMaybe<PostStatusEnum>;
+  /** Title of the object */
+  title: InputMaybe<Scalars['String']['input']>;
+};
+
+/** Connection between the FaqBrand type and the FaqBrand type */
+export type FaqBrandToParentFaqBrandConnectionEdge = Edge & FaqBrandConnectionEdge & OneToOneConnection & {
+  __typename?: 'FaqBrandToParentFaqBrandConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: FaqBrand;
+};
+
+/** Connection between the FaqBrand type and the Taxonomy type */
+export type FaqBrandToTaxonomyConnectionEdge = Edge & OneToOneConnection & TaxonomyConnectionEdge & {
+  __typename?: 'FaqBrandToTaxonomyConnectionEdge';
+  /** Opaque reference to the nodes position in the connection. Value can be used with pagination args. */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The node of the connection, without the edges */
+  node: Taxonomy;
 };
 
 /** A paginated collection of faq Nodes, Supports cursor-based pagination and filtering to efficiently retrieve sets of faq Nodes */
@@ -5962,6 +6479,26 @@ export type FaqConnectionPageInfo = {
   hasPreviousPage: Scalars['Boolean']['output'];
   /** When paginating backwards, the cursor to continue. */
   startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Set relationships between the faq to FaqBrands */
+export type FaqFaqBrandsInput = {
+  /** If true, this will append the FaqBrand to existing related FaqBrands. If false, this will replace existing relationships. Default true. */
+  append: InputMaybe<Scalars['Boolean']['input']>;
+  /** The input list of items to set. */
+  nodes: InputMaybe<Array<InputMaybe<FaqFaqBrandsNodeInput>>>;
+};
+
+/** List of FaqBrands to connect the faq to. If an ID is set, it will be used to create the connection. If not, it will look for a slug. If neither are valid existing terms, and the site is configured to allow terms to be created during post mutations, a term will be created using the Name if it exists in the input, then fallback to the slug if it exists. */
+export type FaqFaqBrandsNodeInput = {
+  /** The description of the FaqBrand. This field is used to set a description of the FaqBrand if a new one is created during the mutation. */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the FaqBrand. If present, this will be used to connect to the faq. If no existing FaqBrand exists with this ID, no connection will be made. */
+  id: InputMaybe<Scalars['ID']['input']>;
+  /** The name of the FaqBrand. This field is used to create a new term, if term creation is enabled in nested mutations, and if one does not already exist with the provided slug or ID or if a slug or ID is not provided. If no name is included and a term is created, the creation will fallback to the slug field. */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The slug of the FaqBrand. If no ID is present, this field will be used to make a connection. If no existing term exists with this slug, this field will be used as a fallback to the Name field when creating a new term to connect to, if term creation is enabled as a nested mutation. */
+  slug: InputMaybe<Scalars['String']['input']>;
 };
 
 /** Identifier types for retrieving a specific Faq. Specifies which unique attribute is used to find an exact Faq. */
@@ -6016,6 +6553,83 @@ export type FaqSection_FieldsSingleFaqArgs = {
   before: InputMaybe<Scalars['String']['input']>;
   first: InputMaybe<Scalars['Int']['input']>;
   last: InputMaybe<Scalars['Int']['input']>;
+};
+
+/** Connection between the Faq type and the FaqBrand type */
+export type FaqToFaqBrandConnection = Connection & FaqBrandConnection & {
+  __typename?: 'FaqToFaqBrandConnection';
+  /** Edges for the FaqToFaqBrandConnection connection */
+  edges: Array<FaqToFaqBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<FaqBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: FaqToFaqBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type FaqToFaqBrandConnectionEdge = Edge & FaqBrandConnectionEdge & {
+  __typename?: 'FaqToFaqBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: FaqBrand;
+};
+
+/** Pagination metadata specific to &quot;FaqToFaqBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of FaqToFaqBrandConnection Nodes. */
+export type FaqToFaqBrandConnectionPageInfo = FaqBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'FaqToFaqBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the FaqToFaqBrandConnection connection */
+export type FaqToFaqBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** Connection between the Faq type and the faq type */
@@ -6076,6 +6690,85 @@ export type FaqToPreviewConnectionEdge = Edge & FaqConnectionEdge & OneToOneConn
   cursor: Maybe<Scalars['String']['output']>;
   /** The node of the connection, without the edges */
   node: Faq;
+};
+
+/** Connection between the Faq type and the TermNode type */
+export type FaqToTermNodeConnection = Connection & TermNodeConnection & {
+  __typename?: 'FaqToTermNodeConnection';
+  /** Edges for the FaqToTermNodeConnection connection */
+  edges: Array<FaqToTermNodeConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<TermNode>;
+  /** Information about pagination in a connection. */
+  pageInfo: FaqToTermNodeConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type FaqToTermNodeConnectionEdge = Edge & TermNodeConnectionEdge & {
+  __typename?: 'FaqToTermNodeConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: TermNode;
+};
+
+/** Pagination metadata specific to &quot;FaqToTermNodeConnection&quot; collections. Provides cursors and flags for navigating through sets of FaqToTermNodeConnection Nodes. */
+export type FaqToTermNodeConnectionPageInfo = PageInfo & TermNodeConnectionPageInfo & WpPageInfo & {
+  __typename?: 'FaqToTermNodeConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the FaqToTermNodeConnection connection */
+export type FaqToTermNodeConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** The Taxonomy to filter terms by */
+  taxonomies: InputMaybe<Array<InputMaybe<TaxonomyEnum>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** The &quot;FeaturedSteps&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
@@ -8068,7 +8761,7 @@ export const MenuItemNodeIdTypeEnum = {
 
 export type MenuItemNodeIdTypeEnum = typeof MenuItemNodeIdTypeEnum[keyof typeof MenuItemNodeIdTypeEnum];
 /** Deprecated in favor of MenuItemLinkeable Interface */
-export type MenuItemObjectUnion = AllInOneBrand | All_In_One | Category | Console | ConsoleBrand | Desktop | DesktopBrand | Faq | Laptop | LaptopBrand | Page | Phone | PhoneBrand | Post | Tablet | TabletBrand | Tag | Watch | WatchBrand;
+export type MenuItemObjectUnion = AllInOneBrand | All_In_One | Category | Console | ConsoleBrand | Desktop | DesktopBrand | Faq | FaqBrand | Laptop | LaptopBrand | Page | Phone | PhoneBrand | Post | Tablet | TabletBrand | Tag | Watch | WatchBrand;
 
 /** Connection between the MenuItem type and the Menu type */
 export type MenuItemToMenuConnectionEdge = Edge & MenuConnectionEdge & OneToOneConnection & {
@@ -11198,6 +11891,8 @@ export type RootMutation = {
   createDesktopBrand: Maybe<CreateDesktopBrandPayload>;
   /** The createFaq mutation */
   createFaq: Maybe<CreateFaqPayload>;
+  /** The createFaqBrand mutation */
+  createFaqBrand: Maybe<CreateFaqBrandPayload>;
   /** The createLaptop mutation */
   createLaptop: Maybe<CreateLaptopPayload>;
   /** The createLaptopBrand mutation */
@@ -11244,6 +11939,8 @@ export type RootMutation = {
   deleteDesktopBrand: Maybe<DeleteDesktopBrandPayload>;
   /** The deleteFaq mutation */
   deleteFaq: Maybe<DeleteFaqPayload>;
+  /** The deleteFaqBrand mutation */
+  deleteFaqBrand: Maybe<DeleteFaqBrandPayload>;
   /** The deleteLaptop mutation */
   deleteLaptop: Maybe<DeleteLaptopPayload>;
   /** The deleteLaptopBrand mutation */
@@ -11300,6 +11997,8 @@ export type RootMutation = {
   updateDesktopBrand: Maybe<UpdateDesktopBrandPayload>;
   /** The updateFaq mutation */
   updateFaq: Maybe<UpdateFaqPayload>;
+  /** The updateFaqBrand mutation */
+  updateFaqBrand: Maybe<UpdateFaqBrandPayload>;
   /** The updateLaptop mutation */
   updateLaptop: Maybe<UpdateLaptopPayload>;
   /** The updateLaptopBrand mutation */
@@ -11384,6 +12083,12 @@ export type RootMutationCreateDesktopBrandArgs = {
 /** The root mutation */
 export type RootMutationCreateFaqArgs = {
   input: CreateFaqInput;
+};
+
+
+/** The root mutation */
+export type RootMutationCreateFaqBrandArgs = {
+  input: CreateFaqBrandInput;
 };
 
 
@@ -11522,6 +12227,12 @@ export type RootMutationDeleteDesktopBrandArgs = {
 /** The root mutation */
 export type RootMutationDeleteFaqArgs = {
   input: DeleteFaqInput;
+};
+
+
+/** The root mutation */
+export type RootMutationDeleteFaqBrandArgs = {
+  input: DeleteFaqBrandInput;
 };
 
 
@@ -11694,6 +12405,12 @@ export type RootMutationUpdateFaqArgs = {
 
 
 /** The root mutation */
+export type RootMutationUpdateFaqBrandArgs = {
+  input: UpdateFaqBrandInput;
+};
+
+
+/** The root mutation */
 export type RootMutationUpdateLaptopArgs = {
   input: UpdateLaptopInput;
 };
@@ -11847,6 +12564,10 @@ export type RootQuery = WithAcfOptionsPageDeviceView & {
   discussionSettings: Maybe<DiscussionSettings>;
   /** An object of the faq Type.  */
   faq: Maybe<Faq>;
+  /** A 0bject */
+  faqBrand: Maybe<FaqBrand>;
+  /** Connection between the RootQuery type and the FaqBrand type */
+  faqBrands: Maybe<RootQueryToFaqBrandConnection>;
   /**
    * A faq object
    * @deprecated Deprecated in favor of using the single entry point for this type with ID and IDType fields. For example, instead of postBy( id: &quot;&quot; ), use post(id: &quot;&quot; idType: &quot;&quot;)
@@ -12200,6 +12921,23 @@ export type RootQueryFaqArgs = {
   asPreview: InputMaybe<Scalars['Boolean']['input']>;
   id: Scalars['ID']['input'];
   idType: InputMaybe<FaqIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryFaqBrandArgs = {
+  id: Scalars['ID']['input'];
+  idType: InputMaybe<FaqBrandIdType>;
+};
+
+
+/** The root entry point into the Graph */
+export type RootQueryFaqBrandsArgs = {
+  after: InputMaybe<Scalars['String']['input']>;
+  before: InputMaybe<Scalars['String']['input']>;
+  first: InputMaybe<Scalars['Int']['input']>;
+  last: InputMaybe<Scalars['Int']['input']>;
+  where: InputMaybe<RootQueryToFaqBrandConnectionWhereArgs>;
 };
 
 
@@ -13468,6 +14206,83 @@ export type RootQueryToEnqueuedStylesheetConnectionPageInfo = EnqueuedStylesheet
   hasPreviousPage: Scalars['Boolean']['output'];
   /** When paginating backwards, the cursor to continue. */
   startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Connection between the RootQuery type and the FaqBrand type */
+export type RootQueryToFaqBrandConnection = Connection & FaqBrandConnection & {
+  __typename?: 'RootQueryToFaqBrandConnection';
+  /** Edges for the RootQueryToFaqBrandConnection connection */
+  edges: Array<RootQueryToFaqBrandConnectionEdge>;
+  /** The nodes of the connection, without the edges */
+  nodes: Array<FaqBrand>;
+  /** Information about pagination in a connection. */
+  pageInfo: RootQueryToFaqBrandConnectionPageInfo;
+};
+
+/** An edge in a connection */
+export type RootQueryToFaqBrandConnectionEdge = Edge & FaqBrandConnectionEdge & {
+  __typename?: 'RootQueryToFaqBrandConnectionEdge';
+  /** A cursor for use in pagination */
+  cursor: Maybe<Scalars['String']['output']>;
+  /** The item at the end of the edge */
+  node: FaqBrand;
+};
+
+/** Pagination metadata specific to &quot;RootQueryToFaqBrandConnection&quot; collections. Provides cursors and flags for navigating through sets of RootQueryToFaqBrandConnection Nodes. */
+export type RootQueryToFaqBrandConnectionPageInfo = FaqBrandConnectionPageInfo & PageInfo & WpPageInfo & {
+  __typename?: 'RootQueryToFaqBrandConnectionPageInfo';
+  /** When paginating forwards, the cursor to continue. */
+  endCursor: Maybe<Scalars['String']['output']>;
+  /** When paginating forwards, are there more items? */
+  hasNextPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, are there more items? */
+  hasPreviousPage: Scalars['Boolean']['output'];
+  /** When paginating backwards, the cursor to continue. */
+  startCursor: Maybe<Scalars['String']['output']>;
+};
+
+/** Arguments for filtering the RootQueryToFaqBrandConnection connection */
+export type RootQueryToFaqBrandConnectionWhereArgs = {
+  /** Unique cache key to be produced when this query is stored in an object cache. Default is 'core'. */
+  cacheDomain: InputMaybe<Scalars['String']['input']>;
+  /** Term ID to retrieve child terms of. If multiple taxonomies are passed, $child_of is ignored. Default 0. */
+  childOf: InputMaybe<Scalars['Int']['input']>;
+  /** True to limit results to terms that have no children. This parameter has no effect on non-hierarchical taxonomies. Default false. */
+  childless: InputMaybe<Scalars['Boolean']['input']>;
+  /** Retrieve terms where the description is LIKE the input value. Default empty. */
+  descriptionLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of term ids to exclude. If $include is non-empty, $exclude is ignored. Default empty array. */
+  exclude: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of term ids to exclude along with all of their descendant terms. If $include is non-empty, $exclude_tree is ignored. Default empty array. */
+  excludeTree: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to hide terms not assigned to any posts. Accepts true or false. Default false */
+  hideEmpty: InputMaybe<Scalars['Boolean']['input']>;
+  /** Whether to include terms that have non-empty descendants (even if $hide_empty is set to true). Default true. */
+  hierarchical: InputMaybe<Scalars['Boolean']['input']>;
+  /** Array of term ids to include. Default empty array. */
+  include: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Array of names to return term(s) for. Default empty. */
+  name: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Retrieve terms where the name is LIKE the input value. Default empty. */
+  nameLike: InputMaybe<Scalars['String']['input']>;
+  /** Array of object IDs. Results will be limited to terms associated with these objects. */
+  objectIds: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Direction the connection should be ordered in */
+  order: InputMaybe<OrderEnum>;
+  /** Field(s) to order terms by. Defaults to 'name'. */
+  orderby: InputMaybe<TermObjectsConnectionOrderbyEnum>;
+  /** Whether to pad the quantity of a term's children in the quantity of each term's "count" object variable. Default false. */
+  padCounts: InputMaybe<Scalars['Boolean']['input']>;
+  /** Parent term ID to retrieve direct-child terms of. Default empty. */
+  parent: InputMaybe<Scalars['Int']['input']>;
+  /** Search criteria to match terms. Will be SQL-formatted with wildcards before and after. Default empty. */
+  search: InputMaybe<Scalars['String']['input']>;
+  /** Array of slugs to return term(s) for. Default empty. */
+  slug: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  /** Array of term taxonomy IDs, to match when querying terms. */
+  termTaxonomyId: InputMaybe<Array<InputMaybe<Scalars['ID']['input']>>>;
+  /** Whether to prime meta caches for matched terms. Default true. */
+  updateTermMetaCache: InputMaybe<Scalars['Boolean']['input']>;
 };
 
 /** Connection between the RootQuery type and the faq type */
@@ -16365,6 +17180,8 @@ export const TaxonomyEnum = {
   Consolebrand: 'CONSOLEBRAND',
   /** Taxonomy enum desktop_brand */
   Desktopbrand: 'DESKTOPBRAND',
+  /** Taxonomy enum faq_category */
+  Faqbrand: 'FAQBRAND',
   /** Taxonomy enum laptop_brand */
   Laptopbrand: 'LAPTOPBRAND',
   /** Taxonomy enum phone_brand */
@@ -16988,6 +17805,35 @@ export type UpdateDesktopPayload = {
   desktop: Maybe<Desktop>;
 };
 
+/** Input for the updateFaqBrand mutation. */
+export type UpdateFaqBrandInput = {
+  /** The slug that the faq_category will be an alias of */
+  aliasOf: InputMaybe<Scalars['String']['input']>;
+  /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: InputMaybe<Scalars['String']['input']>;
+  /** The description of the faq_category object */
+  description: InputMaybe<Scalars['String']['input']>;
+  /** The ID of the FaqBrand object to update */
+  id: Scalars['ID']['input'];
+  /** The name of the faq_category object to mutate */
+  name: InputMaybe<Scalars['String']['input']>;
+  /** The database ID of the faq_category that should be set as the parent. This field cannot be used in conjunction with parentId */
+  parentDatabaseId: InputMaybe<Scalars['Int']['input']>;
+  /** The ID of the faq_category that should be set as the parent. This field cannot be used in conjunction with parentDatabaseId */
+  parentId: InputMaybe<Scalars['ID']['input']>;
+  /** If this argument exists then the slug will be checked to see if it is not an existing valid term. If that check succeeds (it is not a valid term), then it is added and the term id is given. If it fails, then a check is made to whether the taxonomy is hierarchical and the parent argument is not empty. If the second check succeeds, the term will be inserted and the term id will be given. If the slug argument is empty, then it will be calculated from the term name. */
+  slug: InputMaybe<Scalars['String']['input']>;
+};
+
+/** The payload for the updateFaqBrand mutation. */
+export type UpdateFaqBrandPayload = {
+  __typename?: 'UpdateFaqBrandPayload';
+  /** If a &#039;clientMutationId&#039; input is provided to the mutation, it will be returned as output on the mutation. This ID can be used by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
+  clientMutationId: Maybe<Scalars['String']['output']>;
+  /** The created faq_category */
+  faqBrand: Maybe<FaqBrand>;
+};
+
 /** Input for the updateFaq mutation. */
 export type UpdateFaqInput = {
   /** This is an ID that can be passed to a mutation by the client to track the progress of mutations and catch possible duplicate mutation submissions. */
@@ -16996,6 +17842,8 @@ export type UpdateFaqInput = {
   content: InputMaybe<Scalars['String']['input']>;
   /** The date of the object. Preferable to enter as year/month/day (e.g. 01/31/2017) as it will rearrange date as fit if it is not specified. Incomplete dates may have unintended results for example, "2017" as the input will use current date with timestamp 20:17  */
   date: InputMaybe<Scalars['String']['input']>;
+  /** Set connections between the faq and FaqBrands */
+  faqBrands: InputMaybe<FaqFaqBrandsInput>;
   /** The ID of the faq object */
   id: Scalars['ID']['input'];
   /** Override the edit lock when another user is editing the post */
@@ -19335,7 +20183,18 @@ export type GetAllTaxonomyTermsQueryVariables = Exact<{
 }>;
 
 
-export type GetAllTaxonomyTermsQuery = { __typename?: 'RootQuery', terms: { __typename?: 'RootQueryToTermNodeConnection', pageInfo: { __typename?: 'RootQueryToTermNodeConnectionPageInfo', hasNextPage: boolean, endCursor: string | null }, nodes: Array<{ __typename: 'AllInOneBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'Category', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'ConsoleBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'DesktopBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'LaptopBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'PhoneBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'PostFormat', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'TabletBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'Tag', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'WatchBrand', id: string, name: string | null, slug: string | null, description: string | null }> } | null };
+export type GetAllTaxonomyTermsQuery = { __typename?: 'RootQuery', terms: { __typename?: 'RootQueryToTermNodeConnection', pageInfo: { __typename?: 'RootQueryToTermNodeConnectionPageInfo', hasNextPage: boolean, endCursor: string | null }, nodes: Array<{ __typename: 'AllInOneBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'Category', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'ConsoleBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'DesktopBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'FaqBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'LaptopBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'PhoneBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'PostFormat', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'TabletBrand', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'Tag', id: string, name: string | null, slug: string | null, description: string | null } | { __typename: 'WatchBrand', id: string, name: string | null, slug: string | null, description: string | null }> } | null };
+
+export type GetCustomPostTypeQueryVariables = Exact<{
+  pageId: Scalars['ID']['input'];
+  idType?: InputMaybe<PageIdType>;
+  faqFirst?: InputMaybe<Scalars['Int']['input']>;
+}>;
+
+
+export type GetCustomPostTypeQuery = { __typename?: 'RootQuery', page: { __typename?: 'Page', id: string, title: string | null, heroSection: { __typename?: 'HeroSection', title: string | null, subtitle: string | null, button: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, featuredImage: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null } | null, faqs: { __typename?: 'RootQueryToFaqConnection', nodes: Array<{
+    slug: string; __typename?: 'Faq', id: string, title: string | null, content: string | null, faqBrands: { __typename?: 'FaqToFaqBrandConnection', nodes: Array<{ __typename?: 'FaqBrand', id: string, name: string | null, slug: string | null, description: string | null }> } | null 
+}> } | null };
 
 export type GetCustomPostTypesQueryVariables = Exact<{
   first?: InputMaybe<Scalars['Int']['input']>;
@@ -19360,14 +20219,6 @@ export type GetSellPageQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type GetSellPageQuery = { __typename?: 'RootQuery', pageBy: { __typename?: 'Page', id: string, heroSection: { __typename?: 'HeroSection', title: string | null, subtitle: string | null, button: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, featuredImage: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null } | null, deviceView: { __typename?: 'DeviceView', deviceViewSettings: { __typename?: 'DeviceViewSettings', title: string | null, subtitle: string | null, searchFieldPlaceholder: string | null, quickLinks: Array<{ __typename?: 'DeviceViewSettingsQuickLinks', link: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null } | null> | null, selectDevices: Array<{ __typename?: 'DeviceViewSettingsSelectDevices', deviceName: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, icon: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null> | null } | null } | null };
 
-export type GetPageHeroQueryVariables = Exact<{
-  pageId: Scalars['ID']['input'];
-  idType?: InputMaybe<PageIdType>;
-}>;
-
-
-export type GetPageHeroQuery = { __typename?: 'RootQuery', page: { __typename?: 'Page', id: string, title: string | null, heroSection: { __typename?: 'HeroSection', title: string | null, subtitle: string | null, button: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, featuredImage: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null } | null };
-
 
 export const GetAllTaxonomyTermsDocument = `
     query GetAllTaxonomyTerms($taxonomy: TaxonomyEnum!, $first: Int = 100, $after: String) {
@@ -19386,6 +20237,44 @@ export const GetAllTaxonomyTermsDocument = `
       slug
       description
       __typename
+    }
+  }
+}
+    `;
+export const GetCustomPostTypeDocument = `
+    query GetCustomPostType($pageId: ID!, $idType: PageIdType = URI, $faqFirst: Int = 500) {
+  page(id: $pageId, idType: $idType) {
+    id
+    title
+    heroSection {
+      title
+      subtitle
+      button {
+        url
+        title
+        target
+      }
+      featuredImage {
+        node {
+          sourceUrl
+          altText
+        }
+      }
+    }
+  }
+  faqs(first: $faqFirst) {
+    nodes {
+      id
+      title
+      content
+      faqBrands {
+        nodes {
+          id
+          name
+          slug
+          description
+        }
+      }
     }
   }
 }
@@ -19554,29 +20443,6 @@ export const GetSellPageDocument = `
   }
 }
     `;
-export const GetPageHeroDocument = `
-    query GetPageHero($pageId: ID!, $idType: PageIdType = URI) {
-  page(id: $pageId, idType: $idType) {
-    id
-    title
-    heroSection {
-      title
-      subtitle
-      button {
-        url
-        title
-        target
-      }
-      featuredImage {
-        node {
-          sourceUrl
-          altText
-        }
-      }
-    }
-  }
-}
-    `;
 
 export type SdkFunctionWrapper = <T>(action: (requestHeaders?:Record<string, string>) => Promise<T>, operationName: string, operationType?: string, variables?: any) => Promise<T>;
 
@@ -19587,6 +20453,9 @@ export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = 
   return {
     GetAllTaxonomyTerms(variables: GetAllTaxonomyTermsQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetAllTaxonomyTermsQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<GetAllTaxonomyTermsQuery>({ document: GetAllTaxonomyTermsDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetAllTaxonomyTerms', 'query', variables);
+    },
+    GetCustomPostType(variables: GetCustomPostTypeQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetCustomPostTypeQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<GetCustomPostTypeQuery>({ document: GetCustomPostTypeDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetCustomPostType', 'query', variables);
     },
     GetCustomPostTypes(variables?: GetCustomPostTypesQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetCustomPostTypesQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<GetCustomPostTypesQuery>({ document: GetCustomPostTypesDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetCustomPostTypes', 'query', variables);
@@ -19599,9 +20468,6 @@ export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = 
     },
     GetSellPage(variables?: GetSellPageQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetSellPageQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<GetSellPageQuery>({ document: GetSellPageDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetSellPage', 'query', variables);
-    },
-    GetPageHero(variables: GetPageHeroQueryVariables, requestHeaders?: GraphQLClientRequestHeaders, signal?: RequestInit['signal']): Promise<GetPageHeroQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<GetPageHeroQuery>({ document: GetPageHeroDocument, variables, requestHeaders: { ...requestHeaders, ...wrappedRequestHeaders }, signal }), 'GetPageHero', 'query', variables);
     }
   };
 }

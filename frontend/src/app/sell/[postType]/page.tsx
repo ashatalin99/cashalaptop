@@ -9,6 +9,8 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { Brands } from '@/components/Brands';
+import { Faqs } from '@/components/Faqs';
+import { FaqProps } from '@/types/Faqs';
 
 
 export const revalidate = 60;        // ISR: rebuild at most once a minute
@@ -19,7 +21,7 @@ interface Props {
 
 export default async function PostTypePage({ params }: Props) {
     const { menu } = await sdk.GetHeaderNav();
-    const { page } = await sdk.GetPageHero({
+    const { page, faqs } = await sdk.GetCustomPostType({
       pageId: `/${params.postType}/`,
       idType: 'URI',
     });
@@ -33,6 +35,12 @@ export default async function PostTypePage({ params }: Props) {
       notFound();
     }
 
+    if(faqs?.nodes.length === 0) {
+      console.warn(`No FAQs found for post type: ${params.postType}`);
+      //return <h1>No FAQs available for this post type.</h1>;
+    }
+
+    console.log(faqs?.nodes)
     const postTypeSlug  = params.postType;   
     const { terms } = await sdk.GetAllTaxonomyTerms({
     taxonomy: postTypeSlug.toUpperCase().replace(/-/g, '') + 'BRAND' as TaxonomyEnum,
@@ -95,11 +103,22 @@ export default async function PostTypePage({ params }: Props) {
         })),  
     } satisfies BrandProps;
 
+    const faqProps = {
+        faqs: faqs?.nodes
+            ? faqs.nodes.map((faq) => ({
+                id: faq.id,
+                title: faq.title ?? "",
+                content: faq.content ?? "",
+            }))
+            : [],
+    } satisfies FaqProps;
+
     return (
         <div className="min-h-screen bg-white">
             <Header {...headerProps}/>
             <Hero {...heroProps} />
             <Brands {... brandsProps} />
+            <Faqs {... faqProps} />
             <Footer />
         </div>
     );

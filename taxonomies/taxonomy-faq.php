@@ -1,14 +1,14 @@
 <?php
 // Create category sections for faq
 add_action('init', function() {
-    register_taxonomy('faq_section', ['faq'], [
+    register_taxonomy('faq_category', ['faq'], [
         'label' => 'Categories',
         'hierarchical' => true,
         'public' => true,
         'show_admin_column' => true,
-        // 'show_in_graphql'       => true,
-        // 'graphql_single_name'   => 'FAQ',
-        // 'graphql_plural_name'   => 'FAQS',
+        'show_in_graphql'       => true,
+        'graphql_single_name'   => 'FaqBrand',
+        'graphql_plural_name'   => 'FaqBrands',
     ]);
 
     $categories = [

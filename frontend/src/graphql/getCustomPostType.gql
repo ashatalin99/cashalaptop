@@ -1,6 +1,7 @@
-query GetPageHero(
+query GetCustomPostType(
   $pageId: ID!                 # supply a URI, slug, or numeric ID
   $idType: PageIdType = URI 
+  $faqFirst:  Int = 500 
 ) {
   page(id: $pageId, idType: $idType) {
     id
@@ -18,6 +19,21 @@ query GetPageHero(
         node {
           sourceUrl
           altText
+        }
+      }
+    }
+  }
+  faqs(first: $faqFirst) {
+    nodes {
+      id
+      title
+      content                  
+      faqBrands {            
+        nodes {
+          id
+          name
+          slug
+          description
         }
       }
     }

@@ -11,17 +11,17 @@ add_action('init', function() {
         'graphql_plural_name'   => 'FaqBrands',
     ]);
 
-    $categories = [
-        "Shipping", "About online buyback quote process and steps",
-        "About Payment", "About Your Laptop (or other device and gadgets)",
+    // $categories = [
+    //     "Shipping", "About online buyback quote process and steps",
+    //     "About Payment", "About Your Laptop (or other device and gadgets)",
         
-    ];
+    // ];
 
-    foreach ($categories as $category) {
-        if (!term_exists($category, 'faq_category')) {
-            wp_insert_term($category, 'faq_category');
-        }
-    }
+    // foreach ($categories as $category) {
+    //     if (!term_exists($category, 'faq_category')) {
+    //         wp_insert_term($category, 'faq_category');
+    //     }
+    // }
 });
 
 // Populate category slug in post url when saving post

@@ -21,10 +21,16 @@ interface Props {
 
 export default async function PostTypePage({ params }: Props) {
     const { menu } = await sdk.GetHeaderNav();
-    const { page, faqs } = await sdk.GetCustomPostType({
+    const { page } = await sdk.GetCustomPostType({
       pageId: `/${params.postType}/`,
       idType: 'URI',
     });
+    
+    if (!page) {
+      notFound();
+    } 
+
+
     const { contentTypes } = await sdk.GetCustomPostTypes({ first: 100, after: null });
     if (!contentTypes?.nodes || contentTypes.nodes.length === 0) {
       notFound();
@@ -35,12 +41,6 @@ export default async function PostTypePage({ params }: Props) {
       notFound();
     }
 
-    if(faqs?.nodes.length === 0) {
-      console.warn(`No FAQs found for post type: ${params.postType}`);
-      //return <h1>No FAQs available for this post type.</h1>;
-    }
-
-    console.log(faqs?.nodes)
     const postTypeSlug  = params.postType;   
     const { terms } = await sdk.GetAllTaxonomyTerms({
     taxonomy: postTypeSlug.toUpperCase().replace(/-/g, '') + 'BRAND' as TaxonomyEnum,
@@ -104,12 +104,14 @@ export default async function PostTypePage({ params }: Props) {
     } satisfies BrandProps;
 
     const faqProps = {
-        faqs: faqs?.nodes
-            ? faqs.nodes.map((faq) => ({
-                id: faq.id,
-                title: faq.title ?? "",
-                content: faq.content ?? "",
-            }))
+        faqs: page?.faqSection?.faqs?.nodes
+            ? page.faqSection.faqs.nodes
+                .map((faq) => ({
+                    id: faq.id,
+                    title: faq.title ?? "",
+                    content: faq.content ?? "",
+                    
+                }))
             : [],
     } satisfies FaqProps;
 

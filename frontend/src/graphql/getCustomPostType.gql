@@ -1,12 +1,10 @@
 query GetCustomPostType(
   $pageId: ID!                 # supply a URI, slug, or numeric ID
   $idType: PageIdType = URI 
-  $faqFirst:  Int = 500 
 ) {
   page(id: $pageId, idType: $idType) {
     id
-    title                      # page title (optional, but handy)
-    # ───── Hero section (ACF or block field) ─────
+    title                      # page title 
     heroSection {
       title
       subtitle
@@ -22,18 +20,14 @@ query GetCustomPostType(
         }
       }
     }
-  }
-  faqs(first: $faqFirst) {
-    nodes {
-      id
-      title
-      content                  
-      faqBrands {            
+    faqSection {
+      faqs {
         nodes {
           id
-          name
-          slug
-          description
+          ... on Faq {
+            title
+            content
+          }
         }
       }
     }

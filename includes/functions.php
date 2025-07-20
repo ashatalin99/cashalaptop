@@ -38,3 +38,22 @@ if( !function_exists('cc_mime_types') ) {
 add_filter( 'graphql_entrypoint', function() {
   return '/graphql';            
 });
+
+// add_action( 'graphql_register_types', function() {
+//   // 1️⃣ Define the object type
+//   register_graphql_object_type( 'FaqSection', [
+//     'fields' => [
+//       'faqs' => [
+//         'type'    => [ 'list_of' => 'Faq' ],
+//         'resolve' => fn( $root ) => $root['faqs'] ?? [],
+//       ],
+//     ],
+//   ] );
+
+//   // 2️⃣ Attach it to Page
+//   register_graphql_field( 'Page', 'faqSection', [
+//     'type'        => 'FaqSection',
+//     'description' => 'ACF FAQ section',
+//     'resolve'     => fn( $page ) => get_field( 'faq_section', $page->ID ),
+//   ] );
+// });

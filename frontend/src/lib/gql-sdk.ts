@@ -6517,18 +6517,18 @@ export type FaqIdType = typeof FaqIdType[keyof typeof FaqIdType];
 /** The &quot;FaqSection&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
 export type FaqSection = AcfFieldGroup & AcfFieldGroupFields & FaqSection_Fields & {
   __typename?: 'FaqSection';
+  /** Field of the &quot;post_object&quot; Field Type added to the schema as part of the &quot;FaqSection&quot; Field Group */
+  faqs: Maybe<AcfContentNodeConnection>;
   /**
    * The name of the field group
    * @deprecated Use __typename instead
    */
   fieldGroupName: Maybe<Scalars['String']['output']>;
-  /** Field of the &quot;post_object&quot; Field Type added to the schema as part of the &quot;FaqSection&quot; Field Group */
-  singleFaq: Maybe<AcfContentNodeConnection>;
 };
 
 
 /** The &quot;FaqSection&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
-export type FaqSectionSingleFaqArgs = {
+export type FaqSectionFaqsArgs = {
   after: InputMaybe<Scalars['String']['input']>;
   before: InputMaybe<Scalars['String']['input']>;
   first: InputMaybe<Scalars['Int']['input']>;
@@ -6537,18 +6537,18 @@ export type FaqSectionSingleFaqArgs = {
 
 /** Interface representing fields of the ACF &quot;FaqSection&quot; Field Group */
 export type FaqSection_Fields = {
+  /** Field of the &quot;post_object&quot; Field Type added to the schema as part of the &quot;FaqSection&quot; Field Group */
+  faqs: Maybe<AcfContentNodeConnection>;
   /**
    * The name of the field group
    * @deprecated Use __typename instead
    */
   fieldGroupName: Maybe<Scalars['String']['output']>;
-  /** Field of the &quot;post_object&quot; Field Type added to the schema as part of the &quot;FaqSection&quot; Field Group */
-  singleFaq: Maybe<AcfContentNodeConnection>;
 };
 
 
 /** Interface representing fields of the ACF &quot;FaqSection&quot; Field Group */
-export type FaqSection_FieldsSingleFaqArgs = {
+export type FaqSection_FieldsFaqsArgs = {
   after: InputMaybe<Scalars['String']['input']>;
   before: InputMaybe<Scalars['String']['input']>;
   first: InputMaybe<Scalars['Int']['input']>;
@@ -9251,7 +9251,7 @@ export const OrderEnum = {
 
 export type OrderEnum = typeof OrderEnum[keyof typeof OrderEnum];
 /** A standalone content entry generally used for static, non-chronological content such as &quot;About Us&quot; or &quot;Contact&quot; pages. */
-export type Page = ContentNode & DatabaseIdentifier & HierarchicalContentNode & HierarchicalNode & MenuItemLinkable & Node & NodeWithAuthor & NodeWithContentEditor & NodeWithFeaturedImage & NodeWithPageAttributes & NodeWithRevisions & NodeWithTemplate & NodeWithTitle & Previewable & UniformResourceIdentifiable & WithAcfFeaturedSteps & WithAcfHeroSection & {
+export type Page = ContentNode & DatabaseIdentifier & HierarchicalContentNode & HierarchicalNode & MenuItemLinkable & Node & NodeWithAuthor & NodeWithContentEditor & NodeWithFeaturedImage & NodeWithPageAttributes & NodeWithRevisions & NodeWithTemplate & NodeWithTitle & Previewable & UniformResourceIdentifiable & WithAcfFaqSection & WithAcfFeaturedSteps & WithAcfHeroSection & {
   __typename?: 'Page';
   /** Returns ancestors of the node. Default ordered as lowest (closest to the child) to highest (closest to the root). */
   ancestors: Maybe<HierarchicalContentNodeToContentNodeAncestorsConnection>;
@@ -9285,6 +9285,8 @@ export type Page = ContentNode & DatabaseIdentifier & HierarchicalContentNode & 
   enqueuedScripts: Maybe<ContentNodeToEnqueuedScriptConnection>;
   /** Connection between the ContentNode type and the EnqueuedStylesheet type */
   enqueuedStylesheets: Maybe<ContentNodeToEnqueuedStylesheetConnection>;
+  /** Fields of the FaqSection ACF Field Group */
+  faqSection: Maybe<FaqSection>;
   /** Connection between the NodeWithFeaturedImage type and the MediaItem type */
   featuredImage: Maybe<NodeWithFeaturedImageToMediaItemConnectionEdge>;
   /** The database identifier for the featured image node assigned to the content node */
@@ -20188,13 +20190,10 @@ export type GetAllTaxonomyTermsQuery = { __typename?: 'RootQuery', terms: { __ty
 export type GetCustomPostTypeQueryVariables = Exact<{
   pageId: Scalars['ID']['input'];
   idType?: InputMaybe<PageIdType>;
-  faqFirst?: InputMaybe<Scalars['Int']['input']>;
 }>;
 
 
-export type GetCustomPostTypeQuery = { __typename?: 'RootQuery', page: { __typename?: 'Page', id: string, title: string | null, heroSection: { __typename?: 'HeroSection', title: string | null, subtitle: string | null, button: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, featuredImage: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null } | null, faqs: { __typename?: 'RootQueryToFaqConnection', nodes: Array<{
-    slug: string; __typename?: 'Faq', id: string, title: string | null, content: string | null, faqBrands: { __typename?: 'FaqToFaqBrandConnection', nodes: Array<{ __typename?: 'FaqBrand', id: string, name: string | null, slug: string | null, description: string | null }> } | null 
-}> } | null };
+export type GetCustomPostTypeQuery = { __typename?: 'RootQuery', page: { __typename?: 'Page', id: string, title: string | null, heroSection: { __typename?: 'HeroSection', title: string | null, subtitle: string | null, button: { __typename?: 'AcfLink', url: string | null, title: string | null, target: string | null } | null, featuredImage: { __typename?: 'AcfMediaItemConnectionEdge', node: { __typename?: 'MediaItem', sourceUrl: string | null, altText: string | null } } | null } | null, faqSection: { __typename?: 'FaqSection', faqs: { __typename?: 'AcfContentNodeConnection', nodes: Array<{ __typename?: 'All_in_one', id: string } | { __typename?: 'Console', id: string } | { __typename?: 'Desktop', id: string } | { __typename?: 'Faq', title: string | null, content: string | null, id: string } | { __typename?: 'Laptop', id: string } | { __typename?: 'MediaItem', id: string } | { __typename?: 'Page', id: string } | { __typename?: 'Phone', id: string } | { __typename?: 'Post', id: string } | { __typename?: 'Tablet', id: string } | { __typename?: 'Watch', id: string }> } | null } | null } | null };
 
 export type GetCustomPostTypesQueryVariables = Exact<{
   first?: InputMaybe<Scalars['Int']['input']>;
@@ -20242,7 +20241,7 @@ export const GetAllTaxonomyTermsDocument = `
 }
     `;
 export const GetCustomPostTypeDocument = `
-    query GetCustomPostType($pageId: ID!, $idType: PageIdType = URI, $faqFirst: Int = 500) {
+    query GetCustomPostType($pageId: ID!, $idType: PageIdType = URI) {
   page(id: $pageId, idType: $idType) {
     id
     title
@@ -20261,18 +20260,14 @@ export const GetCustomPostTypeDocument = `
         }
       }
     }
-  }
-  faqs(first: $faqFirst) {
-    nodes {
-      id
-      title
-      content
-      faqBrands {
+    faqSection {
+      faqs {
         nodes {
           id
-          name
-          slug
-          description
+          ... on Faq {
+            title
+            content
+          }
         }
       }
     }

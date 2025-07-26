@@ -10,7 +10,7 @@
 //         return;
 //     }
 
-//     $post_type = 'watch'; // Replace with your custom post type name
+//     $post_type = 'laptop'; // Replace with your custom post type name
 
 //     $posts = get_posts([
 //         'post_type'      => $post_type,

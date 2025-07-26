@@ -5,23 +5,25 @@
  * and run it once 
  *
  */
-// add_action('init', function() {
-//     if (!current_user_can('administrator')) {
-//         return;
-//     }
+add_action('init', function() {
+    // Uncomment to run the function once
+    //remove_posts_by_type('tablet');
+});
 
-//     $post_type = 'laptop'; // Replace with your custom post type name
+function remove_posts_by_type($post_type) {
+    if (!current_user_can('administrator')) {
+        return;
+    }
+    $posts = get_posts([
+        'post_type'      => $post_type,
+        'post_status'    => 'any',
+        'posts_per_page' => -1, // Get all
+        'fields'         => 'ids' // Only get IDs
+    ]);
 
-//     $posts = get_posts([
-//         'post_type'      => $post_type,
-//         'post_status'    => 'any',
-//         'posts_per_page' => -1, // Get all
-//         'fields'         => 'ids' // Only get IDs
-//     ]);
+    foreach ($posts as $post_id) {
+        wp_delete_post($post_id, true); // true = force delete without trash
+    }
 
-//     foreach ($posts as $post_id) {
-//         wp_delete_post($post_id, true); // true = force delete without trash
-//     }
-
-//     echo '✅ All posts of type ' . esc_html($post_type) . ' have been deleted.';
-// });
+    echo '✅ All posts of type ' . esc_html($post_type) . ' have been deleted.';
+}

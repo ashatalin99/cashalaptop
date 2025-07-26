@@ -11,15 +11,15 @@ add_action('init', function() {
         'graphql_plural_name'   => 'AllInOneBrands',
     ]);
 
-    $brands = [
-        "Acer", "ASUS", "Averatec", "Dell", "HP", "Lenovo", "LG", "Microsoft", "Samsung"
-    ];
+    // $brands = [
+    //     "Acer", "ASUS", "Averatec", "Dell", "HP", "Lenovo", "LG", "Microsoft", "Samsung"
+    // ];
 
-    foreach ($brands as $brand) {
-        if (!term_exists($brand, 'all_in_one_brand')) {
-            wp_insert_term($brand, 'all_in_one_brand');
-        }
-    }
+    // foreach ($brands as $brand) {
+    //     if (!term_exists($brand, 'all_in_one_brand')) {
+    //         wp_insert_term($brand, 'all_in_one_brand');
+    //     }
+    // }
 });
 
 // Populate category slug in post url when saving post

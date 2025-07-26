@@ -11,16 +11,16 @@ add_action('init', function() {
         'graphql_plural_name'   => 'DesktopBrands',
     ]);
 
-    $brands = [
-        'Acer', 'Alienware', 'Apple', 'ASUS', 'Corsair', 'CyberPowerPC',
-        'Dell', 'DigitalStorm', 'HP', 'iBUYPOWER', 'Lenovo', 'MSI', 'Zotac'
-    ];
+    // $brands = [
+    //     'Acer', 'Alienware', 'Apple', 'ASUS', 'Corsair', 'CyberPowerPC',
+    //     'Dell', 'DigitalStorm', 'HP', 'iBUYPOWER', 'Lenovo', 'MSI', 'Zotac'
+    // ];
 
-    foreach ($brands as $brand) {
-        if (!term_exists($brand, 'desktop_brand')) {
-            wp_insert_term($brand, 'desktop_brand');
-        }
-    }
+    // foreach ($brands as $brand) {
+    //     if (!term_exists($brand, 'desktop_brand')) {
+    //         wp_insert_term($brand, 'desktop_brand');
+    //     }
+    // }
 });
 
 // Populate category slug in post url when saving post

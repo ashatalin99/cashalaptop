@@ -11,16 +11,16 @@ add_action('init', function() {
         'graphql_plural_name'   => 'PhoneBrands',
     ]);
 
-    $brands = [
-        "Apple", "ASUS", "Blackberry", "Google", "HTC", 
-        "Lenovo", "LG", "Motorola", "Nokia", "Samsung"
-    ];
+    // $brands = [
+    //     "Apple", "ASUS", "Blackberry", "Google", "HTC", 
+    //     "Lenovo", "LG", "Motorola", "Nokia", "Samsung"
+    // ];
 
-    foreach ($brands as $brand) {
-        if (!term_exists($brand, 'phone_brand')) {
-            wp_insert_term($brand, 'phone_brand');
-        }
-    }
+    // foreach ($brands as $brand) {
+    //     if (!term_exists($brand, 'phone_brand')) {
+    //         wp_insert_term($brand, 'phone_brand');
+    //     }
+    // }
 });
 
 // Populate category slug in post url when saving post

@@ -11,15 +11,15 @@ add_action('init', function() {
         'graphql_plural_name'   => 'ConsoleBrands',
     ]);
 
-    $brands = [
-        "Sony", "Microsoft"
-    ];
+    // $brands = [
+    //     "Sony", "Microsoft"
+    // ];
 
-    foreach ($brands as $brand) {
-        if (!term_exists($brand, 'console_brand')) {
-            wp_insert_term($brand, 'console_brand');
-        }
-    }
+    // foreach ($brands as $brand) {
+    //     if (!term_exists($brand, 'console_brand')) {
+    //         wp_insert_term($brand, 'console_brand');
+    //     }
+    // }
 });
 
 // Populate category slug in post url when saving post

@@ -11,15 +11,15 @@ add_action('init', function() {
         'graphql_plural_name'   => 'TabletBrands',
     ]);
 
-    $brands = [
-        "Apple", "ASUS", "Dell", "Lenovo", "Samsung"
-    ];
+    // $brands = [
+    //     "Apple", "ASUS", "Dell", "Lenovo", "Samsung"
+    // ];
 
-    foreach ($brands as $brand) {
-        if (!term_exists($brand, 'tablet_brand')) {
-            wp_insert_term($brand, 'tablet_brand');
-        }
-    }
+    // foreach ($brands as $brand) {
+    //     if (!term_exists($brand, 'tablet_brand')) {
+    //         wp_insert_term($brand, 'tablet_brand');
+    //     }
+    // }
 });
 
 // Populate category slug in post url when saving post

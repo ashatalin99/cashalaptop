@@ -11,15 +11,15 @@ add_action('init', function() {
         'graphql_plural_name'   => 'WatchBrands',
     ]);
 
-    $brands = [
-        "Apple", "ASUS", "Fossil", "Garmin", "LG", "METAWATCH", "Motorola", "Samsung"
-    ];
+    // $brands = [
+    //     "Apple", "ASUS", "Fossil", "Garmin", "LG", "METAWATCH", "Motorola", "Samsung"
+    // ];
 
-    foreach ($brands as $brand) {
-        if (!term_exists($brand, 'watch_brand')) {
-            wp_insert_term($brand, 'watch_brand');
-        }
-    }
+    // foreach ($brands as $brand) {
+    //     if (!term_exists($brand, 'watch_brand')) {
+    //         wp_insert_term($brand, 'watch_brand');
+    //     }
+    // }
 });
 
 // Populate category slug in post url when saving post

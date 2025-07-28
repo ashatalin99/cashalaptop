@@ -1,4 +1,4 @@
-id,title,url,images,type,brand,series,model,Year,price,time_changed
+id,title,url,images,type,brand,series,model,year,price,time_changed
 27,Acer Nitro 5 AN515-43 AMD Ryzen 7 3rd Gen,/acer/nitro-5-an515-43-amd-ryzen-7-3rd-gen,acer-nitro-5-an515_43-amd-ryzen-7-3rd-gen.webp,laptop,Acer,,,2019,170,2025-01-24 00:36:27
 29,Acer TravelMate P4 TMP416-53 Intel Core Ultra 7 155U,/acer/travelmate-p4-tmp416-53-intel-core-ultra-7-155u,acer-travelmate-p4-tmp416_53-intel-core-ultra-7-155u.webp,laptop,Acer,,,2025,280,2025-01-27 07:33:52
 32,Alienware M17 Intel Core i7 8th Gen,/alienware/m17-intel-core-i7-8th-gen,alienware-m17-intel-core-i7-8th-gen.webp,laptop,Alienware,,,2018,170,2023-07-31 08:15:34

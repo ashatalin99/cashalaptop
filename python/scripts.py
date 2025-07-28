@@ -199,8 +199,72 @@ def clean_images_column(input_csv, output_csv):
     print(f"Cleaned images saved to {output_csv}")
 
 # Example usage
-clean_images_column('desktops.csv', 'cleaned_desktops.csv')
-clean_images_column('watches.csv', 'cleaned_watches.csv')
-clean_images_column('phones.csv', 'cleaned_phones.csv')
-clean_images_column('tablets.csv', 'cleaned_tablets.csv')
-clean_images_column('all-in-one.csv', 'cleaned_all-in-one.csv')
+#clean_images_column('laptops.csv', 'cleaned_laptops2.csv')
+# clean_images_column('watches.csv', 'cleaned_watches.csv')
+# clean_images_column('phones.csv', 'cleaned_phones.csv')
+# clean_images_column('tablets.csv', 'cleaned_tablets.csv')
+# clean_images_column('all-in-one.csv', 'cleaned_all-in-one.csv')
+
+import csv
+
+def restructure_csv(input_csv, output_csv):
+    desired_columns = [
+        'id', 'type', 'brand', 'series', 'models',
+        'price', 'year', 'title', 'url', 'images'
+    ]
+    columns_to_remove = {'display', 'time_changed'}
+
+    with open(input_csv, 'r', newline='', encoding='utf-8') as infile, \
+         open(output_csv, 'w', newline='', encoding='utf-8') as outfile:
+
+        reader = csv.DictReader(infile)
+        current_fieldnames = [f for f in reader.fieldnames if f not in columns_to_remove]
+
+        # Add missing columns (like 'series', 'models') with empty values
+        for col in desired_columns:
+            if col not in current_fieldnames:
+                current_fieldnames.append(col)
+
+        writer = csv.DictWriter(outfile, fieldnames=desired_columns)
+        writer.writeheader()
+
+        for row in reader:
+            # Remove unwanted columns
+            for col in columns_to_remove:
+                row.pop(col, None)
+
+            # Add missing fields as empty strings
+            for col in desired_columns:
+                row.setdefault(col, '')
+
+            # Write in desired order
+            output_row = {col: row[col] for col in desired_columns}
+            writer.writerow(output_row)
+
+    print(f"Cleaned and reordered CSV saved to {output_csv}")
+
+# Example usage
+# restructure_csv('watches.csv', 'cleaned_watches.csv')
+
+
+def clean_url_column_second_slash(input_csv, output_csv):
+    with open(input_csv, 'r', newline='', encoding='utf-8') as infile, \
+         open(output_csv, 'w', newline='', encoding='utf-8') as outfile:
+
+        reader = csv.DictReader(infile)
+        fieldnames = reader.fieldnames
+
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for row in reader:
+            url = row.get('url', '').strip()
+            parts = url.split('/', 2)  # Split on '/', max 2 times
+            if len(parts) == 3:
+                row['url'] = parts[2]  # Keep only the part after the second slash
+            writer.writerow(row)
+
+    print(f"Cleaned URLs saved to {output_csv}")
+
+# Example usage
+# clean_url_column_second_slash('cleaned_laptops.csv', 'cleaned_laptops2.csv')

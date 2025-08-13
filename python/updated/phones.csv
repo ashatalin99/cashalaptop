@@ -1,0 +1,267 @@
+id,type,brand,series,models,price,year,title,url,images
+3854,phone,Apple,,,40,2018,Apple iPhone XR 128GB A2105,iphone-xr-128gb-a2105,apple-iphone-xr-128gb-a2105.webp
+3855,phone,Apple,,,45,2018,Apple iPhone XR 256GB A1984,iphone-xr-256gb-a1984,apple-iphone-xr-256gb-a1984.webp
+3856,phone,Apple,,,45,2018,Apple iPhone XR 256GB A2105,iphone-xr-256gb-a2105,apple-iphone-xr-256gb-a2105.webp
+11334,phone,Apple,,,30,2017,Apple iPhone X 64GB A1865,iphone-x-64gb-a1865,apple-iphone-x-64gb-a1865.webp
+11335,phone,Apple,,,35,2017,Apple iPhone X 256GB A1865,iphone-x-256gb-a1865,apple-iphone-x-256gb-a1865.webp
+11336,phone,Apple,,,30,2017,Apple iPhone X 64GB A1901,iphone-x-64gb-a1901,apple-iphone-x-64gb-a1901.webp
+11337,phone,Apple,,,40,2017,Apple iPhone X 256GB A1901,iphone-x-256gb-a1901,apple-iphone-x-256gb-a1901.webp
+11373,phone,Apple,,,35,2018,Apple iPhone XS 64GB A1920,iphone-xs-64gb-a1920,apple-iphone-xs-64gb-a1920.webp
+11374,phone,Apple,,,40,2018,Apple iPhone XS 256GB A1920,iphone-xs-256gb-a1920,apple-iphone-xs-256gb-a1920.webp
+11375,phone,Apple,,,45,2018,Apple iPhone XS 512GB A1920,iphone-xs-512gb-a1920,apple-iphone-xs-512gb-a1920.webp
+11376,phone,Apple,,,40,2018,Apple iPhone XS 64GB A2105,iphone-xs-64gb-a2105,apple-iphone-xs-64gb-a2105.webp
+11377,phone,Apple,,,45,2018,Apple iPhone XS 256GB A2105,iphone-xs-256gb-a2105,apple-iphone-xs-256gb-a2105.webp
+11378,phone,Apple,,,50,2018,Apple iPhone XS 512GB A2105,iphone-xs-512gb-a2105,apple-iphone-xs-512gb-a2105.webp
+11407,phone,Apple,,,40,2018,Apple iPhone XS Max 256GB A1921,iphone-xs-max-256gb-a1921,apple-iphone-xs-max-256gb-a1921.webp
+11409,phone,Apple,,,30,2018,Apple iPhone XS Max 64GB A2101,iphone-xs-max-64gb-a2101,apple-iphone-xs-max-64gb-a2101.webp
+11410,phone,Apple,,,45,2018,Apple iPhone XS Max 256GB A2101,iphone-xs-max-256gb-a2101,apple-iphone-xs-max-256gb-a2101.webp
+11411,phone,Apple,,,50,2018,Apple iPhone XS Max 512GB A2101,iphone-xs-max-512gb-a2101,apple-iphone-xs-max-512gb-a2101.webp
+11415,phone,Apple,,,40,2018,Apple iPhone XS Max 64GB A1921,iphone-xs-max-64gb-a1921,apple-iphone-xs-max-64gb-a1921.webp
+11417,phone,Apple,,,45,2018,Apple iPhone XS Max 512GB A1921,iphone-xs-max-512gb-a1921,apple-iphone-xs-max-512gb-a1921.webp
+11443,phone,Apple,,,35,2018,Apple iPhone XR 64GB A1984,iphone-xr-64gb-a1984,apple-iphone-xr-64gb-a1984.webp
+11444,phone,Apple,,,40,2018,Apple iPhone XR 128GB A1984,iphone-xr-128gb-a1984,apple-iphone-xr-128gb-a1984.webp
+11445,phone,Apple,,,40,2018,Apple iPhone XR 64GB A2105,iphone-xr-64gb-a2105,apple-iphone-xr-64gb-a2105.webp
+11457,phone,Apple,,,45,2019,Apple iPhone 11 64GB A2111,iphone-11-64gb-a2111,
+11458,phone,Apple,,,50,2019,Apple iPhone 11 128GB A2111,iphone-11-128gb-a2111,
+11459,phone,Apple,,,55,2019,Apple iPhone 11 64GB A2221,iphone-11-64gb-a2221,
+11460,phone,Apple,,,65,2019,Apple iPhone 11 128GB A2221,iphone-11-128gb-a2221,
+11480,phone,Apple,,,65,2019,Apple iPhone 11 Pro 64GB A2160,iphone-11-pro-64gb-a2160,
+11481,phone,Apple,,,75,2019,Apple iPhone 11 Pro 256GB A2160,iphone-11-pro-256gb-a2160,
+11482,phone,Apple,,,80,2019,Apple iPhone 11 Pro 512GB A2160,iphone-11-pro-512gb-a2160,
+11483,phone,Apple,,,60,2019,Apple iPhone 11 Pro 64GB A2215,iphone-11-pro-64gb-a2215,
+11484,phone,Apple,,,70,2019,Apple iPhone 11 Pro 256GB A2215,iphone-11-pro-256gb-a2215,
+11485,phone,Apple,,,85,2019,Apple iPhone 11 Pro 512GB A2215,iphone-11-pro-512gb-a2215,
+11513,phone,Apple,,,70,2019,Apple iPhone 11 Pro Max 64GB A2161,iphone-11-pro-max-64gb-a2161,
+11514,phone,Apple,,,80,2019,Apple iPhone 11 Pro Max 256GB A2161,iphone-11-pro-max-256gb-a2161,
+11515,phone,Apple,,,90,2019,Apple iPhone 11 Pro Max 512GB A2161,iphone-11-pro-max-512gb-a2161,
+11516,phone,Apple,,,70,2019,Apple iPhone 11 Pro Max 64GB A2218,iphone-11-pro-max-64gb-a2218,
+11517,phone,Apple,,,85,2019,Apple iPhone 11 Pro Max 256GB A2218,iphone-11-pro-max-256gb-a2218,
+11518,phone,Apple,,,95,2019,Apple iPhone 11 Pro Max 512GB A2218,iphone-11-pro-max-512gb-a2218,
+11543,phone,Apple,,,60,2019,Apple iPhone 11 256GB A2111,iphone-11-256gb-a2111,
+11544,phone,Apple,,,75,2019,Apple iPhone 11 256GB A2221,iphone-11-256gb-a2221,
+11565,phone,Apple,,,55,2020,Apple iPhone 12 Mini 64GB A2176,iphone-12-mini-64gb-a2176,
+11566,phone,Apple,,,70,2020,Apple iPhone 12 Mini 128GB A2176,iphone-12-mini-128gb-a2176,
+11567,phone,Apple,,,75,2020,Apple iPhone 12 Mini 256GB A2176,iphone-12-mini-256gb-a2176,
+11568,phone,Apple,,,55,2020,Apple iPhone 12 Mini 64GB A2398,iphone-12-mini-64gb-a2398,
+11569,phone,Apple,,,70,2020,Apple iPhone 12 Mini 128GB A2398,iphone-12-mini-128gb-a2398,
+11570,phone,Apple,,,75,2020,Apple iPhone 12 Mini 256GB A2398,iphone-12-mini-256gb-a2398,
+11571,phone,Apple,,,55,2020,Apple iPhone 12 Mini 64GB A2399,iphone-12-mini-64gb-a2399,
+11572,phone,Apple,,,70,2020,Apple iPhone 12 Mini 128GB A2399,iphone-12-mini-128gb-a2399,
+11573,phone,Apple,,,75,2020,Apple iPhone 12 Mini 256GB A2399,iphone-12-mini-256gb-a2399,
+11598,phone,Apple,,,70,2020,Apple iPhone 12 64GB A2172,iphone-12-64gb-a2172,
+11599,phone,Apple,,,75,2020,Apple iPhone 12 128GB A2172,iphone-12-128gb-a2172,
+11600,phone,Apple,,,80,2020,Apple iPhone 12 256GB A2172,iphone-12-256gb-a2172,
+11601,phone,Apple,,,70,2020,Apple iPhone 12 64GB A2402,iphone-12-64gb-a2402,apple-iphone-12-64gb-a2402.webp
+11602,phone,Apple,,,75,2020,Apple iPhone 12 128GB A2402,iphone-12-128gb-a2402,
+11603,phone,Apple,,,80,2020,Apple iPhone 12 256GB A2402,iphone-12-256gb-a2402,
+11604,phone,Apple,,,70,2020,Apple iPhone 12 64GB A2403,iphone-12-64gb-a2403,
+11605,phone,Apple,,,75,2020,Apple iPhone 12 128GB A2403,iphone-12-128gb-a2403,
+11606,phone,Apple,,,80,2020,Apple iPhone 12 256GB A2403,iphone-12-256gb-a2403,
+11631,phone,Apple,,,85,2020,Apple iPhone 12 Pro 128GB A2341,iphone-12-pro-128gb-a2341,
+11632,phone,Apple,,,100,2020,Apple iPhone 12 Pro 256GB A2341,iphone-12-pro-256gb-a2341,
+11633,phone,Apple,,,110,2020,Apple iPhone 12 Pro 512GB A2341,iphone-12-pro-512gb-a2341,
+11634,phone,Apple,,,90,2020,Apple iPhone 12 Pro 128GB A2406,iphone-12-pro-128gb-a2406,
+11635,phone,Apple,,,100,2020,Apple iPhone 12 Pro 256GB A2406,iphone-12-pro-256gb-a2406,
+11636,phone,Apple,,,115,2020,Apple iPhone 12 Pro 512GB A2406,iphone-12-pro-512gb-a2406,
+11637,phone,Apple,,,90,2020,Apple iPhone 12 Pro 128GB A2407,iphone-12-pro-128gb-a2407,
+11638,phone,Apple,,,105,2020,Apple iPhone 12 Pro 256GB A2407,iphone-12-pro-256gb-a2407,
+11639,phone,Apple,,,115,2020,Apple iPhone 12 Pro 512GB A2407,iphone-12-pro-512gb-a2407,
+11663,phone,Apple,,,100,2020,Apple iPhone 12 Pro Max 128GB A2342,iphone-12-pro-max-128gb-a2342,
+11664,phone,Apple,,,110,2020,Apple iPhone 12 Pro Max 256GB A2342,iphone-12-pro-max-256gb-a2342,
+11665,phone,Apple,,,120,2020,Apple iPhone 12 Pro Max 512GB A2342,iphone-12-pro-max-512gb-a2342,
+11666,phone,Apple,,,100,2020,Apple iPhone 12 Pro Max 128GB A2410,iphone-12-pro-max-128gb-a2410,apple-iphone-12-pro-max-128gb-a2410.webp
+11667,phone,Apple,,,110,2020,Apple iPhone 12 Pro Max 256GB A2410,iphone-12-pro-max-256gb-a2410,
+11668,phone,Apple,,,120,2020,Apple iPhone 12 Pro Max 512GB A2410,iphone-12-pro-max-512gb-a2410,
+11669,phone,Apple,,,100,2020,Apple iPhone 12 Pro Max 128GB A2411,iphone-12-pro-max-128gb-a2411,
+11670,phone,Apple,,,110,2020,Apple iPhone 12 Pro Max 256GB A2411,iphone-12-pro-max-256gb-a2411,
+11671,phone,Apple,,,120,2020,Apple iPhone 12 Pro Max 512GB A2411,iphone-12-pro-max-512gb-a2411,
+11682,phone,Apple,,,105,2021,Apple iPhone 13 128GB A2482,iphone-13-128gb-a2482,
+11683,phone,Apple,,,115,2021,Apple iPhone 13 256GB A2482,iphone-13-256gb-a2482,
+11684,phone,Apple,,,130,2021,Apple iPhone 13 512GB A2482,iphone-13-512gb-a2482,
+11685,phone,Apple,,,75,2021,Apple iPhone 13 Mini 128GB A2481,iphone-13-mini-128gb-a2481,
+11686,phone,Apple,,,90,2021,Apple iPhone 13 Mini 256GB A2481,iphone-13-mini-256gb-a2481,
+11687,phone,Apple,,,105,2021,Apple iPhone 13 Mini 512GB A2481,iphone-13-mini-512gb-a2481,
+11688,phone,Apple,,,120,2021,Apple iPhone 13 Pro 128GB A2483,iphone-13-pro-128gb-a2483,
+11689,phone,Apple,,,175,2021,Apple iPhone 13 Pro 1TB A2483,iphone-13-pro-1tb-a2483,
+11690,phone,Apple,,,145,2021,Apple iPhone 13 Pro 256GB A2483,iphone-13-pro-256gb-a2483,
+11691,phone,Apple,,,160,2021,Apple iPhone 13 Pro 512GB A2483,iphone-13-pro-512gb-a2483,
+11692,phone,Apple,,,135,2021,Apple iPhone 13 Pro Max 128GB A2484,iphone-13-pro-max-128gb-a2484,
+11693,phone,Apple,,,190,2021,Apple iPhone 13 Pro Max 1TB A2484,iphone-13-pro-max-1tb-a2484,
+11694,phone,Apple,,,155,2021,Apple iPhone 13 Pro Max 256GB A2484,iphone-13-pro-max-256gb-a2484,
+11695,phone,Apple,,,170,2021,Apple iPhone 13 Pro Max 512GB A2484,iphone-13-pro-max-512gb-a2484,
+11696,phone,Apple,,,135,2022,Apple iPhone 14 128GB A2649,iphone-14-128gb-a2649,
+11697,phone,Apple,,,150,2022,Apple iPhone 14 256GB A2649,iphone-14-256gb-a2649,
+11698,phone,Apple,,,165,2022,Apple iPhone 14 512GB A2649,iphone-14-512gb-a2649,
+11699,phone,Apple,,,145,2022,Apple iPhone 14 Plus 128GB A2632,iphone-14-plus-128gb-a2632,
+11700,phone,Apple,,,160,2022,Apple iPhone 14 Plus 256GB A2632,iphone-14-plus-256gb-a2632,
+11701,phone,Apple,,,175,2022,Apple iPhone 14 Plus 512GB A2632,iphone-14-plus-512gb-a2632,
+11702,phone,Apple,,,180,2022,Apple iPhone 14 Pro 128GB A2650,iphone-14-pro-128gb-a2650,
+11703,phone,Apple,,,195,2022,Apple iPhone 14 Pro 256GB A2650,iphone-14-pro-256gb-a2650,
+11704,phone,Apple,,,210,2022,Apple iPhone 14 Pro 512GB A2650,iphone-14-pro-512gb-a2650,
+11705,phone,Apple,,,235,2022,Apple iPhone 14 Pro 1TB A2650,iphone-14-pro-1tb-a2650,
+11706,phone,Apple,,,195,2022,Apple iPhone 14 Pro Max 128GB A2651,iphone-14-pro-max-128gb-a2651,
+11707,phone,Apple,,,205,2022,Apple iPhone 14 Pro Max 256GB A2651,iphone-14-pro-max-256gb-a2651,
+11708,phone,Apple,,,225,2022,Apple iPhone 14 Pro Max 512GB A2651,iphone-14-pro-max-512gb-a2651,
+11709,phone,Apple,,,240,2022,Apple iPhone 14 Pro Max 1TB A2651,iphone-14-pro-max-1tb-a2651,
+11710,phone,Samsung,,,60,2019,Samsung Galaxy Note 10+ 4G 256GB Unlocked,galaxy-note-10-4g-256gb-unlocked,samsung-galaxy-note-10-4g-256gb-unlocked.webp
+11711,phone,Samsung,,,40,2019,Samsung Galaxy S10 5G 512GB Unlocked,galaxy-s10-5g-512gb-unlocked,samsung-galaxy-s10-5g-512gb-unlocked.webp
+11712,phone,Samsung,,,75,2022,Samsung Galaxy Z Flip 4 256GB Locked,galaxy-z-flip-4-256gb-locked,samsung-galaxy-z-flip-4-256gb-locked.webp
+11713,phone,Samsung,,,40,2019,Samsung Galaxy Fold 512GB,galaxy-fold-512gb,samsung-galaxy-fold-512gb.webp
+11714,phone,Samsung,,,40,2019,Samsung Galaxy Note 10 256GB,galaxy-note-10-256gb,samsung-galaxy-note-10-256gb.webp
+11715,phone,Samsung,,,45,2019,Samsung Galaxy Note 10+ 4G 256GB Locked,galaxy-note-10-4g-256gb-locked,samsung-galaxy-note-10-4g-256gb-locked.webp
+11716,phone,Samsung,,,50,2021,Samsung Galaxy Z Flip 3 128GB Unlocked,galaxy-z-flip-3-128gb-unlocked,samsung-galaxy-z-flip-3-128gb-unlocked.webp
+11717,phone,Samsung,,,90,2022,Samsung Galaxy Z Flip 4 256GB Unlocked,galaxy-z-flip-4-256gb-unlocked,samsung-galaxy-z-flip-4-256gb-unlocked.webp
+11718,phone,Samsung,,,105,2022,Samsung Galaxy Z Flip 4 512GB Unlocked,galaxy-z-flip-4-512gb-unlocked,samsung-galaxy-z-flip-4-512gb-unlocked.webp
+11719,phone,Samsung,,,75,2022,Samsung Galaxy Z Flip 4 128GB Unlocked,galaxy-z-flip-4-128gb-unlocked,samsung-galaxy-z-flip-4-128gb-unlocked.webp
+11720,phone,Samsung,,,20,2019,Samsung Galaxy Fold 256GB,galaxy-fold-256gb,samsung-galaxy-fold-256gb.webp
+11721,phone,Samsung,,,50,2019,Samsung Galaxy Note 10 512GB,galaxy-note-10-512gb,samsung-galaxy-note-10-512gb.webp
+11722,phone,Samsung,,,30,2019,Samsung Galaxy S10+ 128GB Unlocked,galaxy-s10-128gb-unlocked,samsung-galaxy-s10-128gb-unlocked.webp
+11723,phone,Samsung,,,40,2019,Samsung Galaxy S10 5G 256GB Unlocked,galaxy-s10-5g-256gb-unlocked,samsung-galaxy-s10-5g-256gb-unlocked.webp
+11724,phone,Samsung,,,40,2021,Samsung Galaxy Z Flip 3 128GB Locked,galaxy-z-flip-3-128gb-locked,samsung-galaxy-z-flip-3-128gb-locked.webp
+11725,phone,Samsung,,,50,2021,Samsung Galaxy Z Flip 3 256GB Locked,galaxy-z-flip-3-256gb-locked,samsung-galaxy-z-flip-3-256gb-locked.webp
+11726,phone,Samsung,,,55,2021,Samsung Galaxy Z Flip 3 256GB Unlocked,galaxy-z-flip-3-256gb-unlocked,samsung-galaxy-z-flip-3-256gb-unlocked.webp
+11727,phone,Samsung,,,70,2020,Samsung Galaxy Z Fold2 5G 256GB Locked,galaxy-z-fold2-5g-256gb-locked,samsung-galaxy-z-fold2-5g-256gb-locked.webp
+11728,phone,Samsung,,,80,2020,Samsung Galaxy Z Fold2 5G 512GB Locked,galaxy-z-fold2-5g-512gb-locked,samsung-galaxy-z-fold2-5g-512gb-locked.webp
+11729,phone,Samsung,,,130,2020,Samsung Galaxy Z Fold3 5G 256GB,galaxy-z-fold3-5g-256gb,samsung-galaxy-z-fold3-5g-256gb.webp
+11730,phone,Samsung,,,150,2020,Samsung Galaxy Z Fold3 5G 512GB,galaxy-z-fold3-5g-512gb,samsung-galaxy-z-fold3-5g-512gb.webp
+11731,phone,Samsung,,,205,2022,Samsung Galaxy Z Fold 4 512GB Unlocked,galaxy-z-fold-4-512gb-unlocked,samsung-galaxy-z-fold-4-512gb-unlocked.webp
+11732,phone,Samsung,,,175,2022,Samsung Galaxy Z Fold 4 256GB Unlocked,galaxy-z-fold-4-256gb-unlocked,samsung-galaxy-z-fold-4-256gb-unlocked.webp
+12461,phone,Samsung,,,140,2023,Samsung Galaxy S23 Ultra 256GB Unlocked,galaxy-s23-ultra-256gb-unlocked,samsung-galaxy-s23-ultra-256gb-unlocked.webp
+12462,phone,Samsung,,,150,2023,Samsung Galaxy S23 Ultra 512GB Unlocked,galaxy-s23-ultra-512gb-unlocked,samsung-galaxy-s23-ultra-512gb-unlocked.webp
+12463,phone,Samsung,,,265,2023,Samsung Galaxy S23 Ultra 1TB Unlocked,galaxy-s23-ultra-1tb-unlocked,samsung-galaxy-s23-ultra-1tb-unlocked.webp
+12464,phone,Samsung,,,120,2023,Samsung Galaxy S23 Ultra 512GB Locked,galaxy-s23-ultra-512gb-locked,samsung-galaxy-s23-ultra-512gb-locked.webp
+12465,phone,Samsung,,,120,2023,Samsung Galaxy S23 Ultra 256GB Locked,galaxy-s23-ultra-256gb-locked,samsung-galaxy-s23-ultra-256gb-locked.webp
+12466,phone,Samsung,,,240,2023,Samsung Galaxy S23 Ultra 1TB Locked,galaxy-s23-ultra-1tb-locked,samsung-galaxy-s23-ultra-1tb-locked.webp
+12467,phone,Samsung,,,150,2023,Samsung Galaxy S23+ 128GB Unlocked,galaxy-s23-128gb-unlocked,samsung-galaxy-s23-128gb-unlocked.webp
+12468,phone,Samsung,,,120,2023,Samsung Galaxy S23+ 128GB Locked,galaxy-s23-128gb-locked,samsung-galaxy-s23-128gb-locked.webp
+12469,phone,Samsung,,,160,2023,Samsung Galaxy S23+ 256GB Unlocked,galaxy-s23-256gb-unlocked,samsung-galaxy-s23-256gb-unlocked.webp
+12470,phone,Samsung,,,150,2023,Samsung Galaxy S23+ 256GB Locked,galaxy-s23-256gb-locked,samsung-galaxy-s23-256gb-locked.webp
+12471,phone,Samsung,,,180,2023,Samsung Galaxy S23+ 512GB Unlocked,galaxy-s23-512gb-unlocked,samsung-galaxy-s23-512gb-unlocked.webp
+12472,phone,Samsung,,,165,2023,Samsung Galaxy S23+ 512GB Locked,galaxy-s23-512gb-locked,samsung-galaxy-s23-512gb-locked.webp
+12473,phone,Samsung,,,120,2023,Samsung Galaxy S23 128GB Unlocked,galaxy-s23-128gb-unlocked,samsung-galaxy-s23-128gb-unlocked.webp
+12474,phone,Samsung,,,105,2023,Samsung Galaxy S23 128GB Locked,galaxy-s23-128gb-locked,samsung-galaxy-s23-128gb-locked.webp
+12475,phone,Samsung,,,140,2023,Samsung Galaxy S23 256GB Unlocked,galaxy-s23-256gb-unlocked,samsung-galaxy-s23-256gb-unlocked.webp
+12476,phone,Samsung,,,125,2023,Samsung Galaxy S23 256GB Locked,galaxy-s23-256gb-locked,samsung-galaxy-s23-256gb-locked.webp
+12477,phone,Samsung,,,150,2023,Samsung Galaxy S23 512GB Unlocked,galaxy-s23-512gb-unlocked,samsung-galaxy-s23-512gb-unlocked.webp
+12478,phone,Samsung,,,140,2023,Samsung Galaxy S23 512GB Locked,galaxy-s23-512gb-locked,samsung-galaxy-s23-512gb-locked.webp
+12479,phone,Samsung,,,115,2022,Samsung Galaxy S22 Ultra 128GB Locked,galaxy-s22-ultra-128gb-locked,samsung-galaxy-s22-ultra-128gb-locked.webp
+12480,phone,Samsung,,,115,2022,Samsung Galaxy S22 Ultra 256GB Locked,galaxy-s22-ultra-256gb-locked,samsung-galaxy-s22-ultra-256gb-locked.webp
+12481,phone,Samsung,,,130,2022,Samsung Galaxy S22 Ultra 512GB Locked,galaxy-s22-ultra-512gb-locked,samsung-galaxy-s22-ultra-512gb-locked.webp
+12482,phone,Samsung,,,140,2022,Samsung Galaxy S22 Ultra 1TB Locked,galaxy-s22-ultra-1tb-locked,samsung-galaxy-s22-ultra-1tb-locked.webp
+12483,phone,Samsung,,,130,2022,Samsung Galaxy S22 Ultra 128GB Unlocked,galaxy-s22-ultra-128gb-unlocked,samsung-galaxy-s22-ultra-128gb-unlocked.webp
+12484,phone,Samsung,,,135,2022,Samsung Galaxy S22 Ultra 256GB Unlocked,galaxy-s22-ultra-256gb-unlocked,samsung-galaxy-s22-ultra-256gb-unlocked.webp
+12485,phone,Samsung,,,150,2022,Samsung Galaxy S22 Ultra 512GB Unlocked,galaxy-s22-ultra-512gb-unlocked,samsung-galaxy-s22-ultra-512gb-unlocked.webp
+12486,phone,Samsung,,,160,2022,Samsung Galaxy S22 Ultra 1TB Unlocked,galaxy-s22-ultra-1tb-unlocked,samsung-galaxy-s22-ultra-1tb-unlocked.webp
+12487,phone,Samsung,,,70,2022,Samsung Galaxy S22+ 128GB Locked,galaxy-s22-128gb-locked,samsung-galaxy-s22-128gb-locked.webp
+12488,phone,Samsung,,,80,2022,Samsung Galaxy S22+ 256GB Locked,galaxy-s22-256gb-locked,samsung-galaxy-s22-256gb-locked.webp
+12489,phone,Samsung,,,75,2022,Samsung Galaxy S22+ 128GB Unlocked,galaxy-s22-128gb-unlocked,samsung-galaxy-s22-128gb-unlocked.webp
+12490,phone,Samsung,,,90,2022,Samsung Galaxy S22+ 256GB Unlocked,galaxy-s22-256gb-unlocked,samsung-galaxy-s22-256gb-unlocked.webp
+12491,phone,Samsung,,,70,2022,Samsung Galaxy S22 128GB Unlocked,galaxy-s22-128gb-unlocked,samsung-galaxy-s22-128gb-unlocked.webp
+12492,phone,Samsung,,,75,2022,Samsung Galaxy S22 256GB Unlocked,galaxy-s22-256gb-unlocked,samsung-galaxy-s22-256gb-unlocked.webp
+12493,phone,Samsung,,,60,2022,Samsung Galaxy S22 128GB Locked,galaxy-s22-128gb-locked,samsung-galaxy-s22-128gb-locked.webp
+12494,phone,Samsung,,,65,2022,Samsung Galaxy S22 256GB Locked,galaxy-s22-256gb-locked,samsung-galaxy-s22-256gb-locked.webp
+12495,phone,Samsung,,,50,2022,Samsung Galaxy S21 FE 128GB Unlocked,galaxy-s21-fe-128gb-unlocked,samsung-galaxy-s21-fe-128gb-unlocked.webp
+12496,phone,Samsung,,,40,2022,Samsung Galaxy S21 FE 128GB Locked,galaxy-s21-fe-128gb-locked,samsung-galaxy-s21-fe-128gb-locked.webp
+12497,phone,Samsung,,,55,2022,Samsung Galaxy S21 FE 256GB Unlocked,galaxy-s21-fe-256gb-unlocked,samsung-galaxy-s21-fe-256gb-unlocked.webp
+12498,phone,Samsung,,,50,2022,Samsung Galaxy S21 FE 256GB Locked,galaxy-s21-fe-256gb-locked,samsung-galaxy-s21-fe-256gb-locked.webp
+12499,phone,Samsung,,,55,2022,Samsung Galaxy S21 Ultra 128GB Locked,galaxy-s21-ultra-128gb-locked,samsung-galaxy-s21-ultra-128gb-locked.webp
+12500,phone,Samsung,,,70,2022,Samsung Galaxy S21 Ultra 256GB Locked,galaxy-s21-ultra-256gb-locked,samsung-galaxy-s21-ultra-256gb-locked.webp
+12501,phone,Samsung,,,100,2022,Samsung Galaxy S21 Ultra 512GB Locked,galaxy-s21-ultra-512gb-locked,samsung-galaxy-s21-ultra-512gb-locked.webp
+12502,phone,Samsung,,,65,2022,Samsung Galaxy S21 Ultra 128GB Unlocked,galaxy-s21-ultra-128gb-unlocked,samsung-galaxy-s21-ultra-128gb-unlocked.webp
+12503,phone,Samsung,,,85,2022,Samsung Galaxy S21 Ultra 256GB Unlocked,galaxy-s21-ultra-256gb-unlocked,samsung-galaxy-s21-ultra-256gb-unlocked.webp
+12504,phone,Samsung,,,115,2022,Samsung Galaxy S21 Ultra 512GB Unlocked,galaxy-s21-ultra-512gb-unlocked,samsung-galaxy-s21-ultra-512gb-unlocked.webp
+12505,phone,Samsung,,,30,2021,Samsung Galaxy S21+ 128GB Locked,galaxy-s21-128gb-locked,samsung-galaxy-s21-128gb-locked.webp
+12506,phone,Samsung,,,40,2021,Samsung Galaxy S21+ 256GB Locked,galaxy-s21-256gb-locked,samsung-galaxy-s21-256gb-locked.webp
+12507,phone,Samsung,,,30,2021,Samsung Galaxy S21 128GB Locked,galaxy-s21-128gb-locked,samsung-galaxy-s21-128gb-locked.webp
+12508,phone,Samsung,,,50,2021,Samsung Galaxy S21+ 128GB Unlocked,galaxy-s21-128gb-unlocked,samsung-galaxy-s21-128gb-unlocked.webp
+12509,phone,Samsung,,,55,2021,Samsung Galaxy S21+ 256GB Unlocked,galaxy-s21-256gb-unlocked,samsung-galaxy-s21-256gb-unlocked.webp
+12510,phone,Samsung,,,45,2021,Samsung Galaxy S21 256GB Locked,galaxy-s21-256gb-locked,samsung-galaxy-s21-256gb-locked.webp
+12511,phone,Samsung,,,55,2021,Samsung Galaxy S21 256GB Unlocked,galaxy-s21-256gb-unlocked,samsung-galaxy-s21-256gb-unlocked.webp
+12512,phone,Samsung,,,40,2021,Samsung Galaxy S21 128GB Unlocked,galaxy-s21-128gb-unlocked,samsung-galaxy-s21-128gb-unlocked.webp
+12513,phone,Samsung,,,25,2020,Samsung Galaxy S20 128GB Locked,galaxy-s20-128gb-locked,samsung-galaxy-s20-128gb-locked.webp
+12514,phone,Samsung,,,30,2020,Samsung Galaxy S20 256GB Locked,galaxy-s20-256gb-locked,samsung-galaxy-s20-256gb-locked.webp
+12515,phone,Samsung,,,40,2020,Samsung Galaxy S20 512GB Locked,galaxy-s20-512gb-locked,samsung-galaxy-s20-512gb-locked.webp
+12516,phone,Samsung,,,30,2020,Samsung Galaxy S20 128GB Unlocked,galaxy-s20-128gb-unlocked,samsung-galaxy-s20-128gb-unlocked.webp
+12517,phone,Samsung,,,30,2020,Samsung Galaxy S20 256GB Unlocked,galaxy-s20-256gb-unlocked,samsung-galaxy-s20-256gb-unlocked.webp
+12518,phone,Samsung,,,40,2020,Samsung Galaxy S20 512GB Unlocked,galaxy-s20-512gb-unlocked,samsung-galaxy-s20-512gb-unlocked.webp
+12519,phone,Samsung,,,40,2020,Samsung Galaxy S20 Ultra 128GB Locked,galaxy-s20-ultra-128gb-locked,samsung-galaxy-s20-ultra-128gb-locked.webp
+12520,phone,Samsung,,,50,2020,Samsung Galaxy S20 Ultra 512GB Locked,galaxy-s20-ultra-512gb-locked,samsung-galaxy-s20-ultra-512gb-locked.webp
+12521,phone,Samsung,,,50,2020,Samsung Galaxy S20 Ultra 128GB Unlocked,galaxy-s20-ultra-128gb-unlocked,samsung-galaxy-s20-ultra-128gb-unlocked.webp
+12522,phone,Samsung,,,70,2020,Samsung Galaxy S20 Ultra 512GB Unlocked,galaxy-s20-ultra-512gb-unlocked,samsung-galaxy-s20-ultra-512gb-unlocked.webp
+12523,phone,Samsung,,,70,2020,Samsung Galaxy S20+ 512GB Unlocked,galaxy-s20-512gb-unlocked,samsung-galaxy-s20-512gb-unlocked.webp
+12524,phone,Samsung,,,60,2020,Samsung Galaxy S20+ 512GB Locked,galaxy-s20-512gb-locked,samsung-galaxy-s20-512gb-locked.webp
+12525,phone,Samsung,,,60,2020,Samsung Galaxy S20+ 128GB Unlocked,galaxy-s20-128gb-unlocked,samsung-galaxy-s20-128gb-unlocked.webp
+12526,phone,Samsung,,,50,2020,Samsung Galaxy S20+ 128GB Locked,galaxy-s20-128gb-locked,samsung-galaxy-s20-128gb-locked.webp
+12527,phone,Samsung,,,30,2020,Samsung Galaxy S20 FE 128GB Locked,galaxy-s20-fe-128gb-locked,samsung-galaxy-s20-fe-128gb-locked.webp
+12528,phone,Samsung,,,35,2020,Samsung Galaxy S20 FE 256GB Locked,galaxy-s20-fe-256gb-locked,samsung-galaxy-s20-fe-256gb-locked.webp
+12529,phone,Samsung,,,35,2020,Samsung Galaxy S20 FE 128GB Unlocked,galaxy-s20-fe-128gb-unlocked,samsung-galaxy-s20-fe-128gb-unlocked.webp
+12530,phone,Samsung,,,40,2020,Samsung Galaxy S20 FE 256GB Unlocked,galaxy-s20-fe-256gb-unlocked,samsung-galaxy-s20-fe-256gb-unlocked.webp
+12531,phone,Samsung,,,45,2019,Samsung Galaxy S10+ 512GB Unlocked,galaxy-s10-512gb-unlocked,samsung-galaxy-s10-512gb-unlocked.webp
+12532,phone,Samsung,,,50,2019,Samsung Galaxy S10+ 1TB Unlocked,galaxy-s10-1tb-unlocked,samsung-galaxy-s10-1tb-unlocked.webp
+12533,phone,Samsung,,,25,2019,Samsung Galaxy S10+ 128GB Locked,galaxy-s10-128gb-locked,samsung-galaxy-s10-128gb-locked.webp
+12534,phone,Samsung,,,40,2019,Samsung Galaxy S10+ 512GB Locked,galaxy-s10-512gb-locked,samsung-galaxy-s10-512gb-locked.webp
+12535,phone,Samsung,,,45,2019,Samsung Galaxy S10+ 1TB Locked,galaxy-s10-1tb-locked,samsung-galaxy-s10-1tb-locked.webp
+12536,phone,Samsung,,,30,2019,Samsung Galaxy S10 5G 256GB Locked,galaxy-s10-5g-256gb-locked,samsung-galaxy-s10-5g-256gb-locked.webp
+12537,phone,Samsung,,,35,2019,Samsung Galaxy S10 5G 512GB Locked,galaxy-s10-5g-512gb-locked,samsung-galaxy-s10-5g-512gb-locked.webp
+12538,phone,Samsung,,,30,2019,Samsung Galaxy S10 4G 512GB Unlocked,galaxy-s10-4g-512gb-unlocked,samsung-galaxy-s10-4g-512gb-unlocked.webp
+12539,phone,Samsung,,,25,2019,Samsung Galaxy S10 4G 128GB Unlocked,galaxy-s10-4g-128gb-unlocked,samsung-galaxy-s10-4g-128gb-unlocked.webp
+12540,phone,Samsung,,,25,2019,Samsung Galaxy S10 4G 512GB Locked,galaxy-s10-4g-512gb-locked,samsung-galaxy-s10-4g-512gb-locked.webp
+12541,phone,Samsung,,,20,2019,Samsung Galaxy S10 4G 128GB Locked,galaxy-s10-4g-128gb-locked,samsung-galaxy-s10-4g-128gb-locked.webp
+12542,phone,Samsung,,,20,2019,Samsung Galaxy S10e 128GB Locked,galaxy-s10e-128gb-locked,samsung-galaxy-s10e-128gb-locked.webp
+12543,phone,Samsung,,,25,2019,Samsung Galaxy S10e 128GB Unlocked,galaxy-s10e-128gb-unlocked,samsung-galaxy-s10e-128gb-unlocked.webp
+12544,phone,Samsung,,,25,2019,Samsung Galaxy S10e 256GB Locked,galaxy-s10e-256gb-locked,samsung-galaxy-s10e-256gb-locked.webp
+12545,phone,Samsung,,,25,2019,Samsung Galaxy S10e 256GB Unlocked,galaxy-s10e-256gb-unlocked,samsung-galaxy-s10e-256gb-unlocked.webp
+12546,phone,Samsung,,,75,2020,Samsung Galaxy Note 20 Ultra 128GB Unlocked,galaxy-note-20-ultra-128gb-unlocked,samsung-galaxy-note-20-ultra-128gb-unlocked.webp
+12547,phone,Samsung,,,65,2020,Samsung Galaxy Note 20 Ultra 128GB Locked,galaxy-note-20-ultra-128gb-locked,samsung-galaxy-note-20-ultra-128gb-locked.webp
+12548,phone,Samsung,,,80,2020,Samsung Galaxy Note 20 Ultra 256GB Unlocked,galaxy-note-20-ultra-256gb-unlocked,samsung-galaxy-note-20-ultra-256gb-unlocked.webp
+12549,phone,Samsung,,,70,2020,Samsung Galaxy Note 20 Ultra 256GB Locked,galaxy-note-20-ultra-256gb-locked,samsung-galaxy-note-20-ultra-256gb-locked.webp
+12550,phone,Samsung,,,90,2020,Samsung Galaxy Note 20 Ultra 512GB Unlocked,galaxy-note-20-ultra-512gb-unlocked,samsung-galaxy-note-20-ultra-512gb-unlocked.webp
+12551,phone,Samsung,,,80,2020,Samsung Galaxy Note 20 Ultra 512GB Locked,galaxy-note-20-ultra-512gb-locked,samsung-galaxy-note-20-ultra-512gb-locked.webp
+12552,phone,Samsung,,,50,2020,Samsung Galaxy Note 20 128GB Locked,galaxy-note-20-128gb-locked,samsung-galaxy-note-20-128gb-locked.webp
+12553,phone,Samsung,,,55,2020,Samsung Galaxy Note 20 256GB Locked,galaxy-note-20-256gb-locked,samsung-galaxy-note-20-256gb-locked.webp
+12554,phone,Samsung,,,55,2020,Samsung Galaxy Note 20 128GB Unlocked,galaxy-note-20-128gb-unlocked,samsung-galaxy-note-20-128gb-unlocked.webp
+12555,phone,Samsung,,,60,2020,Samsung Galaxy Note 20 256GB Unlocked,galaxy-note-20-256gb-unlocked,samsung-galaxy-note-20-256gb-unlocked.webp
+12556,phone,Samsung,,,55,2019,Samsung Galaxy Note 10+ 4G 512GB Locked,galaxy-note-10-4g-512gb-locked,samsung-galaxy-note-10-4g-512gb-locked.webp
+12557,phone,Samsung,,,75,2019,Samsung Galaxy Note 10+ 4G 512GB Unlocked,galaxy-note-10-4g-512gb-unlocked,samsung-galaxy-note-10-4g-512gb-unlocked.webp
+12558,phone,Samsung,,,55,2019,Samsung Galaxy Note 10+ 5G 256GB Locked,galaxy-note-10-5g-256gb-locked,samsung-galaxy-note-10-5g-256gb-locked.webp
+12559,phone,Samsung,,,70,2019,Samsung Galaxy Note 10+ 5G 256GB Unlocked,galaxy-note-10-5g-256gb-unlocked,samsung-galaxy-note-10-5g-256gb-unlocked.webp
+12560,phone,Samsung,,,65,2019,Samsung Galaxy Note 10+ 5G 512GB Locked,galaxy-note-10-5g-512gb-locked,samsung-galaxy-note-10-5g-512gb-locked.webp
+12561,phone,Samsung,,,75,2019,Samsung Galaxy Note 10+ 5G 512GB Unlocked,galaxy-note-10-5g-512gb-unlocked,samsung-galaxy-note-10-5g-512gb-unlocked.webp
+12562,phone,Samsung,,,25,2018,Samsung Galaxy Note 9 512GB Locked,galaxy-note-9-512gb-locked,samsung-galaxy-note-9-512gb-locked.webp
+12563,phone,Samsung,,,35,2018,Samsung Galaxy Note 9 512GB Unlocked,galaxy-note-9-512gb-unlocked,samsung-galaxy-note-9-512gb-unlocked.webp
+12564,phone,Samsung,,,20,2018,Samsung Galaxy Note 9 128GB Locked,galaxy-note-9-128gb-locked,samsung-galaxy-note-9-128gb-locked.webp
+12565,phone,Samsung,,,25,2018,Samsung Galaxy Note 9 128GB Unlocked,galaxy-note-9-128gb-unlocked,samsung-galaxy-note-9-128gb-unlocked.webp
+12566,phone,Samsung,,,160,2022,Samsung Galaxy Z Fold 4 256GB Locked,galaxy-z-fold-4-256gb-locked,samsung-galaxy-z-fold-4-256gb-locked.webp
+12567,phone,Samsung,,,180,2022,Samsung Galaxy Z Fold 4 512GB Locked,galaxy-z-fold-4-512gb-locked,samsung-galaxy-z-fold-4-512gb-locked.webp
+12568,phone,Samsung,,,255,2022,Samsung Galaxy Z Fold 4 1TB Locked,galaxy-z-fold-4-1tb-locked,samsung-galaxy-z-fold-4-1tb-locked.webp
+12569,phone,Samsung,,,285,2022,Samsung Galaxy Z Fold 4 1TB Unlocked,galaxy-z-fold-4-1tb-unlocked,samsung-galaxy-z-fold-4-1tb-unlocked.webp
+12570,phone,Samsung,,,80,2020,Samsung Galaxy Z Fold2 5G 256GB Unlocked,galaxy-z-fold2-5g-256gb-unlocked,samsung-galaxy-z-fold2-5g-256gb-unlocked.webp
+12571,phone,Samsung,,,90,2020,Samsung Galaxy Z Fold2 5G 512GB Unlocked,galaxy-z-fold2-5g-512gb-unlocked,samsung-galaxy-z-fold2-5g-512gb-unlocked.webp
+12574,phone,Samsung,,,90,2022,Samsung Galaxy Z Flip 4 512GB Locked,galaxy-z-flip-4-512gb-locked,samsung-galaxy-z-flip-4-512gb-locked.webp
+12575,phone,Samsung,,,60,2022,Samsung Galaxy Z Flip 4 128GB Locked,galaxy-z-flip-4-128gb-locked,samsung-galaxy-z-flip-4-128gb-locked.webp
+12576,phone,Samsung,,,25,2021,Samsung Galaxy A52 5G 128GB Locked,galaxy-a52-5g-128gb-locked,samsung-galaxy-a52-5g-128gb-locked.webp
+12577,phone,Samsung,,,30,2021,Samsung Galaxy A52 5G 128GB Unlocked,galaxy-a52-5g-128gb-unlocked,samsung-galaxy-a52-5g-128gb-unlocked.webp
+12578,phone,Samsung,,,30,2021,Samsung Galaxy A52 5G 256GB Locked,galaxy-a52-5g-256gb-locked,samsung-galaxy-a52-5g-256gb-locked.webp
+12579,phone,Samsung,,,30,2021,Samsung Galaxy A52 5G 256GB Unlocked,galaxy-a52-5g-256gb-unlocked,samsung-galaxy-a52-5g-256gb-unlocked.webp
+12580,phone,Samsung,,,20,2020,Samsung Galaxy A71 5G 128GB Locked,galaxy-a71-5g-128gb-locked,samsung-galaxy-a71-5g-128gb-locked.webp
+12581,phone,Samsung,,,25,2020,Samsung Galaxy A71 5G 128GB Unlocked,galaxy-a71-5g-128gb-unlocked,samsung-galaxy-a71-5g-128gb-unlocked.webp
+12582,phone,Samsung,,,15,2020,Samsung Galaxy A71 4G 128GB Locked,galaxy-a71-4g-128gb-locked,samsung-galaxy-a71-4g-128gb-locked.webp
+12583,phone,Samsung,,,20,2020,Samsung Galaxy A71 4G 128GB Unlocked,galaxy-a71-4g-128gb-unlocked,samsung-galaxy-a71-4g-128gb-unlocked.webp
+12584,phone,Samsung,,,60,2022,Samsung Galaxy A73 128GB Locked,galaxy-a73-128gb-locked,samsung-galaxy-a73-128gb-locked.webp
+12585,phone,Samsung,,,30,2021,Samsung Galaxy A72 256GB Locked,galaxy-a72-256gb-locked,samsung-galaxy-a72-256gb-locked.webp
+12586,phone,Samsung,,,30,2021,Samsung Galaxy A72 128GB Unlocked,galaxy-a72-128gb-unlocked,samsung-galaxy-a72-128gb-unlocked.webp
+12587,phone,Samsung,,,35,2021,Samsung Galaxy A72 256GB Unlocked,galaxy-a72-256gb-unlocked,samsung-galaxy-a72-256gb-unlocked.webp
+12588,phone,Samsung,,,25,2021,Samsung Galaxy A72 128GB Locked,galaxy-a72-128gb-locked,samsung-galaxy-a72-128gb-locked.webp
+12589,phone,Samsung,,,70,2022,Samsung Galaxy A73 128GB Unlocked,galaxy-a73-128gb-unlocked,samsung-galaxy-a73-128gb-unlocked.webp
+12590,phone,Samsung,,,80,2022,Samsung Galaxy A73 256GB Unlocked,galaxy-a73-256gb-unlocked,samsung-galaxy-a73-256gb-unlocked.webp
+12591,phone,Samsung,,,70,2022,Samsung Galaxy A73 256GB Locked,galaxy-a73-256gb-locked,samsung-galaxy-a73-256gb-locked.webp
+12593,phone,Samsung,,,25,2018,Samsung Galaxy S9 128GB Unlocked,galaxy-s9-128gb-unlocked,samsung-galaxy-s9-128gb-unlocked.webp
+12594,phone,Samsung,,,25,2018,Samsung Galaxy S9 256GB Unlocked,galaxy-s9-256gb-unlocked,samsung-galaxy-s9-256gb-unlocked.webp
+12596,phone,Samsung,,,20,2018,Samsung Galaxy S9 128GB Locked,galaxy-s9-128gb-locked,samsung-galaxy-s9-128gb-locked.webp
+12597,phone,Samsung,,,25,2018,Samsung Galaxy S9 256GB Locked,galaxy-s9-256gb-locked,samsung-galaxy-s9-256gb-locked.webp
+12598,phone,Samsung,,,20,2018,Samsung Galaxy S9+ 64GB Locked,galaxy-s9-64gb-locked,samsung-galaxy-s9-64gb-locked.webp
+12599,phone,Samsung,,,25,2018,Samsung Galaxy S9+ 128GB Locked,galaxy-s9-128gb-locked,samsung-galaxy-s9-128gb-locked.webp
+12600,phone,Samsung,,,30,2018,Samsung Galaxy S9+ 256GB Locked,galaxy-s9-256gb-locked,samsung-galaxy-s9-256gb-locked.webp
+12601,phone,Samsung,,,25,2018,Samsung Galaxy S9+ 64GB Unlocked,galaxy-s9-64gb-unlocked,samsung-galaxy-s9-64gb-unlocked.webp
+12602,phone,Samsung,,,30,2018,Samsung Galaxy S9+ 128GB Unlocked,galaxy-s9-128gb-unlocked,samsung-galaxy-s9-128gb-unlocked.webp
+12603,phone,Samsung,,,35,2018,Samsung Galaxy S9+ 256GB Unlocked,galaxy-s9-256gb-unlocked,samsung-galaxy-s9-256gb-unlocked.webp

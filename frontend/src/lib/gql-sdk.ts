@@ -5541,17 +5541,92 @@ export type DesktopToTermNodeConnectionWhereArgs = {
 /** The &quot;Device&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
 export type Device = AcfFieldGroup & AcfFieldGroupFields & Device_Fields & {
   __typename?: 'Device';
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
+  cpu: Maybe<Array<Maybe<DeviceCpu>>>;
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
+  display: Maybe<Array<Maybe<DeviceDisplay>>>;
   /**
    * The name of the field group
    * @deprecated Use __typename instead
    */
   fieldGroupName: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
+  gpu: Maybe<Array<Maybe<DeviceGpu>>>;
   /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
-  heroTitle: Maybe<Scalars['String']['output']>;
+  model: Maybe<Scalars['String']['output']>;
   /** Field of the &quot;number&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
   price: Maybe<Scalars['Float']['output']>;
-  /** Field of the &quot;file&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
-  vedo: Maybe<AcfMediaItemConnectionEdge>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
+  series: Maybe<Scalars['String']['output']>;
+};
+
+/** The &quot;DeviceCpu&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type DeviceCpu = AcfFieldGroup & AcfFieldGroupFields & DeviceCpu_Fields & {
+  __typename?: 'DeviceCpu';
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;DeviceCpu&quot; Field Group */
+  item: Maybe<AcfLink>;
+};
+
+/** Interface representing fields of the ACF &quot;DeviceCpu&quot; Field Group */
+export type DeviceCpu_Fields = {
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;DeviceCpu&quot; Field Group */
+  item: Maybe<AcfLink>;
+};
+
+/** The &quot;DeviceDisplay&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type DeviceDisplay = AcfFieldGroup & AcfFieldGroupFields & DeviceDisplay_Fields & {
+  __typename?: 'DeviceDisplay';
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;DeviceDisplay&quot; Field Group */
+  item: Maybe<AcfLink>;
+};
+
+/** Interface representing fields of the ACF &quot;DeviceDisplay&quot; Field Group */
+export type DeviceDisplay_Fields = {
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;DeviceDisplay&quot; Field Group */
+  item: Maybe<AcfLink>;
+};
+
+/** The &quot;DeviceGpu&quot; Field Group. Added to the Schema by &quot;WPGraphQL for ACF&quot;. */
+export type DeviceGpu = AcfFieldGroup & AcfFieldGroupFields & DeviceGpu_Fields & {
+  __typename?: 'DeviceGpu';
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;DeviceGpu&quot; Field Group */
+  item: Maybe<AcfLink>;
+};
+
+/** Interface representing fields of the ACF &quot;DeviceGpu&quot; Field Group */
+export type DeviceGpu_Fields = {
+  /**
+   * The name of the field group
+   * @deprecated Use __typename instead
+   */
+  fieldGroupName: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;link&quot; Field Type added to the schema as part of the &quot;DeviceGpu&quot; Field Group */
+  item: Maybe<AcfLink>;
 };
 
 export type DeviceView = AcfOptionsPage & Node & WithAcfDeviceViewSettings & {
@@ -5656,17 +5731,23 @@ export type DeviceViewSettings_Fields = {
 
 /** Interface representing fields of the ACF &quot;Device&quot; Field Group */
 export type Device_Fields = {
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
+  cpu: Maybe<Array<Maybe<DeviceCpu>>>;
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
+  display: Maybe<Array<Maybe<DeviceDisplay>>>;
   /**
    * The name of the field group
    * @deprecated Use __typename instead
    */
   fieldGroupName: Maybe<Scalars['String']['output']>;
+  /** Field of the &quot;repeater&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
+  gpu: Maybe<Array<Maybe<DeviceGpu>>>;
   /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
-  heroTitle: Maybe<Scalars['String']['output']>;
+  model: Maybe<Scalars['String']['output']>;
   /** Field of the &quot;number&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
   price: Maybe<Scalars['Float']['output']>;
-  /** Field of the &quot;file&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
-  vedo: Maybe<AcfMediaItemConnectionEdge>;
+  /** Field of the &quot;text&quot; Field Type added to the schema as part of the &quot;Device&quot; Field Group */
+  series: Maybe<Scalars['String']['output']>;
 };
 
 /** The discussion setting type */

@@ -16,13 +16,13 @@ import { FaqProps } from '@/types/Faqs';
 export const revalidate = 60;        // ISR: rebuild at most once a minute
 
 interface Props {
-  params: { postType: string; };
+  params: { brand: string; };
 }
 
-export default async function PostTypePage({ params }: Props) {
+export default async function BrandPage({ params }: Props) {
     const { menu } = await sdk.GetHeaderNav();
     const { page } = await sdk.GetCustomPostType({
-      pageId: `/${params.postType}/`,
+      pageId: `/${params.brand}/`,
       idType: 'URI',
     });
     
@@ -35,15 +35,15 @@ export default async function PostTypePage({ params }: Props) {
     if (!contentTypes?.nodes || contentTypes.nodes.length === 0) {
       notFound();
     }
-    const customPostType = contentTypes?.nodes.find((c) => (c.graphqlSingleName?.toLowerCase().replace(/_/g, '-') ?? "") === params.postType.toLowerCase())
+    const customBrand = contentTypes?.nodes.find((c) => (c.graphqlSingleName?.toLowerCase().replace(/_/g, '-') ?? "") === params.brand.toLowerCase())
   
-    if (!customPostType) {
+    if (!customBrand) {
       notFound();
     }
 
-    const postTypeSlug  = params.postType;   
+    const brandSlug  = params.brand;   
     const { terms } = await sdk.GetAllTaxonomyTerms({
-    taxonomy: postTypeSlug.toUpperCase().replace(/-/g, '') + 'BRAND' as TaxonomyEnum,
+    taxonomy: brandSlug.toUpperCase().replace(/-/g, '') + 'BRAND' as TaxonomyEnum,
     first: 100,
     after: null,
     });
@@ -98,7 +98,7 @@ export default async function PostTypePage({ params }: Props) {
         terms: terms.nodes.map((term) => ({
         id: term.id,
         name: term.name ?? "",
-        slug: `${postTypeSlug}/${term.slug}`,
+        slug: `${brandSlug}/${term.slug}`,
         description: term.description ?? ""
         })),  
     } satisfies BrandProps;

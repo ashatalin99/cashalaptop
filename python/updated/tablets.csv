@@ -1,0 +1,131 @@
+id,type,brand,series,models,price,year,title,url,images
+12052,tablet,Apple,,,25,2017,Apple iPad 9.7 5th Gen 32GB Wi-Fi + Cellular,ipad-9-7-5th-gen-32gb-wi_fi-cellular,apple-ipad-9-7-5th-gen-32gb-wi_fi-cellular.webp
+12053,tablet,Apple,,,35,2017,Apple iPad 9.7 5th Gen 128GB Wi-Fi + Cellular,ipad-9-7-5th-gen-128gb-wi_fi-cellular,apple-ipad-9-7-5th-gen-128gb-wi_fi-cellular.webp
+12054,tablet,Apple,,,15,2017,Apple iPad 9.7 5th Gen 32GB Wi-Fi,ipad-9-7-5th-gen-32gb-wi_fi,apple-ipad-9-7-5th-gen-32gb-wi_fi.webp
+12055,tablet,Apple,,,30,2017,Apple iPad 9.7 5th Gen 128GB Wi-Fi,ipad-9-7-5th-gen-128gb-wi_fi,apple-ipad-9-7-5th-gen-128gb-wi_fi.webp
+12056,tablet,Apple,,,40,2018,Apple iPad 9.7 6th Gen 128GB Wi-Fi + Cellular,ipad-9-7-6th-gen-128gb-wi_fi-cellular,apple-ipad-9-7-6th-gen-128gb-wi_fi-cellular.webp
+12057,tablet,Apple,,,35,2018,Apple iPad 9.7 6th Gen 128GB Wi-Fi,ipad-9-7-6th-gen-128gb-wi_fi,apple-ipad-9-7-6th-gen-128gb-wi_fi.webp
+12058,tablet,Apple,,,25,2018,Apple iPad 9.7 6th Gen 32GB Wi-Fi + Cellular,ipad-9-7-6th-gen-32gb-wi_fi-cellular,apple-ipad-9-7-6th-gen-32gb-wi_fi-cellular.webp
+12059,tablet,Apple,,,20,2018,Apple iPad 9.7 6th Gen 32GB Wi-Fi,ipad-9-7-6th-gen-32gb-wi_fi,apple-ipad-9-7-6th-gen-32gb-wi_fi.webp
+12060,tablet,Apple,,,50,2019,Apple iPad 10.2 7th Gen 32GB Wi-Fi + Cellular,ipad-10-2-7th-gen-32gb-wi_fi-cellular,apple-ipad-10-2-7th-gen-32gb-wi_fi-cellular.webp
+12061,tablet,Apple,,,55,2019,Apple iPad 10.2 7th Gen 128GB Wi-Fi + Cellular,ipad-10-2-7th-gen-128gb-wi_fi-cellular,apple-ipad-10-2-7th-gen-128gb-wi_fi-cellular.webp
+12062,tablet,Apple,,,45,2019,Apple iPad 10.2 7th Gen 32GB Wi-Fi,ipad-10-2-7th-gen-32gb-wi_fi,apple-ipad-10-2-7th-gen-32gb-wi_fi.webp
+12063,tablet,Apple,,,50,2019,Apple iPad 10.2 7th Gen 128GB Wi-Fi,ipad-10-2-7th-gen-128gb-wi_fi,apple-ipad-10-2-7th-gen-128gb-wi_fi.webp
+12064,tablet,Apple,,,80,2020,Apple iPad 10.2 8th Gen 128GB Wi-Fi + Cellular,ipad-10-2-8th-gen-128gb-wi_fi-cellular,apple-ipad-10-2-8th-gen-128gb-wi_fi-cellular.webp
+12065,tablet,Apple,,,70,2020,Apple iPad 10.2 8th Gen 128GB Wi-Fi,ipad-10-2-8th-gen-128gb-wi_fi,apple-ipad-10-2-8th-gen-128gb-wi_fi.webp
+12066,tablet,Apple,,,70,2020,Apple iPad 10.2 8th Gen 32GB Wi-Fi + Cellular,ipad-10-2-8th-gen-32gb-wi_fi-cellular,apple-ipad-10-2-8th-gen-32gb-wi_fi-cellular.webp
+12067,tablet,Apple,,,60,2020,Apple iPad 10.2 8th Gen 32GB Wi-Fi,ipad-10-2-8th-gen-32gb-wi_fi,apple-ipad-10-2-8th-gen-32gb-wi_fi.webp
+12068,tablet,Apple,,,85,2021,Apple iPad 10.2 9th Gen 64GB Wi-Fi + Cellular,ipad-10-2-9th-gen-64gb-wi_fi-cellular,apple-ipad-10-2-9th-gen-64gb-wi_fi-cellular.webp
+12069,tablet,Apple,,,110,2021,Apple iPad 10.2 9th Gen 256GB Wi-Fi + Cellular,ipad-10-2-9th-gen-256gb-wi_fi-cellular,apple-ipad-10-2-9th-gen-256gb-wi_fi-cellular.webp
+12070,tablet,Apple,,,80,2021,Apple iPad 10.2 9th Gen 64GB Wi-Fi,ipad-10-2-9th-gen-64gb-wi_fi,apple-ipad-10-2-9th-gen-64gb-wi_fi.webp
+12071,tablet,Apple,,,100,2021,Apple iPad 10.2 9th Gen 256GB Wi-Fi,ipad-10-2-9th-gen-256gb-wi_fi,apple-ipad-10-2-9th-gen-256gb-wi_fi.webp
+12072,tablet,Apple,,,125,2022,Apple iPad 10.9 10th Gen 64GB Wi-Fi + Cellular,ipad-10-9-10th-gen-64gb-wi_fi-cellular,apple-ipad-10-9-10th-gen-64gb-wi_fi-cellular.webp
+12073,tablet,Apple,,,130,2022,Apple iPad 10.9 10th Gen 256GB Wi-Fi + Cellular,ipad-10-9-10th-gen-256gb-wi_fi-cellular,apple-ipad-10-9-10th-gen-256gb-wi_fi-cellular.webp
+12074,tablet,Apple,,,115,2022,Apple iPad 10.9 10th Gen 256GB Wi-Fi,ipad-10-9-10th-gen-256gb-wi_fi,apple-ipad-10-9-10th-gen-256gb-wi_fi.webp
+12075,tablet,Apple,,,110,2022,Apple iPad 10.9 10th Gen 64GB Wi-Fi,ipad-10-9-10th-gen-64gb-wi_fi,apple-ipad-10-9-10th-gen-64gb-wi_fi.webp
+12076,tablet,Apple,,,65,2019,Apple iPad Air 3rd Gen 64GB Wi-Fi + Cellular,ipad-air-3rd-gen-64gb-wi_fi-cellular,apple-ipad-air-3rd-gen-64gb-wi_fi-cellular.webp
+12077,tablet,Apple,,,85,2019,Apple iPad Air 3rd Gen 256GB Wi-Fi + Cellular,ipad-air-3rd-gen-256gb-wi_fi-cellular,apple-ipad-air-3rd-gen-256gb-wi_fi-cellular.webp
+12078,tablet,Apple,,,60,2019,Apple iPad Air 3rd Gen 64GB Wi-Fi,ipad-air-3rd-gen-64gb-wi_fi,apple-ipad-air-3rd-gen-64gb-wi_fi.webp
+12079,tablet,Apple,,,75,2019,Apple iPad Air 3rd Gen 256GB Wi-Fi,ipad-air-3rd-gen-256gb-wi_fi,apple-ipad-air-3rd-gen-256gb-wi_fi.webp
+12080,tablet,Apple,,,125,2020,Apple iPad Air 4th Gen 64GB Wi-Fi + Cellular,ipad-air-4th-gen-64gb-wi_fi-cellular,apple-ipad-air-4th-gen-64gb-wi_fi-cellular.webp
+12081,tablet,Apple,,,155,2020,Apple iPad Air 4th Gen 256GB Wi-Fi + Cellular,ipad-air-4th-gen-256gb-wi_fi-cellular,apple-ipad-air-4th-gen-256gb-wi_fi-cellular.webp
+12082,tablet,Apple,,,110,2020,Apple iPad Air 4th Gen 64GB Wi-Fi,ipad-air-4th-gen-64gb-wi_fi,apple-ipad-air-4th-gen-64gb-wi_fi.webp
+12083,tablet,Apple,,,140,2020,Apple iPad Air 4th Gen 256GB Wi-Fi,ipad-air-4th-gen-256gb-wi_fi,apple-ipad-air-4th-gen-256gb-wi_fi.webp
+12084,tablet,Apple,,,140,2022,Apple iPad Air 5th Gen 64GB Wi-Fi + Cellular,ipad-air-5th-gen-64gb-wi_fi-cellular,apple-ipad-air-5th-gen-64gb-wi_fi-cellular.webp
+12085,tablet,Apple,,,230,2022,Apple iPad Air 5th Gen 256GB Wi-Fi + Cellular,ipad-air-5th-gen-256gb-wi_fi-cellular,apple-ipad-air-5th-gen-256gb-wi_fi-cellular.webp
+12086,tablet,Apple,,,120,2022,Apple iPad Air 5th Gen 64GB Wi-Fi,ipad-air-5th-gen-64gb-wi_fi,apple-ipad-air-5th-gen-64gb-wi_fi.webp
+12087,tablet,Apple,,,200,2022,Apple iPad Air 5th Gen 256GB Wi-Fi,ipad-air-5th-gen-256gb-wi_fi,apple-ipad-air-5th-gen-256gb-wi_fi.webp
+12088,tablet,Apple,,,95,2019,Apple iPad Mini 5th Gen 64GB Wi-Fi + Cellular,ipad-mini-5th-gen-64gb-wi_fi-cellular,apple-ipad-mini-5th-gen-64gb-wi_fi-cellular.webp
+12089,tablet,Apple,,,110,2019,Apple iPad Mini 5th Gen 256GB Wi-Fi + Cellular,ipad-mini-5th-gen-256gb-wi_fi-cellular,apple-ipad-mini-5th-gen-256gb-wi_fi-cellular.webp
+12090,tablet,Apple,,,80,2019,Apple iPad Mini 5th Gen 64GB Wi-Fi,ipad-mini-5th-gen-64gb-wi_fi,apple-ipad-mini-5th-gen-64gb-wi_fi.webp
+12091,tablet,Apple,,,95,2019,Apple iPad Mini 5th Gen 256GB Wi-Fi,ipad-mini-5th-gen-256gb-wi_fi,apple-ipad-mini-5th-gen-256gb-wi_fi.webp
+12092,tablet,Apple,,,140,2021,Apple iPad Mini 6th Gen 64GB Wi-Fi + Cellular,ipad-mini-6th-gen-64gb-wi_fi-cellular,apple-ipad-mini-6th-gen-64gb-wi_fi-cellular.webp
+12093,tablet,Apple,,,120,2021,Apple iPad Mini 6th Gen 64GB Wi-Fi,ipad-mini-6th-gen-64gb-wi_fi,apple-ipad-mini-6th-gen-64gb-wi_fi.webp
+12094,tablet,Apple,,,170,2021,Apple iPad Mini 6th Gen 256GB Wi-Fi + Cellular,ipad-mini-6th-gen-256gb-wi_fi-cellular,apple-ipad-mini-6th-gen-256gb-wi_fi-cellular.webp
+12095,tablet,Apple,,,145,2021,Apple iPad Mini 6th Gen 256GB Wi-Fi,ipad-mini-6th-gen-256gb-wi_fi,apple-ipad-mini-6th-gen-256gb-wi_fi.webp
+12096,tablet,Apple,,,55,2017,Apple iPad Pro 10.5 1st Gen 64GB Wi-Fi + Cellular,ipad-pro-10-5-1st-gen-64gb-wi_fi-cellular,apple-ipad-pro-10-5-1st-gen-64gb-wi_fi-cellular.webp
+12097,tablet,Apple,,,65,2017,Apple iPad Pro 10.5 1st Gen 256GB Wi-Fi + Cellular,ipad-pro-10-5-1st-gen-256gb-wi_fi-cellular,apple-ipad-pro-10-5-1st-gen-256gb-wi_fi-cellular.webp
+12098,tablet,Apple,,,75,2017,Apple iPad Pro 10.5 1st Gen 512GB Wi-Fi + Cellular,ipad-pro-10-5-1st-gen-512gb-wi_fi-cellular,apple-ipad-pro-10-5-1st-gen-512gb-wi_fi-cellular.webp
+12099,tablet,Apple,,,45,2017,Apple iPad Pro 10.5 1st Gen 64GB Wi-Fi,ipad-pro-10-5-1st-gen-64gb-wi_fi,apple-ipad-pro-10-5-1st-gen-64gb-wi_fi.webp
+12100,tablet,Apple,,,55,2017,Apple iPad Pro 10.5 1st Gen 256GB Wi-Fi,ipad-pro-10-5-1st-gen-256gb-wi_fi,apple-ipad-pro-10-5-1st-gen-256gb-wi_fi.webp
+12101,tablet,Apple,,,65,2017,Apple iPad Pro 10.5 1st Gen 512GB Wi-Fi,ipad-pro-10-5-1st-gen-512gb-wi_fi,apple-ipad-pro-10-5-1st-gen-512gb-wi_fi.webp
+12102,tablet,Apple,,,80,2017,Apple iPad Pro 12.9 2nd Gen 64GB Wi-Fi + Cellular,ipad-pro-12-9-2nd-gen-64gb-wi_fi-cellular,apple-ipad-pro-12-9-2nd-gen-64gb-wi_fi-cellular.webp
+12103,tablet,Apple,,,100,2017,Apple iPad Pro 12.9 2nd Gen 128GB Wi-Fi + Cellular,ipad-pro-12-9-2nd-gen-128gb-wi_fi-cellular,apple-ipad-pro-12-9-2nd-gen-128gb-wi_fi-cellular.webp
+12104,tablet,Apple,,,110,2017,Apple iPad Pro 12.9 2nd Gen 256GB Wi-Fi + Cellular,ipad-pro-12-9-2nd-gen-256gb-wi_fi-cellular,apple-ipad-pro-12-9-2nd-gen-256gb-wi_fi-cellular.webp
+12105,tablet,Apple,,,130,2017,Apple iPad Pro 12.9 2nd Gen 512GB Wi-Fi + Cellular,ipad-pro-12-9-2nd-gen-512gb-wi_fi-cellular,apple-ipad-pro-12-9-2nd-gen-512gb-wi_fi-cellular.webp
+12106,tablet,Apple,,,70,2017,Apple iPad Pro 12.9 2nd Gen 64GB Wi-Fi,ipad-pro-12-9-2nd-gen-64gb-wi_fi,apple-ipad-pro-12-9-2nd-gen-64gb-wi_fi.webp
+12107,tablet,Apple,,,90,2017,Apple iPad Pro 12.9 2nd Gen 128GB Wi-Fi,ipad-pro-12-9-2nd-gen-128gb-wi_fi,apple-ipad-pro-12-9-2nd-gen-128gb-wi_fi.webp
+12108,tablet,Apple,,,100,2017,Apple iPad Pro 12.9 2nd Gen 256GB Wi-Fi,ipad-pro-12-9-2nd-gen-256gb-wi_fi,apple-ipad-pro-12-9-2nd-gen-256gb-wi_fi.webp
+12109,tablet,Apple,,,120,2017,Apple iPad Pro 12.9 2nd Gen 512GB Wi-Fi,ipad-pro-12-9-2nd-gen-512gb-wi_fi,apple-ipad-pro-12-9-2nd-gen-512gb-wi_fi.webp
+12110,tablet,Apple,,,105,2018,Apple iPad Pro 11 1st Gen 64GB Wi-Fi + Cellular,ipad-pro-11-1st-gen-64gb-wi_fi-cellular,apple-ipad-pro-11-1st-gen-64gb-wi_fi-cellular.webp
+12111,tablet,Apple,,,130,2018,Apple iPad Pro 11 1st Gen 256GB Wi-Fi + Cellular,ipad-pro-11-1st-gen-256gb-wi_fi-cellular,apple-ipad-pro-11-1st-gen-256gb-wi_fi-cellular.webp
+12112,tablet,Apple,,,150,2018,Apple iPad Pro 11 1st Gen 512GB Wi-Fi + Cellular,ipad-pro-11-1st-gen-512gb-wi_fi-cellular,apple-ipad-pro-11-1st-gen-512gb-wi_fi-cellular.webp
+12113,tablet,Apple,,,175,2018,Apple iPad Pro 11 1st Gen 1TB Wi-Fi + Cellular,ipad-pro-11-1st-gen-1tb-wi_fi-cellular,apple-ipad-pro-11-1st-gen-1tb-wi_fi-cellular.webp
+12114,tablet,Apple,,,90,2018,Apple iPad Pro 11 1st Gen 64GB Wi-Fi,ipad-pro-11-1st-gen-64gb-wi_fi,apple-ipad-pro-11-1st-gen-64gb-wi_fi.webp
+12115,tablet,Apple,,,110,2018,Apple iPad Pro 11 1st Gen 256GB Wi-Fi,ipad-pro-11-1st-gen-256gb-wi_fi,apple-ipad-pro-11-1st-gen-256gb-wi_fi.webp
+12116,tablet,Apple,,,130,2018,Apple iPad Pro 11 1st Gen 512GB Wi-Fi,ipad-pro-11-1st-gen-512gb-wi_fi,apple-ipad-pro-11-1st-gen-512gb-wi_fi.webp
+12117,tablet,Apple,,,150,2018,Apple iPad Pro 11 1st Gen 1TB Wi-Fi,ipad-pro-11-1st-gen-1tb-wi_fi,apple-ipad-pro-11-1st-gen-1tb-wi_fi.webp
+12118,tablet,Apple,,,105,2018,Apple iPad Pro 12.9 3rd Gen 64GB Wi-Fi + Cellular,ipad-pro-12-9-3rd-gen-64gb-wi_fi-cellular,apple-ipad-pro-12-9-3rd-gen-64gb-wi_fi-cellular.webp
+12119,tablet,Apple,,,140,2018,Apple iPad Pro 12.9 3rd Gen 256GB Wi-Fi + Cellular,ipad-pro-12-9-3rd-gen-256gb-wi_fi-cellular,apple-ipad-pro-12-9-3rd-gen-256gb-wi_fi-cellular.webp
+12120,tablet,Apple,,,160,2018,Apple iPad Pro 12.9 3rd Gen 512GB Wi-Fi + Cellular,ipad-pro-12-9-3rd-gen-512gb-wi_fi-cellular,apple-ipad-pro-12-9-3rd-gen-512gb-wi_fi-cellular.webp
+12121,tablet,Apple,,,200,2018,Apple iPad Pro 12.9 3rd Gen 1TB Wi-Fi + Cellular,ipad-pro-12-9-3rd-gen-1tb-wi_fi-cellular,apple-ipad-pro-12-9-3rd-gen-1tb-wi_fi-cellular.webp
+12122,tablet,Apple,,,90,2018,Apple iPad Pro 12.9 3rd Gen 64GB Wi-Fi,ipad-pro-12-9-3rd-gen-64gb-wi_fi,apple-ipad-pro-12-9-3rd-gen-64gb-wi_fi.webp
+12123,tablet,Apple,,,120,2018,Apple iPad Pro 12.9 3rd Gen 256GB Wi-Fi,ipad-pro-12-9-3rd-gen-256gb-wi_fi,apple-ipad-pro-12-9-3rd-gen-256gb-wi_fi.webp
+12124,tablet,Apple,,,140,2018,Apple iPad Pro 12.9 3rd Gen 512GB Wi-Fi,ipad-pro-12-9-3rd-gen-512gb-wi_fi,apple-ipad-pro-12-9-3rd-gen-512gb-wi_fi.webp
+12125,tablet,Apple,,,180,2018,Apple iPad Pro 12.9 3rd Gen 1TB Wi-Fi,ipad-pro-12-9-3rd-gen-1tb-wi_fi,apple-ipad-pro-12-9-3rd-gen-1tb-wi_fi.webp
+12126,tablet,Apple,,,160,2020,Apple iPad Pro 11 2nd Gen 128GB Wi-Fi + Cellular,ipad-pro-11-2nd-gen-128gb-wi_fi-cellular,apple-ipad-pro-11-2nd-gen-128gb-wi_fi-cellular.webp
+12127,tablet,Apple,,,180,2020,Apple iPad Pro 11 2nd Gen 256GB Wi-Fi + Cellular,ipad-pro-11-2nd-gen-256gb-wi_fi-cellular,apple-ipad-pro-11-2nd-gen-256gb-wi_fi-cellular.webp
+12128,tablet,Apple,,,205,2020,Apple iPad Pro 11 2nd Gen 512GB Wi-Fi + Cellular,ipad-pro-11-2nd-gen-512gb-wi_fi-cellular,apple-ipad-pro-11-2nd-gen-512gb-wi_fi-cellular.webp
+12129,tablet,Apple,,,235,2020,Apple iPad Pro 11 2nd Gen 1TB Wi-Fi + Cellular,ipad-pro-11-2nd-gen-1tb-wi_fi-cellular,apple-ipad-pro-11-2nd-gen-1tb-wi_fi-cellular.webp
+12130,tablet,Apple,,,160,2020,Apple iPad Pro 11 2nd Gen 256GB Wi-Fi,ipad-pro-11-2nd-gen-256gb-wi_fi,apple-ipad-pro-11-2nd-gen-256gb-wi_fi.webp
+12131,tablet,Apple,,,140,2020,Apple iPad Pro 11 2nd Gen 128GB Wi-Fi,ipad-pro-11-2nd-gen-128gb-wi_fi,apple-ipad-pro-11-2nd-gen-128gb-wi_fi.webp
+12132,tablet,Apple,,,185,2020,Apple iPad Pro 11 2nd Gen 512GB Wi-Fi,ipad-pro-11-2nd-gen-512gb-wi_fi,apple-ipad-pro-11-2nd-gen-512gb-wi_fi.webp
+12133,tablet,Apple,,,210,2020,Apple iPad Pro 11 2nd Gen 1TB Wi-Fi,ipad-pro-11-2nd-gen-1tb-wi_fi,apple-ipad-pro-11-2nd-gen-1tb-wi_fi.webp
+12134,tablet,Apple,,,170,2020,Apple iPad Pro 12.9 4th Gen 128GB Wi-Fi + Cellular,ipad-pro-12-9-4th-gen-128gb-wi_fi-cellular,apple-ipad-pro-12-9-4th-gen-128gb-wi_fi-cellular.webp
+12135,tablet,Apple,,,190,2020,Apple iPad Pro 12.9 4th Gen 256GB Wi-Fi + Cellular,ipad-pro-12-9-4th-gen-256gb-wi_fi-cellular,apple-ipad-pro-12-9-4th-gen-256gb-wi_fi-cellular.webp
+12136,tablet,Apple,,,210,2020,Apple iPad Pro 12.9 4th Gen 512GB Wi-Fi + Cellular,ipad-pro-12-9-4th-gen-512gb-wi_fi-cellular,apple-ipad-pro-12-9-4th-gen-512gb-wi_fi-cellular.webp
+12137,tablet,Apple,,,240,2020,Apple iPad Pro 12.9 4th Gen 1TB Wi-Fi + Cellular,ipad-pro-12-9-4th-gen-1tb-wi_fi-cellular,apple-ipad-pro-12-9-4th-gen-1tb-wi_fi-cellular.webp
+12138,tablet,Apple,,,150,2020,Apple iPad Pro 12.9 4th Gen 128GB Wi-Fi,ipad-pro-12-9-4th-gen-128gb-wi_fi,apple-ipad-pro-12-9-4th-gen-128gb-wi_fi.webp
+12139,tablet,Apple,,,170,2020,Apple iPad Pro 12.9 4th Gen 256GB Wi-Fi,ipad-pro-12-9-4th-gen-256gb-wi_fi,apple-ipad-pro-12-9-4th-gen-256gb-wi_fi.webp
+12140,tablet,Apple,,,190,2020,Apple iPad Pro 12.9 4th Gen 512GB Wi-Fi,ipad-pro-12-9-4th-gen-512gb-wi_fi,apple-ipad-pro-12-9-4th-gen-512gb-wi_fi.webp
+12141,tablet,Apple,,,210,2020,Apple iPad Pro 12.9 4th Gen 1TB Wi-Fi,ipad-pro-12-9-4th-gen-1tb-wi_fi,apple-ipad-pro-12-9-4th-gen-1tb-wi_fi.webp
+12142,tablet,Apple,,,170,2021,Apple iPad Pro 11 3rd Gen 128GB Wi-Fi + Cellular,ipad-pro-11-3rd-gen-128gb-wi_fi-cellular,apple-ipad-pro-11-3rd-gen-128gb-wi_fi-cellular.webp
+12143,tablet,Apple,,,190,2021,Apple iPad Pro 11 3rd Gen 256GB Wi-Fi + Cellular,ipad-pro-11-3rd-gen-256gb-wi_fi-cellular,apple-ipad-pro-11-3rd-gen-256gb-wi_fi-cellular.webp
+12144,tablet,Apple,,,215,2021,Apple iPad Pro 11 3rd Gen 512GB Wi-Fi + Cellular,ipad-pro-11-3rd-gen-512gb-wi_fi-cellular,apple-ipad-pro-11-3rd-gen-512gb-wi_fi-cellular.webp
+12145,tablet,Apple,,,250,2021,Apple iPad Pro 11 3rd Gen 1TB Wi-Fi + Cellular,ipad-pro-11-3rd-gen-1tb-wi_fi-cellular,apple-ipad-pro-11-3rd-gen-1tb-wi_fi-cellular.webp
+12146,tablet,Apple,,,275,2021,Apple iPad Pro 11 3rd Gen 2TB Wi-Fi + Cellular,ipad-pro-11-3rd-gen-2tb-wi_fi-cellular,apple-ipad-pro-11-3rd-gen-2tb-wi_fi-cellular.webp
+12147,tablet,Apple,,,150,2021,Apple iPad Pro 11 3rd Gen 128GB Wi-Fi,ipad-pro-11-3rd-gen-128gb-wi_fi,apple-ipad-pro-11-3rd-gen-128gb-wi_fi.webp
+12148,tablet,Apple,,,170,2021,Apple iPad Pro 11 3rd Gen 256GB Wi-Fi,ipad-pro-11-3rd-gen-256gb-wi_fi,apple-ipad-pro-11-3rd-gen-256gb-wi_fi.webp
+12149,tablet,Apple,,,200,2021,Apple iPad Pro 11 3rd Gen 512GB Wi-Fi,ipad-pro-11-3rd-gen-512gb-wi_fi,apple-ipad-pro-11-3rd-gen-512gb-wi_fi.webp
+12150,tablet,Apple,,,225,2021,Apple iPad Pro 11 3rd Gen 1TB Wi-Fi,ipad-pro-11-3rd-gen-1tb-wi_fi,apple-ipad-pro-11-3rd-gen-1tb-wi_fi.webp
+12151,tablet,Apple,,,245,2021,Apple iPad Pro 11 3rd Gen 2TB Wi-Fi,ipad-pro-11-3rd-gen-2tb-wi_fi,apple-ipad-pro-11-3rd-gen-2tb-wi_fi.webp
+12152,tablet,Apple,,,210,2021,Apple iPad Pro 12.9 5th Gen 128GB Wi-Fi + Cellular,ipad-pro-12-9-5th-gen-128gb-wi_fi-cellular,apple-ipad-pro-12-9-5th-gen-128gb-wi_fi-cellular.webp
+12153,tablet,Apple,,,220,2021,Apple iPad Pro 12.9 5th Gen 256GB Wi-Fi + Cellular,ipad-pro-12-9-5th-gen-256gb-wi_fi-cellular,apple-ipad-pro-12-9-5th-gen-256gb-wi_fi-cellular.webp
+12154,tablet,Apple,,,230,2021,Apple iPad Pro 12.9 5th Gen 512GB Wi-Fi + Cellular,ipad-pro-12-9-5th-gen-512gb-wi_fi-cellular,apple-ipad-pro-12-9-5th-gen-512gb-wi_fi-cellular.webp
+12155,tablet,Apple,,,310,2021,Apple iPad Pro 12.9 5th Gen 1TB Wi-Fi + Cellular,ipad-pro-12-9-5th-gen-1tb-wi_fi-cellular,apple-ipad-pro-12-9-5th-gen-1tb-wi_fi-cellular.webp
+12156,tablet,Apple,,,330,2021,Apple iPad Pro 12.9 5th Gen 2TB Wi-Fi + Cellular,ipad-pro-12-9-5th-gen-2tb-wi_fi-cellular,apple-ipad-pro-12-9-5th-gen-2tb-wi_fi-cellular.webp
+12157,tablet,Apple,,,190,2021,Apple iPad Pro 12.9 5th Gen 128GB Wi-Fi,ipad-pro-12-9-5th-gen-128gb-wi_fi,apple-ipad-pro-12-9-5th-gen-128gb-wi_fi.webp
+12158,tablet,Apple,,,200,2021,Apple iPad Pro 12.9 5th Gen 256GB Wi-Fi,ipad-pro-12-9-5th-gen-256gb-wi_fi,apple-ipad-pro-12-9-5th-gen-256gb-wi_fi.webp
+12159,tablet,Apple,,,210,2021,Apple iPad Pro 12.9 5th Gen 512GB Wi-Fi,ipad-pro-12-9-5th-gen-512gb-wi_fi,apple-ipad-pro-12-9-5th-gen-512gb-wi_fi.webp
+12160,tablet,Apple,,,280,2021,Apple iPad Pro 12.9 5th Gen 1TB Wi-Fi,ipad-pro-12-9-5th-gen-1tb-wi_fi,apple-ipad-pro-12-9-5th-gen-1tb-wi_fi.webp
+12161,tablet,Apple,,,300,2021,Apple iPad Pro 12.9 5th Gen 2TB Wi-Fi,ipad-pro-12-9-5th-gen-2tb-wi_fi,apple-ipad-pro-12-9-5th-gen-2tb-wi_fi.webp
+12162,tablet,Apple,,,175,2022,Apple iPad Pro 11 4th Gen 128GB Wi-Fi + Cellular,ipad-pro-11-4th-gen-128gb-wi_fi-cellular,apple-ipad-pro-11-4th-gen-128gb-wi_fi-cellular.webp
+12163,tablet,Apple,,,200,2022,Apple iPad Pro 11 4th Gen 256GB Wi-Fi + Cellular,ipad-pro-11-4th-gen-256gb-wi_fi-cellular,apple-ipad-pro-11-4th-gen-256gb-wi_fi-cellular.webp
+12164,tablet,Apple,,,225,2022,Apple iPad Pro 11 4th Gen 512GB Wi-Fi + Cellular,ipad-pro-11-4th-gen-512gb-wi_fi-cellular,apple-ipad-pro-11-4th-gen-512gb-wi_fi-cellular.webp
+12165,tablet,Apple,,,265,2022,Apple iPad Pro 11 4th Gen 1TB Wi-Fi + Cellular,ipad-pro-11-4th-gen-1tb-wi_fi-cellular,apple-ipad-pro-11-4th-gen-1tb-wi_fi-cellular.webp
+12166,tablet,Apple,,,285,2022,Apple iPad Pro 11 4th Gen 2TB Wi-Fi + Cellular,ipad-pro-11-4th-gen-2tb-wi_fi-cellular,apple-ipad-pro-11-4th-gen-2tb-wi_fi-cellular.webp
+12167,tablet,Apple,,,180,2022,Apple iPad Pro 11 4th Gen 256GB Wi-Fi,ipad-pro-11-4th-gen-256gb-wi_fi,apple-ipad-pro-11-4th-gen-256gb-wi_fi.webp
+12168,tablet,Apple,,,155,2022,Apple iPad Pro 11 4th Gen 128GB Wi-Fi,ipad-pro-11-4th-gen-128gb-wi_fi,apple-ipad-pro-11-4th-gen-128gb-wi_fi.webp
+12169,tablet,Apple,,,210,2022,Apple iPad Pro 11 4th Gen 512GB Wi-Fi,ipad-pro-11-4th-gen-512gb-wi_fi,apple-ipad-pro-11-4th-gen-512gb-wi_fi.webp
+12170,tablet,Apple,,,245,2022,Apple iPad Pro 11 4th Gen 1TB Wi-Fi,ipad-pro-11-4th-gen-1tb-wi_fi,apple-ipad-pro-11-4th-gen-1tb-wi_fi.webp
+12171,tablet,Apple,,,260,2022,Apple iPad Pro 11 4th Gen 2TB Wi-Fi,ipad-pro-11-4th-gen-2tb-wi_fi,apple-ipad-pro-11-4th-gen-2tb-wi_fi.webp
+12172,tablet,Apple,,,220,2022,Apple iPad Pro 12.9 6th Gen 128GB Wi-Fi + Cellular,ipad-pro-12-9-6th-gen-128gb-wi_fi-cellular,apple-ipad-pro-12-9-6th-gen-128gb-wi_fi-cellular.webp
+12173,tablet,Apple,,,230,2022,Apple iPad Pro 12.9 6th Gen 256GB Wi-Fi + Cellular,ipad-pro-12-9-6th-gen-256gb-wi_fi-cellular,apple-ipad-pro-12-9-6th-gen-256gb-wi_fi-cellular.webp
+12174,tablet,Apple,,,290,2022,Apple iPad Pro 12.9 6th Gen 512GB Wi-Fi + Cellular,ipad-pro-12-9-6th-gen-512gb-wi_fi-cellular,apple-ipad-pro-12-9-6th-gen-512gb-wi_fi-cellular.webp
+12175,tablet,Apple,,,350,2022,Apple iPad Pro 12.9 6th Gen 1TB Wi-Fi + Cellular,ipad-pro-12-9-6th-gen-1tb-wi_fi-cellular,apple-ipad-pro-12-9-6th-gen-1tb-wi_fi-cellular.webp
+12176,tablet,Apple,,,400,2022,Apple iPad Pro 12.9 6th Gen 2TB Wi-Fi + Cellular,ipad-pro-12-9-6th-gen-2tb-wi_fi-cellular,apple-ipad-pro-12-9-6th-gen-2tb-wi_fi-cellular.webp
+12177,tablet,Apple,,,320,2022,Apple iPad Pro 12.9 6th Gen 1TB Wi-Fi,ipad-pro-12-9-6th-gen-1tb-wi_fi,apple-ipad-pro-12-9-6th-gen-1tb-wi_fi.webp
+12178,tablet,Apple,,,360,2022,Apple iPad Pro 12.9 6th Gen 2TB Wi-Fi,ipad-pro-12-9-6th-gen-2tb-wi_fi,apple-ipad-pro-12-9-6th-gen-2tb-wi_fi.webp
+12179,tablet,Apple,,,200,2022,Apple iPad Pro 12.9 6th Gen 128GB Wi-Fi,ipad-pro-12-9-6th-gen-128gb-wi_fi,apple-ipad-pro-12-9-6th-gen-128gb-wi_fi.webp
+12180,tablet,Apple,,,210,2022,Apple iPad Pro 12.9 6th Gen 256GB Wi-Fi,ipad-pro-12-9-6th-gen-256gb-wi_fi,apple-ipad-pro-12-9-6th-gen-256gb-wi_fi.webp
+12181,tablet,Apple,,,260,2022,Apple iPad Pro 12.9 6th Gen 512GB Wi-Fi,ipad-pro-12-9-6th-gen-512gb-wi_fi,apple-ipad-pro-12-9-6th-gen-512gb-wi_fi.webp

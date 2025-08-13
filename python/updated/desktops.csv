@@ -1,0 +1,817 @@
+id,type,brand,series,models,price,year,title,url,images
+4906,desktop,Alienware,,,85,2016,Alienware Alpha R2 Intel Core i7 6th Gen,alpha-r2-intel-core-i7-6th-gen,alienware-alpha-r2-intel-core-i7-6th-gen.webp
+4907,desktop,Alienware,,,55,2016,Alienware Alpha R2 Intel Core i5 6th Gen,alpha-r2-intel-core-i5-6th-gen,alienware-alpha-r2-intel-core-i5-6th-gen.webp
+4908,desktop,Alienware,,,40,2016,Alienware Alpha R2 Intel Core i3 6th Gen,alpha-r2-intel-core-i3-6th-gen,alienware-alpha-r2-intel-core-i3-6th-gen.webp
+4909,desktop,Alienware,,,45,2016,Alienware Aurora R5 Intel Core i7 6th Gen NO GPU,aurora-r5-intel-core-i7-6th-gen-no-gpu,alienware-aurora-r5-intel-core-i7-6th-gen-no-gpu.webp
+4910,desktop,Alienware,,,45,2016,Alienware Aurora R5 Intel Core i5 6th Gen Nvidia GTX,aurora-r5-intel-core-i5-6th-gen-nvidia-gtx,alienware-aurora-r5-intel-core-i5-6th-gen-nvidia-gtx.webp
+4911,desktop,Alienware,,,30,2016,Alienware Aurora R5 Intel Core i5 6th Gen NO GPU,aurora-r5-intel-core-i5-6th-gen-no-gpu,alienware-aurora-r5-intel-core-i5-6th-gen-no-gpu.webp
+4912,desktop,Alienware,,,60,2017,Alienware Aurora R5 Intel Core i7 6th Gen Nvidia GTX,aurora-r5-intel-core-i7-6th-gen-nvidia-gtx,alienware-aurora-r5-intel-core-i7-6th-gen-nvidia-gtx.webp
+4913,desktop,Alienware,,,30,2017,Alienware Aurora R6 Intel Core i5 7th Gen NO GPU,aurora-r6-intel-core-i5-7th-gen-no-gpu,alienware-aurora-r6-intel-core-i5-7th-gen-no-gpu.webp
+4914,desktop,Alienware,,,55,2017,Alienware Aurora R6 Intel Core i5 7th Gen Nvidia GTX,aurora-r6-intel-core-i5-7th-gen-nvidia-gtx,alienware-aurora-r6-intel-core-i5-7th-gen-nvidia-gtx.webp
+4915,desktop,Alienware,,,55,2018,Alienware Aurora R7 Intel Core i5 8th Gen Nvidia GTX,aurora-r7-intel-core-i5-8th-gen-nvidia-gtx,alienware-aurora-r7-intel-core-i5-8th-gen-nvidia-gtx.webp
+4916,desktop,Alienware,,,30,2018,Alienware Aurora R7 Intel Core i5 8th Gen NO GPU,aurora-r7-intel-core-i5-8th-gen-no-gpu,alienware-aurora-r7-intel-core-i5-8th-gen-no-gpu.webp
+4917,desktop,Alienware,,,40,2019,Alienware Aurora R8 Intel Core i5 9th Gen NO GPU,aurora-r8-intel-core-i5-9th-gen-no-gpu,alienware-aurora-r8-intel-core-i5-9th-gen-no-gpu.webp
+4918,desktop,Alienware,,,65,2019,Alienware Aurora R8 Intel Core i5 9th Gen Nvidia GTX,aurora-r8-intel-core-i5-9th-gen-nvidia-gtx,alienware-aurora-r8-intel-core-i5-9th-gen-nvidia-gtx.webp
+4919,desktop,Alienware,,,60,2019,Alienware Aurora R8 Intel Core i7 9th Gen NO GPU,aurora-r8-intel-core-i7-9th-gen-no-gpu,alienware-aurora-r8-intel-core-i7-9th-gen-no-gpu.webp
+4920,desktop,Alienware,,,60,2019,Alienware Aurora R9 Intel Core i7 9th Gen NO GPU,aurora-r9-intel-core-i7-9th-gen-no-gpu,alienware-aurora-r9-intel-core-i7-9th-gen-no-gpu.webp
+4921,desktop,Alienware,,,70,2019,Alienware Aurora R9 Intel Core i5 9th Gen Nvidia GTX,aurora-r9-intel-core-i5-9th-gen-nvidia-gtx,alienware-aurora-r9-intel-core-i5-9th-gen-nvidia-gtx.webp
+4922,desktop,Alienware,,,40,2019,Alienware Aurora R9 Intel Core i5 9th Gen NO GPU,aurora-r9-intel-core-i5-9th-gen-no-gpu,alienware-aurora-r9-intel-core-i5-9th-gen-no-gpu.webp
+4926,desktop,Alienware,,,90,2016,Alienware Area 51 R2 Intel Core i7 6th Gen,area-51-r2-intel-core-i7-6th-gen,alienware-area-51-r2-intel-core-i7-6th-gen.webp
+4927,desktop,Alienware,,,90,2016,Alienware Area 51 R3 Intel Core i7 6th Gen,area-51-r3-intel-core-i7-6th-gen,alienware-area-51-r3-intel-core-i7-6th-gen.webp
+4928,desktop,Alienware,,,105,2017,Alienware Area 51 R4 Intel Core i7 7th Gen,area-51-r4-intel-core-i7-7th-gen,alienware-area-51-r4-intel-core-i7-7th-gen.webp
+4929,desktop,Alienware,,,155,2017,Alienware Area 51 R4 Intel Core i9 7th Gen,area-51-r4-intel-core-i9-7th-gen,alienware-area-51-r4-intel-core-i9-7th-gen.webp
+4930,desktop,Alienware,,,105,2017,Alienware Area 51 R5 Intel Core i7 7th Gen,area-51-r5-intel-core-i7-7th-gen,alienware-area-51-r5-intel-core-i7-7th-gen.webp
+4931,desktop,Alienware,,,155,2017,Alienware Area 51 R5 Intel Core i9 7th Gen,area-51-r5-intel-core-i9-7th-gen,alienware-area-51-r5-intel-core-i9-7th-gen.webp
+4947,desktop,Alienware,,,30,2016,Alienware x51 R3 Intel Core i5 6th Gen,x51-r3-intel-core-i5-6th-gen,alienware-x51-r3-intel-core-i5-6th-gen.webp
+4948,desktop,Alienware,,,50,2016,Alienware x51 R3 Intel Core i7 6th Gen,x51-r3-intel-core-i7-6th-gen,alienware-x51-r3-intel-core-i7-6th-gen.webp
+4977,desktop,Dell,,,35,2019,Dell G5 5090 Intel Core i3 9th Gen,g5-5090-intel-core-i3-9th-gen,dell-g5-5090-intel-core-i3-9th-gen.webp
+12326,desktop,Dell,,,80,2020,Dell G5 5090 Intel Core i7 10th Gen,g5-5090-intel-core-i7-10th-gen,dell-g5-5090-intel-core-i7-10th-gen.webp
+4978,desktop,Dell,,,55,2019,Dell G5 5090 Intel Core i5 9th Gen,g5-5090-intel-core-i5-9th-gen,dell-g5-5090-intel-core-i5-9th-gen.webp
+4979,desktop,Dell,,,65,2019,Dell G5 5090 Intel Core i7 9th Gen,g5-5090-intel-core-i7-9th-gen,dell-g5-5090-intel-core-i7-9th-gen.webp
+4980,desktop,Dell,,,80,2020,Dell G5 5090 Intel Core i9 9th Gen,g5-5090-intel-core-i9-9th-gen,dell-g5-5090-intel-core-i9-9th-gen.webp
+4986,desktop,Dell,,,25,2017,Dell Inspiron 3268 Intel Core i7 7th Gen,inspiron-3268-intel-core-i7-7th-gen,dell-inspiron-3268-intel-core-i7-7th-gen.webp
+4987,desktop,Dell,,,30,2019,Dell Inspiron 3471 Intel Core i5 9th Gen,inspiron-3471-intel-core-i5-9th-gen,dell-inspiron-3471-intel-core-i5-9th-gen.webp
+4992,desktop,Dell,,,25,2016,Dell Inspiron 3650 Intel Core i7 6th Gen,inspiron-3650-intel-core-i7-6th-gen,dell-inspiron-3650-intel-core-i7-6th-gen.webp
+4994,desktop,Dell,,,25,2017,Dell Inspiron 3668 Intel Core i5 7th Gen,inspiron-3668-intel-core-i5-7th-gen,dell-inspiron-3668-intel-core-i5-7th-gen.webp
+4995,desktop,Dell,,,30,2017,Dell Inspiron 3668 Intel Core i7 7th Gen,inspiron-3668-intel-core-i7-7th-gen,dell-inspiron-3668-intel-core-i7-7th-gen.webp
+4996,desktop,Dell,,,20,2018,Dell Inspiron 3670 Intel Core i3 8th Gen,inspiron-3670-intel-core-i3-8th-gen,dell-inspiron-3670-intel-core-i3-8th-gen.webp
+4997,desktop,Dell,,,25,2018,Dell Inspiron 3670 Intel Core i5 8th Gen,inspiron-3670-intel-core-i5-8th-gen,dell-inspiron-3670-intel-core-i5-8th-gen.webp
+4998,desktop,Dell,,,30,2018,Dell Inspiron 3670 Intel Core i7 8th Gen,inspiron-3670-intel-core-i7-8th-gen,dell-inspiron-3670-intel-core-i7-8th-gen.webp
+4999,desktop,Dell,,,25,2019,Dell Inspiron 3671 Intel Core i3 9th Gen,inspiron-3671-intel-core-i3-9th-gen,dell-inspiron-3671-intel-core-i3-9th-gen.webp
+5000,desktop,Dell,,,30,2019,Dell Inspiron 3671 Intel Core i5 9th Gen,inspiron-3671-intel-core-i5-9th-gen,dell-inspiron-3671-intel-core-i5-9th-gen.webp
+5001,desktop,Dell,,,35,2019,Dell Inspiron 3671 Intel Core i7 9th Gen,inspiron-3671-intel-core-i7-9th-gen,dell-inspiron-3671-intel-core-i7-9th-gen.webp
+5007,desktop,Dell,,,50,2017,Dell Inspiron 5675 AMD Ryzen 5,inspiron-5675-amd-ryzen-5,dell-inspiron-5675-amd-ryzen-5.webp
+5008,desktop,Dell,,,85,2017,Dell Inspiron 5675 AMD Ryzen 7,inspiron-5675-amd-ryzen-7,dell-inspiron-5675-amd-ryzen-7.webp
+5009,desktop,Dell,,,85,2018,Dell Inspiron 5676 AMD Ryzen 7,inspiron-5676-amd-ryzen-7,dell-inspiron-5676-amd-ryzen-7.webp
+5010,desktop,Dell,,,45,2018,Dell Inspiron 5680 Intel Core i5 8th Gen,inspiron-5680-intel-core-i5-8th-gen,dell-inspiron-5680-intel-core-i5-8th-gen.webp
+5011,desktop,Dell,,,55,2019,Dell Inspiron 5680 Intel Core i5 9th Gen,inspiron-5680-intel-core-i5-9th-gen,dell-inspiron-5680-intel-core-i5-9th-gen.webp
+5012,desktop,Dell,,,70,2018,Dell Inspiron 5680 Intel Core i7 8th Gen,inspiron-5680-intel-core-i7-8th-gen,dell-inspiron-5680-intel-core-i7-8th-gen.webp
+5013,desktop,Dell,,,75,2019,Dell Inspiron 5680 Intel Core i7 9th Gen,inspiron-5680-intel-core-i7-9th-gen,dell-inspiron-5680-intel-core-i7-9th-gen.webp
+5020,desktop,Dell,,,25,2017,Dell OptiPlex 3050 Intel Core i7 7th Gen,optiplex-3050-intel-core-i7-7th-gen,dell-optiplex-3050-intel-core-i7-7th-gen.webp
+5021,desktop,Dell,,,20,2018,Dell OptiPlex 3060 Intel Core i3 8th Gen,optiplex-3060-intel-core-i3-8th-gen,dell-optiplex-3060-intel-core-i3-8th-gen.webp
+5022,desktop,Dell,,,25,2018,Dell OptiPlex 3060 Intel Core i5 8th Gen,optiplex-3060-intel-core-i5-8th-gen,dell-optiplex-3060-intel-core-i5-8th-gen.webp
+5023,desktop,Dell,,,30,2018,Dell OptiPlex 3060 Intel Core i7 8th Gen,optiplex-3060-intel-core-i7-8th-gen,dell-optiplex-3060-intel-core-i7-8th-gen.webp
+5024,desktop,Dell,,,25,2019,Dell OptiPlex 3070 Intel Core i3 9th Gen,optiplex-3070-intel-core-i3-9th-gen,dell-optiplex-3070-intel-core-i3-9th-gen.webp
+5025,desktop,Dell,,,25,2019,Dell OptiPlex 3070 Intel Core i5 9th Gen,optiplex-3070-intel-core-i5-9th-gen,dell-optiplex-3070-intel-core-i5-9th-gen.webp
+5026,desktop,Dell,,,30,2019,Dell OptiPlex 3070 Intel Core i7 9th Gen,optiplex-3070-intel-core-i7-9th-gen,dell-optiplex-3070-intel-core-i7-9th-gen.webp
+5031,desktop,Dell,,,25,2016,Dell OptiPlex 5050 Intel Core i7 6th Gen,optiplex-5050-intel-core-i7-6th-gen,dell-optiplex-5050-intel-core-i7-6th-gen.webp
+5032,desktop,Dell,,,30,2017,Dell OptiPlex 5050 Intel Core i7 7th Gen,optiplex-5050-intel-core-i7-7th-gen,dell-optiplex-5050-intel-core-i7-7th-gen.webp
+5033,desktop,Dell,,,25,2018,Dell OptiPlex 5060 Intel Core i3 8th Gen,optiplex-5060-intel-core-i3-8th-gen,dell-optiplex-5060-intel-core-i3-8th-gen.webp
+5034,desktop,Dell,,,30,2018,Dell OptiPlex 5060 Intel Core i5 8th Gen,optiplex-5060-intel-core-i5-8th-gen,dell-optiplex-5060-intel-core-i5-8th-gen.webp
+5035,desktop,Dell,,,30,2018,Dell OptiPlex 5060 Intel Core i7 8th Gen,optiplex-5060-intel-core-i7-8th-gen,dell-optiplex-5060-intel-core-i7-8th-gen.webp
+5044,desktop,Dell,,,20,2016,Dell OptiPlex 7040 Intel Core i7 6th Gen,optiplex-7040-intel-core-i7-6th-gen,dell-optiplex-7040-intel-core-i7-6th-gen.webp
+5046,desktop,Dell,,,25,2017,Dell OptiPlex 7050 Intel Core i5 7th Gen,optiplex-7050-intel-core-i5-7th-gen,dell-optiplex-7050-intel-core-i5-7th-gen.webp
+5047,desktop,Dell,,,30,2018,Dell OptiPlex 7050 Intel Core i5 8th Gen,optiplex-7050-intel-core-i5-8th-gen,dell-optiplex-7050-intel-core-i5-8th-gen.webp
+5048,desktop,Dell,,,30,2016,Dell OptiPlex 7050 Intel Core i7 6th Gen,optiplex-7050-intel-core-i7-6th-gen,dell-optiplex-7050-intel-core-i7-6th-gen.webp
+5049,desktop,Dell,,,40,2017,Dell OptiPlex 7050 Intel Core i7 7th Gen,optiplex-7050-intel-core-i7-7th-gen,dell-optiplex-7050-intel-core-i7-7th-gen.webp
+5050,desktop,Dell,,,45,2018,Dell OptiPlex 7050 Intel Core i7 8th Gen,optiplex-7050-intel-core-i7-8th-gen,dell-optiplex-7050-intel-core-i7-8th-gen.webp
+5051,desktop,Dell,,,25,2018,Dell OptiPlex 7060 Intel Core i5 8th Gen,optiplex-7060-intel-core-i5-8th-gen,dell-optiplex-7060-intel-core-i5-8th-gen.webp
+5052,desktop,Dell,,,30,2018,Dell OptiPlex 7060 Intel Core i7 8th Gen,optiplex-7060-intel-core-i7-8th-gen,dell-optiplex-7060-intel-core-i7-8th-gen.webp
+5053,desktop,Dell,,,45,2018,Dell OptiPlex 7070 Intel Core i5 8th Gen,optiplex-7070-intel-core-i5-8th-gen,dell-optiplex-7070-intel-core-i5-8th-gen.webp
+5054,desktop,Dell,,,50,2019,Dell OptiPlex 7070 Intel Core i5 9th Gen,optiplex-7070-intel-core-i5-9th-gen,dell-optiplex-7070-intel-core-i5-9th-gen.webp
+5055,desktop,Dell,,,55,2018,Dell OptiPlex 7070 Intel Core i7 8th Gen,optiplex-7070-intel-core-i7-8th-gen,dell-optiplex-7070-intel-core-i7-8th-gen.webp
+5056,desktop,Dell,,,55,2019,Dell OptiPlex 7070 Intel Core i7 9th Gen,optiplex-7070-intel-core-i7-9th-gen,dell-optiplex-7070-intel-core-i7-9th-gen.webp
+5057,desktop,Dell,,,110,2019,Dell OptiPlex 7070 Intel Core i9 9th Gen,optiplex-7070-intel-core-i9-9th-gen,dell-optiplex-7070-intel-core-i9-9th-gen.webp
+5063,desktop,Dell,,,25,2019,Dell Precision 3431 Intel Core i3 9th Gen,precision-3431-intel-core-i3-9th-gen,dell-precision-3431-intel-core-i3-9th-gen.webp
+5064,desktop,Dell,,,45,2019,Dell Precision 3431 Intel Core i5 9th Gen,precision-3431-intel-core-i5-9th-gen,dell-precision-3431-intel-core-i5-9th-gen.webp
+5065,desktop,Dell,,,55,2019,Dell Precision 3431 Intel Core i7 9th Gen,precision-3431-intel-core-i7-9th-gen,dell-precision-3431-intel-core-i7-9th-gen.webp
+5066,desktop,Dell,,,85,2019,Dell Precision 3431 Intel Core i9 9th Gen,precision-3431-intel-core-i9-9th-gen,dell-precision-3431-intel-core-i9-9th-gen.webp
+5069,desktop,Dell,,,45,2016,Dell Precision 3620 Intel Core i7 6th Gen,precision-3620-intel-core-i7-6th-gen,dell-precision-3620-intel-core-i7-6th-gen.webp
+5070,desktop,Dell,,,30,2016,Dell Precision 3620 Intel Xeon,precision-3620-intel-xeon,dell-precision-3620-intel-xeon.webp
+5075,desktop,Dell,,,20,2016,Dell Precision T3420 Intel Core i5 6th Gen,precision-t3420-intel-core-i5-6th-gen,dell-precision-t3420-intel-core-i5-6th-gen.webp
+5076,desktop,Dell,,,25,2016,Dell Precision T3420 Intel Core i7 6th Gen,precision-t3420-intel-core-i7-6th-gen,dell-precision-t3420-intel-core-i7-6th-gen.webp
+5077,desktop,Dell,,,25,2017,Dell Precision T3420 Intel Xeon,precision-t3420-intel-xeon,dell-precision-t3420-intel-xeon.webp
+5078,desktop,Dell,,,40,2019,Dell Precision T3431 Intel Core i7 9th Gen,precision-t3431-intel-core-i7-9th-gen,dell-precision-t3431-intel-core-i7-9th-gen.webp
+5079,desktop,Dell,,,20,2012,Dell Precision T3600 Intel Xeon,precision-t3600-intel-xeon,dell-precision-t3600-intel-xeon.webp
+5080,desktop,Dell,,,20,2013,Dell Precision T3610 Intel Xeon,precision-t3610-intel-xeon,dell-precision-t3610-intel-xeon.webp
+5081,desktop,Dell,,,30,2016,Dell Precision T3620 Intel Core i7 6th Gen,precision-t3620-intel-core-i7-6th-gen,dell-precision-t3620-intel-core-i7-6th-gen.webp
+5082,desktop,Dell,,,20,2016,Dell Precision T3620 Intel Xeon,precision-t3620-intel-xeon,dell-precision-t3620-intel-xeon.webp
+5083,desktop,Dell,,,65,2018,Dell Precision 3630 Intel Core i7 8th Gen,precision-3630-intel-core-i7-8th-gen,dell-precision-3630-intel-core-i7-8th-gen.webp
+5084,desktop,Dell,,,85,2018,Dell Precision 3630 Intel Xeon,precision-3630-intel-xeon,dell-precision-3630-intel-xeon.webp
+5085,desktop,Dell,,,35,2012,Dell Precision T5600 Intel Xeon,precision-t5600-intel-xeon,dell-desktop.webp
+5086,desktop,Dell,,,25,2012,Dell Precision T5600 Intel Xeon E5,precision-t5600-intel-xeon-e5,dell-precision-t5600-intel-xeon-e5.webp
+5087,desktop,Dell,,,30,2014,Dell Precision T5810 Intel Xeon,precision-t5810-intel-xeon,dell-precision-t5810-intel-xeon.webp
+5088,desktop,Dell,,,30,2019,Dell Precision T5820 Intel Xeon,precision-t5820-intel-xeon,dell-precision-t5820-intel-xeon.webp
+5089,desktop,Dell,,,40,2015,Dell Precision T7810 Intel Xeon,precision-t7810-intel-xeon,dell-precision-t7810-intel-xeon.webp
+5090,desktop,Dell,,,75,2018,Dell Precision T7820 Intel Xeon,precision-t7820-intel-xeon,dell-precision-t7820-intel-xeon.webp
+5091,desktop,Dell,,,75,2016,Dell Precision T7910 Intel Xeon,precision-t7910-intel-xeon,dell-precision-t7910-intel-xeon.webp
+5092,desktop,Dell,,,175,2019,Dell Precision T7920 Intel Xeon,precision-t7920-intel-xeon,dell-precision-t7920-intel-xeon.webp
+5094,desktop,Dell,,,30,2018,Dell Vostro 3670 Intel Core i5 8th Gen,vostro-3670-intel-core-i5-8th-gen,dell-vostro-3670-intel-core-i5-8th-gen.webp
+5095,desktop,Dell,,,35,2018,Dell Vostro 3670 Intel Core i7 8th Gen,vostro-3670-intel-core-i7-8th-gen,dell-vostro-3670-intel-core-i7-8th-gen.webp
+5104,desktop,Dell,,,25,2016,Dell XPS 8900 Intel Core i5 6th Gen,xps-8900-intel-core-i5-6th-gen,dell-xps-8900-intel-core-i5-6th-gen.webp
+5105,desktop,Dell,,,30,2017,Dell XPS 8900 Intel Core i5 7th Gen,xps-8900-intel-core-i5-7th-gen,dell-xps-8900-intel-core-i5-7th-gen.webp
+5106,desktop,Dell,,,40,2016,Dell XPS 8900 Intel Core i7 6th Gen,xps-8900-intel-core-i7-6th-gen,dell-xps-8900-intel-core-i7-6th-gen.webp
+5107,desktop,Dell,,,30,2016,Dell XPS 8910 Intel Core i5 6th Gen,xps-8910-intel-core-i5-6th-gen,dell-xps-8910-intel-core-i5-6th-gen.webp
+5108,desktop,Dell,,,40,2016,Dell XPS 8910 Intel Core i7 6th Gen,xps-8910-intel-core-i7-6th-gen,dell-xps-8910-intel-core-i7-6th-gen.webp
+5109,desktop,Dell,,,40,2017,Dell XPS 8920 Intel Core i5 7th Gen,xps-8920-intel-core-i5-7th-gen,dell-xps-8920-intel-core-i5-7th-gen.webp
+5110,desktop,Dell,,,60,2017,Dell XPS 8920 Intel Core i7 7th Gen,xps-8920-intel-core-i7-7th-gen,dell-xps-8920-intel-core-i7-7th-gen.webp
+5111,desktop,Dell,,,55,2018,Dell XPS 8930 Intel Core i5 8th Gen,xps-8930-intel-core-i5-8th-gen,dell-xps-8930-intel-core-i5-8th-gen.webp
+5112,desktop,Dell,,,60,2019,Dell XPS 8930 Intel Core i5 9th Gen,xps-8930-intel-core-i5-9th-gen,dell-xps-8930-intel-core-i5-9th-gen.webp
+5113,desktop,Dell,,,65,2018,Dell XPS 8930 Intel Core i7 8th Gen,xps-8930-intel-core-i7-8th-gen,dell-xps-8930-intel-core-i7-8th-gen.webp
+5114,desktop,Dell,,,70,2019,Dell XPS 8930 Intel Core i7 9th Gen,xps-8930-intel-core-i7-9th-gen,dell-xps-8930-intel-core-i7-9th-gen.webp
+5115,desktop,Dell,,,120,2019,Dell XPS 8930 Intel Core i9 9th Gen,xps-8930-intel-core-i9-9th-gen,dell-xps-8930-intel-core-i9-9th-gen.webp
+5128,desktop,Lenovo,,,20,2016,Lenovo IdeaCentre 300-20ISH Intel Core i7 6th Gen,ideacentre-300_20ish-intel-core-i7-6th-gen,lenovo-ideacentre-300_20ish-intel-core-i7-6th-gen.webp
+5135,desktop,Lenovo,,,25,2018,Lenovo IdeaCentre 510A-15ICB Intel Core i5 8th Gen,ideacentre-510a_15icb-intel-core-i5-8th-gen,lenovo-ideacentre-510a_15icb-intel-core-i5-8th-gen.webp
+5136,desktop,Lenovo,,,30,2018,Lenovo IdeaCentre 510A-15ICB Intel Core i7 8th Gen,ideacentre-510a_15icb-intel-core-i7-8th-gen,lenovo-ideacentre-510a_15icb-intel-core-i7-8th-gen.webp
+5138,desktop,Lenovo,,,25,2019,Lenovo IdeaCentre 510A-15ICK Intel Core i5 9th Gen,ideacentre-510a_15ick-intel-core-i5-9th-gen,lenovo-ideacentre-510a_15ick-intel-core-i5-9th-gen.webp
+5139,desktop,Lenovo,,,30,2019,Lenovo IdeaCentre 510A-15ICK Intel Core i7 9th Gen,ideacentre-510a_15ick-intel-core-i7-9th-gen,lenovo-ideacentre-510a_15ick-intel-core-i7-9th-gen.webp
+5141,desktop,Lenovo,,,25,2016,Lenovo IdeaCentre 610S-02ISH,ideacentre-610s_02ish,lenovo-ideacentre-610s_02ish.webp
+5142,desktop,Lenovo,,,25,2018,Lenovo IdeaCentre 620S-03IKL,ideacentre-620s_03ikl,lenovo-ideacentre-620s_03ikl.webp
+5144,desktop,Lenovo,,,20,2016,Lenovo IdeaCentre 700-25ISH Intel Core i7 6th Gen,ideacentre-700_25ish-intel-core-i7-6th-gen,lenovo-ideacentre-700_25ish-intel-core-i7-6th-gen.webp
+5146,desktop,Lenovo,,,20,2016,Lenovo IdeaCentre 710-25ISH Intel Core i7 6th Gen,ideacentre-710_25ish-intel-core-i7-6th-gen,lenovo-ideacentre-710_25ish-intel-core-i7-6th-gen.webp
+5149,desktop,Lenovo,,,25,2018,Lenovo IdeaCentre 720 AMD Ryzen 7,ideacentre-720-amd-ryzen-7,lenovo-ideacentre-720-amd-ryzen-7.webp
+5150,desktop,Lenovo,,,20,2017,Lenovo IdeaCentre 720 Intel Core i5 7th Gen,ideacentre-720-intel-core-i5-7th-gen,lenovo-ideacentre-720-intel-core-i5-7th-gen.webp
+5151,desktop,Lenovo,,,25,2018,Lenovo IdeaCentre 720 Intel Core i5 8th Gen,ideacentre-720-intel-core-i5-8th-gen,lenovo-ideacentre-720-intel-core-i5-8th-gen.webp
+5152,desktop,Lenovo,,,25,2018,Lenovo IdeaCentre 720 Intel Core i7 8th Gen,ideacentre-720-intel-core-i7-8th-gen,lenovo-ideacentre-720-intel-core-i7-8th-gen.webp
+5154,desktop,Lenovo,,,25,2019,Lenovo IdeaCentre T540 Intel Core i5 9th Gen,ideacentre-t540-intel-core-i5-9th-gen,lenovo-ideacentre-t540-intel-core-i5-9th-gen.webp
+5155,desktop,Lenovo,,,35,2019,Lenovo IdeaCentre T540 Intel Core i7 9th Gen,ideacentre-t540-intel-core-i7-9th-gen,lenovo-ideacentre-t540-intel-core-i7-9th-gen.webp
+5156,desktop,Lenovo,,,25,2016,Lenovo IdeaCentre Y700 Intel Core i5 6th Gen,ideacentre-y700-intel-core-i5-6th-gen,lenovo-ideacentre-y700-intel-core-i5-6th-gen.webp
+5157,desktop,Lenovo,,,30,2016,Lenovo IdeaCentre Y700 Intel Core i7 6th Gen,ideacentre-y700-intel-core-i7-6th-gen,lenovo-ideacentre-y700-intel-core-i7-6th-gen.webp
+5158,desktop,Lenovo,,,25,2016,Lenovo IdeaCentre Y710 Cube Intel Core i5 6th Gen,ideacentre-y710-cube-intel-core-i5-6th-gen,lenovo-ideacentre-y710-cube-intel-core-i5-6th-gen.webp
+5159,desktop,Lenovo,,,30,2016,Lenovo IdeaCentre Y710 Cube Intel Core i7 6th Gen,ideacentre-y710-cube-intel-core-i7-6th-gen,lenovo-ideacentre-y710-cube-intel-core-i7-6th-gen.webp
+5160,desktop,Lenovo,,,30,2017,Lenovo IdeaCentre Y720 Cube Intel Core i5 7th Gen,ideacentre-y720-cube-intel-core-i5-7th-gen,lenovo-ideacentre-y720-cube-intel-core-i5-7th-gen.webp
+5161,desktop,Lenovo,,,40,2017,Lenovo IdeaCentre Y720 Cube Intel Core i7 7th Gen,ideacentre-y720-cube-intel-core-i7-7th-gen,lenovo-ideacentre-y720-cube-intel-core-i7-7th-gen.webp
+5162,desktop,Lenovo,,,20,2017,Lenovo IdeaCentre Y900 Intel Core i5 6th Gen,ideacentre-y900-intel-core-i5-6th-gen,lenovo-ideacentre-y900-intel-core-i5-6th-gen.webp
+5163,desktop,Lenovo,,,30,2016,Lenovo IdeaCentre Y900 Intel Core i7 6th Gen,ideacentre-y900-intel-core-i7-6th-gen,lenovo-ideacentre-y900-intel-core-i7-6th-gen.webp
+5164,desktop,Lenovo,,,55,2018,Lenovo Legion C530 Intel Core i5 8th Gen,legion-c530-intel-core-i5-8th-gen,lenovo-legion-c530-intel-core-i5-8th-gen.webp
+5165,desktop,Lenovo,,,75,2018,Lenovo Legion C530 Intel Core i7 8th Gen,legion-c530-intel-core-i7-8th-gen,lenovo-legion-c530-intel-core-i7-8th-gen.webp
+5166,desktop,Lenovo,,,70,2019,Lenovo Legion C530 Intel Core i5 9th Gen,legion-c530-intel-core-i5-9th-gen,lenovo-legion-c530-intel-core-i5-9th-gen.webp
+5167,desktop,Lenovo,,,85,2019,Lenovo Legion C530 Intel Core i7 9th Gen,legion-c530-intel-core-i7-9th-gen,lenovo-legion-c530-intel-core-i7-9th-gen.webp
+5168,desktop,Lenovo,,,60,2018,Lenovo Legion C730 Intel Core i5 8th Gen,legion-c730-intel-core-i5-8th-gen,lenovo-legion-c730-intel-core-i5-8th-gen.webp
+5169,desktop,Lenovo,,,85,2018,Lenovo Legion C730 Intel Core i7 8th Gen,legion-c730-intel-core-i7-8th-gen,lenovo-legion-c730-intel-core-i7-8th-gen.webp
+5170,desktop,Lenovo,,,80,2019,Lenovo Legion C730 Intel Core i5 9th Gen,legion-c730-intel-core-i5-9th-gen,lenovo-legion-c730-intel-core-i5-9th-gen.webp
+5171,desktop,Lenovo,,,90,2019,Lenovo Legion C730 Intel Core i7 9th Gen,legion-c730-intel-core-i7-9th-gen,lenovo-legion-c730-intel-core-i7-9th-gen.webp
+5172,desktop,Lenovo,,,55,2019,Lenovo Legion T530 AMD Ryzen 5,legion-t530-amd-ryzen-5,lenovo-legion-t530-amd-ryzen-5.webp
+5173,desktop,Lenovo,,,75,2018,Lenovo Legion T730 Intel Core i7 8th Gen,legion-t730-intel-core-i7-8th-gen,lenovo-legion-t730-intel-core-i7-8th-gen.webp
+5174,desktop,Lenovo,,,85,2019,Lenovo Legion T730 Intel Core i7 9th Gen,legion-t730-intel-core-i7-9th-gen,lenovo-legion-t730-intel-core-i7-9th-gen.webp
+5175,desktop,Lenovo,,,40,2017,Lenovo Legion Y520T Intel Core i5 7th Gen,legion-y520t-intel-core-i5-7th-gen,lenovo-legion-y520t-intel-core-i5-7th-gen.webp
+5176,desktop,Lenovo,,,50,2017,Lenovo Legion Y520T Intel Core i7 7th Gen,legion-y520t-intel-core-i7-7th-gen,lenovo-legion-y520t-intel-core-i7-7th-gen.webp
+5177,desktop,Lenovo,,,40,2017,Lenovo Legion Y720T AMD Ryzen 5,legion-y720t-amd-ryzen-5,lenovo-legion-y720t-amd-ryzen-5.webp
+5178,desktop,Lenovo,,,50,2017,Lenovo Legion Y720T AMD Ryzen 7,legion-y720t-amd-ryzen-7,lenovo-legion-y720t-amd-ryzen-7.webp
+5179,desktop,Lenovo,,,60,2019,Lenovo Legion Y920T Intel Core i5 7th Gen,legion-y920t-intel-core-i5-7th-gen,lenovo-legion-y920t-intel-core-i5-7th-gen.webp
+5180,desktop,Lenovo,,,75,2017,Lenovo Legion Y920T Intel Core i7 7th Gen,legion-y920t-intel-core-i7-7th-gen,lenovo-legion-y920t-intel-core-i7-7th-gen.webp
+5185,desktop,Lenovo,,,20,2016,Lenovo ThinkStation P310 Intel Core i5 6th Gen,thinkstation-p310-intel-core-i5-6th-gen,lenovo-thinkstation-p310-intel-core-i5-6th-gen.webp
+5186,desktop,Lenovo,,,25,2016,Lenovo ThinkStation P310 Intel Core i7 6th Gen,thinkstation-p310-intel-core-i7-6th-gen,lenovo-thinkstation-p310-intel-core-i7-6th-gen.webp
+5187,desktop,Lenovo,,,25,2016,Lenovo ThinkStation P310 Intel Xeon,thinkstation-p310-intel-xeon,lenovo-thinkstation-p310-intel-xeon.webp
+5188,desktop,Lenovo,,,30,2017,Lenovo ThinkStation P320 Intel Core i5 7th Gen,thinkstation-p320-intel-core-i5-7th-gen,lenovo-thinkstation-p320-intel-core-i5-7th-gen.webp
+5189,desktop,Lenovo,,,50,2017,Lenovo ThinkStation P320 Intel Core i7 7th Gen,thinkstation-p320-intel-core-i7-7th-gen,lenovo-thinkstation-p320-intel-core-i7-7th-gen.webp
+5190,desktop,Lenovo,,,25,2017,Lenovo ThinkStation P320 Intel Xeon E3,thinkstation-p320-intel-xeon-e3,lenovo-thinkstation-p320-intel-xeon-e3.webp
+5191,desktop,Lenovo,,,55,2018,Lenovo ThinkStation P330 Intel Core i5 8th Gen,thinkstation-p330-intel-core-i5-8th-gen,lenovo-thinkstation-p330-intel-core-i5-8th-gen.webp
+5192,desktop,Lenovo,,,65,2018,Lenovo ThinkStation P330 Intel Core i7 8th Gen,thinkstation-p330-intel-core-i7-8th-gen,lenovo-thinkstation-p330-intel-core-i7-8th-gen.webp
+5193,desktop,Lenovo,,,55,2019,Lenovo ThinkStation P330 Intel Xeon,thinkstation-p330-intel-xeon,lenovo-thinkstation-p330-intel-xeon.webp
+5194,desktop,Lenovo,,,60,2019,Lenovo ThinkStation P330 Intel Core i5 9th Gen,thinkstation-p330-intel-core-i5-9th-gen,lenovo-thinkstation-p330-intel-core-i5-9th-gen.webp
+5195,desktop,Lenovo,,,70,2019,Lenovo ThinkStation P330 Intel Core i7 9th Gen,thinkstation-p330-intel-core-i7-9th-gen,lenovo-thinkstation-p330-intel-core-i7-9th-gen.webp
+5197,desktop,Lenovo,,,55,2015,Lenovo ThinkStation P500 Intel Xeon,thinkstation-p500-intel-xeon,lenovo-thinkstation-p500-intel-xeon.webp
+5198,desktop,Lenovo,,,45,2017,Lenovo ThinkStation P510 Intel Xeon E5,thinkstation-p510-intel-xeon-e5,lenovo-thinkstation-p510-intel-xeon-e5.webp
+5199,desktop,Lenovo,,,55,2017,Lenovo ThinkStation P520 Intel Xeon,thinkstation-p520-intel-xeon,lenovo-thinkstation-p520-intel-xeon.webp
+5200,desktop,Lenovo,,,50,2017,Lenovo ThinkStation P520C Intel Xeon,thinkstation-p520c-intel-xeon,lenovo-thinkstation-p520c-intel-xeon.webp
+5201,desktop,Lenovo,,,45,2015,Lenovo ThinkStation P700 Intel Xeon,thinkstation-p700-intel-xeon,lenovo-thinkstation-p700-intel-xeon.webp
+5202,desktop,Lenovo,,,55,2016,Lenovo ThinkStation P710 Intel Xeon,thinkstation-p710-intel-xeon,lenovo-thinkstation-p710-intel-xeon.webp
+5203,desktop,Lenovo,,,100,2017,Lenovo ThinkStation P720 Intel Xeon Gold,thinkstation-p720-intel-xeon-gold,lenovo-thinkstation-p720-intel-xeon-gold.webp
+5204,desktop,Lenovo,,,30,2015,Lenovo ThinkStation P900 Intel Xeon E5,thinkstation-p900-intel-xeon-e5,lenovo-thinkstation-p900-intel-xeon-e5.webp
+5205,desktop,Lenovo,,,35,2017,Lenovo ThinkStation P910 Intel Xeon E5,thinkstation-p910-intel-xeon-e5,lenovo-thinkstation-p910-intel-xeon-e5.webp
+5634,desktop,Acer,,,60,2018,Acer Nitro 50 Intel Core i5 8th Gen,nitro-50-intel-core-i5-8th-gen,acer-nitro-50-intel-core-i5-8th-gen.webp
+5635,desktop,Acer,,,60,2019,Acer Nitro 50 Intel Core i5 9th Gen,nitro-50-intel-core-i5-9th-gen,acer-nitro-50-intel-core-i5-9th-gen.webp
+5636,desktop,Acer,,,75,2018,Acer Nitro 50 Intel Core i7 8th Gen,nitro-50-intel-core-i7-8th-gen,acer-nitro-50-intel-core-i7-8th-gen.webp
+5637,desktop,Acer,,,85,2019,Acer Nitro 50 Intel Core i7 9th Gen,nitro-50-intel-core-i7-9th-gen,acer-nitro-50-intel-core-i7-9th-gen.webp
+5638,desktop,Acer,,,25,2018,Acer Nitro 50 AMD Ryzen 5,nitro-50-amd-ryzen-5,acer-nitro-50-amd-ryzen-5.webp
+5639,desktop,Acer,,,30,2018,Acer Nitro 50 AMD Ryzen 7,nitro-50-amd-ryzen-7,acer-nitro-50-amd-ryzen-7.webp
+5643,desktop,Acer,,,55,2017,Acer Predator G3-710 Intel Core i5 6th Gen,predator-g3_710-intel-core-i5-6th-gen,acer-predator-g3_710-intel-core-i5-6th-gen.webp
+5644,desktop,Acer,,,70,2016,Acer Predator G3-710 Intel Core i7 6th Gen,predator-g3_710-intel-core-i7-6th-gen,acer-predator-g3_710-intel-core-i7-6th-gen.webp
+5647,desktop,Acer,,,70,2016,Acer Predator G6-710 Intel Core i7 6th Gen,predator-g6_710-intel-core-i7-6th-gen,acer-predator-g6_710-intel-core-i7-6th-gen.webp
+5649,desktop,Acer,,,45,2018,Acer Predator PO3-600 Intel Core i5 8th Gen,predator-po3_600-intel-core-i5-8th-gen,acer-predator-po3_600-intel-core-i5-8th-gen.webp
+5650,desktop,Acer,,,55,2019,Acer Predator PO3-600 Intel Core i7 8th Gen,predator-po3_600-intel-core-i7-8th-gen,acer-predator-po3_600-intel-core-i7-8th-gen.webp
+5651,desktop,Acer,,,35,2018,Acer Predator PO5 AMD Ryzen 7,predator-po5-amd-ryzen-7,acer-predator-po5-amd-ryzen-7.webp
+5652,desktop,Acer,,,70,2020,Acer Predator PO5 Intel Core i5 10th Gen,predator-po5-intel-core-i5-10th-gen,acer-predator-po5-intel-core-i5-10th-gen.webp
+5653,desktop,Acer,,,90,2019,Acer Predator PO5 Intel Core i7 10th Gen,predator-po5-intel-core-i7-10th-gen,acer-predator-po5-intel-core-i7-10th-gen.webp
+5654,desktop,Acer,,,85,2018,Acer Predator PO9 Intel Core i7 9th Gen,predator-po9-intel-core-i7-9th-gen,acer-predator-po9-intel-core-i7-9th-gen.webp
+5655,desktop,Acer,,,120,2018,Acer Predator PO9 Intel Core i9 9th Gen,predator-po9-intel-core-i9-9th-gen,acer-predator-po9-intel-core-i9-9th-gen.webp
+5656,desktop,Acer,,,75,2020,Acer Predator ORION 3000 Intel Core i5 10th Gen,predator-orion-3000-intel-core-i5-10th-gen,acer-predator-orion-3000-intel-core-i5-10th-gen.webp
+5657,desktop,Acer,,,95,2020,Acer Predator ORION 3000 Intel Core i7 10th Gen,predator-orion-3000-intel-core-i7-10th-gen,acer-predator-orion-3000-intel-core-i7-10th-gen.webp
+5658,desktop,Acer,,,65,2018,Acer Predator ORION 5000 AMD Ryzen 7,predator-orion-5000-amd-ryzen-7,acer-predator-orion-5000-amd-ryzen-7.webp
+5659,desktop,Acer,,,90,2018,Acer Predator ORION 5000 Intel Core i5 11th Gen,predator-orion-5000-intel-core-i5-11th-gen,acer-predator-orion-5000-intel-core-i5-11th-gen.webp
+5660,desktop,Acer,,,170,2018,Acer Predator ORION 5000 Intel Core i7 12th Gen,predator-orion-5000-intel-core-i7-12th-gen,acer-predator-orion-5000-intel-core-i7-12th-gen.webp
+5661,desktop,Acer,,,120,2018,Acer Predator ORION 9000 Intel Core i7 8th Gen,predator-orion-9000-intel-core-i7-8th-gen,acer-predator-orion-9000-intel-core-i7-8th-gen.webp
+5662,desktop,Acer,,,140,2018,Acer Predator ORION 9000 Intel Core i9 8th Gen,predator-orion-9000-intel-core-i9-8th-gen,acer-predator-orion-9000-intel-core-i9-8th-gen.webp
+5669,desktop,Acer,,,25,2017,Acer Veriton 4650 Series Intel Core i7 7th Gen,veriton-4650-series-intel-core-i7-7th-gen,acer-veriton-4650-series-intel-core-i7-7th-gen.webp
+5672,desktop,Acer,,,30,2018,Acer Veriton 4660 Series Intel Core i7 8th Gen,veriton-4660-series-intel-core-i7-8th-gen,acer-veriton-4660-series-intel-core-i7-8th-gen.webp
+5673,desktop,Acer,,,25,2019,Acer Veriton 4665 Series Intel Core i5 9th Gen,veriton-4665-series-intel-core-i5-9th-gen,acer-veriton-4665-series-intel-core-i5-9th-gen.webp
+5674,desktop,Acer,,,30,2019,Acer Veriton 4665 Series Intel Core i7 9th Gen,veriton-4665-series-intel-core-i7-9th-gen,acer-veriton-4665-series-intel-core-i7-9th-gen.webp
+5679,desktop,Acer,,,20,2017,Acer Veriton 6640 Series Intel Core i5 7th Gen,veriton-6640-series-intel-core-i5-7th-gen,acer-veriton-6640-series-intel-core-i5-7th-gen.webp
+5680,desktop,Acer,,,30,2017,Acer Veriton 6640 Series Intel Core i7 7th Gen,veriton-6640-series-intel-core-i7-7th-gen,acer-veriton-6640-series-intel-core-i7-7th-gen.webp
+5681,desktop,Acer,,,20,2017,Acer Veriton 6650 Series Intel Core i5 7th Gen,veriton-6650-series-intel-core-i5-7th-gen,acer-veriton-6650-series-intel-core-i5-7th-gen.webp
+5682,desktop,Acer,,,30,2017,Acer Veriton 6650 Series Intel Core i7 7th Gen,veriton-6650-series-intel-core-i7-7th-gen,acer-veriton-6650-series-intel-core-i7-7th-gen.webp
+5683,desktop,Acer,,,25,2018,Acer Veriton 6660 Series Intel Core i5 8th Gen,veriton-6660-series-intel-core-i5-8th-gen,acer-veriton-6660-series-intel-core-i5-8th-gen.webp
+5684,desktop,Acer,,,30,2018,Acer Veriton 6660 Series Intel Core i7 8th Gen,veriton-6660-series-intel-core-i7-8th-gen,acer-veriton-6660-series-intel-core-i7-8th-gen.webp
+5685,desktop,Acer,,,30,2019,Acer Veriton 6660 Series Intel Core i5 9th Gen,veriton-6660-series-intel-core-i5-9th-gen,acer-veriton-6660-series-intel-core-i5-9th-gen.webp
+5686,desktop,Acer,,,40,2019,Acer Veriton 6660 Series Intel Core i7 9th Gen,veriton-6660-series-intel-core-i7-9th-gen,acer-veriton-6660-series-intel-core-i7-9th-gen.webp
+7473,desktop,ASUS,,,25,2020,ASUS Mini PC PB50 AMD Ryzen 7,mini-pc-pb50-amd-ryzen-7,asus-mini-pc-pb50-amd-ryzen-7.webp
+7474,desktop,ASUS,,,20,2018,ASUS Mini PC PB60 Intel Core i3 8th Gen,mini-pc-pb60-intel-core-i3-8th-gen,asus-mini-pc-pb60-intel-core-i3-8th-gen.webp
+7475,desktop,ASUS,,,25,2018,ASUS Mini PC PB60 Intel Core i5 8th Gen,mini-pc-pb60-intel-core-i5-8th-gen,asus-mini-pc-pb60-intel-core-i5-8th-gen.webp
+7476,desktop,ASUS,,,25,2019,ASUS Mini PC PB60 Intel Core i5 9th Gen,mini-pc-pb60-intel-core-i5-9th-gen,asus-mini-pc-pb60-intel-core-i5-9th-gen.webp
+7477,desktop,ASUS,,,55,2018,ASUS Mini PC PB60G Intel Core i5 8th Gen,mini-pc-pb60g-intel-core-i5-8th-gen,asus-mini-pc-pb60g-intel-core-i5-8th-gen.webp
+7478,desktop,ASUS,,,75,2019,ASUS Mini PC PB60G Intel Core i7 9th Gen,mini-pc-pb60g-intel-core-i7-9th-gen,asus-mini-pc-pb60g-intel-core-i7-9th-gen.webp
+7479,desktop,ASUS,,,55,2019,ASUS Mini PC PB60V Intel Core i5 9th Gen,mini-pc-pb60v-intel-core-i5-9th-gen,asus-mini-pc-pb60v-intel-core-i5-9th-gen.webp
+7480,desktop,ASUS,,,30,2020,ASUS Mini PC PN61 Intel Core i5 8th Gen,mini-pc-pn61-intel-core-i5-8th-gen,asus-mini-pc-pn61-intel-core-i5-8th-gen.webp
+7481,desktop,ASUS,,,40,2019,ASUS Mini PC PN61 Intel Core i7 8th Gen,mini-pc-pn61-intel-core-i7-8th-gen,asus-mini-pc-pn61-intel-core-i7-8th-gen.webp
+7482,desktop,ASUS,,,30,2021,ASUS Mini PC PN62 Intel Core i3 10th Gen,mini-pc-pn62-intel-core-i3-10th-gen,asus-mini-pc-pn62-intel-core-i3-10th-gen.webp
+7483,desktop,ASUS,,,40,2021,ASUS Mini PC PN62 Intel Core i5 10th Gen,mini-pc-pn62-intel-core-i5-10th-gen,asus-mini-pc-pn62-intel-core-i5-10th-gen.webp
+7484,desktop,ASUS,,,30,2021,ASUS Mini PC PN62S Intel Core i3 10th Gen,mini-pc-pn62s-intel-core-i3-10th-gen,asus-mini-pc-pn62s-intel-core-i3-10th-gen.webp
+7485,desktop,ASUS,,,40,2021,ASUS Mini PC PN62S Intel Core i5 10th Gen,mini-pc-pn62s-intel-core-i5-10th-gen,asus-mini-pc-pn62s-intel-core-i5-10th-gen.webp
+7486,desktop,ASUS,,,40,2018,ASUS Google Meet Hardware Kit Intel Core i7 8th Gen,google-meet-hardware-kit-intel-core-i7-8th-gen,asus-google-meet-hardware-kit-intel-core-i7-8th-gen.webp
+7491,desktop,ASUS,,,25,2018,ASUS Chromebox 3 Intel Core i7 8th Gen,chromebox-3-intel-core-i7-8th-gen,asus-chromebox-3-intel-core-i7-8th-gen.webp
+7492,desktop,ASUS,,,20,2020,ASUS Chromebox 4 Intel Core i3 10th Gen,chromebox-4-intel-core-i3-10th-gen,asus-chromebox-4-intel-core-i3-10th-gen.webp
+7496,desktop,ASUS,,,40,2018,ASUS Hangouts Meet Hardware Kit Intel Core i7 8th Gen,hangouts-meet-hardware-kit-intel-core-i7-8th-gen,asus-hangouts-meet-hardware-kit-intel-core-i7-8th-gen.webp
+7498,desktop,ASUS,,,25,2018,ASUS PB60S Intel Core i3 8th Gen,pb60s-intel-core-i3-8th-gen,asus-pb60s-intel-core-i3-8th-gen.webp
+7499,desktop,ASUS,,,30,2018,ASUS PB60S Intel Core i5 8th Gen,pb60s-intel-core-i5-8th-gen,asus-pb60s-intel-core-i5-8th-gen.webp
+7501,desktop,ASUS,,,25,2020,ASUS Mini PC PN50 AMD Ryzen 3,mini-pc-pn50-amd-ryzen-3,asus-mini-pc-pn50-amd-ryzen-3.webp
+7502,desktop,ASUS,,,35,2020,ASUS Mini PC PN50 AMD Ryzen 5,mini-pc-pn50-amd-ryzen-5,asus-mini-pc-pn50-amd-ryzen-5.webp
+7503,desktop,ASUS,,,25,2018,ASUS Mini PC PN60 Intel Core i3 8th Gen,mini-pc-pn60-intel-core-i3-8th-gen,asus-mini-pc-pn60-intel-core-i3-8th-gen.webp
+7504,desktop,ASUS,,,30,2018,ASUS Mini PC PN60 Intel Core i5 8th Gen,mini-pc-pn60-intel-core-i5-8th-gen,asus-mini-pc-pn60-intel-core-i5-8th-gen.webp
+7505,desktop,ASUS,,,40,2018,ASUS Mini PC PN60 Intel Core i7 8th Gen,mini-pc-pn60-intel-core-i7-8th-gen,asus-mini-pc-pn60-intel-core-i7-8th-gen.webp
+7506,desktop,ASUS,,,70,2019,ASUS Mini PC ProArt PA90 Intel Core i7 9th Gen,mini-pc-proart-pa90-intel-core-i7-9th-gen,asus-mini-pc-proart-pa90-intel-core-i7-9th-gen.webp
+7507,desktop,ASUS,,,175,2019,ASUS ProArt Station D940MX Intel Core i9 9th Gen,proart-station-d940mx-intel-core-i9-9th-gen,asus-proart-station-d940mx-intel-core-i9-9th-gen.webp
+7508,desktop,ASUS,,,20,2015,ASUS ROG GR6,rog-gr6,asus-rog-gr6.webp
+7509,desktop,ASUS,,,70,2017,ASUS ROG GR8 II Intel Core i7 7th Gen,rog-gr8-ii-intel-core-i7-7th-gen,asus-rog-gr8-ii-intel-core-i7-7th-gen.webp
+7510,desktop,ASUS,,,55,2014,ASUS ROG GR8 Intel Core i7 7th Gen,rog-gr8-intel-core-i7-7th-gen,asus-rog-gr8-intel-core-i7-7th-gen.webp
+7511,desktop,ASUS,,,70,2015,ASUS VivoMini UN42,vivomini-un42,asus-vivomini-un42.webp
+7516,desktop,ASUS,,,20,2020,ASUS VivoMini UN65 Intel Core i3 7th Gen,vivomini-un65-intel-core-i3-7th-gen,asus-desktop.webp
+7517,desktop,ASUS,,,25,2017,ASUS VivoMini UN65 Intel Core i5 7th Gen,vivomini-un65-intel-core-i5-7th-gen,asus-vivomini-un65-intel-core-i5-7th-gen.webp
+7518,desktop,ASUS,,,30,2017,ASUS VivoMini UN65 Intel Core i7 7th Gen,vivomini-un65-intel-core-i7-7th-gen,asus-vivomini-un65-intel-core-i7-7th-gen.webp
+7519,desktop,ASUS,,,25,2016,ASUS VivoMini UN65H Intel Core i3 6th Gen,vivomini-un65h-intel-core-i3-6th-gen,asus-vivomini-un65h-intel-core-i3-6th-gen.webp
+7520,desktop,ASUS,,,30,2016,ASUS VivoMini UN65H Intel Core i5 6th Gen,vivomini-un65h-intel-core-i5-6th-gen,asus-vivomini-un65h-intel-core-i5-6th-gen.webp
+7522,desktop,ASUS,,,25,2017,ASUS VivoMini UN65U Intel Core i5 7th Gen,vivomini-un65u-intel-core-i5-7th-gen,asus-vivomini-un65u-intel-core-i5-7th-gen.webp
+7523,desktop,ASUS,,,45,2018,ASUS VivoMini UN68U Intel Core i7 8th Gen,vivomini-un68u-intel-core-i7-8th-gen,asus-vivomini-un68u-intel-core-i7-8th-gen.webp
+7529,desktop,ASUS,,,40,2017,ASUS VivoMini VC66 Intel Core i5 7th Gen,vivomini-vc66-intel-core-i5-7th-gen,asus-vivomini-vc66-intel-core-i5-7th-gen.webp
+7530,desktop,ASUS,,,50,2017,ASUS VivoMini VC66 Intel Core i7 7th Gen,vivomini-vc66-intel-core-i7-7th-gen,asus-vivomini-vc66-intel-core-i7-7th-gen.webp
+7531,desktop,ASUS,,,45,2018,ASUS VivoMini VC66-C Intel Core i5 8th Gen,vivomini-vc66_c-intel-core-i5-8th-gen,asus-vivomini-vc66_c-intel-core-i5-8th-gen.webp
+7532,desktop,ASUS,,,55,2020,ASUS VivoMini VC66-С2 Intel Core i5 10th Gen,vivomini-vc66_%D0%A12-intel-core-i5-10th-gen,
+7533,desktop,ASUS,,,60,2020,ASUS VivoMini VC66-С2 Intel Core i7 10th Gen,vivomini-vc66_%D0%A12-intel-core-i7-10th-gen,
+7535,desktop,ASUS,,,30,2016,ASUS VivoMini VC68R Intel Core i5 6th Gen,vivomini-vc68r-intel-core-i5-6th-gen,asus-vivomini-vc68r-intel-core-i5-6th-gen.webp
+7536,desktop,ASUS,,,50,2017,ASUS VivoMini VC68V Intel Core i7 7th Gen,vivomini-vc68v-intel-core-i7-7th-gen,asus-vivomini-vc68v-intel-core-i7-7th-gen.webp
+7537,desktop,ASUS,,,40,2017,ASUS VivoMini VC68V Intel Core i5 7th Gen,vivomini-vc68v-intel-core-i5-7th-gen,asus-vivomini-vc68v-intel-core-i5-7th-gen.webp
+7540,desktop,ASUS,,,40,2017,ASUS VivoMini VM65 Intel Core i5 7th Gen,vivomini-vm65-intel-core-i5-7th-gen,asus-vivomini-vm65-intel-core-i5-7th-gen.webp
+7542,desktop,ASUS,,,40,2017,ASUS VivoMini VM65N Intel Core i5 7th Gen,vivomini-vm65n-intel-core-i5-7th-gen,asus-vivomini-vm65n-intel-core-i5-7th-gen.webp
+7555,desktop,ASUS,,,40,2016,ASUS G11CB Intel Core i7 6th Gen,g11cb-intel-core-i7-6th-gen,asus-g11cb-intel-core-i7-6th-gen.webp
+7556,desktop,ASUS,,,25,2016,ASUS G11CB Intel Core i5 6th Gen,g11cb-intel-core-i5-6th-gen,asus-g11cb-intel-core-i5-6th-gen.webp
+7557,desktop,ASUS,,,40,2016,ASUS G11CD Intel Core i7 6th Gen,g11cd-intel-core-i7-6th-gen,asus-g11cd-intel-core-i7-6th-gen.webp
+7567,desktop,ASUS,,,35,2016,ASUS ROG G20CB Intel Core i5 6th Gen,rog-g20cb-intel-core-i5-6th-gen,asus-rog-g20cb-intel-core-i5-6th-gen.webp
+7568,desktop,ASUS,,,45,2016,ASUS ROG G20CB Intel Core i7 6th Gen,rog-g20cb-intel-core-i7-6th-gen,asus-rog-g20cb-intel-core-i7-6th-gen.webp
+7569,desktop,ASUS,,,55,2016,ASUS ROG GT51CA Intel Core i7 6th Gen,rog-gt51ca-intel-core-i7-6th-gen,asus-rog-gt51ca-intel-core-i7-6th-gen.webp
+7570,desktop,ASUS,,,60,2017,ASUS ROG GT51CH Intel Core i7 7th Gen,rog-gt51ch-intel-core-i7-7th-gen,asus-rog-gt51ch-intel-core-i7-7th-gen.webp
+7571,desktop,ASUS,,,40,2018,ASUS ROG HURACAN G21CN Intel Core i5 8th Gen,rog-huracan-g21cn-intel-core-i5-8th-gen,asus-rog-huracan-g21cn-intel-core-i5-8th-gen.webp
+7572,desktop,ASUS,,,75,2018,ASUS ROG HURACAN G21CN Intel Core i7 8th Gen,rog-huracan-g21cn-intel-core-i7-8th-gen,asus-rog-huracan-g21cn-intel-core-i7-8th-gen.webp
+7573,desktop,ASUS,,,50,2019,ASUS ROG HURACAN G21CX Intel Core i5 9th Gen,rog-huracan-g21cx-intel-core-i5-9th-gen,asus-rog-huracan-g21cx-intel-core-i5-9th-gen.webp
+7574,desktop,ASUS,,,85,2019,ASUS ROG HURACAN G21CX Intel Core i7 9th Gen,rog-huracan-g21cx-intel-core-i7-9th-gen,asus-rog-huracan-g21cx-intel-core-i7-9th-gen.webp
+7575,desktop,ASUS,,,155,2019,ASUS ROG HURACAN G21CX Intel Core i9 9th Gen,rog-huracan-g21cx-intel-core-i9-9th-gen,asus-rog-huracan-g21cx-intel-core-i9-9th-gen.webp
+7576,desktop,ASUS,,,45,2020,ASUS ROG Strix GA15 AMD Ryzen 5,rog-strix-ga15-amd-ryzen-5,asus-rog-strix-ga15-amd-ryzen-5.webp
+7577,desktop,ASUS,,,65,2020,ASUS ROG Strix GA15 AMD Ryzen 7,rog-strix-ga15-amd-ryzen-7,asus-rog-strix-ga15-amd-ryzen-7.webp
+7578,desktop,ASUS,,,75,2021,ASUS ROG Strix GA35 AMD Ryzen 7,rog-strix-ga35-amd-ryzen-7,asus-rog-strix-ga35-amd-ryzen-7.webp
+7579,desktop,ASUS,,,35,2017,ASUS ROG Strix GD30CI Intel Core i7 7th Gen,rog-strix-gd30ci-intel-core-i7-7th-gen,asus-rog-strix-gd30ci-intel-core-i7-7th-gen.webp
+7580,desktop,ASUS,,,35,2018,ASUS ROG Strix GL10CS Intel Core i5 8th Gen,rog-strix-gl10cs-intel-core-i5-8th-gen,asus-rog-strix-gl10cs-intel-core-i5-8th-gen.webp
+7581,desktop,ASUS,,,55,2018,ASUS ROG Strix GL10CS Intel Core i7 8th Gen,rog-strix-gl10cs-intel-core-i7-8th-gen,asus-rog-strix-gl10cs-intel-core-i7-8th-gen.webp
+7582,desktop,ASUS,,,45,2019,ASUS ROG Strix GL10DH AMD Ryzen 5,rog-strix-gl10dh-amd-ryzen-5,asus-rog-strix-gl10dh-amd-ryzen-5.webp
+7583,desktop,ASUS,,,80,2019,ASUS ROG Strix GL10DH AMD Ryzen 7,rog-strix-gl10dh-amd-ryzen-7,asus-rog-strix-gl10dh-amd-ryzen-7.webp
+7584,desktop,ASUS,,,85,2019,ASUS ROG Strix GL12CX Intel Core i7 9th Gen,rog-strix-gl12cx-intel-core-i7-9th-gen,asus-rog-strix-gl12cx-intel-core-i7-9th-gen.webp
+7585,desktop,ASUS,,,105,2019,ASUS ROG Strix GL12CX Intel Core i9 9th Gen,rog-strix-gl12cx-intel-core-i9-9th-gen,asus-rog-strix-gl12cx-intel-core-i9-9th-gen.webp
+7586,desktop,ASUS,,,55,2018,ASUS ROG Strix GL12CS Intel Core i5 8th Gen,rog-strix-gl12cs-intel-core-i5-8th-gen,asus-rog-strix-gl12cs-intel-core-i5-8th-gen.webp
+7587,desktop,ASUS,,,75,2018,ASUS ROG Strix GL12CS Intel Core i7 8th Gen,rog-strix-gl12cs-intel-core-i7-8th-gen,asus-rog-strix-gl12cs-intel-core-i7-8th-gen.webp
+7588,desktop,ASUS,,,60,2018,ASUS ROG Strix GL12 Call of Duty - Black Ops 4 Edition,rog-strix-gl12-call-of-duty-_-black-ops-4-edition,asus-rog-strix-gl12-call-of-duty-_-black-ops-4-edition.webp
+7589,desktop,ASUS,,,75,2020,ASUS ROG Strix G15CK Intel Core i7 10th Gen,rog-strix-g15ck-intel-core-i7-10th-gen,asus-rog-strix-g15ck-intel-core-i7-10th-gen.webp
+7590,desktop,ASUS,,,175,2020,ASUS ROG Strix GT35 Intel Core i9 10th Gen,rog-strix-gt35-intel-core-i9-10th-gen,asus-rog-strix-gt35-intel-core-i9-10th-gen.webp
+7604,desktop,ASUS,,,35,2019,ASUS PRO D641SC Intel Core i5 9th Gen,pro-d641sc-intel-core-i5-9th-gen,asus-pro-d641sc-intel-core-i5-9th-gen.webp
+7605,desktop,ASUS,,,55,2019,ASUS PRO D641SC Intel Core i7 9th Gen,pro-d641sc-intel-core-i7-9th-gen,asus-pro-d641sc-intel-core-i7-9th-gen.webp
+7606,desktop,ASUS,,,20,2016,ASUS D320 Series Intel Core i5 6th Gen,d320-series-intel-core-i5-6th-gen,asus-d320-series-intel-core-i5-6th-gen.webp
+7607,desktop,ASUS,,,30,2016,ASUS D320 Series Intel Core i7 6th Gen,d320-series-intel-core-i7-6th-gen,asus-d320-series-intel-core-i7-6th-gen.webp
+7608,desktop,ASUS,,,20,2017,ASUS D415MT ADM A10,d415mt-adm-a10,asus-d415mt-adm-a10.webp
+7616,desktop,ASUS,,,30,2020,ASUS ExpertCenter D500SA Intel Core i5 10th Gen,expertcenter-d500sa-intel-core-i5-10th-gen,asus-expertcenter-d500sa-intel-core-i5-10th-gen.webp
+7617,desktop,ASUS,,,50,2020,ASUS ExpertCenter D500SA Intel Core i7 10th Gen,expertcenter-d500sa-intel-core-i7-10th-gen,asus-expertcenter-d500sa-intel-core-i7-10th-gen.webp
+7618,desktop,ASUS,,,55,2020,ASUS ExpertCenter D700SA Intel Core i7 10th Gen,expertcenter-d700sa-intel-core-i7-10th-gen,asus-expertcenter-d700sa-intel-core-i7-10th-gen.webp
+7619,desktop,ASUS,,,30,2020,ASUS ExpertCenter D700SA Intel Core i5 10th Gen,expertcenter-d700sa-intel-core-i5-10th-gen,asus-expertcenter-d700sa-intel-core-i5-10th-gen.webp
+7620,desktop,ASUS,,,55,2020,ASUS ExpertCenter D900SA Intel Core i5 10th Gen,expertcenter-d900sa-intel-core-i5-10th-gen,asus-expertcenter-d900sa-intel-core-i5-10th-gen.webp
+7621,desktop,ASUS,,,70,2020,ASUS ExpertCenter D900SA Intel Core i7 10th Gen,expertcenter-d900sa-intel-core-i7-10th-gen,asus-expertcenter-d900sa-intel-core-i7-10th-gen.webp
+7622,desktop,ASUS,,,55,2018,ASUS TUF Gaming FX10CP Intel Core i5 8th Gen,tuf-gaming-fx10cp-intel-core-i5-8th-gen,asus-tuf-gaming-fx10cp-intel-core-i5-8th-gen.webp
+7623,desktop,ASUS,,,85,2018,ASUS TUF Gaming FX10CP Intel Core i7 8th Gen,tuf-gaming-fx10cp-intel-core-i7-8th-gen,asus-tuf-gaming-fx10cp-intel-core-i7-8th-gen.webp
+7630,desktop,ASUS,,,20,2017,ASUS Essentio CG5285,essentio-cg5285,asus-essentio-cg5285.webp
+7631,desktop,ASUS,,,20,2017,ASUS Essentio CG5290,essentio-cg5290,asus-essentio-cg5290.webp
+7638,desktop,ASUS,,,110,2020,ASUS ROG Strix GT15 Intel Core i5 10th Gen,rog-strix-gt15-intel-core-i5-10th-gen,asus-rog-strix-gt15-intel-core-i5-10th-gen.webp
+7639,desktop,ASUS,,,45,2020,ASUS S300MA Intel Core i5 10th Gen,s300ma-intel-core-i5-10th-gen,asus-s300ma-intel-core-i5-10th-gen.webp
+7640,desktop,ASUS,,,60,2020,ASUS S300MA Intel Core i7 10th Gen,s300ma-intel-core-i7-10th-gen,asus-s300ma-intel-core-i7-10th-gen.webp
+7641,desktop,ASUS,,,60,2020,ASUS S300TA Intel Core i5 10th Gen,s300ta-intel-core-i5-10th-gen,asus-s300ta-intel-core-i5-10th-gen.webp
+7642,desktop,ASUS,,,70,2020,ASUS S300TA Intel Core i7 10th Gen,s300ta-intel-core-i7-10th-gen,asus-s300ta-intel-core-i7-10th-gen.webp
+7644,desktop,ASUS,,,20,2018,ASUS S340MC Intel Core i3 8th Gen,s340mc-intel-core-i3-8th-gen,asus-s340mc-intel-core-i3-8th-gen.webp
+7645,desktop,ASUS,,,30,2018,ASUS S340MC Intel Core i5 8th Gen,s340mc-intel-core-i5-8th-gen,asus-s340mc-intel-core-i5-8th-gen.webp
+7646,desktop,ASUS,,,25,2019,ASUS S340MF Intel Core i3 9th Gen,s340mf-intel-core-i3-9th-gen,asus-s340mf-intel-core-i3-9th-gen.webp
+7647,desktop,ASUS,,,30,2019,ASUS S340MF Intel Core i5 9th Gen,s340mf-intel-core-i5-9th-gen,asus-s340mf-intel-core-i5-9th-gen.webp
+7649,desktop,ASUS,,,55,2019,ASUS S640MB Intel Core i5 9th Gen,s640mb-intel-core-i5-9th-gen,asus-s640mb-intel-core-i5-9th-gen.webp
+7652,desktop,ASUS,,,30,2017,ASUS VivoPC X Intel Core i5 7th Gen,vivopc-x-intel-core-i5-7th-gen,asus-vivopc-x-intel-core-i5-7th-gen.webp
+7706,desktop,ASUS,,,20,2017,ASUS K20CE Intel Celeron,k20ce-intel-celeron,asus-k20ce-intel-celeron.webp
+7707,desktop,ASUS,,,20,2017,ASUS K20DA Intel Pentium,k20da-intel-pentium,asus-k20da-intel-pentium.webp
+7737,desktop,ASUS,,,30,2016,ASUS VivoPC K31CD Intel Core i5 7th Gen,vivopc-k31cd-intel-core-i5-7th-gen,asus-vivopc-k31cd-intel-core-i5-7th-gen.webp
+7739,desktop,ASUS,,,20,2019,ASUS PRO D340MC Intel Celeron,pro-d340mc-intel-celeron,asus-pro-d340mc-intel-celeron.webp
+7740,desktop,ASUS,,,20,2019,ASUS PRO D340MC Intel Pentium,pro-d340mc-intel-pentium,asus-pro-d340mc-intel-pentium.webp
+7741,desktop,ASUS,,,25,2018,ASUS PRO D340MC Intel Core i3 8th Gen,pro-d340mc-intel-core-i3-8th-gen,asus-pro-d340mc-intel-core-i3-8th-gen.webp
+7742,desktop,ASUS,,,30,2018,ASUS PRO D340MC Intel Core i5 8th Gen,pro-d340mc-intel-core-i5-8th-gen,asus-pro-d340mc-intel-core-i5-8th-gen.webp
+7743,desktop,ASUS,,,55,2018,ASUS PRO D340MC Intel Core i7 8th Gen,pro-d340mc-intel-core-i7-8th-gen,asus-pro-d340mc-intel-core-i7-8th-gen.webp
+7744,desktop,ASUS,,,25,2018,ASUS PRO D540M Series Intel Core i3 8th Gen,pro-d540m-series-intel-core-i3-8th-gen,asus-pro-d540m-series-intel-core-i3-8th-gen.webp
+7745,desktop,ASUS,,,30,2018,ASUS PRO D540M Series Intel Core i5 8th Gen,pro-d540m-series-intel-core-i5-8th-gen,asus-pro-d540m-series-intel-core-i5-8th-gen.webp
+7746,desktop,ASUS,,,55,2018,ASUS PRO D540M Series Intel Core i7 8th Gen,pro-d540m-series-intel-core-i7-8th-gen,asus-pro-d540m-series-intel-core-i7-8th-gen.webp
+7747,desktop,ASUS,,,25,2018,ASUS PRO D540SA Intel Core i3 8th Gen,pro-d540sa-intel-core-i3-8th-gen,asus-pro-d540sa-intel-core-i3-8th-gen.webp
+7748,desktop,ASUS,,,30,2018,ASUS PRO D540SA Intel Core i5 8th Gen,pro-d540sa-intel-core-i5-8th-gen,asus-pro-d540sa-intel-core-i5-8th-gen.webp
+7749,desktop,ASUS,,,55,2018,ASUS PRO D540SA Intel Core i7 8th Gen,pro-d540sa-intel-core-i7-8th-gen,asus-pro-d540sa-intel-core-i7-8th-gen.webp
+7777,desktop,ASUS,,,20,2016,ASUS D322MT Intel Core i5 6th Gen,d322mt-intel-core-i5-6th-gen,asus-d322mt-intel-core-i5-6th-gen.webp
+7782,desktop,ASUS,,,20,2017,ASUS D521MT,d521mt,asus-d521mt.webp
+8253,desktop,Dell,,,70,2020,Dell G5 5000 Intel Core i3 10th Gen,g5-5000-intel-core-i3-10th-gen,dell-g5-5000-intel-core-i3-10th-gen.webp
+8254,desktop,Dell,,,90,2020,Dell G5 5000 Intel Core i5 10th Gen,g5-5000-intel-core-i5-10th-gen,dell-g5-5000-intel-core-i5-10th-gen.webp
+8255,desktop,Dell,,,120,2020,Dell G5 5000 Intel Core i7 10th Gen,g5-5000-intel-core-i7-10th-gen,dell-g5-5000-intel-core-i7-10th-gen.webp
+8256,desktop,Dell,,,40,2019,Dell Vostro 3471 Intel Core i5 9th Gen,vostro-3471-intel-core-i5-9th-gen,dell-vostro-3471-intel-core-i5-9th-gen.webp
+8257,desktop,Dell,,,20,2017,Dell Vostro 3669 Intel Core i5 7th Gen,vostro-3669-intel-core-i5-7th-gen,dell-vostro-3669-intel-core-i5-7th-gen.webp
+8258,desktop,Dell,,,30,2020,Dell Vostro 3888 Intel Core i3 10th Gen,vostro-3888-intel-core-i3-10th-gen,dell-vostro-3888-intel-core-i3-10th-gen.webp
+8259,desktop,Dell,,,50,2020,Dell Vostro 3888 Intel Core i5 10th Gen,vostro-3888-intel-core-i5-10th-gen,dell-vostro-3888-intel-core-i5-10th-gen.webp
+8261,desktop,Dell,,,30,2016,Dell Vostro 3650 Intel Core i7 6th Gen,vostro-3650-intel-core-i7-6th-gen,dell-vostro-3650-intel-core-i7-6th-gen.webp
+8263,desktop,Dell,,,30,2019,Dell Vostro 3671 Intel Core i5 9th Gen,vostro-3671-intel-core-i5-9th-gen,dell-vostro-3671-intel-core-i5-9th-gen.webp
+8264,desktop,Dell,,,45,2019,Dell Vostro 3671 Intel Core i7 9th Gen,vostro-3671-intel-core-i7-9th-gen,dell-vostro-3671-intel-core-i7-9th-gen.webp
+8267,desktop,Dell,,,45,2020,Dell Vostro 3681 Intel Core i3 10th Gen,vostro-3681-intel-core-i3-10th-gen,dell-vostro-3681-intel-core-i3-10th-gen.webp
+8268,desktop,Dell,,,70,2020,Dell Vostro 3681 Intel Core i5 10th Gen,vostro-3681-intel-core-i5-10th-gen,dell-vostro-3681-intel-core-i5-10th-gen.webp
+8269,desktop,Dell,,,85,2020,Dell Vostro 3681 Intel Core i7 10th Gen,vostro-3681-intel-core-i7-10th-gen,dell-vostro-3681-intel-core-i7-10th-gen.webp
+8271,desktop,Dell,,,20,2017,Dell Vostro 3268 Intel Core i5 7th Gen,vostro-3268-intel-core-i5-7th-gen,dell-vostro-3268-intel-core-i5-7th-gen.webp
+8274,desktop,Dell,,,25,2018,Dell Vostro 3470 Intel Core i5 8th Gen,vostro-3470-intel-core-i5-8th-gen,dell-vostro-3470-intel-core-i5-8th-gen.webp
+8276,desktop,Dell,,,35,2020,Dell Vostro 3881 Intel Core i5 10th Gen,vostro-3881-intel-core-i5-10th-gen,dell-vostro-3881-intel-core-i5-10th-gen.webp
+8277,desktop,Dell,,,45,2020,Dell Vostro 3881 Intel Core i7 10th Gen,vostro-3881-intel-core-i7-10th-gen,dell-vostro-3881-intel-core-i7-10th-gen.webp
+8278,desktop,Dell,,,40,2019,Dell Vostro 5090 Intel Core i5 9th Gen,vostro-5090-intel-core-i5-9th-gen,dell-vostro-5090-intel-core-i5-9th-gen.webp
+8279,desktop,Dell,,,55,2019,Dell Vostro 5090 Intel Core i7 9th Gen,vostro-5090-intel-core-i7-9th-gen,dell-vostro-5090-intel-core-i7-9th-gen.webp
+8280,desktop,Dell,,,55,2020,Dell Vostro 5880 Intel Core i5 10th Gen,vostro-5880-intel-core-i5-10th-gen,dell-vostro-5880-intel-core-i5-10th-gen.webp
+8281,desktop,Dell,,,70,2020,Dell Vostro 5880 Intel Core i7 10th Gen,vostro-5880-intel-core-i7-10th-gen,dell-vostro-5880-intel-core-i7-10th-gen.webp
+8283,desktop,Dell,,,30,2020,Dell Inspiron 3880 Intel Core i3 10th Gen,inspiron-3880-intel-core-i3-10th-gen,dell-inspiron-3880-intel-core-i3-10th-gen.webp
+8285,desktop,Dell,,,30,2018,Dell Inspiron 3470 Intel Core i5 8th Gen,inspiron-3470-intel-core-i5-8th-gen,dell-inspiron-3470-intel-core-i5-8th-gen.webp
+8287,desktop,Dell,,,55,2020,Dell Inspiron 3880 Intel Core i5 10th Gen,inspiron-3880-intel-core-i5-10th-gen,dell-inspiron-3880-intel-core-i5-10th-gen.webp
+8288,desktop,Dell,,,70,2020,Dell Inspiron 3880 Intel Core i7 10th Gen,inspiron-3880-intel-core-i7-10th-gen,dell-inspiron-3880-intel-core-i7-10th-gen.webp
+8301,desktop,Dell,,,45,2020,Dell OptiPlex 3080 Intel Core i3 10th Gen,optiplex-3080-intel-core-i3-10th-gen,dell-optiplex-3080-intel-core-i3-10th-gen.webp
+8302,desktop,Dell,,,60,2020,Dell OptiPlex 3080 Intel Core i5 10th Gen,optiplex-3080-intel-core-i5-10th-gen,dell-optiplex-3080-intel-core-i5-10th-gen.webp
+8305,desktop,Dell,,,20,2016,Dell OptiPlex 3040 Intel Core i7 6th Gen,optiplex-3040-intel-core-i7-6th-gen,dell-optiplex-3040-intel-core-i7-6th-gen.webp
+8306,desktop,Dell,,,50,2021,Dell OptiPlex 3090 Ultra Intel Core i3 11th Gen,optiplex-3090-ultra-intel-core-i3-11th-gen,dell-optiplex-3090-ultra-intel-core-i3-11th-gen.webp
+8307,desktop,Dell,,,65,2021,Dell OptiPlex 3090 Ultra Intel Core i5 11th Gen,optiplex-3090-ultra-intel-core-i5-11th-gen,dell-optiplex-3090-ultra-intel-core-i5-11th-gen.webp
+8308,desktop,Dell,,,40,2019,Dell OptiPlex 7071 Intel Core i5 9th Gen,optiplex-7071-intel-core-i5-9th-gen,dell-optiplex-7071-intel-core-i5-9th-gen.webp
+8309,desktop,Dell,,,70,2020,Dell OptiPlex 7080 Intel Core i5 10th Gen,optiplex-7080-intel-core-i5-10th-gen,dell-optiplex-7080-intel-core-i5-10th-gen.webp
+8310,desktop,Dell,,,90,2020,Dell OptiPlex 7080 Intel Core i7 10th Gen,optiplex-7080-intel-core-i7-10th-gen,dell-optiplex-7080-intel-core-i7-10th-gen.webp
+8311,desktop,Dell,,,70,2021,Dell OptiPlex 7090 Ultra Intel Core i5 11th Gen,optiplex-7090-ultra-intel-core-i5-11th-gen,dell-optiplex-7090-ultra-intel-core-i5-11th-gen.webp
+8318,desktop,Dell,,,25,2016,Dell OptiPlex 5040 Intel Core i7 6th Gen,optiplex-5040-intel-core-i7-6th-gen,dell-optiplex-5040-intel-core-i7-6th-gen.webp
+8319,desktop,Dell,,,25,2017,Dell OptiPlex 5055 AMD Ryzen 5,optiplex-5055-amd-ryzen-5,dell-optiplex-5055-amd-ryzen-5.webp
+8320,desktop,Dell,,,25,2019,Dell OptiPlex 5070 Intel Core i3 9th Gen,optiplex-5070-intel-core-i3-9th-gen,dell-optiplex-5070-intel-core-i3-9th-gen.webp
+8321,desktop,Dell,,,30,2019,Dell OptiPlex 5070 Intel Core i5 9th Gen,optiplex-5070-intel-core-i5-9th-gen,dell-optiplex-5070-intel-core-i5-9th-gen.webp
+8322,desktop,Dell,,,45,2019,Dell OptiPlex 5070 Intel Core i7 9th Gen,optiplex-5070-intel-core-i7-9th-gen,dell-optiplex-5070-intel-core-i7-9th-gen.webp
+8323,desktop,Dell,,,55,2020,Dell OptiPlex 5080 Intel Core i5 10th Gen,optiplex-5080-intel-core-i5-10th-gen,dell-optiplex-5080-intel-core-i5-10th-gen.webp
+8324,desktop,Dell,,,85,2020,Dell OptiPlex 5080 Intel Core i7 10th Gen,optiplex-5080-intel-core-i7-10th-gen,dell-optiplex-5080-intel-core-i7-10th-gen.webp
+8326,desktop,Dell,,,25,2018,Dell OptiPlex XE3 Intel Core i5 8th Gen,optiplex-xe3-intel-core-i5-8th-gen,dell-optiplex-xe3-intel-core-i5-8th-gen.webp
+8327,desktop,Dell,,,45,2018,Dell OptiPlex XE3 Intel Core i7 8th Gen,optiplex-xe3-intel-core-i7-8th-gen,dell-optiplex-xe3-intel-core-i7-8th-gen.webp
+8328,desktop,Dell,,,65,2020,Dell XPS 8940 Intel Core i5 10th Gen,xps-8940-intel-core-i5-10th-gen,dell-xps-8940-intel-core-i5-10th-gen.webp
+8329,desktop,Dell,,,130,2020,Dell XPS 8940 Intel Core i7 10th Gen,xps-8940-intel-core-i7-10th-gen,dell-xps-8940-intel-core-i7-10th-gen.webp
+8536,desktop,HP,,,20,2017,HP EliteDesk 800 G3 Intel Core i5 7th Gen,elitedesk-800-g3-intel-core-i5-7th-gen,hp-elitedesk-800-g3-intel-core-i5-7th-gen.webp
+8537,desktop,HP,,,30,2017,HP EliteDesk 800 G3 Intel Core i7 7th Gen,elitedesk-800-g3-intel-core-i7-7th-gen,hp-elitedesk-800-g3-intel-core-i7-7th-gen.webp
+8539,desktop,HP,,,20,2017,HP EliteDesk 800 G3 Mini Intel Core i5 7th Gen,elitedesk-800-g3-mini-intel-core-i5-7th-gen,hp-elitedesk-800-g3-mini-intel-core-i5-7th-gen.webp
+8540,desktop,HP,,,25,2016,HP EliteDesk 800 G3 Mini Intel Core i7 6th Gen,elitedesk-800-g3-mini-intel-core-i7-6th-gen,hp-elitedesk-800-g3-mini-intel-core-i7-6th-gen.webp
+8541,desktop,HP,,,30,2017,HP EliteDesk 800 G3 Mini Intel Core i7 7th Gen,elitedesk-800-g3-mini-intel-core-i7-7th-gen,hp-elitedesk-800-g3-mini-intel-core-i7-7th-gen.webp
+8542,desktop,HP,,,50,2018,HP EliteDesk 800 G4 Mini Intel Core i7 8th Gen,elitedesk-800-g4-mini-intel-core-i7-8th-gen,hp-elitedesk-800-g4-mini-intel-core-i7-8th-gen.webp
+8543,desktop,HP,,,30,2018,HP EliteDesk 800 G4 Mini Intel Core i5 8th Gen,elitedesk-800-g4-mini-intel-core-i5-8th-gen,hp-elitedesk-800-g4-mini-intel-core-i5-8th-gen.webp
+8544,desktop,HP,,,45,2019,HP EliteDesk 800 G5 Mini Intel Core i5 9th Gen,elitedesk-800-g5-mini-intel-core-i5-9th-gen,hp-elitedesk-800-g5-mini-intel-core-i5-9th-gen.webp
+8545,desktop,HP,,,85,2019,HP EliteDesk 800 G5 Mini Intel Core i9 9th Gen,elitedesk-800-g5-mini-intel-core-i9-9th-gen,hp-elitedesk-800-g5-mini-intel-core-i9-9th-gen.webp
+8546,desktop,HP,,,65,2020,HP EliteDesk 800 G6 Mini Intel Core i5 10th Gen,elitedesk-800-g6-mini-intel-core-i5-10th-gen,hp-elitedesk-800-g6-mini-intel-core-i5-10th-gen.webp
+8547,desktop,HP,,,105,2020,HP EliteDesk 800 G6 Mini Intel Core i7 10th Gen,elitedesk-800-g6-mini-intel-core-i7-10th-gen,hp-elitedesk-800-g6-mini-intel-core-i7-10th-gen.webp
+8553,desktop,HP,,,25,2018,HP Chromebox G2 Intel Core i7 8th Gen,chromebox-g2-intel-core-i7-8th-gen,hp-chromebox-g2-intel-core-i7-8th-gen.webp
+8563,desktop,HP,,,25,2016,HP Envy 750 Intel Core i5 6th Gen,envy-750-intel-core-i5-6th-gen,hp-envy-750-intel-core-i5-6th-gen.webp
+8564,desktop,HP,,,30,2017,HP Envy 750 Intel Core i5 7th Gen,envy-750-intel-core-i5-7th-gen,hp-envy-750-intel-core-i5-7th-gen.webp
+8565,desktop,HP,,,30,2016,HP Envy 750 Intel Core i7 6th Gen,envy-750-intel-core-i7-6th-gen,hp-envy-750-intel-core-i7-6th-gen.webp
+8566,desktop,HP,,,40,2017,HP Envy 750 Intel Core i7 7th Gen,envy-750-intel-core-i7-7th-gen,hp-envy-750-intel-core-i7-7th-gen.webp
+8567,desktop,HP,,,30,2018,HP Envy TE01 Intel Core i5 8th Gen,envy-te01-intel-core-i5-8th-gen,hp-envy-te01-intel-core-i5-8th-gen.webp
+8568,desktop,HP,,,40,2019,HP Envy TE01 Intel Core i5 9th Gen,envy-te01-intel-core-i5-9th-gen,hp-envy-te01-intel-core-i5-9th-gen.webp
+8569,desktop,HP,,,55,2020,HP Envy TE01 Intel Core i5 10th Gen,envy-te01-intel-core-i5-10th-gen,hp-envy-te01-intel-core-i5-10th-gen.webp
+8570,desktop,HP,,,55,2018,HP Envy TE01 Intel Core i7 8th Gen,envy-te01-intel-core-i7-8th-gen,hp-envy-te01-intel-core-i7-8th-gen.webp
+8571,desktop,HP,,,60,2019,HP Envy TE01 Intel Core i7 9th Gen,envy-te01-intel-core-i7-9th-gen,hp-envy-te01-intel-core-i7-9th-gen.webp
+8572,desktop,HP,,,75,2020,HP Envy TE01 Intel Core i7 10th Gen,envy-te01-intel-core-i7-10th-gen,hp-envy-te01-intel-core-i7-10th-gen.webp
+8573,desktop,HP,,,75,2020,HP Omen 25L AMD Ryzen 5,omen-25l-amd-ryzen-5,hp-omen-25l-amd-ryzen-5.webp
+8574,desktop,HP,,,100,2020,HP Omen 25L AMD Ryzen 7,omen-25l-amd-ryzen-7,hp-omen-25l-amd-ryzen-7.webp
+8577,desktop,HP,,,130,2020,HP Omen 30L Intel Core i5 10th Gen,omen-30l-intel-core-i5-10th-gen,hp-omen-30l-intel-core-i5-10th-gen.webp
+8578,desktop,HP,,,190,2020,HP Omen 30L Intel Core i7 10th Gen,omen-30l-intel-core-i7-10th-gen,hp-omen-30l-intel-core-i7-10th-gen.webp
+8579,desktop,HP,,,230,2020,HP Omen 30L Intel Core i9 10th Gen,omen-30l-intel-core-i9-10th-gen,hp-omen-30l-intel-core-i9-10th-gen.webp
+8580,desktop,HP,,,20,2017,HP Omen 870 Intel Core i3 7th Gen,omen-870-intel-core-i3-7th-gen,hp-omen-870-intel-core-i3-7th-gen.webp
+8581,desktop,HP,,,40,2017,HP Omen 870 Intel Core i5 7th Gen,omen-870-intel-core-i5-7th-gen,hp-omen-870-intel-core-i5-7th-gen.webp
+8582,desktop,HP,,,55,2016,HP Omen 870 Intel Core i7 6th Gen,omen-870-intel-core-i7-6th-gen,hp-omen-870-intel-core-i7-6th-gen.webp
+8583,desktop,HP,,,60,2017,HP Omen 870 Intel Core i7 7th Gen,omen-870-intel-core-i7-7th-gen,hp-omen-870-intel-core-i7-7th-gen.webp
+8584,desktop,HP,,,35,2018,HP Omen 880 AMD Ryzen 5,omen-880-amd-ryzen-5,hp-omen-880-amd-ryzen-5.webp
+8585,desktop,HP,,,50,2018,HP Omen 880 AMD Ryzen 7,omen-880-amd-ryzen-7,hp-omen-880-amd-ryzen-7.webp
+8586,desktop,HP,,,65,2017,HP Omen 880 Intel Core i5 7th Gen,omen-880-intel-core-i5-7th-gen,hp-omen-880-intel-core-i5-7th-gen.webp
+8587,desktop,HP,,,75,2018,HP Omen 880 Intel Core i5 8th Gen,omen-880-intel-core-i5-8th-gen,hp-omen-880-intel-core-i5-8th-gen.webp
+8588,desktop,HP,,,90,2019,HP Omen 880 Intel Core i5 9th Gen,omen-880-intel-core-i5-9th-gen,hp-omen-880-intel-core-i5-9th-gen.webp
+8589,desktop,HP,,,110,2017,HP Omen 880 Intel Core i7 7th Gen,omen-880-intel-core-i7-7th-gen,hp-omen-880-intel-core-i7-7th-gen.webp
+8590,desktop,HP,,,120,2018,HP Omen 880 Intel Core i7 8th Gen,omen-880-intel-core-i7-8th-gen,hp-omen-880-intel-core-i7-8th-gen.webp
+8591,desktop,HP,,,130,2019,HP Omen 880 Intel Core i7 9th Gen,omen-880-intel-core-i7-9th-gen,hp-omen-880-intel-core-i7-9th-gen.webp
+8592,desktop,HP,,,90,2018,HP Omen Obelisk Intel Core i7 8th Gen,omen-obelisk-intel-core-i7-8th-gen,hp-omen-obelisk-intel-core-i7-8th-gen.webp
+8593,desktop,HP,,,105,2019,HP Omen Obelisk Intel Core i7 9th Gen,omen-obelisk-intel-core-i7-9th-gen,hp-omen-obelisk-intel-core-i7-9th-gen.webp
+8594,desktop,HP,,,155,2019,HP Omen Obelisk Intel Core i9 9th Gen,omen-obelisk-intel-core-i9-9th-gen,hp-omen-obelisk-intel-core-i9-9th-gen.webp
+8595,desktop,HP,,,120,2016,HP Omen X 900 Intel Core i7 6th Gen,omen-x-900-intel-core-i7-6th-gen,hp-omen-x-900-intel-core-i7-6th-gen.webp
+8596,desktop,HP,,,140,2017,HP Omen X 900 Intel Core i7 7th Gen,omen-x-900-intel-core-i7-7th-gen,hp-omen-x-900-intel-core-i7-7th-gen.webp
+8597,desktop,HP,,,165,2017,HP Omen X 900 Intel Core i9 7th Gen,omen-x-900-intel-core-i9-7th-gen,hp-omen-x-900-intel-core-i9-7th-gen.webp
+8598,desktop,HP,,,180,2019,HP Omen X 900 Intel Core i9 9th Gen,omen-x-900-intel-core-i9-9th-gen,hp-omen-x-900-intel-core-i9-9th-gen.webp
+8600,desktop,HP,,,25,2017,HP Pavilion 570 Intel Core i7 7th Gen,pavilion-570-intel-core-i7-7th-gen,hp-pavilion-570-intel-core-i7-7th-gen.webp
+8602,desktop,HP,,,40,2017,HP Pavilion 580 Intel Core i7 7th Gen,pavilion-580-intel-core-i7-7th-gen,hp-pavilion-580-intel-core-i7-7th-gen.webp
+8603,desktop,HP,,,55,2020,HP ProDesk 400 G6 Intel Core i5 10th Gen,prodesk-400-g6-intel-core-i5-10th-gen,hp-prodesk-400-g6-intel-core-i5-10th-gen.webp
+8604,desktop,HP,,,70,2020,HP ProDesk 400 G6 Intel Core i7 10th Gen,prodesk-400-g6-intel-core-i7-10th-gen,hp-prodesk-400-g6-intel-core-i7-10th-gen.webp
+8605,desktop,HP,,,20,2018,HP Pavilion 590 Intel Core i3 8th Gen,pavilion-590-intel-core-i3-8th-gen,hp-pavilion-590-intel-core-i3-8th-gen.webp
+8606,desktop,HP,,,30,2018,HP Pavilion 590 Intel Core i5 8th Gen,pavilion-590-intel-core-i5-8th-gen,hp-pavilion-590-intel-core-i5-8th-gen.webp
+8607,desktop,HP,,,45,2018,HP Pavilion 590 Intel Core i7 8th Gen,pavilion-590-intel-core-i7-8th-gen,hp-pavilion-590-intel-core-i7-8th-gen.webp
+8608,desktop,HP,,,50,2019,HP Pavilion 590 Intel Core i7 9th Gen,pavilion-590-intel-core-i7-9th-gen,hp-pavilion-590-intel-core-i7-9th-gen.webp
+8609,desktop,HP,,,35,2018,HP Pavilion 595 Intel Core i5 8th Gen,pavilion-595-intel-core-i5-8th-gen,hp-pavilion-595-intel-core-i5-8th-gen.webp
+8610,desktop,HP,,,55,2018,HP Pavilion 595 Intel Core i7 8th Gen,pavilion-595-intel-core-i7-8th-gen,hp-pavilion-595-intel-core-i7-8th-gen.webp
+8611,desktop,HP,,,30,2018,HP Pavilion 690 AMD Ryzen 3,pavilion-690-amd-ryzen-3,hp-desktop.webp
+8612,desktop,HP,,,50,2018,HP Pavilion 690 AMD Ryzen 5,pavilion-690-amd-ryzen-5,hp-pavilion-690-amd-ryzen-5.webp
+8613,desktop,HP,,,65,2018,HP Pavilion 690 AMD Ryzen 7,pavilion-690-amd-ryzen-7,hp-pavilion-690-amd-ryzen-7.webp
+8614,desktop,HP,,,55,2018,HP Pavilion 690 Intel Core i5 8th Gen,pavilion-690-intel-core-i5-8th-gen,hp-pavilion-690-intel-core-i5-8th-gen.webp
+8615,desktop,HP,,,65,2019,HP Pavilion 690 Intel Core i5 9th Gen,pavilion-690-intel-core-i5-9th-gen,hp-pavilion-690-intel-core-i5-9th-gen.webp
+8616,desktop,HP,,,25,2018,HP Pavilion 790 Intel Core i3 8th Gen,pavilion-790-intel-core-i3-8th-gen,hp-pavilion-790-intel-core-i3-8th-gen.webp
+8617,desktop,HP,,,40,2018,HP Pavilion 790 Intel Core i5 8th Gen,pavilion-790-intel-core-i5-8th-gen,hp-pavilion-790-intel-core-i5-8th-gen.webp
+8618,desktop,HP,,,55,2018,HP Pavilion 790 Intel Core i7 8th Gen,pavilion-790-intel-core-i7-8th-gen,hp-pavilion-790-intel-core-i7-8th-gen.webp
+8621,desktop,HP,,,25,2018,HP ProDesk 400 G4 Intel Core i5 8th Gen,prodesk-400-g4-intel-core-i5-8th-gen,hp-prodesk-400-g4-intel-core-i5-8th-gen.webp
+8622,desktop,HP,,,30,2017,HP ProDesk 400 G4 Intel Core i7 7th Gen,prodesk-400-g4-intel-core-i7-7th-gen,hp-prodesk-400-g4-intel-core-i7-7th-gen.webp
+8623,desktop,HP,,,50,2018,HP ProDesk 400 G4 Intel Core i7 8th Gen,prodesk-400-g4-intel-core-i7-8th-gen,hp-prodesk-400-g4-intel-core-i7-8th-gen.webp
+8624,desktop,HP,,,20,2018,HP ProDesk 400 G5 Intel Core i3 8th Gen,prodesk-400-g5-intel-core-i3-8th-gen,hp-prodesk-400-g5-intel-core-i3-8th-gen.webp
+8625,desktop,HP,,,25,2018,HP ProDesk 400 G5 Intel Core i5 8th Gen,prodesk-400-g5-intel-core-i5-8th-gen,hp-prodesk-400-g5-intel-core-i5-8th-gen.webp
+8626,desktop,HP,,,30,2019,HP ProDesk 400 G5 Intel Core i5 9th Gen,prodesk-400-g5-intel-core-i5-9th-gen,hp-prodesk-400-g5-intel-core-i5-9th-gen.webp
+8627,desktop,HP,,,45,2018,HP ProDesk 400 G5 Intel Core i7 8th Gen,prodesk-400-g5-intel-core-i7-8th-gen,hp-prodesk-400-g5-intel-core-i7-8th-gen.webp
+8628,desktop,HP,,,30,2018,HP ProDesk 600 G4 Intel Core i5 8th Gen,prodesk-600-g4-intel-core-i5-8th-gen,hp-prodesk-600-g4-intel-core-i5-8th-gen.webp
+8629,desktop,HP,,,45,2018,HP ProDesk 600 G4 Intel Core i7 8th Gen,prodesk-600-g4-intel-core-i7-8th-gen,hp-prodesk-600-g4-intel-core-i7-8th-gen.webp
+8630,desktop,HP,,,30,2019,HP ProDesk 600 G5 Intel Core i5 9th Gen,prodesk-600-g5-intel-core-i5-9th-gen,hp-prodesk-600-g5-intel-core-i5-9th-gen.webp
+8631,desktop,HP,,,45,2019,HP ProDesk 600 G5 Intel Core i7 9th Gen,prodesk-600-g5-intel-core-i7-9th-gen,hp-prodesk-600-g5-intel-core-i7-9th-gen.webp
+8632,desktop,HP,,,55,2020,HP ProDesk 600 G6 Intel Core i5 10th Gen,prodesk-600-g6-intel-core-i5-10th-gen,hp-prodesk-600-g6-intel-core-i5-10th-gen.webp
+8633,desktop,HP,,,85,2020,HP ProDesk 600 G6 Intel Core i7 10th Gen,prodesk-600-g6-intel-core-i7-10th-gen,hp-prodesk-600-g6-intel-core-i7-10th-gen.webp
+8634,desktop,HP,,,25,2016,HP Z2 G3 Intel Core i5 6th Gen,z2-g3-intel-core-i5-6th-gen,hp-z2-g3-intel-core-i5-6th-gen.webp
+8635,desktop,HP,,,30,2016,HP Z2 G3 Intel Core i7 6th Gen,z2-g3-intel-core-i7-6th-gen,hp-z2-g3-intel-core-i7-6th-gen.webp
+8636,desktop,HP,,,40,2016,HP Z2 G3 Intel Xeon,z2-g3-intel-xeon,hp-z2-g3-intel-xeon.webp
+8637,desktop,HP,,,30,2018,HP Z2 G4 Intel Core i5 8th Gen,z2-g4-intel-core-i5-8th-gen,hp-z2-g4-intel-core-i5-8th-gen.webp
+8638,desktop,HP,,,30,2019,HP Z2 G4 Intel Core i5 9th Gen,z2-g4-intel-core-i5-9th-gen,hp-z2-g4-intel-core-i5-9th-gen.webp
+8639,desktop,HP,,,40,2018,HP Z2 G4 Intel Core i7 8th Gen,z2-g4-intel-core-i7-8th-gen,hp-z2-g4-intel-core-i7-8th-gen.webp
+8640,desktop,HP,,,55,2019,HP Z2 G4 Intel Core i7 9th Gen,z2-g4-intel-core-i7-9th-gen,hp-z2-g4-intel-core-i7-9th-gen.webp
+8641,desktop,HP,,,85,2019,HP Z2 G4 Intel Core i9 9th Gen,z2-g4-intel-core-i9-9th-gen,hp-z2-g4-intel-core-i9-9th-gen.webp
+8642,desktop,HP,,,90,2020,HP Z2 G4 Intel Core i9 10th Gen,z2-g4-intel-core-i9-10th-gen,hp-z2-g4-intel-core-i9-10th-gen.webp
+8643,desktop,HP,,,55,2019,HP Z2 G4 Intel Xeon,z2-g4-intel-xeon,hp-z2-g4-intel-xeon.webp
+8850,desktop,Lenovo,,,120,2019,Lenovo Legion C730 Intel Core i9 9th Gen,legion-c730-intel-core-i9-9th-gen,lenovo-legion-c730-intel-core-i9-9th-gen.webp
+8851,desktop,Lenovo,,,65,2019,Lenovo Legion T530 AMD Ryzen 7,legion-t530-amd-ryzen-7,lenovo-legion-t530-amd-ryzen-7.webp
+8852,desktop,Lenovo,,,55,2018,Lenovo Legion T530 Intel Core i5 8th Gen,legion-t530-intel-core-i5-8th-gen,lenovo-legion-t530-intel-core-i5-8th-gen.webp
+8853,desktop,Lenovo,,,65,2019,Lenovo Legion T530 Intel Core i5 9th Gen,legion-t530-intel-core-i5-9th-gen,lenovo-legion-t530-intel-core-i5-9th-gen.webp
+8854,desktop,Lenovo,,,70,2018,Lenovo Legion T530 Intel Core i7 8th Gen,legion-t530-intel-core-i7-8th-gen,lenovo-legion-t530-intel-core-i7-8th-gen.webp
+8855,desktop,Lenovo,,,85,2019,Lenovo Legion T530 Intel Core i7 9th Gen,legion-t530-intel-core-i7-9th-gen,lenovo-legion-t530-intel-core-i7-9th-gen.webp
+8856,desktop,Lenovo,,,65,2018,Lenovo Legion T730 Intel Core i5 8th Gen,legion-t730-intel-core-i5-8th-gen,lenovo-legion-t730-intel-core-i5-8th-gen.webp
+8857,desktop,Lenovo,,,105,2019,Lenovo Legion T730 Intel Core i9 9th Gen,legion-t730-intel-core-i9-9th-gen,lenovo-legion-t730-intel-core-i9-9th-gen.webp
+8859,desktop,Lenovo,,,60,2017,Lenovo Legion Y720T Intel Core i5 7th Gen,legion-y720t-intel-core-i5-7th-gen,lenovo-legion-y720t-intel-core-i5-7th-gen.webp
+8860,desktop,Lenovo,,,70,2017,Lenovo Legion Y720T Intel Core i7 7th Gen,legion-y720t-intel-core-i7-7th-gen,lenovo-legion-y720t-intel-core-i7-7th-gen.webp
+8863,desktop,Lenovo,,,25,2018,Lenovo ThinkCentre M720G Intel Core i5 8th Gen,thinkcentre-m720g-intel-core-i5-8th-gen,lenovo-thinkcentre-m720g-intel-core-i5-8th-gen.webp
+8864,desktop,Lenovo,,,40,2018,Lenovo ThinkCentre M720G Intel Core i7 8th Gen,thinkcentre-m720g-intel-core-i7-8th-gen,lenovo-thinkcentre-m720g-intel-core-i7-8th-gen.webp
+8865,desktop,Lenovo,,,95,2019,Lenovo ThinkStation P330 Intel Core i9 9th Gen,thinkstation-p330-intel-core-i9-9th-gen,lenovo-thinkstation-p330-intel-core-i9-9th-gen.webp
+8866,desktop,Lenovo,,,175,2020,Lenovo ThinkStation P920 Intel Xeon Gold,thinkstation-p920-intel-xeon-gold,lenovo-thinkstation-p920-intel-xeon-gold.webp
+8877,desktop,Corsair,,,95,2021,Corsair AMD Ryzen 5 Nvidia GTX,amd-ryzen-5-nvidia-gtx,corsair-amd-ryzen-5-nvidia-gtx.webp
+8878,desktop,Corsair,,,110,2021,Corsair AMD Ryzen 7 Nvidia GTX,amd-ryzen-7-nvidia-gtx,corsair-amd-ryzen-7-nvidia-gtx.webp
+8880,desktop,Corsair,,,95,2016,Corsair Intel Core i7 6th Gen GTX,intel-core-i7-6th-gen-gtx,corsair-intel-core-i7-6th-gen-gtx.webp
+8881,desktop,Corsair,,,110,2017,Corsair Intel Core i7 7th Gen GTX,intel-core-i7-7th-gen-gtx,corsair-intel-core-i7-7th-gen-gtx.webp
+8882,desktop,Corsair,,,110,2018,Corsair Intel Core i7 8th Gen GTX,intel-core-i7-8th-gen-gtx,corsair-intel-core-i7-8th-gen-gtx.webp
+8883,desktop,Corsair,,,130,2019,Corsair Intel Core i7 9th Gen GTX,intel-core-i7-9th-gen-gtx,corsair-intel-core-i7-9th-gen-gtx.webp
+8884,desktop,Corsair,,,120,2020,Corsair Intel Core i7 10th Gen GTX,intel-core-i7-10th-gen-gtx,corsair-intel-core-i7-10th-gen-gtx.webp
+8885,desktop,Corsair,,,130,2021,Corsair Intel Core i7 11th Gen GTX,intel-core-i7-11th-gen-gtx,corsair-intel-core-i7-11th-gen-gtx.webp
+8886,desktop,Corsair,,,155,2019,Corsair Intel Core i9 9th Gen GTX,intel-core-i9-9th-gen-gtx,corsair-intel-core-i9-9th-gen-gtx.webp
+8887,desktop,CyberPowerPC,,,90,2020,CyberPowerPC AMD Ryzen 5 GTX,amd-ryzen-5-gtx,cyberpowerpc-amd-ryzen-5-gtx.webp
+8888,desktop,CyberPowerPC,,,120,2020,CyberPowerPC AMD Ryzen 7 GTX,amd-ryzen-7-gtx,cyberpowerpc-amd-ryzen-7-gtx.webp
+8889,desktop,CyberPowerPC,,,120,2020,CyberPowerPC Intel Core i5 11th Gen,intel-core-i5-11th-gen,cyberpowerpc-intel-core-i5-11th-gen.webp
+8890,desktop,CyberPowerPC,,,110,2020,CyberPowerPC Intel Core i5 10th Gen,intel-core-i5-10th-gen,cyberpowerpc-intel-core-i5-10th-gen.webp
+8891,desktop,CyberPowerPC,,,95,2018,CyberPowerPC Intel Core i5 8th Gen,intel-core-i5-8th-gen,cyberpowerpc-intel-core-i5-8th-gen.webp
+8892,desktop,CyberPowerPC,,,105,2019,CyberPowerPC Intel Core i5 9th Gen,intel-core-i5-9th-gen,cyberpowerpc-intel-core-i5-9th-gen.webp
+8893,desktop,CyberPowerPC,,,110,2016,CyberPowerPC Intel Core i7 6th Gen,intel-core-i7-6th-gen,cyberpowerpc-intel-core-i7-6th-gen.webp
+8894,desktop,CyberPowerPC,,,115,2017,CyberPowerPC Intel Core i7 7th Gen,intel-core-i7-7th-gen,cyberpowerpc-intel-core-i7-7th-gen.webp
+8895,desktop,CyberPowerPC,,,120,2018,CyberPowerPC Intel Core i7 8th Gen,intel-core-i7-8th-gen,cyberpowerpc-intel-core-i7-8th-gen.webp
+8896,desktop,CyberPowerPC,,,130,2019,CyberPowerPC Intel Core i7 9th Gen,intel-core-i7-9th-gen,cyberpowerpc-intel-core-i7-9th-gen.webp
+8897,desktop,CyberPowerPC,,,175,2019,CyberPowerPC Intel Core i9 9th Gen,intel-core-i9-9th-gen,cyberpowerpc-intel-core-i9-9th-gen.webp
+8898,desktop,iBuyPower,,,25,2016,iBuyPower Intel Core i5 6th Gen,intel-core-i5-6th-gen,ibuypower-intel-core-i5-6th-gen.webp
+8899,desktop,iBuyPower,,,55,2018,iBuyPower Intel Core i5 8th Gen,intel-core-i5-8th-gen,ibuypower-intel-core-i5-8th-gen.webp
+8900,desktop,iBuyPower,,,30,2016,iBuyPower Intel Core i7 6th Gen,intel-core-i7-6th-gen,ibuypower-intel-core-i7-6th-gen.webp
+8901,desktop,iBuyPower,,,85,2017,iBuyPower Intel Core i7 7th Gen,intel-core-i7-7th-gen,ibuypower-intel-core-i7-7th-gen.webp
+8902,desktop,iBuyPower,,,90,2018,iBuyPower Intel Core i7 8th Gen,intel-core-i7-8th-gen,ibuypower-intel-core-i7-8th-gen.webp
+8903,desktop,iBuyPower,,,60,2019,iBuyPower Intel Core i5 9th Gen,intel-core-i5-9th-gen,ibuypower-intel-core-i5-9th-gen.webp
+8904,desktop,iBuyPower,,,110,2019,iBuyPower Intel Core i7 9th Gen,intel-core-i7-9th-gen,ibuypower-intel-core-i7-9th-gen.webp
+8905,desktop,iBuyPower,,,160,2019,iBuyPower Intel Core i9 9th Gen,intel-core-i9-9th-gen,ibuypower-intel-core-i9-9th-gen.webp
+8906,desktop,MSI,,,95,2016,MSI Aegis 3 Intel Core i7 6th Gen,aegis-3-intel-core-i7-6th-gen,msi-aegis-3-intel-core-i7-6th-gen.webp
+8907,desktop,MSI,,,110,2017,MSI Aegis 3 Intel Core i7 7th Gen,aegis-3-intel-core-i7-7th-gen,msi-aegis-3-intel-core-i7-7th-gen.webp
+8908,desktop,MSI,,,50,2018,MSI Codex XE Intel Core i5 8th Gen,codex-xe-intel-core-i5-8th-gen,msi-codex-xe-intel-core-i5-8th-gen.webp
+8909,desktop,MSI,,,90,2018,MSI Codex XE Intel Core i7 8th Gen,codex-xe-intel-core-i7-8th-gen,msi-codex-xe-intel-core-i7-8th-gen.webp
+8910,desktop,MSI,,,65,2018,MSI Trident 3 Intel Core i5 8th Gen,trident-3-intel-core-i5-8th-gen,msi-trident-3-intel-core-i5-8th-gen.webp
+8911,desktop,MSI,,,55,2017,MSI Trident 3 Intel Core i5 7th Gen,trident-3-intel-core-i5-7th-gen,msi-trident-3-intel-core-i5-7th-gen.webp
+8912,desktop,MSI,,,85,2019,MSI Trident 3 Intel Core i5 9th Gen,trident-3-intel-core-i5-9th-gen,msi-trident-3-intel-core-i5-9th-gen.webp
+8913,desktop,MSI,,,95,2020,MSI Trident 3 Intel Core i5 10th Gen,trident-3-intel-core-i5-10th-gen,msi-trident-3-intel-core-i5-10th-gen.webp
+8914,desktop,MSI,,,65,2017,MSI Trident 3 Intel Core i7 7th Gen,trident-3-intel-core-i7-7th-gen,msi-trident-3-intel-core-i7-7th-gen.webp
+8915,desktop,MSI,,,80,2018,MSI Trident 3 Intel Core i7 8th Gen,trident-3-intel-core-i7-8th-gen,msi-trident-3-intel-core-i7-8th-gen.webp
+8916,desktop,MSI,,,85,2019,MSI Trident 3 Intel Core i7 9th Gen,trident-3-intel-core-i7-9th-gen,msi-trident-3-intel-core-i7-9th-gen.webp
+8917,desktop,MSI,,,105,2020,MSI Trident 3 Intel Core i7 10th Gen,trident-3-intel-core-i7-10th-gen,msi-trident-3-intel-core-i7-10th-gen.webp
+8918,desktop,MSI,,,120,2019,MSI Trident X Plus Intel Core i7 9th Gen,trident-x-plus-intel-core-i7-9th-gen,msi-trident-x-plus-intel-core-i7-9th-gen.webp
+8919,desktop,MSI,,,130,2020,MSI Trident X Plus Intel Core i7 10th Gen,trident-x-plus-intel-core-i7-10th-gen,msi-trident-x-plus-intel-core-i7-10th-gen.webp
+8920,desktop,MSI,,,170,2019,MSI Trident X Plus Intel Core i9 9th Gen,trident-x-plus-intel-core-i9-9th-gen,msi-trident-x-plus-intel-core-i9-9th-gen.webp
+8921,desktop,MSI,,,200,2020,MSI Trident X Plus Intel Core i9 10th Gen,trident-x-plus-intel-core-i9-10th-gen,msi-trident-x-plus-intel-core-i9-10th-gen.webp
+8922,desktop,MSI,,,130,2016,MSI Vortex G65VR Intel Core i7 6th Gen,vortex-g65vr-intel-core-i7-6th-gen,msi-vortex-g65vr-intel-core-i7-6th-gen.webp
+8923,desktop,MSI,,,155,2017,MSI Vortex G65VR Intel Core i7 7th Gen,vortex-g65vr-intel-core-i7-7th-gen,msi-vortex-g65vr-intel-core-i7-7th-gen.webp
+8924,desktop,MSI,,,175,2018,MSI Vortex W25 Intel Core i7 8th Gen,vortex-w25-intel-core-i7-8th-gen,msi-vortex-w25-intel-core-i7-8th-gen.webp
+8925,desktop,Zotac,,,40,2017,Zotac Magnus EK51060 Intel Core i5 7th Gen,magnus-ek51060-intel-core-i5-7th-gen,zotac-magnus-ek51060-intel-core-i5-7th-gen.webp
+8926,desktop,Zotac,,,50,2017,Zotac Magnus EK51060 Intel Core i7 7th Gen,magnus-ek51060-intel-core-i7-7th-gen,zotac-magnus-ek51060-intel-core-i7-7th-gen.webp
+12203,desktop,Acer,,,90,2019,Acer Nitro 50 Intel Core i5 10th Gen,nitro-50-intel-core-i5-10th-gen,acer-desktop.webp
+11179,desktop,Alienware,,,115,2017,Alienware Area 51 R5 Intel Core i7 9th Gen,area-51-r5-intel-core-i7-9th-gen,alienware-desktop.webp
+11180,desktop,Alienware,,,170,2017,Alienware Area 51 R5 Intel Core i9 9th Gen,area-51-r5-intel-core-i9-9th-gen,alienware-desktop.webp
+11181,desktop,Alienware,,,50,2021,Alienware Aurora R10 AMD Ryzen 5 NO GPU,aurora-r10-amd-ryzen-5-no-gpu,alienware-aurora-r10-amd-ryzen-5-no-gpu.webp
+11182,desktop,Alienware,,,90,2021,Alienware Aurora R10 AMD Ryzen 5 Nvidia GTX,aurora-r10-amd-ryzen-5-nvidia-gtx,alienware-aurora-r10-amd-ryzen-5-nvidia-gtx.webp
+11183,desktop,Alienware,,,130,2021,Alienware Aurora R10 AMD Ryzen 5 Nvidia RTX,aurora-r10-amd-ryzen-5-nvidia-rtx,alienware-aurora-r10-amd-ryzen-5-nvidia-rtx.webp
+11184,desktop,Alienware,,,60,2021,Alienware Aurora R10 AMD Ryzen 7 NO GPU,aurora-r10-amd-ryzen-7-no-gpu,alienware-aurora-r10-amd-ryzen-7-no-gpu.webp
+11185,desktop,Alienware,,,105,2021,Alienware Aurora R10 AMD Ryzen 7 Nvidia GTX,aurora-r10-amd-ryzen-7-nvidia-gtx,alienware-aurora-r10-amd-ryzen-7-nvidia-gtx.webp
+11186,desktop,Alienware,,,140,2021,Alienware Aurora R10 AMD Ryzen 7 Nvidia RTX,aurora-r10-amd-ryzen-7-nvidia-rtx,alienware-aurora-r10-amd-ryzen-7-nvidia-rtx.webp
+11187,desktop,Alienware,,,75,2021,Alienware Aurora R10 AMD Ryzen 9 NO GPU,aurora-r10-amd-ryzen-9-no-gpu,alienware-aurora-r10-amd-ryzen-9-no-gpu.webp
+11188,desktop,Alienware,,,110,2021,Alienware Aurora R10 AMD Ryzen 9 Nvidia GTX,aurora-r10-amd-ryzen-9-nvidia-gtx,alienware-aurora-r10-amd-ryzen-9-nvidia-gtx.webp
+11189,desktop,Alienware,,,155,2021,Alienware Aurora R10 AMD Ryzen 9 Nvidia RTX,aurora-r10-amd-ryzen-9-nvidia-rtx,alienware-aurora-r10-amd-ryzen-9-nvidia-rtx.webp
+11191,desktop,Alienware,,,60,2021,Alienware Aurora R11 Intel Core i5 10th Gen NO GPU,aurora-r11-intel-core-i5-10th-gen-no-gpu,alienware-aurora-r11-intel-core-i5-10th-gen-no-gpu.webp
+11192,desktop,Alienware,,,85,2021,Alienware Aurora R11 Intel Core i5 10th Gen Nvidia GTX,aurora-r11-intel-core-i5-10th-gen-nvidia-gtx,alienware-aurora-r11-intel-core-i5-10th-gen-nvidia-gtx.webp
+11193,desktop,Alienware,,,75,2021,Alienware Aurora R11 Intel Core i7 10th Gen NO GPU,aurora-r11-intel-core-i7-10th-gen-no-gpu,alienware-aurora-r11-intel-core-i7-10th-gen-no-gpu.webp
+11194,desktop,Alienware,,,105,2021,Alienware Aurora R11 Intel Core i7 10th Gen Nvidia GTX,aurora-r11-intel-core-i7-10th-gen-nvidia-gtx,alienware-aurora-r11-intel-core-i7-10th-gen-nvidia-gtx.webp
+11195,desktop,Alienware,,,110,2021,Alienware Aurora R11 Intel Core i7 10th Gen Nvidia RTX 2060,aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-2060,alienware-aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-2060.webp
+11196,desktop,Alienware,,,120,2021,Alienware Aurora R11 Intel Core i7 10th Gen Nvidia RTX 2070,aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-2070,alienware-aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-2070.webp
+11197,desktop,Alienware,,,120,2021,Alienware Aurora R11 Intel Core i7 10th Gen Nvidia RTX 2080,aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-2080,alienware-aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-2080.webp
+11198,desktop,Alienware,,,165,2021,Alienware Aurora R11 Intel Core i7 10th Gen Nvidia RTX 3060,aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-3060,alienware-aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-3060.webp
+11199,desktop,Alienware,,,170,2021,Alienware Aurora R11 Intel Core i7 10th Gen Nvidia RTX 3070,aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-3070,alienware-aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-3070.webp
+11200,desktop,Alienware,,,185,2021,Alienware Aurora R11 Intel Core i7 10th Gen Nvidia RTX 3080,aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-3080,alienware-aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-3080.webp
+11201,desktop,Alienware,,,210,2021,Alienware Aurora R11 Intel Core i7 10th Gen Nvidia RTX 3090,aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-3090,alienware-aurora-r11-intel-core-i7-10th-gen-nvidia-rtx-3090.webp
+11202,desktop,Alienware,,,85,2021,Alienware Aurora R11 Intel Core i9 10th Gen NO GPU,aurora-r11-intel-core-i9-10th-gen-no-gpu,alienware-aurora-r11-intel-core-i9-10th-gen-no-gpu.webp
+11203,desktop,Alienware,,,170,2021,Alienware Aurora R11 Intel Core i9 10th Gen Nvidia RTX 2070,aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-2070,alienware-aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-2070.webp
+11204,desktop,Alienware,,,190,2021,Alienware Aurora R11 Intel Core i9 10th Gen Nvidia RTX 2080,aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-2080,alienware-aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-2080.webp
+11205,desktop,Alienware,,,210,2021,Alienware Aurora R11 Intel Core i9 10th Gen Nvidia RTX 3060,aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-3060,alienware-aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-3060.webp
+11206,desktop,Alienware,,,240,2021,Alienware Aurora R11 Intel Core i9 10th Gen Nvidia RTX 3070,aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-3070,alienware-aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-3070.webp
+11207,desktop,Alienware,,,270,2021,Alienware Aurora R11 Intel Core i9 10th Gen Nvidia RTX 3080,aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-3080,alienware-aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-3080.webp
+11208,desktop,Alienware,,,290,2021,Alienware Aurora R11 Intel Core i9 10th Gen Nvidia RTX 3090,aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-3090,alienware-aurora-r11-intel-core-i9-10th-gen-nvidia-rtx-3090.webp
+11209,desktop,Alienware,,,65,2021,Alienware Aurora R12 Intel Core i5 11th Gen NO GPU,aurora-r12-intel-core-i5-11th-gen-no-gpu,alienware-aurora-r12-intel-core-i5-11th-gen-no-gpu.webp
+11210,desktop,Alienware,,,90,2021,Alienware Aurora R12 Intel Core i5 11th Gen Nvidia GTX,aurora-r12-intel-core-i5-11th-gen-nvidia-gtx,alienware-aurora-r12-intel-core-i5-11th-gen-nvidia-gtx.webp
+11211,desktop,Alienware,,,130,2021,Alienware Aurora R12 Intel Core i5 11th Gen Nvidia RTX 3060,aurora-r12-intel-core-i5-11th-gen-nvidia-rtx-3060,alienware-aurora-r12-intel-core-i5-11th-gen-nvidia-rtx-3060.webp
+11212,desktop,Alienware,,,140,2021,Alienware Aurora R12 Intel Core i5 11th Gen Nvidia RTX 3070,aurora-r12-intel-core-i5-11th-gen-nvidia-rtx-3070,alienware-aurora-r12-intel-core-i5-11th-gen-nvidia-rtx-3070.webp
+11213,desktop,Alienware,,,170,2021,Alienware Aurora R12 Intel Core i5 11th Gen Nvidia RTX 3080,aurora-r12-intel-core-i5-11th-gen-nvidia-rtx-3080,alienware-aurora-r12-intel-core-i5-11th-gen-nvidia-rtx-3080.webp
+11214,desktop,Alienware,,,200,2021,Alienware Aurora R12 Intel Core i5 11th Gen Nvidia RTX 3090,aurora-r12-intel-core-i5-11th-gen-nvidia-rtx-3090,alienware-aurora-r12-intel-core-i5-11th-gen-nvidia-rtx-3090.webp
+11215,desktop,Alienware,,,80,2021,Alienware Aurora R12 Intel Core i7 11th Gen NO GPU,aurora-r12-intel-core-i7-11th-gen-no-gpu,alienware-aurora-r12-intel-core-i7-11th-gen-no-gpu.webp
+11216,desktop,Alienware,,,115,2021,Alienware Aurora R12 Intel Core i7 11th Gen Nvidia GTX,aurora-r12-intel-core-i7-11th-gen-nvidia-gtx,alienware-aurora-r12-intel-core-i7-11th-gen-nvidia-gtx.webp
+11217,desktop,Alienware,,,170,2021,Alienware Aurora R12 Intel Core i7 11th Gen Nvidia RTX 3060,aurora-r12-intel-core-i7-11th-gen-nvidia-rtx-3060,alienware-aurora-r12-intel-core-i7-11th-gen-nvidia-rtx-3060.webp
+11218,desktop,Alienware,,,185,2021,Alienware Aurora R12 Intel Core i7 11th Gen Nvidia RTX 3070,aurora-r12-intel-core-i7-11th-gen-nvidia-rtx-3070,alienware-aurora-r12-intel-core-i7-11th-gen-nvidia-rtx-3070.webp
+11219,desktop,Alienware,,,200,2021,Alienware Aurora R12 Intel Core i7 11th Gen Nvidia RTX 3080,aurora-r12-intel-core-i7-11th-gen-nvidia-rtx-3080,alienware-aurora-r12-intel-core-i7-11th-gen-nvidia-rtx-3080.webp
+11220,desktop,Alienware,,,225,2021,Alienware Aurora R12 Intel Core i7 11th Gen Nvidia RTX 3090,aurora-r12-intel-core-i7-11th-gen-nvidia-rtx-3090,alienware-aurora-r12-intel-core-i7-11th-gen-nvidia-rtx-3090.webp
+11221,desktop,Alienware,,,90,2021,Alienware Aurora R12 Intel Core i9 11th Gen NO GPU,aurora-r12-intel-core-i9-11th-gen-no-gpu,alienware-aurora-r12-intel-core-i9-11th-gen-no-gpu.webp
+11222,desktop,Alienware,,,225,2021,Alienware Aurora R12 Intel Core i9 11th Gen Nvidia RTX 3060,aurora-r12-intel-core-i9-11th-gen-nvidia-rtx-3060,alienware-aurora-r12-intel-core-i9-11th-gen-nvidia-rtx-3060.webp
+11223,desktop,Alienware,,,255,2021,Alienware Aurora R12 Intel Core i9 11th Gen Nvidia RTX 3070,aurora-r12-intel-core-i9-11th-gen-nvidia-rtx-3070,alienware-aurora-r12-intel-core-i9-11th-gen-nvidia-rtx-3070.webp
+11224,desktop,Alienware,,,280,2021,Alienware Aurora R12 Intel Core i9 11th Gen Nvidia RTX 3080,aurora-r12-intel-core-i9-11th-gen-nvidia-rtx-3080,alienware-aurora-r12-intel-core-i9-11th-gen-nvidia-rtx-3080.webp
+11225,desktop,Alienware,,,330,2021,Alienware Aurora R12 Intel Core i9 11th Gen Nvidia RTX 3090,aurora-r12-intel-core-i9-11th-gen-nvidia-rtx-3090,alienware-aurora-r12-intel-core-i9-11th-gen-nvidia-rtx-3090.webp
+11226,desktop,Alienware,,,85,2021,Alienware Aurora R13 Intel Core i5 12th Gen NO GPU,aurora-r13-intel-core-i5-12th-gen-no-gpu,alienware-aurora-r13-intel-core-i5-12th-gen-no-gpu.webp
+11227,desktop,Alienware,,,105,2021,Alienware Aurora R13 Intel Core i5 12th Gen Nvidia GTX,aurora-r13-intel-core-i5-12th-gen-nvidia-gtx,alienware-aurora-r13-intel-core-i5-12th-gen-nvidia-gtx.webp
+11228,desktop,Alienware,,,145,2021,Alienware Aurora R13 Intel Core i5 12th Gen Nvidia RTX 3060,aurora-r13-intel-core-i5-12th-gen-nvidia-rtx-3060,alienware-aurora-r13-intel-core-i5-12th-gen-nvidia-rtx-3060.webp
+11229,desktop,Alienware,,,155,2021,Alienware Aurora R13 Intel Core i5 12th Gen Nvidia RTX 3070,aurora-r13-intel-core-i5-12th-gen-nvidia-rtx-3070,alienware-aurora-r13-intel-core-i5-12th-gen-nvidia-rtx-3070.webp
+11230,desktop,Alienware,,,180,2021,Alienware Aurora R13 Intel Core i5 12th Gen Nvidia RTX 3080,aurora-r13-intel-core-i5-12th-gen-nvidia-rtx-3080,alienware-aurora-r13-intel-core-i5-12th-gen-nvidia-rtx-3080.webp
+11231,desktop,Alienware,,,220,2021,Alienware Aurora R13 Intel Core i5 12th Gen Nvidia RTX 3090,aurora-r13-intel-core-i5-12th-gen-nvidia-rtx-3090,alienware-aurora-r13-intel-core-i5-12th-gen-nvidia-rtx-3090.webp
+11232,desktop,Alienware,,,85,2021,Alienware Aurora R13 Intel Core i7 12th Gen NO GPU,aurora-r13-intel-core-i7-12th-gen-no-gpu,alienware-aurora-r13-intel-core-i7-12th-gen-no-gpu.webp
+11233,desktop,Alienware,,,120,2021,Alienware Aurora R13 Intel Core i7 12th Gen Nvidia GTX,aurora-r13-intel-core-i7-12th-gen-nvidia-gtx,alienware-aurora-r13-intel-core-i7-12th-gen-nvidia-gtx.webp
+11234,desktop,Alienware,,,155,2021,Alienware Aurora R13 Intel Core i7 12th Gen Nvidia RTX 3060,aurora-r13-intel-core-i7-12th-gen-nvidia-rtx-3060,alienware-aurora-r13-intel-core-i7-12th-gen-nvidia-rtx-3060.webp
+11235,desktop,Alienware,,,170,2021,Alienware Aurora R13 Intel Core i7 12th Gen Nvidia RTX 3070,aurora-r13-intel-core-i7-12th-gen-nvidia-rtx-3070,alienware-aurora-r13-intel-core-i7-12th-gen-nvidia-rtx-3070.webp
+11236,desktop,Alienware,,,190,2021,Alienware Aurora R13 Intel Core i7 12th Gen Nvidia RTX 3080,aurora-r13-intel-core-i7-12th-gen-nvidia-rtx-3080,alienware-aurora-r13-intel-core-i7-12th-gen-nvidia-rtx-3080.webp
+11237,desktop,Alienware,,,240,2021,Alienware Aurora R13 Intel Core i7 12th Gen Nvidia RTX 3090,aurora-r13-intel-core-i7-12th-gen-nvidia-rtx-3090,alienware-aurora-r13-intel-core-i7-12th-gen-nvidia-rtx-3090.webp
+11238,desktop,Alienware,,,90,2021,Alienware Aurora R13 Intel Core i9 12th Gen NO GPU,aurora-r13-intel-core-i9-12th-gen-no-gpu,alienware-aurora-r13-intel-core-i9-12th-gen-no-gpu.webp
+11239,desktop,Alienware,,,160,2021,Alienware Aurora R13 Intel Core i9 12th Gen Nvidia GTX,aurora-r13-intel-core-i9-12th-gen-nvidia-gtx,alienware-aurora-r13-intel-core-i9-12th-gen-nvidia-gtx.webp
+11240,desktop,Alienware,,,225,2021,Alienware Aurora R13 Intel Core i9 12th Gen Nvidia RTX 3060,aurora-r13-intel-core-i9-12th-gen-nvidia-rtx-3060,alienware-aurora-r13-intel-core-i9-12th-gen-nvidia-rtx-3060.webp
+11241,desktop,Alienware,,,260,2021,Alienware Aurora R13 Intel Core i9 12th Gen Nvidia RTX 3070,aurora-r13-intel-core-i9-12th-gen-nvidia-rtx-3070,alienware-aurora-r13-intel-core-i9-12th-gen-nvidia-rtx-3070.webp
+11242,desktop,Alienware,,,340,2021,Alienware Aurora R13 Intel Core i9 12th Gen Nvidia RTX 3090,aurora-r13-intel-core-i9-12th-gen-nvidia-rtx-3090,alienware-aurora-r13-intel-core-i9-12th-gen-nvidia-rtx-3090.webp
+11243,desktop,Alienware,,,300,2021,Alienware Aurora R13 Intel Core i9 12th Gen Nvidia RTX 3080,aurora-r13-intel-core-i9-12th-gen-nvidia-rtx-3080,alienware-aurora-r13-intel-core-i9-12th-gen-nvidia-rtx-3080.webp
+11244,desktop,Alienware,,,35,2019,Alienware Aurora R14 AMD Ryzen 5 Gen NO GPU,aurora-r14-amd-ryzen-5-gen-no-gpu,alienware-aurora-r14-amd-ryzen-5-gen-no-gpu.webp
+11245,desktop,Alienware,,,105,2019,Alienware Aurora R14 AMD Ryzen 5 Nvidia RTX 3060,aurora-r14-amd-ryzen-5-nvidia-rtx-3060,alienware-aurora-r14-amd-ryzen-5-nvidia-rtx-3060.webp
+11246,desktop,Alienware,,,110,2019,Alienware Aurora R14 AMD Ryzen 5 Nvidia RTX 3070,aurora-r14-amd-ryzen-5-nvidia-rtx-3070,alienware-aurora-r14-amd-ryzen-5-nvidia-rtx-3070.webp
+11247,desktop,Alienware,,,130,2019,Alienware Aurora R14 AMD Ryzen 5 Nvidia RTX 3080,aurora-r14-amd-ryzen-5-nvidia-rtx-3080,alienware-aurora-r14-amd-ryzen-5-nvidia-rtx-3080.webp
+11248,desktop,Alienware,,,145,2019,Alienware Aurora R14 AMD Ryzen 5 Nvidia RTX 3090,aurora-r14-amd-ryzen-5-nvidia-rtx-3090,alienware-aurora-r14-amd-ryzen-5-nvidia-rtx-3090.webp
+11249,desktop,Alienware,,,45,2020,Alienware Aurora R14 AMD Ryzen 7 Gen NO GPU,aurora-r14-amd-ryzen-7-gen-no-gpu,alienware-aurora-r14-amd-ryzen-7-gen-no-gpu.webp
+11250,desktop,Alienware,,,120,2020,Alienware Aurora R14 AMD Ryzen 7 Nvidia RTX 3060,aurora-r14-amd-ryzen-7-nvidia-rtx-3060,alienware-aurora-r14-amd-ryzen-7-nvidia-rtx-3060.webp
+11251,desktop,Alienware,,,140,2020,Alienware Aurora R14 AMD Ryzen 7 Nvidia RTX 3070,aurora-r14-amd-ryzen-7-nvidia-rtx-3070,alienware-aurora-r14-amd-ryzen-7-nvidia-rtx-3070.webp
+11252,desktop,Alienware,,,165,2020,Alienware Aurora R14 AMD Ryzen 7 Nvidia RTX 3080,aurora-r14-amd-ryzen-7-nvidia-rtx-3080,alienware-aurora-r14-amd-ryzen-7-nvidia-rtx-3080.webp
+11253,desktop,Alienware,,,175,2020,Alienware Aurora R14 AMD Ryzen 7 Nvidia RTX 3090,aurora-r14-amd-ryzen-7-nvidia-rtx-3090,alienware-aurora-r14-amd-ryzen-7-nvidia-rtx-3090.webp
+11254,desktop,Alienware,,,55,2021,Alienware Aurora R14 AMD Ryzen 9 Gen NO GPU,aurora-r14-amd-ryzen-9-gen-no-gpu,alienware-aurora-r14-amd-ryzen-9-gen-no-gpu.webp
+11255,desktop,Alienware,,,155,2021,Alienware Aurora R14 AMD Ryzen 9 Nvidia RTX 3060,aurora-r14-amd-ryzen-9-nvidia-rtx-3060,alienware-aurora-r14-amd-ryzen-9-nvidia-rtx-3060.webp
+11256,desktop,Alienware,,,170,2021,Alienware Aurora R14 AMD Ryzen 9 Nvidia RTX 3070,aurora-r14-amd-ryzen-9-nvidia-rtx-3070,alienware-aurora-r14-amd-ryzen-9-nvidia-rtx-3070.webp
+11257,desktop,Alienware,,,190,2021,Alienware Aurora R14 AMD Ryzen 9 Nvidia RTX 3080,aurora-r14-amd-ryzen-9-nvidia-rtx-3080,alienware-aurora-r14-amd-ryzen-9-nvidia-rtx-3080.webp
+11258,desktop,Alienware,,,250,2021,Alienware Aurora R14 AMD Ryzen 9 Nvidia RTX 3090,aurora-r14-amd-ryzen-9-nvidia-rtx-3090,alienware-aurora-r14-amd-ryzen-9-nvidia-rtx-3090.webp
+11259,desktop,Alienware,,,50,2017,Alienware Aurora R6 Intel Core i7 7th Gen NO GPU,aurora-r6-intel-core-i7-7th-gen-no-gpu,alienware-aurora-r6-intel-core-i7-7th-gen-no-gpu.webp
+11260,desktop,Alienware,,,60,2017,Alienware Aurora R6 Intel Core i7 7th Gen Nvidia GTX,aurora-r6-intel-core-i7-7th-gen-nvidia-gtx,alienware-aurora-r6-intel-core-i7-7th-gen-nvidia-gtx.webp
+11261,desktop,Alienware,,,55,2018,Alienware Aurora R7 Intel Core i7 8th Gen NO GPU,aurora-r7-intel-core-i7-8th-gen-no-gpu,alienware-aurora-r7-intel-core-i7-8th-gen-no-gpu.webp
+11262,desktop,Alienware,,,60,2018,Alienware Aurora R7 Intel Core i7 8th Gen Nvidia GTX,aurora-r7-intel-core-i7-8th-gen-nvidia-gtx,alienware-aurora-r7-intel-core-i7-8th-gen-nvidia-gtx.webp
+11263,desktop,Alienware,,,65,2019,Alienware Aurora R8 Intel Core i7 9th Gen Nvidia GTX,aurora-r8-intel-core-i7-9th-gen-nvidia-gtx,alienware-aurora-r8-intel-core-i7-9th-gen-nvidia-gtx.webp
+11264,desktop,Alienware,,,85,2019,Alienware Aurora R8 Intel Core i7 9th Gen Nvidia RTX,aurora-r8-intel-core-i7-9th-gen-nvidia-rtx,alienware-aurora-r8-intel-core-i7-9th-gen-nvidia-rtx.webp
+11265,desktop,Alienware,,,65,2020,Alienware Aurora R8 Intel Core i9 9th Gen NO GPU,aurora-r8-intel-core-i9-9th-gen-no-gpu,alienware-aurora-r8-intel-core-i9-9th-gen-no-gpu.webp
+11266,desktop,Alienware,,,105,2020,Alienware Aurora R8 Intel Core i9 9th Gen Nvidia GTX,aurora-r8-intel-core-i9-9th-gen-nvidia-gtx,alienware-aurora-r8-intel-core-i9-9th-gen-nvidia-gtx.webp
+11267,desktop,Alienware,,,120,2020,Alienware Aurora R8 Intel Core i9 9th Gen Nvidia RTX,aurora-r8-intel-core-i9-9th-gen-nvidia-rtx,alienware-aurora-r8-intel-core-i9-9th-gen-nvidia-rtx.webp
+11268,desktop,Alienware,,,70,2019,Alienware Aurora R9 Intel Core i7 9th Gen Nvidia GTX,aurora-r9-intel-core-i7-9th-gen-nvidia-gtx,alienware-aurora-r9-intel-core-i7-9th-gen-nvidia-gtx.webp
+11269,desktop,Alienware,,,85,2019,Alienware Aurora R9 Intel Core i7 9th Gen Nvidia RTX,aurora-r9-intel-core-i7-9th-gen-nvidia-rtx,alienware-aurora-r9-intel-core-i7-9th-gen-nvidia-rtx.webp
+11270,desktop,Alienware,,,75,2020,Alienware Aurora R9 Intel Core i9 9th Gen NO GPU,aurora-r9-intel-core-i9-9th-gen-no-gpu,alienware-aurora-r9-intel-core-i9-9th-gen-no-gpu.webp
+11271,desktop,Alienware,,,130,2020,Alienware Aurora R9 Intel Core i9 9th Gen Nvidia RTX,aurora-r9-intel-core-i9-9th-gen-nvidia-rtx,alienware-aurora-r9-intel-core-i9-9th-gen-nvidia-rtx.webp
+11272,desktop,ASUS,,,35,2020,ASUS ROG Strix G15DH AMD Ryzen 5,rog-strix-g15dh-amd-ryzen-5,asus-rog-strix-g15dh-amd-ryzen-5.webp
+11273,desktop,ASUS,,,45,2020,ASUS ROG Strix G15DH AMD Ryzen 7,rog-strix-g15dh-amd-ryzen-7,asus-rog-strix-g15dh-amd-ryzen-7.webp
+11274,desktop,ASUS,,,75,2021,ASUS ROG Strix G35DX AMD Ryzen 7,rog-strix-g35dx-amd-ryzen-7,asus-rog-strix-g35dx-amd-ryzen-7.webp
+11275,desktop,ASUS,,,60,2020,ASUS ROG Strix G15CK Intel Core i5 10th Gen,rog-strix-g15ck-intel-core-i5-10th-gen,asus-rog-strix-g15ck-intel-core-i5-10th-gen.webp
+11276,desktop,ASUS,,,130,2020,ASUS ROG Strix GT15 Intel Core i7 10th Gen,rog-strix-gt15-intel-core-i7-10th-gen,asus-rog-strix-gt15-intel-core-i7-10th-gen.webp
+11277,desktop,ASUS,,,165,2020,ASUS ROG Strix G35CZ Intel Core i9 10th Gen,rog-strix-g35cz-intel-core-i9-10th-gen,asus-rog-strix-g35cz-intel-core-i9-10th-gen.webp
+11278,desktop,HP,,,55,2019,HP EliteDesk 800 G5 Mini Intel Core i7 9th Gen,elitedesk-800-g5-mini-intel-core-i7-9th-gen,hp-elitedesk-800-g5-mini-intel-core-i7-9th-gen.webp
+11279,desktop,Lenovo,,,35,2019,Lenovo IdeaCentre C5 Intel Core i5 10th Gen,ideacentre-c5-intel-core-i5-10th-gen,lenovo-ideacentre-c5-intel-core-i5-10th-gen.webp
+11280,desktop,Lenovo,,,50,2019,Lenovo IdeaCentre C5 Intel Core i7 10th Gen,ideacentre-c5-intel-core-i7-10th-gen,lenovo-ideacentre-c5-intel-core-i7-10th-gen.webp
+11281,desktop,Lenovo,,,30,2017,Lenovo IdeaCentre Y700 Intel Core i7 7th Gen,ideacentre-y700-intel-core-i7-7th-gen,lenovo-ideacentre-y700-intel-core-i7-7th-gen.webp
+11282,desktop,Lenovo,,,25,2017,Lenovo IdeaCentre Y700 Intel Core i5 7th Gen,ideacentre-y700-intel-core-i5-7th-gen,lenovo-ideacentre-y700-intel-core-i5-7th-gen.webp
+11283,desktop,Lenovo,,,30,2017,Lenovo IdeaCentre Y900 Intel Core i7 7th Gen,ideacentre-y900-intel-core-i7-7th-gen,lenovo-ideacentre-y900-intel-core-i7-7th-gen.webp
+11284,desktop,Lenovo,,,25,2017,Lenovo IdeaCentre Y900 Intel Core i5 7th Gen,ideacentre-y900-intel-core-i5-7th-gen,lenovo-ideacentre-y900-intel-core-i5-7th-gen.webp
+11287,desktop,Zotac,,,45,2017,Zotac Magnus EK51070 Intel Core i5 7th Gen,magnus-ek51070-intel-core-i5-7th-gen,zotac-magnus-ek51070-intel-core-i5-7th-gen.webp
+11288,desktop,Zotac,,,55,2017,Zotac Magnus EK51070 Intel Core i7 7th Gen,magnus-ek51070-intel-core-i7-7th-gen,zotac-magnus-ek51070-intel-core-i7-7th-gen.webp
+11290,desktop,DigitalStorm,,,110,2018,DigitalStorm Lynx Intel Core i7 9th Gen,lynx-intel-core-i7-9th-gen,digitalstorm-lynx-intel-core-i7-9th-gen.webp
+11291,desktop,DigitalStorm,,,130,2020,DigitalStorm Lynx Intel Core i7 10th Gen,lynx-intel-core-i7-10th-gen,digitalstorm-lynx-intel-core-i7-10th-gen.webp
+11292,desktop,DigitalStorm,,,175,2022,DigitalStorm Lynx Intel Core i7 12th Gen,lynx-intel-core-i7-12th-gen,digitalstorm-lynx-intel-core-i7-12th-gen.webp
+11293,desktop,DigitalStorm,,,170,2022,DigitalStorm Intel Core i9 9th Gen,intel-core-i9-9th-gen,digitalstorm-intel-core-i9-9th-gen.webp
+11294,desktop,DigitalStorm,,,185,2022,DigitalStorm Intel Core i9 10th Gen,intel-core-i9-10th-gen,digitalstorm-intel-core-i9-10th-gen.webp
+11295,desktop,DigitalStorm,,,55,2019,DigitalStorm Lynx AMD Ryzen 5,lynx-amd-ryzen-5,digitalstorm-lynx-amd-ryzen-5.webp
+11296,desktop,CyberPowerPC,,,65,2016,CyberPowerPC Gamer Master AMD Ryzen 3,gamer-master-amd-ryzen-3,cyberpowerpc-gamer-master-amd-ryzen-3.webp
+11297,desktop,CyberPowerPC,,,110,2017,CyberPowerPC Gamer Master AMD Ryzen 5,gamer-master-amd-ryzen-5,cyberpowerpc-gamer-master-amd-ryzen-5.webp
+11298,desktop,CyberPowerPC,,,130,2019,CyberPowerPC Gamer Master AMD Ryzen 7,gamer-master-amd-ryzen-7,cyberpowerpc-gamer-master-amd-ryzen-7.webp
+11299,desktop,CyberPowerPC,,,180,2021,CyberPowerPC Gamer Supreme Liquid Cool Intel Core i7 12th Gen,gamer-supreme-liquid-cool-intel-core-i7-12th-gen,cyberpowerpc-gamer-supreme-liquid-cool-intel-core-i7-12th-gen.webp
+11300,desktop,CyberPowerPC,,,220,2022,CyberPowerPC Gamer Supreme Liquid Cool Intel Core i9 12th Gen,gamer-supreme-liquid-cool-intel-core-i9-12th-gen,cyberpowerpc-gamer-supreme-liquid-cool-intel-core-i9-12th-gen.webp
+11301,desktop,CyberPowerPC,,,120,2020,CyberPowerPC Gamer Xtreme Intel Core i7 10th Gen,gamer-xtreme-intel-core-i7-10th-gen,cyberpowerpc-gamer-xtreme-intel-core-i7-10th-gen.webp
+11302,desktop,CyberPowerPC,,,130,2021,CyberPowerPC Gamer Xtreme Intel Core i5 12th Gen,gamer-xtreme-intel-core-i5-12th-gen,cyberpowerpc-gamer-xtreme-intel-core-i5-12th-gen.webp
+11303,desktop,CyberPowerPC,,,155,2021,CyberPowerPC Gamer Xtreme Intel Core i7 12th Gen,gamer-xtreme-intel-core-i7-12th-gen,cyberpowerpc-gamer-xtreme-intel-core-i7-12th-gen.webp
+11304,desktop,CyberPowerPC,,,110,2020,CyberPowerPC Gamer Xtreme Intel Core i5 10th Gen,gamer-xtreme-intel-core-i5-10th-gen,cyberpowerpc-gamer-xtreme-intel-core-i5-10th-gen.webp
+12192,desktop,Dell,,,45,2018,Dell Precision 3630 Intel Core i5 8th Gen,precision-3630-intel-core-i5-8th-gen,dell-desktop.webp
+12193,desktop,Dell,,,50,2019,Dell Precision 3630 Intel Core i5 9th Gen,precision-3630-intel-core-i5-9th-gen,dell-desktop.webp
+12194,desktop,Dell,,,75,2019,Dell Precision 3630 Intel Core i7 9th Gen,precision-3630-intel-core-i7-9th-gen,dell-desktop.webp
+12195,desktop,Dell,,,200,2019,Dell Precision 3630 Intel Core i9 9th Gen,precision-3630-intel-core-i9-9th-gen,dell-desktop.webp
+12204,desktop,Acer,,,55,2016,Acer Predator G6-710 Intel Core i5 6th Gen,predator-g6_710-intel-core-i5-6th-gen,acer-desktop.webp
+12205,desktop,Alienware,,,120,2021,Alienware Aurora R11 Intel Core i5 10th Gen Nvidia RTX,aurora-r11-intel-core-i5-10th-gen-nvidia-rtx,alienware-desktop.webp
+12206,desktop,ASUS,,,55,2020,ASUS Mini PC PN50 AMD Ryzen 7,mini-pc-pn50-amd-ryzen-7,asus-desktop.webp
+12237,desktop,Acer,,,300,2023,Acer Predator ORION 7000 Intel Core i9 12th Gen,predator-orion-7000-intel-core-i9-12th-gen,acer-desktop.webp
+12238,desktop,Lenovo,,,85,2022,Lenovo Legion T5 Intel Core i5 10th Gen,legion-t5-intel-core-i5-10th-gen,lenovo-legion-t5-intel-core-i5-10th-gen.webp
+12239,desktop,Lenovo,,,90,2022,Lenovo Legion T5 Intel Core i5 11th Gen,legion-t5-intel-core-i5-11th-gen,lenovo-legion-t5-intel-core-i5-11th-gen.webp
+12240,desktop,Lenovo,,,110,2022,Lenovo Legion T5 Intel Core i5 12th Gen,legion-t5-intel-core-i5-12th-gen,lenovo-legion-t5-intel-core-i5-12th-gen.webp
+12241,desktop,Acer,,,90,2021,Acer Predator ORION 3000 Intel Core i5 11th Gen,predator-orion-3000-intel-core-i5-11th-gen,acer-predator-orion-3000-intel-core-i5-11th-gen.webp
+12242,desktop,Acer,,,110,2021,Acer Predator ORION 3000 Intel Core i7 11th Gen,predator-orion-3000-intel-core-i7-11th-gen,acer-predator-orion-3000-intel-core-i7-11th-gen.webp
+12243,desktop,Acer,,,85,2019,Acer Predator ORION 3000 Intel Core i7 9th Gen,predator-orion-3000-intel-core-i7-9th-gen,acer-predator-orion-3000-intel-core-i7-9th-gen.webp
+12244,desktop,Acer,,,130,2020,Acer Predator ORION 5000 Intel Core i7 10th Gen,predator-orion-5000-intel-core-i7-10th-gen,acer-predator-orion-5000-intel-core-i7-10th-gen.webp
+12245,desktop,Acer,,,85,2020,Acer Predator ORION 5000 Intel Core i7 9th Gen,predator-orion-5000-intel-core-i7-9th-gen,acer-predator-orion-5000-intel-core-i7-9th-gen.webp
+12246,desktop,Acer,,,145,2020,Acer Predator ORION 5000 Intel Core i7 11th Gen,predator-orion-5000-intel-core-i7-11th-gen,acer-predator-orion-5000-intel-core-i7-11th-gen.webp
+12247,desktop,Apple,,,170,2020,Apple Mac Mini A2348 M1 Chip 2020 1TB SSD,mac-mini-a2348-m1-chip-2020-1tb-ssd,apple-mac-mini-a2348-m1-chip-2020-1tb-ssd.webp
+12248,desktop,Apple,,,85,2020,Apple Mac Mini A2348 M1 Chip 2020 256GB SSD,mac-mini-a2348-m1-chip-2020-256gb-ssd,apple-mac-mini-a2348-m1-chip-2020-256gb-ssd.webp
+12249,desktop,Apple,,,210,2020,Apple Mac Mini A2348 M1 Chip 2020 2TB SSD,mac-mini-a2348-m1-chip-2020-2tb-ssd,apple-mac-mini-a2348-m1-chip-2020-2tb-ssd.webp
+12250,desktop,Apple,,,110,2020,Apple Mac Mini A2348 M1 Chip 2020 512GB SSD,mac-mini-a2348-m1-chip-2020-512gb-ssd,apple-mac-mini-a2348-m1-chip-2020-512gb-ssd.webp
+12251,desktop,Apple,,,45,2018,Apple Mac Mini Intel Core i5 8th Gen 2018 128GB SSD,mac-mini-intel-core-i5-8th-gen-2018-128gb-ssd,apple-mac-mini-intel-core-i5-8th-gen-2018-128gb-ssd.webp
+12252,desktop,Apple,,,120,2018,Apple Mac Mini Intel Core i5 8th Gen 2018 1TB SSD,mac-mini-intel-core-i5-8th-gen-2018-1tb-ssd,apple-mac-mini-intel-core-i5-8th-gen-2018-1tb-ssd.webp
+12253,desktop,Apple,,,140,2018,Apple Mac Mini Intel Core i5 8th Gen 2018 2TB SSD,mac-mini-intel-core-i5-8th-gen-2018-2tb-ssd,apple-mac-mini-intel-core-i5-8th-gen-2018-2tb-ssd.webp
+12254,desktop,Apple,,,75,2018,Apple Mac Mini Intel Core i5 8th Gen 2018 256GB SSD,mac-mini-intel-core-i5-8th-gen-2018-256gb-ssd,apple-mac-mini-intel-core-i5-8th-gen-2018-256gb-ssd.webp
+12255,desktop,Apple,,,90,2018,Apple Mac Mini Intel Core i5 8th Gen 2018 512GB SSD,mac-mini-intel-core-i5-8th-gen-2018-512gb-ssd,apple-mac-mini-intel-core-i5-8th-gen-2018-512gb-ssd.webp
+12256,desktop,Apple,,,90,2018,Apple Mac Mini Intel Core i7 8th Gen 2018 128GB SSD,mac-mini-intel-core-i7-8th-gen-2018-128gb-ssd,apple-mac-mini-intel-core-i7-8th-gen-2018-128gb-ssd.webp
+12257,desktop,Apple,,,165,2018,Apple Mac Mini Intel Core i7 8th Gen 2018 1TB SSD,mac-mini-intel-core-i7-8th-gen-2018-1tb-ssd,apple-mac-mini-intel-core-i7-8th-gen-2018-1tb-ssd.webp
+12258,desktop,Apple,,,115,2018,Apple Mac Mini Intel Core i7 8th Gen 2018 256GB SSD,mac-mini-intel-core-i7-8th-gen-2018-256gb-ssd,apple-mac-mini-intel-core-i7-8th-gen-2018-256gb-ssd.webp
+12259,desktop,Apple,,,130,2018,Apple Mac Mini Intel Core i7 8th Gen 2018 512GB SSD,mac-mini-intel-core-i7-8th-gen-2018-512gb-ssd,apple-mac-mini-intel-core-i7-8th-gen-2018-512gb-ssd.webp
+12260,desktop,Apple,,,225,2018,Apple Mac Mini Intel Core i7 8th Gen 2018 2TB SSD,mac-mini-intel-core-i7-8th-gen-2018-2tb-ssd,apple-mac-mini-intel-core-i7-8th-gen-2018-2tb-ssd.webp
+12261,desktop,Apple,,,175,2021,Apple Mac Mini M1 2021 1TB SSD,mac-mini-m1-2021-1tb-ssd,apple-mac-mini-m1-2021-1tb-ssd.webp
+12262,desktop,Apple,,,85,2021,Apple Mac Mini M1 2021 256GB SSD,mac-mini-m1-2021-256gb-ssd,apple-mac-mini-m1-2021-256gb-ssd.webp
+12263,desktop,Apple,,,225,2021,Apple Mac Mini M1 2021 2TB SSD,mac-mini-m1-2021-2tb-ssd,apple-mac-mini-m1-2021-2tb-ssd.webp
+12264,desktop,Apple,,,120,2021,Apple Mac Mini M1 2021 512GB SSD,mac-mini-m1-2021-512gb-ssd,apple-mac-mini-m1-2021-512gb-ssd.webp
+12265,desktop,Apple,,,100,2022,Apple Mac Mini M1 2022 256GB SSD,mac-mini-m1-2022-256gb-ssd,apple-mac-mini-m1-2022-256gb-ssd.webp
+12266,desktop,Apple,,,130,2022,Apple Mac Mini M1 2022 512GB SSD,mac-mini-m1-2022-512gb-ssd,apple-mac-mini-m1-2022-512gb-ssd.webp
+12267,desktop,Apple,,,185,2022,Apple Mac Mini M1 2022 1TB SSD,mac-mini-m1-2022-1tb-ssd,apple-mac-mini-m1-2022-1tb-ssd.webp
+12268,desktop,Apple,,,235,2022,Apple Mac Mini M1 2022 2TB SSD,mac-mini-m1-2022-2tb-ssd,apple-mac-mini-m1-2022-2tb-ssd.webp
+12269,desktop,Apple,,,190,2023,Apple Mac Mini M2 8-Core 2023 1TB SSD,mac-mini-m2-8_core-2023-1tb-ssd,apple-mac-mini-m2-8_core-2023-1tb-ssd.webp
+12270,desktop,Apple,,,240,2023,Apple Mac Mini M2 8-Core 2023 2TB SSD,mac-mini-m2-8_core-2023-2tb-ssd,apple-mac-mini-m2-8_core-2023-2tb-ssd.webp
+12271,desktop,Apple,,,260,2023,Apple Mac Mini M2 8-Core 2023 4TB SSD,mac-mini-m2-8_core-2023-4tb-ssd,apple-mac-mini-m2-8_core-2023-4tb-ssd.webp
+12272,desktop,Apple,,,105,2023,Apple Mac Mini M2 8-Core 2023 256GB SSD,mac-mini-m2-8_core-2023-256gb-ssd,apple-mac-mini-m2-8_core-2023-256gb-ssd.webp
+12273,desktop,Apple,,,120,2023,Apple Mac Mini M2 8-Core 2023 512GB SSD,mac-mini-m2-8_core-2023-512gb-ssd,apple-mac-mini-m2-8_core-2023-512gb-ssd.webp
+12274,desktop,Apple,,,220,2023,Apple Mac Mini M2 Pro 10-Core 2023 1TB SSD,mac-mini-m2-pro-10_core-2023-1tb-ssd,apple-mac-mini-m2-pro-10_core-2023-1tb-ssd.webp
+12275,desktop,Apple,,,235,2023,Apple Mac Mini M2 Pro 10-Core 2023 2TB SSD,mac-mini-m2-pro-10_core-2023-2tb-ssd,apple-mac-mini-m2-pro-10_core-2023-2tb-ssd.webp
+12276,desktop,Apple,,,260,2023,Apple Mac Mini M2 Pro 10-Core 2023 4TB SSD,mac-mini-m2-pro-10_core-2023-4tb-ssd,apple-mac-mini-m2-pro-10_core-2023-4tb-ssd.webp
+12277,desktop,Apple,,,300,2023,Apple Mac Mini M2 Pro 10-Core 2023 8TB SSD,mac-mini-m2-pro-10_core-2023-8tb-ssd,apple-mac-mini-m2-pro-10_core-2023-8tb-ssd.webp
+12278,desktop,Apple,,,95,2023,Apple Mac Mini M2 Pro 10-Core 2023 256GB SSD,mac-mini-m2-pro-10_core-2023-256gb-ssd,apple-mac-mini-m2-pro-10_core-2023-256gb-ssd.webp
+12279,desktop,Apple,,,200,2023,Apple Mac Mini M2 Pro 10-Core 2023 512GB SSD,mac-mini-m2-pro-10_core-2023-512gb-ssd,apple-mac-mini-m2-pro-10_core-2023-512gb-ssd.webp
+12280,desktop,Apple,,,230,2023,Apple Mac Mini M2 Pro 12-Core 2023 1TB SSD,mac-mini-m2-pro-12_core-2023-1tb-ssd,apple-mac-mini-m2-pro-12_core-2023-1tb-ssd.webp
+12281,desktop,Apple,,,250,2023,Apple Mac Mini M2 Pro 12-Core 2023 2TB SSD,mac-mini-m2-pro-12_core-2023-2tb-ssd,apple-mac-mini-m2-pro-12_core-2023-2tb-ssd.webp
+12282,desktop,Apple,,,275,2023,Apple Mac Mini M2 Pro 12-Core 2023 4TB SSD,mac-mini-m2-pro-12_core-2023-4tb-ssd,apple-mac-mini-m2-pro-12_core-2023-4tb-ssd.webp
+12283,desktop,Apple,,,345,2023,Apple Mac Mini M2 Pro 12-Core 2023 8TB SSD,mac-mini-m2-pro-12_core-2023-8tb-ssd,apple-mac-mini-m2-pro-12_core-2023-8tb-ssd.webp
+12284,desktop,Apple,,,110,2023,Apple Mac Mini M2 Pro 12-Core 2023 256GB SSD,mac-mini-m2-pro-12_core-2023-256gb-ssd,apple-mac-mini-m2-pro-12_core-2023-256gb-ssd.webp
+12285,desktop,Apple,,,205,2023,Apple Mac Mini M2 Pro 12-Core 2023 512GB SSD,mac-mini-m2-pro-12_core-2023-512gb-ssd,apple-mac-mini-m2-pro-12_core-2023-512gb-ssd.webp
+12286,desktop,Apple,,,65,2013,Apple Mac Pro A1481 Core Xeon 2013,mac-pro-a1481-core-xeon-2013,apple-mac-pro-a1481-core-xeon-2013.webp
+12287,desktop,Corsair,,,105,2021,Corsair AMD Ryzen 5 Nvidia RTX,amd-ryzen-5-nvidia-rtx,corsair-amd-ryzen-5-nvidia-rtx.webp
+12288,desktop,Corsair,,,120,2021,Corsair AMD Ryzen 7 Nvidia RTX,amd-ryzen-7-nvidia-rtx,corsair-amd-ryzen-7-nvidia-rtx.webp
+12289,desktop,Corsair,,,130,2021,Corsair AMD Ryzen 9 Nvidia GTX,amd-ryzen-9-nvidia-gtx,corsair-amd-ryzen-9-nvidia-gtx.webp
+12290,desktop,Corsair,,,145,2021,Corsair AMD Ryzen 9 Nvidia RTX,amd-ryzen-9-nvidia-rtx,corsair-amd-ryzen-9-nvidia-rtx.webp
+12291,desktop,Corsair,,,90,2020,Corsair Intel Core i5 10th Gen Nvidia GTX,intel-core-i5-10th-gen-nvidia-gtx,corsair-intel-core-i5-10th-gen-nvidia-gtx.webp
+12292,desktop,Corsair,,,100,2020,Corsair Intel Core i5 10th Gen Nvidia RTX,intel-core-i5-10th-gen-nvidia-rtx,corsair-intel-core-i5-10th-gen-nvidia-rtx.webp
+12293,desktop,Corsair,,,105,2021,Corsair Intel Core i5 11th Gen Nvidia GTX,intel-core-i5-11th-gen-nvidia-gtx,corsair-intel-core-i5-11th-gen-nvidia-gtx.webp
+12294,desktop,Corsair,,,110,2021,Corsair Intel Core i5 11th Gen Nvidia RTX,intel-core-i5-11th-gen-nvidia-rtx,corsair-intel-core-i5-11th-gen-nvidia-rtx.webp
+12295,desktop,Corsair,,,120,2021,Corsair Intel Core i5 12th Gen Nvidia GTX,intel-core-i5-12th-gen-nvidia-gtx,corsair-intel-core-i5-12th-gen-nvidia-gtx.webp
+12296,desktop,Corsair,,,130,2021,Corsair Intel Core i5 12th Gen Nvidia RTX,intel-core-i5-12th-gen-nvidia-rtx,corsair-intel-core-i5-12th-gen-nvidia-rtx.webp
+12297,desktop,Corsair,,,85,2019,Corsair Intel Core i5 9th Gen Nvidia GTX,intel-core-i5-9th-gen-nvidia-gtx,corsair-intel-core-i5-9th-gen-nvidia-gtx.webp
+12298,desktop,Corsair,,,90,2019,Corsair Intel Core i5 9th Gen Nvidia RTX,intel-core-i5-9th-gen-nvidia-rtx,corsair-intel-core-i5-9th-gen-nvidia-rtx.webp
+12299,desktop,Corsair,,,130,2020,Corsair Intel Core i7 10th Gen RTX,intel-core-i7-10th-gen-rtx,corsair-intel-core-i7-10th-gen-rtx.webp
+12300,desktop,Corsair,,,140,2021,Corsair Intel Core i7 11th Gen RTX,intel-core-i7-11th-gen-rtx,corsair-intel-core-i7-11th-gen-rtx.webp
+12301,desktop,Corsair,,,155,2021,Corsair Intel Core i7 12th Gen RTX,intel-core-i7-12th-gen-rtx,corsair-intel-core-i7-12th-gen-rtx.webp
+12302,desktop,Corsair,,,145,2021,Corsair Intel Core i7 12th Gen GTX,intel-core-i7-12th-gen-gtx,corsair-intel-core-i7-12th-gen-gtx.webp
+12303,desktop,Corsair,,,120,2018,Corsair Intel Core i7 8th Gen RTX,intel-core-i7-8th-gen-rtx,corsair-intel-core-i7-8th-gen-rtx.webp
+12304,desktop,Corsair,,,135,2019,Corsair Intel Core i7 9th Gen RTX,intel-core-i7-9th-gen-rtx,corsair-intel-core-i7-9th-gen-rtx.webp
+12305,desktop,Corsair,,,170,2019,Corsair Intel Core i9 9th Gen RTX,intel-core-i9-9th-gen-rtx,corsair-intel-core-i9-9th-gen-rtx.webp
+12306,desktop,Corsair,,,170,2019,Corsair Intel Core i9 10th Gen GTX,intel-core-i9-10th-gen-gtx,corsair-intel-core-i9-10th-gen-gtx.webp
+12307,desktop,Corsair,,,175,2019,Corsair Intel Core i9 10th Gen RTX,intel-core-i9-10th-gen-rtx,corsair-intel-core-i9-10th-gen-rtx.webp
+12308,desktop,Corsair,,,180,2019,Corsair Intel Core i9 11th Gen GTX,intel-core-i9-11th-gen-gtx,corsair-intel-core-i9-11th-gen-gtx.webp
+12309,desktop,Corsair,,,190,2019,Corsair Intel Core i9 11th Gen RTX,intel-core-i9-11th-gen-rtx,corsair-intel-core-i9-11th-gen-rtx.webp
+12310,desktop,Corsair,,,200,2019,Corsair Intel Core i9 12th Gen GTX,intel-core-i9-12th-gen-gtx,corsair-intel-core-i9-12th-gen-gtx.webp
+12311,desktop,Corsair,,,210,2019,Corsair Intel Core i9 12th Gen RTX,intel-core-i9-12th-gen-rtx,corsair-intel-core-i9-12th-gen-rtx.webp
+12312,desktop,CyberPowerPC,,,140,2021,CyberPowerPC AMD Ryzen 9 GTX,amd-ryzen-9-gtx,cyberpowerpc-amd-ryzen-9-gtx.webp
+12313,desktop,CyberPowerPC,,,105,2020,CyberPowerPC AMD Ryzen 5 RTX,amd-ryzen-5-rtx,cyberpowerpc-amd-ryzen-5-rtx.webp
+12314,desktop,CyberPowerPC,,,130,2020,CyberPowerPC AMD Ryzen 7 RTX,amd-ryzen-7-rtx,cyberpowerpc-amd-ryzen-7-rtx.webp
+12315,desktop,CyberPowerPC,,,150,2020,CyberPowerPC AMD Ryzen 9 RTX,amd-ryzen-9-rtx,cyberpowerpc-amd-ryzen-9-rtx.webp
+12316,desktop,CyberPowerPC,,,120,2020,CyberPowerPC Gamer Xtreme Intel Core i5 11th Gen,gamer-xtreme-intel-core-i5-11th-gen,cyberpowerpc-gamer-xtreme-intel-core-i5-11th-gen.webp
+12317,desktop,CyberPowerPC,,,140,2020,CyberPowerPC Gamer Xtreme Intel Core i7 11th Gen,gamer-xtreme-intel-core-i7-11th-gen,cyberpowerpc-gamer-xtreme-intel-core-i7-11th-gen.webp
+12318,desktop,CyberPowerPC,,,130,2021,CyberPowerPC Intel Core i5 12th Gen,intel-core-i5-12th-gen,cyberpowerpc-intel-core-i5-12th-gen.webp
+12319,desktop,CyberPowerPC,,,140,2020,CyberPowerPC Intel Core i7 10th Gen,intel-core-i7-10th-gen,cyberpowerpc-intel-core-i7-10th-gen.webp
+12320,desktop,CyberPowerPC,,,155,2020,CyberPowerPC Intel Core i7 11th Gen,intel-core-i7-11th-gen,cyberpowerpc-intel-core-i7-11th-gen.webp
+12321,desktop,CyberPowerPC,,,165,2021,CyberPowerPC Intel Core i7 12th Gen,intel-core-i7-12th-gen,cyberpowerpc-intel-core-i7-12th-gen.webp
+12322,desktop,CyberPowerPC,,,190,2021,CyberPowerPC Intel Core i9 10th Gen,intel-core-i9-10th-gen,cyberpowerpc-intel-core-i9-10th-gen.webp
+12323,desktop,CyberPowerPC,,,210,2021,CyberPowerPC Intel Core i9 11th Gen,intel-core-i9-11th-gen,cyberpowerpc-intel-core-i9-11th-gen.webp
+12324,desktop,CyberPowerPC,,,230,2022,CyberPowerPC Intel Core i9 12th Gen,intel-core-i9-12th-gen,cyberpowerpc-intel-core-i9-12th-gen.webp
+12325,desktop,Dell,,,145,2020,Dell G5 5000 Intel Core i9 10th Gen,g5-5000-intel-core-i9-10th-gen,dell-g5-5000-intel-core-i9-10th-gen.webp
+12327,desktop,Dell,,,95,2020,Dell G5 5090 Intel Core i9 10th Gen,g5-5090-intel-core-i9-10th-gen,dell-g5-5090-intel-core-i9-10th-gen.webp
+12328,desktop,Dell,,,40,2018,Dell Inspiron 3670 Intel Core i7 9th Gen,inspiron-3670-intel-core-i7-9th-gen,dell-desktop.webp
+12329,desktop,Dell,,,30,2018,Dell Inspiron 3670 Intel Core i5 9th Gen,inspiron-3670-intel-core-i5-9th-gen,dell-desktop.webp
+12330,desktop,Dell,,,55,2020,Dell Inspiron 3891 Intel Core i5 10th Gen,inspiron-3891-intel-core-i5-10th-gen,dell-inspiron-3891-intel-core-i5-10th-gen.webp
+12331,desktop,Dell,,,70,2020,Dell Inspiron 3891 Intel Core i7 10th Gen,inspiron-3891-intel-core-i7-10th-gen,dell-inspiron-3891-intel-core-i7-10th-gen.webp
+12332,desktop,Dell,,,60,2020,Dell Inspiron 3891 Intel Core i5 11th Gen,inspiron-3891-intel-core-i5-11th-gen,dell-inspiron-3891-intel-core-i5-11th-gen.webp
+12333,desktop,Dell,,,85,2020,Dell Inspiron 3891 Intel Core i7 11th Gen,inspiron-3891-intel-core-i7-11th-gen,dell-inspiron-3891-intel-core-i7-11th-gen.webp
+12334,desktop,Dell,,,110,2021,Dell Inspiron 3910 Intel Core i7 12th Gen,inspiron-3910-intel-core-i7-12th-gen,dell-inspiron-3910-intel-core-i7-12th-gen.webp
+12335,desktop,Dell,,,70,2021,Dell Inspiron 3910 Intel Core i5 12th Gen,inspiron-3910-intel-core-i5-12th-gen,dell-inspiron-3910-intel-core-i5-12th-gen.webp
+12336,desktop,Dell,,,50,2021,Dell Inspiron 3910 Intel Core i3 12th Gen,inspiron-3910-intel-core-i3-12th-gen,dell-inspiron-3910-intel-core-i3-12th-gen.webp
+12337,desktop,Dell,,,55,2018,Dell Inspiron 5676 AMD Ryzen 5,inspiron-5676-amd-ryzen-5,dell-inspiron-5676-amd-ryzen-5.webp
+12338,desktop,Dell,,,85,2020,Dell Precision 3640 Intel Core i5 10th Gen,precision-3640-intel-core-i5-10th-gen,dell-precision-3640-intel-core-i5-10th-gen.webp
+12339,desktop,Dell,,,110,2020,Dell Precision 3640 Intel Core i7 10th Gen,precision-3640-intel-core-i7-10th-gen,dell-precision-3640-intel-core-i7-10th-gen.webp
+12340,desktop,Dell,,,120,2020,Dell Precision 3640 Intel Core i9 10th Gen,precision-3640-intel-core-i9-10th-gen,dell-precision-3640-intel-core-i9-10th-gen.webp
+12341,desktop,Dell,,,95,2020,Dell Precision 3640 Intel Xeon,precision-3640-intel-xeon,dell-precision-3640-intel-xeon.webp
+12342,desktop,Dell,,,95,2020,Dell Precision 3650 Intel Core i5 11th Gen,precision-3650-intel-core-i5-11th-gen,dell-precision-3650-intel-core-i5-11th-gen.webp
+12343,desktop,Dell,,,120,2020,Dell Precision 3650 Intel Core i7 11th Gen,precision-3650-intel-core-i7-11th-gen,dell-precision-3650-intel-core-i7-11th-gen.webp
+12344,desktop,Dell,,,135,2020,Dell Precision 3650 Intel Core i9 11th Gen,precision-3650-intel-core-i9-11th-gen,dell-precision-3650-intel-core-i9-11th-gen.webp
+12345,desktop,Dell,,,105,2020,Dell Precision 3650 Intel Xeon,precision-3650-intel-xeon,dell-precision-3650-intel-xeon.webp
+12346,desktop,Dell,,,80,2021,Dell XPS 8940 Intel Core i5 11th Gen,xps-8940-intel-core-i5-11th-gen,dell-xps-8940-intel-core-i5-11th-gen.webp
+12347,desktop,Dell,,,140,2021,Dell XPS 8940 Intel Core i7 11th Gen,xps-8940-intel-core-i7-11th-gen,dell-xps-8940-intel-core-i7-11th-gen.webp
+12348,desktop,Dell,,,175,2021,Dell XPS 8940 Intel Core i9 11th Gen,xps-8940-intel-core-i9-11th-gen,dell-xps-8940-intel-core-i9-11th-gen.webp
+12349,desktop,Dell,,,165,2021,Dell XPS 8940 Intel Core i9 10th Gen,xps-8940-intel-core-i9-10th-gen,dell-xps-8940-intel-core-i9-10th-gen.webp
+12350,desktop,Dell,,,200,2023,Dell XPS 8960 Intel Core i5 13th Gen,xps-8960-intel-core-i5-13th-gen,dell-xps-8960-intel-core-i5-13th-gen.webp
+12351,desktop,Dell,,,300,2023,Dell XPS 8960 Intel Core i7 13th Gen,xps-8960-intel-core-i7-13th-gen,dell-xps-8960-intel-core-i7-13th-gen.webp
+12352,desktop,Dell,,,385,2023,Dell XPS 8960 Intel Core i9 13th Gen,xps-8960-intel-core-i9-13th-gen,dell-xps-8960-intel-core-i9-13th-gen.webp
+12353,desktop,iBuyPower,,,75,2022,iBuyPower AMD Ryzen 5 Radeon RX,amd-ryzen-5-radeon-rx,ibuypower-desktop.webp
+12354,desktop,iBuyPower,,,85,2022,iBuyPower AMD Ryzen 5 Nvidia GTX,amd-ryzen-5-nvidia-gtx,ibuypower-amd-ryzen-5-nvidia-gtx.webp
+12355,desktop,iBuyPower,,,90,2022,iBuyPower AMD Ryzen 5 Nvidia RTX,amd-ryzen-5-nvidia-rtx,ibuypower-amd-ryzen-5-nvidia-rtx.webp
+12356,desktop,iBuyPower,,,85,2022,iBuyPower AMD Ryzen 7 Radeon RX,amd-ryzen-7-radeon-rx,ibuypower-desktop.webp
+12357,desktop,iBuyPower,,,90,2022,iBuyPower AMD Ryzen 7 Nvidia GTX,amd-ryzen-7-nvidia-gtx,ibuypower-amd-ryzen-7-nvidia-gtx.webp
+12358,desktop,iBuyPower,,,100,2022,iBuyPower AMD Ryzen 7 Nvidia RTX,amd-ryzen-7-nvidia-rtx,ibuypower-amd-ryzen-7-nvidia-rtx.webp
+12359,desktop,iBuyPower,,,110,2022,iBuyPower AMD Ryzen 9 Radeon RX,amd-ryzen-9-radeon-rx,ibuypower-desktop.webp
+12360,desktop,iBuyPower,,,110,2022,iBuyPower AMD Ryzen 9 Nvidia GTX,amd-ryzen-9-nvidia-gtx,ibuypower-amd-ryzen-9-nvidia-gtx.webp
+12361,desktop,iBuyPower,,,120,2022,iBuyPower AMD Ryzen 9 Nvidia RTX,amd-ryzen-9-nvidia-rtx,ibuypower-amd-ryzen-9-nvidia-rtx.webp
+12362,desktop,iBuyPower,,,75,2020,iBuyPower Intel Core i5 10th Gen,intel-core-i5-10th-gen,ibuypower-intel-core-i5-10th-gen.webp
+12363,desktop,iBuyPower,,,85,2021,iBuyPower Intel Core i5 11th Gen,intel-core-i5-11th-gen,ibuypower-intel-core-i5-11th-gen.webp
+12364,desktop,iBuyPower,,,110,2022,iBuyPower Intel Core i5 12th Gen,intel-core-i5-12th-gen,ibuypower-intel-core-i5-12th-gen.webp
+12365,desktop,iBuyPower,,,110,2021,iBuyPower Intel Core i7 10th Gen,intel-core-i7-10th-gen,ibuypower-intel-core-i7-10th-gen.webp
+12366,desktop,iBuyPower,,,120,2021,iBuyPower Intel Core i7 11th Gen,intel-core-i7-11th-gen,ibuypower-intel-core-i7-11th-gen.webp
+12367,desktop,iBuyPower,,,175,2022,iBuyPower Intel Core i7 12th Gen,intel-core-i7-12th-gen,ibuypower-intel-core-i7-12th-gen.webp
+12368,desktop,iBuyPower,,,260,2023,iBuyPower Intel Core i7 13th Gen,intel-core-i7-13th-gen,ibuypower-intel-core-i7-13th-gen.webp
+12369,desktop,iBuyPower,,,190,2021,iBuyPower Intel Core i9 10th Gen,intel-core-i9-10th-gen,ibuypower-intel-core-i9-10th-gen.webp
+12370,desktop,iBuyPower,,,225,2021,iBuyPower Intel Core i9 11th Gen,intel-core-i9-11th-gen,ibuypower-intel-core-i9-11th-gen.webp
+12371,desktop,iBuyPower,,,275,2022,iBuyPower Intel Core i9 12th Gen,intel-core-i9-12th-gen,ibuypower-intel-core-i9-12th-gen.webp
+12372,desktop,iBuyPower,,,320,2023,iBuyPower Intel Core i9 13th Gen,intel-core-i9-13th-gen,ibuypower-intel-core-i9-13th-gen.webp
+12373,desktop,MSI,,,120,2021,MSI Codex R Intel Core i5 10th Gen,codex-r-intel-core-i5-10th-gen,msi-codex-r-intel-core-i5-10th-gen.webp
+12374,desktop,MSI,,,130,2021,MSI Codex R Intel Core i7 10th Gen,codex-r-intel-core-i7-10th-gen,msi-codex-r-intel-core-i7-10th-gen.webp
+12375,desktop,MSI,,,200,2021,MSI Infinite RS Intel Core i7 10th Gen,infinite-rs-intel-core-i7-10th-gen,msi-infinite-rs-intel-core-i7-10th-gen.webp
+12376,desktop,MSI,,,260,2021,MSI Infinite RS Intel Core i7 11th Gen,infinite-rs-intel-core-i7-11th-gen,msi-infinite-rs-intel-core-i7-11th-gen.webp
+12377,desktop,MSI,,,280,2021,MSI Infinite RS Intel Core i9 10th Gen,infinite-rs-intel-core-i9-10th-gen,msi-infinite-rs-intel-core-i9-10th-gen.webp
+12378,desktop,MSI,,,320,2021,MSI Infinite RS Intel Core i9 11th Gen,infinite-rs-intel-core-i9-11th-gen,msi-infinite-rs-intel-core-i9-11th-gen.webp
+12379,desktop,MSI,,,160,2021,MSI MPG Trident 3 Intel Core i5 10th Gen,mpg-trident-3-intel-core-i5-10th-gen,msi-mpg-trident-3-intel-core-i5-10th-gen.webp
+12380,desktop,MSI,,,210,2021,MSI Aegis RS Intel Core i7 11th Gen,aegis-rs-intel-core-i7-11th-gen,msi-aegis-rs-intel-core-i7-11th-gen.webp
+12381,desktop,MSI,,,225,2022,MSI Aegis RS Intel Core i7 12th Gen,aegis-rs-intel-core-i7-12th-gen,msi-aegis-rs-intel-core-i7-12th-gen.webp
+12382,desktop,MSI,,,220,2021,MSI Aegis RS Intel Core i9 10th Gen,aegis-rs-intel-core-i9-10th-gen,msi-aegis-rs-intel-core-i9-10th-gen.webp
+12383,desktop,MSI,,,240,2021,MSI Aegis RS Intel Core i9 11th Gen,aegis-rs-intel-core-i9-11th-gen,msi-aegis-rs-intel-core-i9-11th-gen.webp
+12384,desktop,MSI,,,270,2022,MSI Aegis RS Intel Core i9 12th Gen,aegis-rs-intel-core-i9-12th-gen,msi-aegis-rs-intel-core-i9-12th-gen.webp
+12385,desktop,MSI,,,95,2021,MSI Aegis SE Intel Core i5 10th Gen,aegis-se-intel-core-i5-10th-gen,msi-aegis-se-intel-core-i5-10th-gen.webp
+12386,desktop,MSI,,,110,2018,MSI Aegis ZS AMD Ryzen 3,aegis-zs-amd-ryzen-3,msi-aegis-zs-amd-ryzen-3.webp
+12387,desktop,MSI,,,140,2020,MSI Aegis ZS AMD Ryzen 5,aegis-zs-amd-ryzen-5,msi-aegis-zs-amd-ryzen-5.webp
+12388,desktop,MSI,,,155,2020,MSI Aegis ZS AMD Ryzen 7,aegis-zs-amd-ryzen-7,msi-aegis-zs-amd-ryzen-7.webp
+12389,desktop,MSI,,,175,2021,MSI Aegis ZS AMD Ryzen 9,aegis-zs-amd-ryzen-9,msi-aegis-zs-amd-ryzen-9.webp
+12390,desktop,MSI,,,170,2022,MSI Codex R Intel Core i7 12th Gen,codex-r-intel-core-i7-12th-gen,msi-codex-r-intel-core-i7-12th-gen.webp
+12391,desktop,MSI,,,140,2022,MSI Codex R Intel Core i5 12th Gen,codex-r-intel-core-i5-12th-gen,msi-codex-r-intel-core-i5-12th-gen.webp
+12392,desktop,MSI,,,160,2021,MSI Codex R Intel Core i7 11th Gen,codex-r-intel-core-i7-11th-gen,msi-codex-r-intel-core-i7-11th-gen.webp
+12393,desktop,MSI,,,130,2021,MSI Codex R Intel Core i5 11th Gen,codex-r-intel-core-i5-11th-gen,msi-codex-r-intel-core-i5-11th-gen.webp
+12394,desktop,MSI,,,105,2022,MSI Creator P50 Intel Core i5 12th Gen,creator-p50-intel-core-i5-12th-gen,msi-creator-p50-intel-core-i5-12th-gen.webp
+12395,desktop,MSI,,,120,2022,MSI Creator P50 Intel Core i7 12th Gen,creator-p50-intel-core-i7-12th-gen,msi-creator-p50-intel-core-i7-12th-gen.webp
+12396,desktop,MSI,,,55,2020,MSI Cubi 5 Intel Core i3 10th Gen,cubi-5-intel-core-i3-10th-gen,msi-cubi-5-intel-core-i3-10th-gen.webp
+12397,desktop,MSI,,,85,2020,MSI Cubi 5 Intel Core i5 10th Gen,cubi-5-intel-core-i5-10th-gen,msi-cubi-5-intel-core-i5-10th-gen.webp
+12398,desktop,MSI,,,105,2020,MSI Cubi 5 Intel Core i7 10th Gen,cubi-5-intel-core-i7-10th-gen,msi-cubi-5-intel-core-i7-10th-gen.webp
+12399,desktop,MSI,,,300,2023,MSI Infinite RS Intel Core i7 13th Gen,infinite-rs-intel-core-i7-13th-gen,msi-infinite-rs-intel-core-i7-13th-gen.webp
+12400,desktop,MSI,,,535,2023,MSI Infinite RS Intel Core i9 13th Gen,infinite-rs-intel-core-i9-13th-gen,msi-infinite-rs-intel-core-i9-13th-gen.webp
+12401,desktop,MSI,,,70,2020,MSI MAG Trident S 5M AMD Ryzen 5,mag-trident-s-5m-amd-ryzen-5,msi-mag-trident-s-5m-amd-ryzen-5.webp
+12402,desktop,MSI,,,85,2020,MSI MAG Trident S 5M AMD Ryzen 7,mag-trident-s-5m-amd-ryzen-7,msi-mag-trident-s-5m-amd-ryzen-7.webp
+12403,desktop,MSI,,,180,2022,MSI MPG Trident 3 Intel Core i5 12th Gen,mpg-trident-3-intel-core-i5-12th-gen,msi-mpg-trident-3-intel-core-i5-12th-gen.webp
+12404,desktop,MSI,,,220,2022,MSI MPG Trident 3 Intel Core i7 12th Gen,mpg-trident-3-intel-core-i7-12th-gen,msi-mpg-trident-3-intel-core-i7-12th-gen.webp
+12405,desktop,MSI,,,175,2021,MSI MPG Trident 3 Intel Core i7 10th Gen,mpg-trident-3-intel-core-i7-10th-gen,msi-mpg-trident-3-intel-core-i7-10th-gen.webp
+12406,desktop,MSI,,,0,2019,MSI Trident X Plus Intel Core i7 8th Gen,trident-x-plus-intel-core-i7-8th-gen,msi-trident-x-plus-intel-core-i7-8th-gen.webp
